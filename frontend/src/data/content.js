@@ -6,6 +6,7 @@ export const LOGO_MARK = "/images/logo-mark.png";
 
 export const MEDIA = {
   heroVideo: "/videos/hero.mp4",
+  globalVideo: "/videos/global-expansion.mp4",
   robotPortrait: "https://images.pexels.com/photos/8294558/pexels-photo-8294558.jpeg",
   robotWhite: "https://images.unsplash.com/photo-1535378273068-9bb67d5beacd",
   network: "https://images.unsplash.com/photo-1637166185518-058f5896a2e9",
