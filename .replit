@@ -19,10 +19,6 @@ author = "agent"
 task = "workflow.run"
 args = "Start application"
 
-[[workflows.workflow.tasks]]
-task = "workflow.run"
-args = "Backend API"
-
 [[workflows.workflow]]
 name = "Start application"
 author = "agent"
@@ -35,18 +31,6 @@ waitForPort = 5000
 [workflows.workflow.metadata]
 outputType = "webview"
 
-[[workflows.workflow]]
-name = "Backend API"
-author = "agent"
-
-[[workflows.workflow.tasks]]
-task = "shell.exec"
-args = "cd backend && python3 server.py"
-waitForPort = 8000
-
-[workflows.workflow.metadata]
-outputType = "console"
-
 [[ports]]
 localPort = 5000
 externalPort = 80
@@ -57,6 +41,7 @@ externalPort = 8000
 exposeLocalhost = true
 
 [deployment]
-deploymentTarget = "autoscale"
+deploymentTarget = "static"
 run = ["bash", "-c", "cd backend && uvicorn server:app --host 0.0.0.0 --port 8000 & cd frontend && npx serve -s build -l 5000"]
 build = ["bash", "-c", "cd frontend && npm run build"]
+publicDir = "frontend/build"
