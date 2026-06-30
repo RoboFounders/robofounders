@@ -6,14 +6,15 @@ export default function Hero() {
       id="hero"
       className="relative h-screen w-full overflow-hidden bg-[#040a12]"
     >
+      {/* Image anchored right, starts just below navbar (top-16 = 64px), naturally proportioned — no zoom */}
       <img
         src="/images/hero-bg.jpeg"
         alt="RoboFounders Robot COO"
-        className="absolute inset-0 h-full w-full object-cover object-bottom"
+        className="absolute right-0 top-16 h-[calc(100%-4rem)] w-auto"
       />
 
-      <div className="absolute inset-0 bg-gradient-to-r from-[#040a12]/90 via-[#040a12]/50 to-transparent" />
-      <div className="absolute inset-0 bg-gradient-to-b from-[#040a12]/40 via-transparent to-[#040a12]/55" />
+      <div className="absolute inset-0 bg-gradient-to-r from-[#040a12]/95 via-[#040a12]/60 to-transparent" />
+      <div className="absolute inset-0 bg-gradient-to-b from-[#040a12]/30 via-transparent to-[#040a12]/60" />
 
       <div className="relative flex h-full max-w-7xl flex-col justify-center px-8 lg:px-16">
         <div className="max-w-xl">
