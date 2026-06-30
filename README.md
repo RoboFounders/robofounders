@@ -1,13 +1,8 @@
 # RoboFounders — Landing Page
 
-A high-end, fully static marketing landing page for **RoboFounders**, an
-"AI-Powered Robot COO for Global Expansion" service. The page pairs a
-scroll-controlled hero video with synchronized text overlays and a series of
-storytelling sections (value props, the Rofi robot showcase, event momentum,
-photo/video gallery, founder bio, leadership team, and a contact form).
+A high-end, fully static marketing landing page for **RoboFounders**, an "AI-Powered Robot COO for Global Expansion" service. The page pairs a scroll-controlled hero video with synchronized text overlays and a series of storytelling sections (value props, the Rofi robot showcase, event updates, photo/video gallery, founder bio, leadership team, and a contact form).
 
-The visual language is a futuristic AI-robotics aesthetic: deep royal-blue /
-indigo accents (`#4d6bff` → `#6a4dff`) on clean white and near-black sections.
+The visual language is a futuristic AI-robotics aesthetic: deep royal-blue / indigo accents (`#4d6bff` → `#6a4dff`) on clean white and near-black sections.
 
 ---
 
@@ -22,12 +17,8 @@ indigo accents (`#4d6bff` → `#6a4dff`) on clean white and near-black sections.
 | Icons        | lucide-react                                                 |
 | UI primitives| shadcn/ui (Radix UI) components in `src/components/ui`       |
 | Toasts       | sonner                                                       |
-| Served on    | Port **5000** (`cd frontend && npm start`)                  |
-| Backend      | None — 100% static, all content lives in one data file       |
-
-> Note: although the dependency list includes libraries like `axios`,
-> `react-query`, `react-router-dom`, and `recharts` (CRA template leftovers),
-> the landing page itself is static and does not use them.
+| Served on    | Port **5000** (`cd frontend && yarn start`)                  |
+| Deployment   | Render (Static Site CDN) or Docker                           |
 
 ---
 
@@ -36,7 +27,9 @@ indigo accents (`#4d6bff` → `#6a4dff`) on clean white and near-black sections.
 ```
 .
 ├── README.md                 # This file
-├── replit.md                 # Project overview + user preferences
+├── Dockerfile                # Production Docker configuration
+├── .dockerignore             # Files ignored during Docker builds
+├── render.yaml               # Render Blueprint deployment configuration
 └── frontend/
     ├── craco.config.js       # CRACO overrides (incl. "@" → src alias)
     ├── tailwind.config.js     # Tailwind theme + content globs
@@ -48,7 +41,7 @@ indigo accents (`#4d6bff` → `#6a4dff`) on clean white and near-black sections.
     │   ├── images/
     │   │   ├── logo-*.png          # Brand logos / marks
     │   │   ├── hero-bg.jpeg
-    │   │   ├── mariel.png          # Founder photo
+    │   │   ├── mariel.jpg          # Founder photo (updated)
     │   │   ├── rofi-3d.png         # Transparent Rofi render (showcase)
     │   │   ├── team/               # Cartoon avatars (hiro, mai, bong, celine)
     │   │   └── events/             # Event/booth gallery photos
@@ -81,31 +74,17 @@ indigo accents (`#4d6bff` → `#6a4dff`) on clean white and near-black sections.
 
 The app follows a simple, content-driven single-page architecture:
 
-1. **`src/App.js`** is the composition root. It renders `<Navbar />`, then a
-   `<main>` containing every section component in display order, followed by
-   `<Footer />` and a global `<Toaster />`.
+1. **`src/App.js`** is the composition root. It renders `<Navbar />`, then a `<main>` containing every section component in display order, followed by `<Footer />`, a global `<Toaster />`, and the `<ScrollToTop />` controller.
 
-2. **`src/data/content.js`** is the single source of truth. Every piece of copy,
-   every media path (images/videos), nav links, stats, steps, team members,
-   events, and contact details are exported as plain constants. Components import
-   what they need and render it — so editing text or swapping media usually means
-   touching only this one file.
+2. **`src/data/content.js`** is the single source of truth. Every piece of copy, every media path (images/videos), nav links, stats, steps, team members, events, and contact details are exported as plain constants.
 
-3. **Section components** in `src/components/landing/` are mostly presentational.
-   Each owns one section of the page, pulls its data from `content.js`, and uses
-   the shared `Reveal` helper for scroll-in animation.
+3. **Section components** in `src/components/landing/` pull their data from `content.js` and use the shared `Reveal` helper for scroll-in animation.
 
-4. **`Reveal.jsx`** exports two reusable building blocks used across sections:
+4. **`Reveal.jsx`** exports reusable transition elements:
    - `Reveal` — a Framer Motion wrapper that fades/slides children in on scroll.
    - `SectionLabel` — the small uppercase eyebrow label above each headline.
 
-5. **Styling** is Tailwind utility classes compiled through PostCSS. Design
-   tokens (brand colors, surfaces, borders) are defined as CSS variables in
-   `src/index.css`, alongside custom helper classes (e.g. `rf-text-gradient`,
-   `rf-cyan-gradient`, `rf-glow`, `rf-grid-bg`, `rf-chip`).
-
-6. **Path alias**: `@/` maps to `src/` (configured in `craco.config.js` /
-   `jsconfig.json`), so imports look like `@/components/landing/Navbar`.
+5. **Path alias**: `@/` maps to `src/` (configured in `craco.config.js` / `jsconfig.json`).
 
 ---
 
@@ -116,62 +95,53 @@ Defined in `src/App.js`. Each section reads its content from `content.js`.
 | # | Component          | Section id   | What it shows | Data used |
 |---|--------------------|--------------|---------------|-----------|
 | — | `Navbar.jsx`       | —            | Sticky top nav: logo, anchor links, primary CTA | `NAV_LINKS`, `LOGO` |
-| 1 | `HeroScroll.jsx`   | `#hero`      | Scroll-controlled hero video with text overlays that fade in/out at scroll checkpoints; floating "24/7 Active" badge | `MEDIA.heroVideo`, `HERO_SCENES` |
+| 1 | `HeroScroll.jsx`   | `#hero`      | Scroll-controlled hero video with text overlays; floating "24/7 Active" badge | `MEDIA.heroVideo`, `HERO_SCENES` |
 | 2 | `StatsBar.jsx`     | `#stats`     | Headline stats strip (hubs, companies, etc.) | `STATS` |
 | 3 | `GlobalReach.jsx`  | —            | Global-expansion video feature | `MEDIA.globalVideo` |
 | 4 | `HowItWorks.jsx`   | `#how`       | "Your Global Expansion, Powered by Robot COO" — step-by-step process | `STEPS` |
 | 5 | `ValueProp.jsx`    | —            | Full-width value statement over imagery | `VALUES` |
-| 6 | `RobotShowcase.jsx`| `#meet-rofi` | Interactive 3D-tilt showcase of "Rofi" (transparent render) with capability highlights | `rofi-3d.png` |
-| 7 | `Momentum.jsx`     | —            | "Where the Robot COO is showing up next" — upcoming events timeline | `MOMENTUM` |
+| 6 | `RobotShowcase.jsx`| `#meet-rofi` | Interactive 3D-tilt showcase of "Rofi" with capability highlights | `rofi-3d.png` |
+| 7 | `Updates.jsx`      | `#news`      | Tabbed updates interface: toggles between **Events Timeline** & **Press & News** | `MOMENTUM`, `NEWS` |
 | 8 | `Gallery.jsx`      | —            | Masonry of event photos + autoplaying clips from the field | `GALLERY`, `EVENT_VIDEOS` |
 | 9 | `Works.jsx`        | `#works`     | "Our Works / Case Studies" | `WORKS` |
-| 10| `ForFounders.jsx`  | `#founders`  | "Stay in the office. Go global anyway." pitch with a looping Rofi video and key bullet points | `MEDIA.founderVideo` |
-| 11| `Founder.jsx`      | —            | Founder bio (Mariel Asami Fukase), leadership team grid (cartoon avatars + Rofi), and other ventures | `MEDIA.founder`, `TEAM`, `FOUNDER_VENTURES`, `CONTACT` |
-| 12| `News.jsx`         | `#news`      | "News & Momentum" updates | `NEWS` |
-| 13| `Contact.jsx`      | `#contact`   | Contact form (client-side, toast confirmation) + social links (X, LinkedIn) | `CONTACT` |
+| 10| `ForFounders.jsx`  | `#founders`  | "Stay in the office. Go global anyway." pitch with a looping Rofi video | `MEDIA.founderVideo` |
+| 11| `Founder.jsx`      | `#founder`   | Founder bio (Mariel Asami Fukase) and leadership team grid | `MEDIA.founder`, `TEAM`, `FOUNDER_VENTURES`, `CONTACT` |
+| 12| `Contact.jsx`      | `#contact`   | Contact form (client-side, toast confirmation) + social links | `CONTACT` |
+| — | `ScrollToTop.jsx`  | —            | Floating scroll-to-top button that appears on scroll | — |
 | — | `Footer.jsx`       | —            | Logo, explore links, social icons, CTA | `NAV_LINKS`, `CONTACT` |
 
-### Shared helpers
-
-- `Reveal.jsx` — `Reveal` (scroll animation wrapper) and `SectionLabel` (eyebrow label).
-
 ---
 
-## Content & Media
+## Development & Deployment
 
-All editable content is centralized in **`src/data/content.js`**:
+### Local Development
 
-- **Brand**: `LOGO`, `LOGO_FULL`, `LOGO_MARK`
-- **Media paths**: `MEDIA` (hero/global/founder videos, founder photo, etc.)
-- **Navigation**: `NAV_LINKS`
-- **Section data**: `HERO_SCENES`, `STATS`, `STEPS`, `VALUES`, `MOMENTUM`,
-  `WORKS`, `GALLERY`, `EVENT_VIDEOS`, `NEWS`
-- **People**: `TEAM` (Rofi + human leadership), `FOUNDER_VENTURES`
-- **Contact**: `CONTACT` (LinkedIn, X/Twitter handle, etc.)
+1. Navigate to the frontend directory:
+   ```bash
+   cd frontend
+   ```
+2. Install dependencies (Yarn is recommended to avoid npm installation conflicts):
+   ```bash
+   yarn install
+   ```
+3. Start the local server:
+   ```bash
+   yarn start
+   ```
 
-Images live in `frontend/public/images/` and videos in
-`frontend/public/videos/`, referenced by root-relative URL paths (e.g.
-`/images/mariel.png`, `/videos/hero.mp4`).
+### Docker Deployment
 
----
+To run the application inside a container:
+1. Build the production image:
+   ```bash
+   docker build -t robofounders-landing .
+   ```
+2. Start the container:
+   ```bash
+   docker run -d -p 8080:80 --name robofounders-web robofounders-landing
+   ```
+   *The page will be served on `http://localhost:8080` via Nginx.*
 
-## Development
+### Render Blueprint Deployment
 
-```bash
-cd frontend
-npm install          # install dependencies (use --legacy-peer-deps if needed)
-npm start            # dev server on http://localhost:5000
-npm run build        # production build
-```
-
-The dev server runs through CRACO (`craco start`). On Replit it is wired to the
-**"Start application"** workflow.
-
-### Conventions
-
-- Use **npm** (not yarn) for package management in this environment.
-- Edit copy and media in `src/data/content.js` rather than hardcoding strings in
-  components.
-- Reuse `Reveal` / `SectionLabel` and the `rf-*` utility classes to stay on-brand.
-- Interactive elements carry `data-testid` attributes (registered in
-  `src/constants/testIds/`).
+This repository includes a `render.yaml` specification for zero-config Render Blueprint deployments. When pushed to GitHub, you can link the repository to Render, which will host the React build directory (`./frontend/build`) on Render's static CDN.
