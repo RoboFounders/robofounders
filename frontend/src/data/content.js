@@ -8,14 +8,8 @@ export const MEDIA = {
   heroVideo: "/videos/hero.mp4",
   globalVideo: "/videos/global-expansion.mp4",
   founderVideo: "/videos/founder-rofi.mp4",
-  robotPortrait: "https://images.pexels.com/photos/8294558/pexels-photo-8294558.jpeg",
-  robotWhite: "https://images.unsplash.com/photo-1535378273068-9bb67d5beacd",
-  network: "https://images.unsplash.com/photo-1637166185518-058f5896a2e9",
+  network: "/images/network.png",
   founder: "/images/mariel.png",
-  team: "https://images.unsplash.com/photo-1559136555-9303baea8ebd",
-  event1: "https://images.unsplash.com/photo-1587825140708-dfaf72ae4b04",
-  event2: "https://images.unsplash.com/photo-1505373877841-8d25f7d46678",
-  event3: "https://images.unsplash.com/photo-1558008258-3256797b43f3",
 };
 
 export const NAV_LINKS = [
