@@ -51,9 +51,14 @@ export default function ForFounders() {
         <Reveal delay={0.15}>
           <div className="relative">
             <div className="absolute -inset-4 rounded-[2rem] bg-[#4d6bff]/20 blur-2xl" />
-            <img
-              src={MEDIA.robotPortrait}
-              alt="Robot COO"
+            <video
+              src={MEDIA.founderVideo}
+              autoPlay
+              loop
+              muted
+              playsInline
+              preload="metadata"
+              aria-label="Robot COO"
               className="relative h-[480px] w-full rounded-[1.75rem] border border-white/10 object-cover"
             />
             <div className="absolute bottom-5 left-5 right-5 rounded-2xl rf-chip p-5">
