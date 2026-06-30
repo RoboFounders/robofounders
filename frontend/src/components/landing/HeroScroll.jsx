@@ -10,26 +10,15 @@ export default function Hero() {
           "radial-gradient(125% 95% at 32% 42%, #2b3bb0 0%, #1c2278 30%, #11144a 58%, #070a22 100%)",
       }}
     >
-      {/* Image anchored right, starts just below navbar (top-16 = 64px), naturally proportioned — no zoom */}
+      {/* Left readability gradient ONLY — fades to transparent before the robot so the image color is untouched */}
+      <div className="absolute inset-y-0 left-0 w-3/4 bg-gradient-to-r from-[#0c1147]/95 via-[#141a63]/35 to-transparent" />
+
+      {/* Image anchored right, rendered ON TOP of the gradient so its colors stay natural — no tint, no zoom */}
       <img
         src="/images/hero-bg.jpeg"
         alt="RoboFounders Robot COO"
         className="absolute right-0 top-16 h-[calc(100%-4rem)] w-auto"
       />
-
-      {/* faint blue wash to blend the robot image background into the theme */}
-      <div className="absolute inset-0 bg-[#1b2a8f]/20" />
-      {/* left readability gradient */}
-      <div className="absolute inset-0 bg-gradient-to-r from-[#0c1147]/95 via-[#141a63]/45 to-transparent" />
-      {/* center-left glow */}
-      <div
-        className="absolute inset-0"
-        style={{
-          background:
-            "radial-gradient(65% 75% at 28% 45%, rgba(85,105,240,0.30), transparent 70%)",
-        }}
-      />
-      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-[#070a22]/70" />
 
       <div className="relative flex h-full max-w-7xl flex-col justify-center px-8 lg:px-16">
         <div className="max-w-xl">

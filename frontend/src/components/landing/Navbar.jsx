@@ -16,10 +16,10 @@ export default function Navbar() {
   return (
     <header
       data-testid="navbar"
-      className={`fixed inset-x-0 top-0 z-50 transition-all duration-300 ${
+      className={`fixed inset-x-0 top-0 z-50 transition-all duration-300 border-b ${
         scrolled
-          ? "bg-[#070a22]/85 backdrop-blur-xl border-b border-white/10"
-          : "bg-transparent"
+          ? "bg-[#070a22]/90 backdrop-blur-xl border-white/10"
+          : "bg-[#0c1147]/80 backdrop-blur-md border-white/5"
       }`}
     >
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
