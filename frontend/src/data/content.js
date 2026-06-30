@@ -123,8 +123,8 @@ export const GALLERY = [
 
 export const EVENT_VIDEOS = [
   "/videos/event-demo.mp4",
-  "/videos/event-clip1.mp4",
   "/videos/event-clip2.mp4",
+  "/videos/event-clip1.mp4",
 ];
 
 export const NEWS = [
