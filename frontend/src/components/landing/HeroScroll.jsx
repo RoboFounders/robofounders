@@ -1,4 +1,4 @@
-import { ArrowUpRight, ChevronDown } from "lucide-react";
+import { ArrowUpRight, ChevronDown, Zap } from "lucide-react";
 
 export default function Hero() {
   return (
@@ -9,11 +9,11 @@ export default function Hero() {
       <img
         src="/images/hero-bg.jpeg"
         alt="RoboFounders Robot COO"
-        className="absolute inset-0 h-full w-full object-cover object-center"
+        className="absolute inset-0 h-full w-full object-cover object-bottom"
       />
 
       <div className="absolute inset-0 bg-gradient-to-r from-[#040a12]/90 via-[#040a12]/50 to-transparent" />
-      <div className="absolute inset-0 bg-gradient-to-b from-[#040a12]/30 via-transparent to-[#040a12]/60" />
+      <div className="absolute inset-0 bg-gradient-to-b from-[#040a12]/40 via-transparent to-[#040a12]/55" />
 
       <div className="relative flex h-full max-w-7xl flex-col justify-center px-8 lg:px-16">
         <div className="max-w-xl">
@@ -46,6 +46,36 @@ export default function Hero() {
             >
               See how it works
             </a>
+          </div>
+        </div>
+      </div>
+
+      {/* Floating badge near the star — bottom right */}
+      <div className="absolute bottom-24 right-12 hidden lg:flex flex-col items-end gap-3">
+        <div className="flex items-center gap-3 rounded-2xl border border-white/10 bg-white/5 px-5 py-3.5 backdrop-blur-md">
+          <span className="flex h-8 w-8 items-center justify-center rounded-full bg-[#00e0ef]/20">
+            <Zap className="h-4 w-4 text-[#00e0ef]" />
+          </span>
+          <div>
+            <p className="text-xs font-semibold text-[#00e0ef]">24/7 Active</p>
+            <p className="text-[11px] text-white/60">Robot COO — Rofi</p>
+          </div>
+          <span className="ml-1 h-2 w-2 rounded-full bg-[#00e0ef] animate-pulse" />
+        </div>
+        <div className="flex items-center gap-6 rounded-2xl border border-white/10 bg-white/5 px-5 py-3 backdrop-blur-md">
+          <div className="text-center">
+            <p className="text-base font-extrabold text-white">6</p>
+            <p className="text-[10px] text-white/50">Global Hubs</p>
+          </div>
+          <div className="h-6 w-px bg-white/10" />
+          <div className="text-center">
+            <p className="text-base font-extrabold text-white">3,000+</p>
+            <p className="text-[10px] text-white/50">Companies</p>
+          </div>
+          <div className="h-6 w-px bg-white/10" />
+          <div className="text-center">
+            <p className="text-base font-extrabold text-white">4</p>
+            <p className="text-[10px] text-white/50">IPOs</p>
           </div>
         </div>
       </div>
