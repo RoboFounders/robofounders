@@ -17,18 +17,18 @@ export default function Momentum() {
           </p>
         </Reveal>
 
-        <div className="mt-14 border-l-2 border-[#cdeef2] pl-8 sm:pl-12">
+        <div className="mt-14 border-l-2 border-[#d6ddff] pl-8 sm:pl-12">
           {MOMENTUM.map((m, i) => (
             <Reveal key={m.title} delay={i * 0.08}>
               <div data-testid={`momentum-${i}`} className="group relative pb-10 last:pb-0">
                 <span className="absolute -left-[41px] top-1 flex h-5 w-5 items-center justify-center sm:-left-[57px]">
-                  <span className="h-3 w-3 rounded-full rf-cyan-gradient ring-4 ring-[#e6fbfd] transition-transform group-hover:scale-125" />
+                  <span className="h-3 w-3 rounded-full rf-cyan-gradient ring-4 ring-[#eef1ff] transition-transform group-hover:scale-125" />
                 </span>
                 <div className="flex flex-wrap items-center gap-3">
                   <span className="rounded-full bg-[#0a0f1a] px-3 py-1 text-xs font-semibold text-white">
                     {m.date}
                   </span>
-                  <span className="rounded-full border border-[#cdeef2] bg-[#e6fbfd] px-3 py-1 text-xs font-semibold text-[#008f99]">
+                  <span className="rounded-full border border-[#d6ddff] bg-[#eef1ff] px-3 py-1 text-xs font-semibold text-[#4d6bff]">
                     {m.tag}
                   </span>
                 </div>

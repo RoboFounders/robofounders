@@ -14,7 +14,7 @@ export const Reveal = ({ children, delay = 0, y = 28, className = "" }) => (
 
 export const SectionLabel = ({ children, className = "" }) => (
   <span
-    className={`inline-block text-xs font-bold uppercase tracking-[0.28em] text-[#008f99] ${className}`}
+    className={`inline-block text-xs font-bold uppercase tracking-[0.28em] text-[#4d6bff] ${className}`}
   >
     {children}
   </span>

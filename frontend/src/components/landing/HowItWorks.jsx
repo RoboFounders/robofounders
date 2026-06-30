@@ -23,13 +23,13 @@ export default function HowItWorks() {
             <Reveal key={s.n} delay={i * 0.12}>
               <div
                 data-testid={`step-${s.n}`}
-                className="group relative h-full overflow-hidden rounded-2xl border border-[#e4ecf2] bg-white p-8 transition-all duration-300 hover:-translate-y-1.5 hover:border-[#9fe9f0] hover:rf-glow"
+                className="group relative h-full overflow-hidden rounded-2xl border border-[#e4ecf2] bg-white p-8 transition-all duration-300 hover:-translate-y-1.5 hover:border-[#b9c2ff] hover:rf-glow"
               >
-                <div className="pointer-events-none absolute -right-6 -top-8 font-display text-[120px] font-black leading-none text-[#eef7f9] transition-colors group-hover:text-[#e0f7fa]">
+                <div className="pointer-events-none absolute -right-6 -top-8 font-display text-[120px] font-black leading-none text-[#eef1ff] transition-colors group-hover:text-[#d6ddff]">
                   {s.n}
                 </div>
                 <div className="relative">
-                  <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#008f99]">
+                  <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#4d6bff]">
                     {s.kicker}
                   </span>
                   <h3 className="mt-3 font-display text-2xl font-bold text-[#0a0f1a]">

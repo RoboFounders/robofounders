@@ -2,6 +2,7 @@
 
 export const LOGO = "/images/logo-icon.png";
 export const LOGO_FULL = "/images/logo-full.png";
+export const LOGO_MARK = "/images/logo-mark.png";
 
 export const MEDIA = {
   heroVideo: "/videos/hero.mp4",
@@ -16,12 +17,13 @@ export const MEDIA = {
 };
 
 export const NAV_LINKS = [
-  { label: "How It Works", href: "#how" },
-  { label: "Capabilities", href: "#value" },
-  { label: "Momentum", href: "#momentum" },
-  { label: "Moments", href: "#moments" },
-  { label: "Works", href: "#works" },
-  { label: "Founder", href: "#founder" },
+  { label: "Home", href: "#hero" },
+  { label: "About Us", href: "#how" },
+  { label: "Our Teams", href: "#founder" },
+  { label: "Our Works", href: "#works" },
+  { label: "News", href: "#news" },
+  { label: "For Startups", href: "#founders" },
+  { label: "Contact", href: "#contact" },
 ];
 
 // from/to are scroll progress values [0–1] for when each text appears/disappears.

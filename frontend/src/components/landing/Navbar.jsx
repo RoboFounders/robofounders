@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Menu, X, ArrowUpRight } from "lucide-react";
-import { LOGO, NAV_LINKS } from "../../data/content";
+import { LOGO_MARK, NAV_LINKS } from "../../data/content";
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -18,25 +18,27 @@ export default function Navbar() {
       data-testid="navbar"
       className={`fixed inset-x-0 top-0 z-50 transition-all duration-300 ${
         scrolled
-          ? "bg-[#040a12]/85 backdrop-blur-xl border-b border-white/10"
+          ? "bg-[#070a22]/85 backdrop-blur-xl border-b border-white/10"
           : "bg-transparent"
       }`}
     >
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
-        <a href="#hero" data-testid="nav-logo" className="flex items-center gap-2.5">
-          <img src={LOGO} alt="RoboFounders logo mark" className="h-9 w-9 object-contain rounded-sm" />
-          <span className="font-display text-lg font-extrabold tracking-tight text-white">
-            Robo<span className="text-[#00e0ef]">Founders</span>
-          </span>
+        <a href="#hero" data-testid="nav-logo" className="flex items-center">
+          <img
+            src={LOGO_MARK}
+            alt="RoboFounders"
+            className="h-11 w-auto object-contain"
+            style={{ filter: "brightness(0) invert(1)" }}
+          />
         </a>
 
-        <div className="hidden items-center gap-8 md:flex">
+        <div className="hidden items-center gap-7 lg:flex">
           {NAV_LINKS.map((l) => (
             <a
               key={l.href}
               href={l.href}
               data-testid={`nav-link-${l.href.replace("#", "")}`}
-              className="text-sm font-medium text-white/70 transition-colors hover:text-white"
+              className="text-xs font-semibold uppercase tracking-[0.15em] text-white/70 transition-colors hover:text-white"
             >
               {l.label}
             </a>
@@ -47,7 +49,7 @@ export default function Navbar() {
           <a
             href="#contact"
             data-testid="nav-cta"
-            className="group hidden items-center gap-1.5 rounded-full rf-cyan-gradient px-5 py-2.5 text-sm font-semibold text-[#04222a] transition-all duration-300 hover:rf-glow-strong hover:-translate-y-0.5 sm:inline-flex"
+            className="group hidden items-center gap-1.5 rounded-full rf-cyan-gradient px-5 py-2.5 text-sm font-semibold text-white transition-all duration-300 hover:rf-glow-strong hover:-translate-y-0.5 sm:inline-flex"
           >
             Get Your Robot COO
             <ArrowUpRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
@@ -55,7 +57,7 @@ export default function Navbar() {
           <button
             data-testid="nav-mobile-toggle"
             onClick={() => setOpen((v) => !v)}
-            className="rounded-lg border border-white/20 bg-white/10 p-2 text-white md:hidden"
+            className="rounded-lg border border-white/20 bg-white/10 p-2 text-white lg:hidden"
             aria-label="Toggle menu"
           >
             {open ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
@@ -64,14 +66,14 @@ export default function Navbar() {
       </nav>
 
       {open && (
-        <div className="border-t border-white/10 bg-[#040a12]/95 backdrop-blur-xl md:hidden">
+        <div className="border-t border-white/10 bg-[#070a22]/95 backdrop-blur-xl lg:hidden">
           <div className="flex flex-col px-6 py-4">
             {NAV_LINKS.map((l) => (
               <a
                 key={l.href}
                 href={l.href}
                 onClick={() => setOpen(false)}
-                className="py-3 text-base font-medium text-white/80"
+                className="py-3 text-sm font-semibold uppercase tracking-[0.15em] text-white/80"
               >
                 {l.label}
               </a>
@@ -79,7 +81,7 @@ export default function Navbar() {
             <a
               href="#contact"
               onClick={() => setOpen(false)}
-              className="mt-2 inline-flex items-center justify-center rounded-full rf-cyan-gradient px-5 py-3 text-sm font-semibold text-[#04222a]"
+              className="mt-2 inline-flex items-center justify-center rounded-full rf-cyan-gradient px-5 py-3 text-sm font-semibold text-white"
             >
               Get Your Robot COO
             </a>

@@ -10,7 +10,7 @@ export default function Footer() {
             <a href="#hero" className="flex items-center gap-2.5">
               <img src={LOGO} alt="RoboFounders" className="h-9 w-9 object-contain" />
               <span className="font-display text-lg font-extrabold tracking-tight">
-                Robo<span className="text-[#5ee9f3]">Founders</span>
+                Robo<span className="text-[#6a4dff]">Founders</span>
               </span>
             </a>
             <p className="mt-4 max-w-sm text-sm leading-relaxed text-white/60">
@@ -28,7 +28,7 @@ export default function Footer() {
                 <li key={l.href}>
                   <a
                     href={l.href}
-                    className="text-sm text-white/70 transition-colors hover:text-[#5ee9f3]"
+                    className="text-sm text-white/70 transition-colors hover:text-[#6a4dff]"
                   >
                     {l.label}
                   </a>
@@ -45,7 +45,7 @@ export default function Footer() {
               <a
                 href={`mailto:${CONTACT.email}`}
                 aria-label="Email"
-                className="flex h-10 w-10 items-center justify-center rounded-lg border border-white/15 text-white/70 transition-all hover:border-[#5ee9f3] hover:text-[#5ee9f3]"
+                className="flex h-10 w-10 items-center justify-center rounded-lg border border-white/15 text-white/70 transition-all hover:border-[#6a4dff] hover:text-[#6a4dff]"
               >
                 <Mail className="h-5 w-5" />
               </a>
@@ -54,7 +54,7 @@ export default function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="LinkedIn"
-                className="flex h-10 w-10 items-center justify-center rounded-lg border border-white/15 text-white/70 transition-all hover:border-[#5ee9f3] hover:text-[#5ee9f3]"
+                className="flex h-10 w-10 items-center justify-center rounded-lg border border-white/15 text-white/70 transition-all hover:border-[#6a4dff] hover:text-[#6a4dff]"
               >
                 <Linkedin className="h-5 w-5" />
               </a>
@@ -63,14 +63,14 @@ export default function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Website"
-                className="flex h-10 w-10 items-center justify-center rounded-lg border border-white/15 text-white/70 transition-all hover:border-[#5ee9f3] hover:text-[#5ee9f3]"
+                className="flex h-10 w-10 items-center justify-center rounded-lg border border-white/15 text-white/70 transition-all hover:border-[#6a4dff] hover:text-[#6a4dff]"
               >
                 <Globe className="h-5 w-5" />
               </a>
             </div>
             <a
               href="#contact"
-              className="mt-6 inline-flex rounded-full rf-cyan-gradient px-5 py-2.5 text-sm font-semibold text-[#04222a] transition-all hover:rf-glow-strong"
+              className="mt-6 inline-flex rounded-full rf-cyan-gradient px-5 py-2.5 text-sm font-semibold text-white transition-all hover:rf-glow-strong"
             >
               Get Your Robot COO
             </a>

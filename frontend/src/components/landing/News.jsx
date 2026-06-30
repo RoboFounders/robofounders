@@ -18,9 +18,9 @@ export default function News() {
             <Reveal key={n.title} delay={i * 0.1}>
               <article
                 data-testid={`news-${i}`}
-                className="group flex h-full flex-col rounded-2xl border border-[#e4ecf2] bg-white p-7 transition-all duration-300 hover:-translate-y-1.5 hover:border-[#9fe9f0] hover:rf-glow"
+                className="group flex h-full flex-col rounded-2xl border border-[#e4ecf2] bg-white p-7 transition-all duration-300 hover:-translate-y-1.5 hover:border-[#b9c2ff] hover:rf-glow"
               >
-                <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#008f99]">
+                <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#4d6bff]">
                   {n.date}
                 </span>
                 <h3 className="mt-3 font-display text-xl font-bold text-[#0a0f1a]">{n.title}</h3>

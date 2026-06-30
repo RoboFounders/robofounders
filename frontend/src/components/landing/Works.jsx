@@ -18,7 +18,7 @@ export default function Works() {
             <a
               href="#contact"
               data-testid="works-cta"
-              className="inline-flex items-center gap-1.5 text-sm font-semibold text-[#008f99] transition-colors hover:text-[#0a0f1a]"
+              className="inline-flex items-center gap-1.5 text-sm font-semibold text-[#4d6bff] transition-colors hover:text-[#0a0f1a]"
             >
               Start your case study
               <ArrowUpRight className="h-4 w-4" />

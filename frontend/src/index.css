@@ -5,8 +5,8 @@
 :root {
   --rf-bg: #ffffff;
   --rf-surface: #f6f9fb;
-  --rf-primary: #00e0ef;
-  --rf-secondary: #008f99;
+  --rf-primary: #4d6bff;
+  --rf-secondary: #6a4dff;
   --rf-ink: #0a0f1a;
   --rf-muted: #5b6b7e;
   --rf-border: #e4ecf2;
@@ -29,19 +29,19 @@ body {
     --card-foreground: 217 47% 7%;
     --popover: 0 0% 100%;
     --popover-foreground: 217 47% 7%;
-    --primary: 186 100% 47%;
-    --primary-foreground: 217 47% 7%;
+    --primary: 227 100% 65%;
+    --primary-foreground: 0 0% 100%;
     --secondary: 200 20% 97%;
     --secondary-foreground: 217 47% 7%;
     --muted: 200 20% 96%;
     --muted-foreground: 212 16% 43%;
-    --accent: 186 100% 47%;
-    --accent-foreground: 217 47% 7%;
+    --accent: 227 100% 65%;
+    --accent-foreground: 0 0% 100%;
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
     --border: 203 33% 92%;
     --input: 203 33% 92%;
-    --ring: 186 100% 47%;
+    --ring: 227 100% 65%;
     --radius: 0.75rem;
   }
 }
@@ -64,37 +64,37 @@ body {
 }
 
 .rf-glow {
-  box-shadow: 0 0 0 1px rgba(0, 224, 239, 0.25), 0 10px 40px -10px rgba(0, 224, 239, 0.45);
+  box-shadow: 0 0 0 1px rgba(77, 107, 255, 0.25), 0 10px 40px -10px rgba(77, 107, 255, 0.5);
 }
 
 .rf-glow-strong {
-  box-shadow: 0 0 30px -2px rgba(0, 224, 239, 0.55);
+  box-shadow: 0 0 30px -2px rgba(77, 107, 255, 0.6);
 }
 
 .rf-text-gradient {
-  background: linear-gradient(100deg, #00e0ef 0%, #008f99 55%, #0a0f1a 120%);
+  background: linear-gradient(100deg, #4d6bff 0%, #6a4dff 60%, #0a0f1a 130%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .rf-cyan-gradient {
-  background: linear-gradient(100deg, #00e0ef 0%, #00b8c4 100%);
+  background: linear-gradient(100deg, #4d6bff 0%, #6a4dff 100%);
 }
 
 .rf-grid-bg {
   background-image:
-    linear-gradient(to right, rgba(0, 143, 153, 0.07) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(0, 143, 153, 0.07) 1px, transparent 1px);
+    linear-gradient(to right, rgba(77, 107, 255, 0.07) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(77, 107, 255, 0.07) 1px, transparent 1px);
   background-size: 46px 46px;
 }
 
 .rf-radial-glow {
-  background: radial-gradient(closest-side, rgba(0, 224, 239, 0.18), transparent);
+  background: radial-gradient(closest-side, rgba(77, 107, 255, 0.2), transparent);
 }
 
 .rf-hero-vignette {
-  background: radial-gradient(120% 80% at 50% 40%, transparent 35%, rgba(4, 10, 18, 0.55) 100%);
+  background: radial-gradient(120% 80% at 50% 40%, transparent 35%, rgba(7, 10, 34, 0.55) 100%);
 }
 
 .rf-chip {
@@ -104,14 +104,14 @@ body {
 }
 
 ::selection {
-  background: rgba(0, 224, 239, 0.3);
-  color: #0a0f1a;
+  background: rgba(77, 107, 255, 0.35);
+  color: #ffffff;
 }
 
 /* Custom scrollbar */
 ::-webkit-scrollbar { width: 10px; }
-::-webkit-scrollbar-track { background: #eef4f7; }
-::-webkit-scrollbar-thumb { background: #b9d4da; border-radius: 8px; }
-::-webkit-scrollbar-thumb:hover { background: #00b8c4; }
+::-webkit-scrollbar-track { background: #eef1ff; }
+::-webkit-scrollbar-thumb { background: #b9c2ff; border-radius: 8px; }
+::-webkit-scrollbar-thumb:hover { background: #6a4dff; }
 
 html { scroll-behavior: smooth; }

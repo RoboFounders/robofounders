@@ -4,7 +4,11 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      className="relative h-screen w-full overflow-hidden bg-[#040a12]"
+      className="relative h-screen w-full overflow-hidden"
+      style={{
+        background:
+          "radial-gradient(125% 95% at 32% 42%, #2b3bb0 0%, #1c2278 30%, #11144a 58%, #070a22 100%)",
+      }}
     >
       {/* Image anchored right, starts just below navbar (top-16 = 64px), naturally proportioned — no zoom */}
       <img
@@ -13,18 +17,29 @@ export default function Hero() {
         className="absolute right-0 top-16 h-[calc(100%-4rem)] w-auto"
       />
 
-      <div className="absolute inset-0 bg-gradient-to-r from-[#040a12]/95 via-[#040a12]/60 to-transparent" />
-      <div className="absolute inset-0 bg-gradient-to-b from-[#040a12]/30 via-transparent to-[#040a12]/60" />
+      {/* faint blue wash to blend the robot image background into the theme */}
+      <div className="absolute inset-0 bg-[#1b2a8f]/20" />
+      {/* left readability gradient */}
+      <div className="absolute inset-0 bg-gradient-to-r from-[#0c1147]/95 via-[#141a63]/45 to-transparent" />
+      {/* center-left glow */}
+      <div
+        className="absolute inset-0"
+        style={{
+          background:
+            "radial-gradient(65% 75% at 28% 45%, rgba(85,105,240,0.30), transparent 70%)",
+        }}
+      />
+      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-[#070a22]/70" />
 
       <div className="relative flex h-full max-w-7xl flex-col justify-center px-8 lg:px-16">
         <div className="max-w-xl">
-          <span className="mb-6 inline-block rounded-full border border-cyan-400/30 bg-cyan-400/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.25em] text-cyan-300">
+          <span className="mb-6 inline-block rounded-full border border-[#6478ff]/40 bg-[#6478ff]/15 px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.25em] text-[#aeb9ff]">
             Robot COO
           </span>
 
           <h1 className="font-display text-5xl font-extrabold leading-[1.05] tracking-tight text-white sm:text-6xl lg:text-7xl">
             Your Robot COO<br />
-            <span className="text-[#00e0ef]">is Here</span>
+            <span className="text-[#8a9bff]">is Here</span>
           </h1>
 
           <p className="mt-6 max-w-md text-lg leading-relaxed text-white/75">
@@ -35,7 +50,7 @@ export default function Hero() {
             <a
               href="#contact"
               data-testid="hero-cta-primary"
-              className="group inline-flex items-center gap-2 rounded-full bg-[#00e0ef] px-7 py-3.5 text-sm font-semibold text-[#04222a] transition-all duration-300 hover:brightness-110 hover:-translate-y-0.5 hover:shadow-[0_0_30px_rgba(0,224,239,0.4)]"
+              className="group inline-flex items-center gap-2 rounded-full bg-[#4d6bff] px-7 py-3.5 text-sm font-semibold text-white transition-all duration-300 hover:brightness-110 hover:-translate-y-0.5 hover:shadow-[0_0_30px_rgba(77,107,255,0.45)]"
             >
               Get Your Robot COO
               <ArrowUpRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
@@ -54,14 +69,14 @@ export default function Hero() {
       {/* Floating badge near the star — bottom right */}
       <div className="absolute bottom-24 right-12 hidden lg:flex flex-col items-end gap-3">
         <div className="flex items-center gap-3 rounded-2xl border border-white/10 bg-white/5 px-5 py-3.5 backdrop-blur-md">
-          <span className="flex h-8 w-8 items-center justify-center rounded-full bg-[#00e0ef]/20">
-            <Zap className="h-4 w-4 text-[#00e0ef]" />
+          <span className="flex h-8 w-8 items-center justify-center rounded-full bg-[#5b6cff]/20">
+            <Zap className="h-4 w-4 text-[#8a9bff]" />
           </span>
           <div>
-            <p className="text-xs font-semibold text-[#00e0ef]">24/7 Active</p>
+            <p className="text-xs font-semibold text-[#8a9bff]">24/7 Active</p>
             <p className="text-[11px] text-white/60">Robot COO — Rofi</p>
           </div>
-          <span className="ml-1 h-2 w-2 rounded-full bg-[#00e0ef] animate-pulse" />
+          <span className="ml-1 h-2 w-2 rounded-full bg-[#5b6cff] animate-pulse" />
         </div>
         <div className="flex items-center gap-6 rounded-2xl border border-white/10 bg-white/5 px-5 py-3 backdrop-blur-md">
           <div className="text-center">

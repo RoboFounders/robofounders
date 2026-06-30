@@ -14,7 +14,7 @@ export default function Founder() {
       <div className="mx-auto grid max-w-7xl items-center gap-14 px-6 lg:grid-cols-[0.85fr_1fr]">
         <Reveal>
           <div className="relative mx-auto max-w-md">
-            <div className="absolute -inset-3 rounded-[2rem] bg-gradient-to-tr from-[#00e0ef]/30 to-transparent blur-xl" />
+            <div className="absolute -inset-3 rounded-[2rem] bg-gradient-to-tr from-[#4d6bff]/30 to-transparent blur-xl" />
             <img
               src={MEDIA.founder}
               alt="Mariel Asami Fukase"
@@ -28,7 +28,7 @@ export default function Founder() {
           <h2 className="mt-4 font-display text-4xl font-bold tracking-tight text-[#0a0f1a] sm:text-5xl">
             Mariel Asami Fukase
           </h2>
-          <p className="mt-2 font-display text-lg font-semibold text-[#008f99]">
+          <p className="mt-2 font-display text-lg font-semibold text-[#4d6bff]">
             Founder &amp; CEO — RoboFounders
           </p>
           <p className="mt-5 max-w-xl text-lg leading-relaxed text-[#5b6b7e]">
@@ -40,7 +40,7 @@ export default function Founder() {
           <div className="mt-8 space-y-3">
             {FACTS.map((f) => (
               <div key={f.text} className="flex items-center gap-3">
-                <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-[#e6fbfd] text-[#008f99]">
+                <span className="flex h-10 w-10 items-center justify-center rounded-xl bg-[#eef1ff] text-[#4d6bff]">
                   <f.icon className="h-5 w-5" />
                 </span>
                 <span className="text-base font-medium text-[#0a0f1a]">{f.text}</span>
@@ -54,9 +54,9 @@ export default function Founder() {
               target="_blank"
               rel="noopener noreferrer"
               data-testid="founder-linkedin"
-              className="inline-flex items-center gap-2 rounded-full border border-[#e4ecf2] bg-white px-5 py-2.5 text-sm font-semibold text-[#0a0f1a] transition-all hover:border-[#9fe9f0] hover:rf-glow"
+              className="inline-flex items-center gap-2 rounded-full border border-[#e4ecf2] bg-white px-5 py-2.5 text-sm font-semibold text-[#0a0f1a] transition-all hover:border-[#b9c2ff] hover:rf-glow"
             >
-              <Linkedin className="h-4 w-4 text-[#008f99]" />
+              <Linkedin className="h-4 w-4 text-[#4d6bff]" />
               LinkedIn
             </a>
             <a
@@ -64,9 +64,9 @@ export default function Founder() {
               target="_blank"
               rel="noopener noreferrer"
               data-testid="founder-website"
-              className="inline-flex items-center gap-2 rounded-full border border-[#e4ecf2] bg-white px-5 py-2.5 text-sm font-semibold text-[#0a0f1a] transition-all hover:border-[#9fe9f0] hover:rf-glow"
+              className="inline-flex items-center gap-2 rounded-full border border-[#e4ecf2] bg-white px-5 py-2.5 text-sm font-semibold text-[#0a0f1a] transition-all hover:border-[#b9c2ff] hover:rf-glow"
             >
-              <Globe className="h-4 w-4 text-[#008f99]" />
+              <Globe className="h-4 w-4 text-[#4d6bff]" />
               robofounders.net
             </a>
           </div>

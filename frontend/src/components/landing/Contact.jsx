@@ -25,7 +25,7 @@ export default function Contact() {
   };
 
   const inputCls =
-    "w-full rounded-xl border border-[#e4ecf2] bg-white px-4 py-3 text-[#0a0f1a] placeholder:text-[#9aa9b8] outline-none transition-all focus:border-[#00e0ef] focus:ring-2 focus:ring-[#00e0ef]/30";
+    "w-full rounded-xl border border-[#e4ecf2] bg-white px-4 py-3 text-[#0a0f1a] placeholder:text-[#9aa9b8] outline-none transition-all focus:border-[#4d6bff] focus:ring-2 focus:ring-[#4d6bff]/30";
 
   return (
     <section id="contact" className="relative overflow-hidden bg-white py-24 lg:py-32">
@@ -46,9 +46,9 @@ export default function Contact() {
             <a
               href={`mailto:${CONTACT.email}`}
               data-testid="contact-email"
-              className="flex items-center gap-3 rounded-xl border border-[#e4ecf2] bg-white p-4 transition-all hover:border-[#9fe9f0] hover:rf-glow"
+              className="flex items-center gap-3 rounded-xl border border-[#e4ecf2] bg-white p-4 transition-all hover:border-[#b9c2ff] hover:rf-glow"
             >
-              <span className="flex h-10 w-10 items-center justify-center rounded-lg bg-[#e6fbfd] text-[#008f99]">
+              <span className="flex h-10 w-10 items-center justify-center rounded-lg bg-[#eef1ff] text-[#4d6bff]">
                 <Mail className="h-5 w-5" />
               </span>
               <span className="text-base font-medium text-[#0a0f1a]">{CONTACT.email}</span>
@@ -59,9 +59,9 @@ export default function Contact() {
                 target="_blank"
                 rel="noopener noreferrer"
                 data-testid="contact-linkedin"
-                className="flex flex-1 items-center gap-3 rounded-xl border border-[#e4ecf2] bg-white p-4 transition-all hover:border-[#9fe9f0] hover:rf-glow"
+                className="flex flex-1 items-center gap-3 rounded-xl border border-[#e4ecf2] bg-white p-4 transition-all hover:border-[#b9c2ff] hover:rf-glow"
               >
-                <span className="flex h-10 w-10 items-center justify-center rounded-lg bg-[#e6fbfd] text-[#008f99]">
+                <span className="flex h-10 w-10 items-center justify-center rounded-lg bg-[#eef1ff] text-[#4d6bff]">
                   <Linkedin className="h-5 w-5" />
                 </span>
                 <span className="text-base font-medium text-[#0a0f1a]">LinkedIn</span>
@@ -71,9 +71,9 @@ export default function Contact() {
                 target="_blank"
                 rel="noopener noreferrer"
                 data-testid="contact-website"
-                className="flex flex-1 items-center gap-3 rounded-xl border border-[#e4ecf2] bg-white p-4 transition-all hover:border-[#9fe9f0] hover:rf-glow"
+                className="flex flex-1 items-center gap-3 rounded-xl border border-[#e4ecf2] bg-white p-4 transition-all hover:border-[#b9c2ff] hover:rf-glow"
               >
-                <span className="flex h-10 w-10 items-center justify-center rounded-lg bg-[#e6fbfd] text-[#008f99]">
+                <span className="flex h-10 w-10 items-center justify-center rounded-lg bg-[#eef1ff] text-[#4d6bff]">
                   <Globe className="h-5 w-5" />
                 </span>
                 <span className="text-base font-medium text-[#0a0f1a]">Website</span>
@@ -138,7 +138,7 @@ export default function Contact() {
               type="submit"
               data-testid="contact-submit"
               disabled={submitting}
-              className="group mt-6 inline-flex w-full items-center justify-center gap-2 rounded-full rf-cyan-gradient px-7 py-4 text-base font-semibold text-[#04222a] transition-all duration-300 hover:rf-glow-strong hover:-translate-y-0.5 disabled:opacity-60"
+              className="group mt-6 inline-flex w-full items-center justify-center gap-2 rounded-full rf-cyan-gradient px-7 py-4 text-base font-semibold text-white transition-all duration-300 hover:rf-glow-strong hover:-translate-y-0.5 disabled:opacity-60"
             >
               {submitting ? "Sending..." : "Request your Robot COO"}
               {submitting ? (

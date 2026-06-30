@@ -16,10 +16,10 @@ export default function ForFounders() {
       className="relative overflow-hidden border-y border-[#e4ecf2] bg-[#040a12] py-24 text-white lg:py-32"
     >
       <div className="absolute inset-0 rf-grid-bg opacity-[0.08]" />
-      <div className="pointer-events-none absolute -right-40 top-0 h-[500px] w-[500px] rounded-full bg-[#00e0ef]/10 blur-3xl" />
+      <div className="pointer-events-none absolute -right-40 top-0 h-[500px] w-[500px] rounded-full bg-[#4d6bff]/10 blur-3xl" />
       <div className="relative mx-auto grid max-w-7xl items-center gap-14 px-6 lg:grid-cols-2">
         <Reveal>
-          <SectionLabel className="text-[#5ee9f3]">For Startups / Founders</SectionLabel>
+          <SectionLabel className="text-[#6a4dff]">For Startups / Founders</SectionLabel>
           <h2 className="mt-4 font-display text-4xl font-bold leading-tight tracking-tight sm:text-5xl">
             Stay in the office.{" "}
             <span className="rf-text-gradient">Go global anyway.</span>
@@ -31,7 +31,7 @@ export default function ForFounders() {
           <ul className="mt-8 space-y-4">
             {POINTS.map((p) => (
               <li key={p} className="flex items-start gap-3">
-                <span className="mt-0.5 flex h-6 w-6 flex-none items-center justify-center rounded-full rf-cyan-gradient text-[#04222a]">
+                <span className="mt-0.5 flex h-6 w-6 flex-none items-center justify-center rounded-full rf-cyan-gradient text-white">
                   <Check className="h-4 w-4" strokeWidth={3} />
                 </span>
                 <span className="text-base text-white/85">{p}</span>
@@ -41,7 +41,7 @@ export default function ForFounders() {
           <a
             href="#contact"
             data-testid="founders-cta"
-            className="group mt-9 inline-flex items-center gap-2 rounded-full rf-cyan-gradient px-7 py-3.5 text-sm font-semibold text-[#04222a] transition-all duration-300 hover:rf-glow-strong hover:-translate-y-0.5"
+            className="group mt-9 inline-flex items-center gap-2 rounded-full rf-cyan-gradient px-7 py-3.5 text-sm font-semibold text-white transition-all duration-300 hover:rf-glow-strong hover:-translate-y-0.5"
           >
             Deploy your Robot COO
             <ArrowUpRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
@@ -50,7 +50,7 @@ export default function ForFounders() {
 
         <Reveal delay={0.15}>
           <div className="relative">
-            <div className="absolute -inset-4 rounded-[2rem] bg-[#00e0ef]/20 blur-2xl" />
+            <div className="absolute -inset-4 rounded-[2rem] bg-[#4d6bff]/20 blur-2xl" />
             <img
               src={MEDIA.robotPortrait}
               alt="Robot COO"
