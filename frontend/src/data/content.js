@@ -10,7 +10,7 @@ export const MEDIA = {
   robotPortrait: "https://images.pexels.com/photos/8294558/pexels-photo-8294558.jpeg",
   robotWhite: "https://images.unsplash.com/photo-1535378273068-9bb67d5beacd",
   network: "https://images.unsplash.com/photo-1637166185518-058f5896a2e9",
-  founder: "https://images.unsplash.com/photo-1581065178047-8ee15951ede6",
+  founder: "/images/mariel.png",
   team: "https://images.unsplash.com/photo-1559136555-9303baea8ebd",
   event1: "https://images.unsplash.com/photo-1587825140708-dfaf72ae4b04",
   event2: "https://images.unsplash.com/photo-1505373877841-8d25f7d46678",
@@ -136,10 +136,10 @@ export const NEWS = [
 // Leadership: the Robot COO + the human team behind RoboFounders.
 export const TEAM = [
   { name: "Rofi", role: "Robot COO", note: "Our embodied AI operator on the ground", isRobot: true },
-  { name: "Hiro Umemoto", role: "Chief Financial Officer", initials: "HU" },
-  { name: "Mai Okazawa", role: "Chief Marketing Officer", initials: "MO" },
-  { name: "Bong Hao Jie", role: "Chief AI Officer", initials: "BH" },
-  { name: "Celine Tan", role: "Chief Strategy Officer", initials: "CT" },
+  { name: "Hiro Umemoto", role: "Chief Financial Officer", initials: "HU", img: "/images/team/hiro.png" },
+  { name: "Mai Okazawa", role: "Chief Marketing Officer", initials: "MO", img: "/images/team/mai.png" },
+  { name: "Bong Hao Jie", role: "Chief AI Officer", initials: "BH", img: "/images/team/bong.png" },
+  { name: "Celine Tan", role: "Chief Strategy Officer", initials: "CT", img: "/images/team/celine.png" },
 ];
 
 // Other ventures the founder has built or leads.

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Twitter, Linkedin, Globe, ArrowUpRight, Send } from "lucide-react";
+import { Twitter, Linkedin, ArrowUpRight, Send } from "lucide-react";
 import { toast } from "sonner";
 import { Reveal, SectionLabel } from "./Reveal";
 import { CONTACT } from "../../data/content";
@@ -55,32 +55,18 @@ export default function Contact() {
               </span>
               <span className="text-base font-medium text-[#0a0f1a]">@maripto7 on X</span>
             </a>
-            <div className="flex gap-3">
-              <a
-                href={CONTACT.linkedin}
-                target="_blank"
-                rel="noopener noreferrer"
-                data-testid="contact-linkedin"
-                className="flex flex-1 items-center gap-3 rounded-xl border border-[#e4ecf2] bg-white p-4 transition-all hover:border-[#b9c2ff] hover:rf-glow"
-              >
-                <span className="flex h-10 w-10 items-center justify-center rounded-lg bg-[#eef1ff] text-[#4d6bff]">
-                  <Linkedin className="h-5 w-5" />
-                </span>
-                <span className="text-base font-medium text-[#0a0f1a]">LinkedIn</span>
-              </a>
-              <a
-                href={CONTACT.website}
-                target="_blank"
-                rel="noopener noreferrer"
-                data-testid="contact-website"
-                className="flex flex-1 items-center gap-3 rounded-xl border border-[#e4ecf2] bg-white p-4 transition-all hover:border-[#b9c2ff] hover:rf-glow"
-              >
-                <span className="flex h-10 w-10 items-center justify-center rounded-lg bg-[#eef1ff] text-[#4d6bff]">
-                  <Globe className="h-5 w-5" />
-                </span>
-                <span className="text-base font-medium text-[#0a0f1a]">Website</span>
-              </a>
-            </div>
+            <a
+              href={CONTACT.linkedin}
+              target="_blank"
+              rel="noopener noreferrer"
+              data-testid="contact-linkedin"
+              className="flex items-center gap-3 rounded-xl border border-[#e4ecf2] bg-white p-4 transition-all hover:border-[#b9c2ff] hover:rf-glow"
+            >
+              <span className="flex h-10 w-10 items-center justify-center rounded-lg bg-[#eef1ff] text-[#4d6bff]">
+                <Linkedin className="h-5 w-5" />
+              </span>
+              <span className="text-base font-medium text-[#0a0f1a]">LinkedIn</span>
+            </a>
           </div>
         </Reveal>
 

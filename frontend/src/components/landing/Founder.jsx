@@ -87,16 +87,6 @@ export default function Founder() {
                 <Twitter className="h-4 w-4 text-[#4d6bff]" />
                 @maripto7
               </a>
-              <a
-                href={CONTACT.website}
-                target="_blank"
-                rel="noopener noreferrer"
-                data-testid="founder-website"
-                className="inline-flex items-center gap-2 rounded-full border border-[#e4ecf2] bg-white px-5 py-2.5 text-sm font-semibold text-[#0a0f1a] transition-all hover:border-[#b9c2ff] hover:rf-glow"
-              >
-                <Globe className="h-4 w-4 text-[#4d6bff]" />
-                robofounders.net
-              </a>
             </div>
           </Reveal>
         </div>
@@ -122,15 +112,17 @@ export default function Founder() {
                   data-testid={`team-${i}`}
                   className="group flex h-full flex-col items-center rounded-2xl border border-[#e4ecf2] bg-white p-7 text-center transition-all duration-300 hover:-translate-y-1.5 hover:rf-glow"
                 >
-                  <span
-                    className={`flex h-20 w-20 items-center justify-center rounded-2xl font-display text-2xl font-bold ${
-                      m.isRobot
-                        ? "rf-cyan-gradient text-white"
-                        : "bg-[#eef1ff] text-[#4d6bff]"
-                    }`}
-                  >
-                    {m.isRobot ? <Bot className="h-9 w-9" /> : m.initials}
-                  </span>
+                  {m.isRobot ? (
+                    <span className="flex h-20 w-20 items-center justify-center rounded-2xl rf-cyan-gradient text-white">
+                      <Bot className="h-9 w-9" />
+                    </span>
+                  ) : (
+                    <img
+                      src={m.img}
+                      alt={m.name}
+                      className="h-20 w-20 rounded-2xl bg-[#eef1ff] object-cover"
+                    />
+                  )}
                   <h4 className="mt-5 font-display text-lg font-bold text-[#0a0f1a]">{m.name}</h4>
                   <p className="mt-1 text-sm font-semibold text-[#4d6bff]">{m.role}</p>
                   {m.note && (

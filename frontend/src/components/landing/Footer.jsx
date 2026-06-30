@@ -1,4 +1,4 @@
-import { Linkedin, Globe, Twitter } from "lucide-react";
+import { Linkedin, Twitter } from "lucide-react";
 import { LOGO, NAV_LINKS, CONTACT } from "../../data/content";
 
 export default function Footer() {
@@ -59,15 +59,6 @@ export default function Footer() {
                 className="flex h-10 w-10 items-center justify-center rounded-lg border border-white/15 text-white/70 transition-all hover:border-[#6a4dff] hover:text-[#6a4dff]"
               >
                 <Linkedin className="h-5 w-5" />
-              </a>
-              <a
-                href={CONTACT.website}
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Website"
-                className="flex h-10 w-10 items-center justify-center rounded-lg border border-white/15 text-white/70 transition-all hover:border-[#6a4dff] hover:text-[#6a4dff]"
-              >
-                <Globe className="h-5 w-5" />
               </a>
             </div>
             <a

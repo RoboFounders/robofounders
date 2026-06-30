@@ -1,5 +1,5 @@
 import { useRef, useState, useCallback, useEffect } from "react";
-import { MousePointer2, Globe2, Cpu, Briefcase } from "lucide-react";
+import { Globe2, Cpu, Briefcase } from "lucide-react";
 import { Reveal, SectionLabel } from "./Reveal";
 
 const HIGHLIGHTS = [
@@ -85,11 +85,6 @@ export default function RobotShowcase() {
                 <span className="text-base font-medium text-white/90">{h.text}</span>
               </div>
             ))}
-          </div>
-
-          <div className="mt-8 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm text-white/60">
-            <MousePointer2 className="h-4 w-4 text-[#7d93ff]" />
-            Drag your cursor across Rofi to rotate
           </div>
         </Reveal>
 
