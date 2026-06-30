@@ -101,10 +101,10 @@ Defined in `src/App.js`. Each section reads its content from `content.js`.
 | 4 | `HowItWorks.jsx`   | `#how`       | "Your Global Expansion, Powered by Robot COO" — step-by-step process | `STEPS` |
 | 5 | `ValueProp.jsx`    | —            | Full-width value statement over imagery | `VALUES` |
 | 6 | `RobotShowcase.jsx`| `#meet-rofi` | Interactive 3D-tilt showcase of "Rofi" with capability highlights | `rofi-3d.png` |
-| 7 | `Updates.jsx`      | `#news`      | Tabbed updates interface: toggles between **Events Timeline** & **Press & News** | `MOMENTUM`, `NEWS` |
-| 8 | `Gallery.jsx`      | —            | Masonry of event photos + autoplaying clips from the field | `GALLERY`, `EVENT_VIDEOS` |
-| 9 | `Works.jsx`        | `#works`     | "Our Works / Case Studies" | `WORKS` |
-| 10| `ForFounders.jsx`  | `#founders`  | "Stay in the office. Go global anyway." pitch with a looping Rofi video | `MEDIA.founderVideo` |
+| 7 | `Gallery.jsx`      | —            | Masonry of event photos + autoplaying clips from the field | `GALLERY`, `EVENT_VIDEOS` |
+| 8 | `Works.jsx`        | `#works`     | "Our Works / Case Studies" | `WORKS` |
+| 9 | `ForFounders.jsx`  | `#founders`  | "Stay in the office. Go global anyway." pitch with a looping Rofi video | `MEDIA.founderVideo` |
+| 10| `Updates.jsx`      | `#news`      | Tabbed updates interface: toggles between **Events Timeline** & **Press & News** | `MOMENTUM`, `NEWS` |
 | 11| `Founder.jsx`      | `#founder`   | Founder bio (Mariel Asami Fukase) and leadership team grid | `MEDIA.founder`, `TEAM`, `FOUNDER_VENTURES`, `CONTACT` |
 | 12| `Contact.jsx`      | `#contact`   | Contact form (client-side, toast confirmation) + social links | `CONTACT` |
 | — | `ScrollToTop.jsx`  | —            | Floating scroll-to-top button that appears on scroll | — |

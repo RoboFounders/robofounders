@@ -27,10 +27,10 @@ export default function App() {
         <HowItWorks />
         <ValueProp />
         <RobotShowcase />
-        <Updates />
         <Gallery />
         <Works />
         <ForFounders />
+        <Updates />
         <Founder />
         <Contact />
       </main>
