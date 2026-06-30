@@ -1,0 +1,49 @@
+{
+  "summary": "Frontend-only review of RoboFounders static landing page. All UI sections, content, nav links, contact form, and external links work correctly. Scene text overlays change correctly through scenes 01->05 as you scroll within the 420vh hero. However, the hero VIDEO itself fails to decode (chromium reports 'PipelineStatus::DEMUXER_ERROR_NO_SUPPORTED_STREAMS: FFmpegDemuxer: no supported streams'), so video.currentTime stays at 0 throughout scroll. The text-scene scrubbing still progresses (because it depends only on scrollYProgress), but the visual frame scrubbing of the video is broken — the user sees a black background with no video frames behind the text.",
+  "backend_issues": {
+    "critical": [],
+    "minor": []
+  },
+  "frontend_issues": {
+    "ui_bugs": [
+      {
+        "component": "HeroScroll / /media/hero.mp4",
+        "issue": "Hero video file at /app/frontend/public/media/hero.mp4 (8.27 MB) is served with HTTP 200 and has a valid 'ftypisom...avc1mp41' header, but Chromium fails to demux it: video.error.message = 'PipelineStatus::DEMUXER_ERROR_NO_SUPPORTED_STREAMS: FFmpegDemuxer: no supported streams'. networkState=3 (NETWORK_NO_SOURCE), readyState stays at 0, duration stays NaN, and video.currentTime never advances above 0 during scroll. As a result the scroll-controlled FRAME SCRUBBING (the core differentiator of the page) does not actually work — only the text overlays change, the visual stays black. Reproduction: open the site, run document.querySelector('video').error in console.",
+        "selector": "[data-testid='hero-video']",
+        "priority": "CRITICAL"
+      },
+      {
+        "component": "HeroScroll container",
+        "issue": "framer-motion logs a console warning on mount: 'Please ensure that the container has a non-static position, like relative, fixed, or absolute to ensure scroll offset is calculated correctly.' The #hero section already has Tailwind 'relative', so this is likely a timing issue where useScroll runs before the class is applied. Not user-visible but worth verifying targetRef is the relative element.",
+        "selector": "#hero",
+        "priority": "LOW"
+      }
+    ],
+    "integration_issues": [],
+    "design_issues": []
+  },
+  "test_report_links": [],
+  "action_items": [
+    "URGENT: Replace /app/frontend/public/media/hero.mp4 with a properly encoded H.264/AAC MP4 (yuv420p, faststart) that Chromium can decode. The current file fails with DEMUXER_ERROR_NO_SUPPORTED_STREAMS so the entire scroll-scrubbed video effect is invisible. After replacing, verify in browser console that document.querySelector('video').duration is a finite number and document.querySelector('video').currentTime increases monotonically as you scroll through #hero.",
+    "Optional: investigate the framer-motion 'non-static position' console warning on #hero — possibly attach the ref to an element that is already laid out as relative at first paint.",
+    "Optional: add a CSS poster/fallback image for the hero so users still see a meaningful image while the video fails to load (defense in depth)."
+  ],
+  "critical_code_review_comments": [
+    "HeroScroll.jsx: scrub logic is fine, but there is no error handler on the <video> element. If the video fails (as it does today) the user just gets a black hero. Consider listening to 'error' event and showing a poster image.",
+    "HeroScroll.jsx: video element has no `poster` attribute — adding one would prevent the dark blank state on slow networks and broken decodes.",
+    "Contact.jsx: form is purely client-side (by design — user chose static). All validation and reset logic works correctly. Toast messages are clear.",
+    "All data-testid attributes from the spec are present and correctly wired. Nav smooth-scroll works (offset diff=0).",
+    "All Unsplash/Pexels images load with naturalWidth > 0; no broken images."
+  ],
+  "updated_files": [],
+  "success_rate": {
+    "backend": "N/A (static site, no backend tested per request)",
+    "frontend": "92% (1 critical: hero video decode; 1 minor warning)"
+  },
+  "test_credentials": "N/A (no auth)",
+  "seed_data_creation": "None",
+  "retest_needed": true,
+  "should_main_agent_self_test": true,
+  "context_for_next_testing_agent": "Everything except the hero video decode passes. When re-testing, the single most important check is: load the site, wait ~3s, then in console run `const v=document.querySelector('video'); console.log({err:v.error, dur:v.duration, rs:v.readyState});` — `err` must be null, `dur` must be a finite number, `rs` must be >=1. Then scroll to 25%, 50%, 75%, 95% of the #hero (which is 420vh tall starting at offsetTop=0) and confirm v.currentTime increases. Text overlay scene changes (Scene 01->05 H1 titles) are already verified working and do not need to be re-tested. All other sections, links, contact form (empty -> error toast, filled -> success toast + field reset), nav smooth-scroll, and images are verified working.",
+  "rca of the issue": "RCA for hero video: the file /app/frontend/public/media/hero.mp4 is being served correctly over the network (curl -I returns 200 with content-type video/mp4, content-length 8678697). The file header bytes are 'ftypisom...isomiso2avc1mp41' which looks like a valid MP4 ISO base-media container declaring AVC1/MP41 compatibility. However Chromium's media pipeline reports 'FFmpegDemuxer: no supported streams', meaning the moov atom either does not exist, is truncated/corrupted, or contains zero playable tracks. The most likely cause is that the source file is a placeholder/header-only stub or that the asset was uploaded incompletely. Fix: re-encode and replace the file with a known-good H.264/AAC mp4 with faststart, e.g. `ffmpeg -i source.mov -c:v libx264 -pix_fmt yuv420p -profile:v high -movflags +faststart -an hero.mp4`. Mitigation while fixing: add a `poster` attribute and a static background image so the hero is not blank when the video is missing/broken."
+}
