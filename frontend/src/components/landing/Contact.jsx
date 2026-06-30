@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Mail, Linkedin, Globe, ArrowUpRight, Send } from "lucide-react";
+import { Twitter, Linkedin, Globe, ArrowUpRight, Send } from "lucide-react";
 import { toast } from "sonner";
 import { Reveal, SectionLabel } from "./Reveal";
 import { CONTACT } from "../../data/content";
@@ -44,14 +44,16 @@ export default function Contact() {
 
           <div className="mt-9 space-y-3">
             <a
-              href={`mailto:${CONTACT.email}`}
-              data-testid="contact-email"
+              href={CONTACT.twitter}
+              target="_blank"
+              rel="noopener noreferrer"
+              data-testid="contact-twitter"
               className="flex items-center gap-3 rounded-xl border border-[#e4ecf2] bg-white p-4 transition-all hover:border-[#b9c2ff] hover:rf-glow"
             >
               <span className="flex h-10 w-10 items-center justify-center rounded-lg bg-[#eef1ff] text-[#4d6bff]">
-                <Mail className="h-5 w-5" />
+                <Twitter className="h-5 w-5" />
               </span>
-              <span className="text-base font-medium text-[#0a0f1a]">{CONTACT.email}</span>
+              <span className="text-base font-medium text-[#0a0f1a]">@maripto7 on X</span>
             </a>
             <div className="flex gap-3">
               <a

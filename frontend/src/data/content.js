@@ -132,8 +132,27 @@ export const NEWS = [
   { date: "Apr 2026", title: "ASEAN partnership network expands", body: "New on-ground partners added across Malaysia and the region." },
 ];
 
+// Leadership: the Robot COO + the human team behind RoboFounders.
+export const TEAM = [
+  { name: "Rofi", role: "Robot COO", note: "Our embodied AI operator on the ground", isRobot: true },
+  { name: "Hiro Umemoto", role: "Chief Financial Officer", initials: "HU" },
+  { name: "Mai Okazawa", role: "Chief Marketing Officer", initials: "MO" },
+  { name: "Bong Hao Jie", role: "Chief AI Officer", initials: "BH" },
+  { name: "Celine Tan", role: "Chief Strategy Officer", initials: "CT" },
+];
+
+// Other ventures the founder has built or leads.
+export const FOUNDER_VENTURES = [
+  "Summys",
+  "Eventsize",
+  "RIVENIQ",
+  "AI Founder Table",
+  "BuildClub Tokyo",
+];
+
 export const CONTACT = {
-  email: "dummyemail@gmail.com",
   linkedin: "https://www.linkedin.com/company/robofounders/",
   website: "https://robofounders.net/",
+  twitter: "https://x.com/maripto7",
+  founderLinkedin: "https://www.linkedin.com/in/marie-asami/",
 };

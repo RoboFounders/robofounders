@@ -1,4 +1,4 @@
-import { Linkedin, Globe, Mail } from "lucide-react";
+import { Linkedin, Globe, Twitter } from "lucide-react";
 import { LOGO, NAV_LINKS, CONTACT } from "../../data/content";
 
 export default function Footer() {
@@ -43,11 +43,13 @@ export default function Footer() {
             </h4>
             <div className="mt-4 flex gap-3">
               <a
-                href={`mailto:${CONTACT.email}`}
-                aria-label="Email"
+                href={CONTACT.twitter}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="X (Twitter)"
                 className="flex h-10 w-10 items-center justify-center rounded-lg border border-white/15 text-white/70 transition-all hover:border-[#6a4dff] hover:text-[#6a4dff]"
               >
-                <Mail className="h-5 w-5" />
+                <Twitter className="h-5 w-5" />
               </a>
               <a
                 href={CONTACT.linkedin}
@@ -82,7 +84,7 @@ export default function Footer() {
             © {new Date().getFullYear()} RoboFounders. Build the future. Go global.
           </p>
           <p className="text-xs text-white/40">
-            Japan • Malaysia • United States • ASEAN
+            Japan • Malaysia • United States • ASEAN • Vietnam
           </p>
         </div>
       </div>
