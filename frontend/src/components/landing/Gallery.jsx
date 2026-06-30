@@ -1,10 +1,31 @@
 import { Reveal, SectionLabel } from "./Reveal";
 import { GALLERY, EVENT_VIDEOS } from "../../data/content";
 
+// Interleave photos and clips into a single Pinterest-style masonry flow.
+function buildItems() {
+  const items = [];
+  let vi = 0;
+  GALLERY.forEach((photo, i) => {
+    items.push({ type: "photo", ...photo });
+    // drop a video clip in roughly every 3rd slot so they're spread out and never oversized
+    if ((i + 1) % 3 === 0 && vi < EVENT_VIDEOS.length) {
+      items.push({ type: "video", src: EVENT_VIDEOS[vi], index: vi });
+      vi += 1;
+    }
+  });
+  while (vi < EVENT_VIDEOS.length) {
+    items.push({ type: "video", src: EVENT_VIDEOS[vi], index: vi });
+    vi += 1;
+  }
+  return items;
+}
+
 export default function Gallery() {
+  const items = buildItems();
+
   return (
     <section id="moments" className="relative overflow-hidden bg-[#040a12] py-24 lg:py-32">
-      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_20%_10%,rgba(34,211,238,0.12),transparent_45%),radial-gradient(circle_at_85%_80%,rgba(34,211,238,0.08),transparent_45%)]" />
+      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_20%_10%,rgba(77,107,255,0.12),transparent_45%),radial-gradient(circle_at_85%_80%,rgba(106,77,255,0.10),transparent_45%)]" />
 
       <div className="relative mx-auto max-w-7xl px-6">
         <Reveal className="max-w-3xl">
@@ -19,72 +40,54 @@ export default function Gallery() {
           </p>
         </Reveal>
 
-        {/* Featured video */}
-        <Reveal delay={0.1}>
-          <div className="mt-12 overflow-hidden rounded-3xl border border-white/10 bg-black/40 shadow-2xl">
-            <video
-              data-testid="gallery-video"
-              className="h-full w-full object-cover"
-              src={EVENT_VIDEOS[0]}
-              aria-label="RoboFounders event highlights"
-              preload="metadata"
-              autoPlay
-              muted
-              loop
-              playsInline
-              controls
-            />
-          </div>
-        </Reveal>
-
-        {/* Photo grid */}
-        <div className="mt-6 grid auto-rows-[200px] grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-4">
-          {GALLERY.map((g, i) => (
-            <Reveal
-              key={g.src}
-              delay={(i % 4) * 0.08}
-              className={`${g.span === "wide" ? "sm:col-span-2" : ""} ${
-                g.span === "tall" ? "row-span-2" : ""
-              }`}
-            >
-              <figure
-                data-testid={`gallery-item-${i}`}
-                className="group relative h-full w-full overflow-hidden rounded-2xl border border-white/10"
+        {/* Pinterest-style masonry: photos shown full at natural aspect, clips sized to the same column width */}
+        <div className="mt-12 columns-2 gap-4 lg:columns-3 [column-fill:balance]">
+          {items.map((item, i) =>
+            item.type === "photo" ? (
+              <Reveal
+                key={item.src}
+                delay={(i % 3) * 0.06}
+                className="mb-4 break-inside-avoid"
               >
-                <img
-                  src={g.src}
-                  alt={g.caption}
-                  loading="lazy"
-                  className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#040a12] via-transparent to-transparent opacity-80" />
-                <figcaption className="absolute inset-x-0 bottom-0 p-4 text-sm font-medium leading-snug text-white opacity-100 transition-all duration-300 sm:translate-y-2 sm:opacity-0 sm:group-hover:translate-y-0 sm:group-hover:opacity-100">
-                  {g.caption}
-                </figcaption>
-              </figure>
-            </Reveal>
-          ))}
-        </div>
-
-        {/* Secondary clips */}
-        <div className="mt-6 grid gap-4 sm:grid-cols-2">
-          {EVENT_VIDEOS.slice(1).map((v, i) => (
-            <Reveal key={v} delay={i * 0.1}>
-              <div className="overflow-hidden rounded-2xl border border-white/10 bg-black/40">
-                <video
-                  data-testid={`gallery-clip-${i}`}
-                  className="h-full w-full object-cover"
-                  src={v}
-                  aria-label={`RoboFounders event clip ${i + 1}`}
-                  preload="metadata"
-                  muted
-                  loop
-                  playsInline
-                  controls
-                />
-              </div>
-            </Reveal>
-          ))}
+                <figure
+                  data-testid={`gallery-item-${i}`}
+                  className="group relative overflow-hidden rounded-2xl border border-white/10"
+                >
+                  <img
+                    src={item.src}
+                    alt={item.caption}
+                    loading="lazy"
+                    className="w-full h-auto object-cover transition-transform duration-700 group-hover:scale-105"
+                  />
+                  <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-[#040a12]/90 via-transparent to-transparent opacity-80" />
+                  <figcaption className="absolute inset-x-0 bottom-0 p-4 text-sm font-medium leading-snug text-white opacity-100 transition-all duration-300 sm:translate-y-2 sm:opacity-0 sm:group-hover:translate-y-0 sm:group-hover:opacity-100">
+                    {item.caption}
+                  </figcaption>
+                </figure>
+              </Reveal>
+            ) : (
+              <Reveal
+                key={item.src}
+                delay={(i % 3) * 0.06}
+                className="mb-4 break-inside-avoid"
+              >
+                <div className="overflow-hidden rounded-2xl border border-white/10 bg-black/40">
+                  <video
+                    data-testid={`gallery-clip-${item.index}`}
+                    className="w-full h-auto"
+                    src={item.src}
+                    aria-label={`RoboFounders event clip ${item.index + 1}`}
+                    preload="metadata"
+                    autoPlay
+                    muted
+                    loop
+                    playsInline
+                    controls
+                  />
+                </div>
+              </Reveal>
+            )
+          )}
         </div>
       </div>
     </section>
