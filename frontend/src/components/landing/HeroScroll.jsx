@@ -10,15 +10,15 @@ export default function Hero() {
           "radial-gradient(125% 95% at 32% 42%, #2b3bb0 0%, #1c2278 30%, #11144a 58%, #070a22 100%)",
       }}
     >
-      {/* Left readability gradient ONLY — fades to transparent before the robot so the image color is untouched */}
-      <div className="absolute inset-y-0 left-0 w-3/4 bg-gradient-to-r from-[#0c1147]/95 via-[#141a63]/35 to-transparent" />
-
-      {/* Image anchored right, rendered ON TOP of the gradient so its colors stay natural — no tint, no zoom */}
+      {/* Full-bleed hero image — covers the entire section below the navbar, no seam, natural colors */}
       <img
         src="/images/hero-bg.jpeg"
         alt="RoboFounders Robot COO"
-        className="absolute right-0 top-16 h-[calc(100%-4rem)] w-auto"
+        className="absolute inset-0 h-full w-full object-cover object-[68%_center]"
       />
+
+      {/* Left readability gradient on top of the image so the headline text stays legible */}
+      <div className="absolute inset-y-0 left-0 w-3/4 bg-gradient-to-r from-[#070a22]/90 via-[#0c1147]/45 to-transparent" />
 
       <div className="relative flex h-full max-w-7xl flex-col justify-center px-8 lg:px-16">
         <div className="max-w-xl">
