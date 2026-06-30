@@ -97,6 +97,14 @@ body {
   background: radial-gradient(120% 80% at 50% 40%, transparent 35%, rgba(7, 10, 34, 0.55) 100%);
 }
 
+@keyframes rf-float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-14px); }
+}
+.rf-float {
+  animation: rf-float 6s ease-in-out infinite;
+}
+
 .rf-chip {
   backdrop-filter: blur(10px);
   background: rgba(255, 255, 255, 0.1);

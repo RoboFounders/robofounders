@@ -4,6 +4,7 @@ import Navbar from "@/components/landing/Navbar";
 import HeroScroll from "@/components/landing/HeroScroll";
 import StatsBar from "@/components/landing/StatsBar";
 import GlobalReach from "@/components/landing/GlobalReach";
+import RobotShowcase from "@/components/landing/RobotShowcase";
 import HowItWorks from "@/components/landing/HowItWorks";
 import ValueProp from "@/components/landing/ValueProp";
 import Momentum from "@/components/landing/Momentum";
@@ -25,6 +26,7 @@ export default function App() {
         <GlobalReach />
         <HowItWorks />
         <ValueProp />
+        <RobotShowcase />
         <Momentum />
         <Gallery />
         <Works />
