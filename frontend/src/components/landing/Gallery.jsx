@@ -74,7 +74,7 @@ export default function Gallery() {
                 <div className="overflow-hidden rounded-2xl border border-white/10 bg-black/40">
                   <video
                     data-testid={`gallery-clip-${item.index}`}
-                    className="w-full h-auto"
+                    className={`w-full ${item.index === 1 ? "aspect-[3/4] object-cover" : "h-auto"}`}
                     src={item.src}
                     aria-label={`RoboFounders event clip ${item.index + 1}`}
                     preload="metadata"
