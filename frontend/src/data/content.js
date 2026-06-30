@@ -19,10 +19,10 @@ export const MEDIA = {
 export const NAV_LINKS = [
   { label: "Home", href: "#hero" },
   { label: "About Us", href: "#how" },
-  { label: "Our Teams", href: "#founder" },
   { label: "Our Works", href: "#works" },
-  { label: "News", href: "#news" },
   { label: "For Startups", href: "#founders" },
+  { label: "Our Teams", href: "#founder" },
+  { label: "News", href: "#news" },
   { label: "Contact", href: "#contact" },
 ];
 
