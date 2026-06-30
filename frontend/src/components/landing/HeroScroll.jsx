@@ -7,18 +7,23 @@ export default function Hero() {
       className="relative h-screen w-full overflow-hidden"
       style={{
         background:
-          "radial-gradient(125% 95% at 32% 42%, #2b3bb0 0%, #1c2278 30%, #11144a 58%, #070a22 100%)",
+          "radial-gradient(110% 120% at 78% 45%, #1c2576 0%, #11144a 42%, #070a22 100%)",
       }}
     >
-      {/* Full-bleed hero image — covers the entire section below the navbar, no seam, natural colors */}
+      {/* Robot image anchored right at natural size, sitting fully below the navbar (top-16). Its left edge
+          fades into the dark background via a mask so there's no hard seam — no zoom, head stays below nav. */}
       <img
         src="/images/hero-bg.jpeg"
         alt="RoboFounders Robot COO"
-        className="absolute inset-0 h-full w-full object-cover object-[68%_center]"
+        className="absolute right-0 top-16 h-[calc(100%-4rem)] w-auto"
+        style={{
+          WebkitMaskImage: "linear-gradient(to right, transparent 0%, black 22%)",
+          maskImage: "linear-gradient(to right, transparent 0%, black 22%)",
+        }}
       />
 
-      {/* Left readability gradient on top of the image so the headline text stays legible */}
-      <div className="absolute inset-y-0 left-0 w-3/4 bg-gradient-to-r from-[#070a22]/90 via-[#0c1147]/45 to-transparent" />
+      {/* Left readability gradient so the headline text stays legible */}
+      <div className="absolute inset-y-0 left-0 w-3/4 bg-gradient-to-r from-[#070a22]/85 via-[#0c1147]/35 to-transparent" />
 
       <div className="relative flex h-full max-w-7xl flex-col justify-center px-8 lg:px-16">
         <div className="max-w-xl">
