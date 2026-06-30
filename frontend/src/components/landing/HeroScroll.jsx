@@ -124,7 +124,7 @@ export default function HeroScroll() {
           ref={videoRef}
           data-testid="hero-video"
           poster={MEDIA.robotPortrait}
-          className="absolute inset-0 h-full w-full object-cover"
+          className="absolute inset-0 h-full w-full object-contain"
           muted
           playsInline
           preload="auto"

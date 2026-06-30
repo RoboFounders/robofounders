@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Menu, X, ArrowUpRight } from "lucide-react";
-import { LOGO, LOGO_FULL, NAV_LINKS } from "../../data/content";
+import { LOGO, NAV_LINKS } from "../../data/content";
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -25,12 +25,7 @@ export default function Navbar() {
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
         <a href="#hero" data-testid="nav-logo" className="flex items-center gap-2.5">
           <img src={LOGO} alt="RoboFounders logo mark" className="h-9 w-9 object-contain rounded-sm" />
-          <img
-            src={LOGO_FULL}
-            alt="RoboFounders"
-            className={`h-8 object-contain hidden sm:block transition-opacity duration-300 ${scrolled ? "opacity-100" : "opacity-0 pointer-events-none"}`}
-          />
-          <span className={`font-display text-lg font-extrabold tracking-tight transition-opacity duration-300 ${scrolled ? "opacity-0 hidden" : "text-white sm:text-[#0a0f1a]"}`}>
+          <span className={`font-display text-lg font-extrabold tracking-tight transition-colors duration-300 ${scrolled ? "text-[#0a0f1a]" : "text-white"}`}>
             Robo<span className="text-[#00e0ef]">Founders</span>
           </span>
         </a>
