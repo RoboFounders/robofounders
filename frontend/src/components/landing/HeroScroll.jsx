@@ -123,14 +123,16 @@ export default function HeroScroll() {
         <video
           ref={videoRef}
           data-testid="hero-video"
-          src="/media/hero.mp4"
           poster={MEDIA.robotPortrait}
           className="absolute inset-0 h-full w-full object-cover"
           muted
           playsInline
           preload="auto"
           autoPlay={false}
-        />
+        >
+          <source src="/media/hero.webm" type="video/webm" />
+          <source src="/media/hero.mp4" type="video/mp4" />
+        </video>
         {/* legibility overlays */}
         <div className="absolute inset-0 rf-hero-vignette" />
         <div className="absolute inset-0 bg-gradient-to-b from-[#040a12]/40 via-transparent to-[#040a12]/70" />
