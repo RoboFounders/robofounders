@@ -18,14 +18,14 @@ export default function Navbar() {
       data-testid="navbar"
       className={`fixed inset-x-0 top-0 z-50 transition-all duration-300 ${
         scrolled
-          ? "bg-white/80 backdrop-blur-xl border-b border-[#e4ecf2] shadow-[0_4px_30px_-12px_rgba(0,143,153,0.25)]"
+          ? "bg-[#040a12]/85 backdrop-blur-xl border-b border-white/10"
           : "bg-transparent"
       }`}
     >
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
         <a href="#hero" data-testid="nav-logo" className="flex items-center gap-2.5">
           <img src={LOGO} alt="RoboFounders logo mark" className="h-9 w-9 object-contain rounded-sm" />
-          <span className={`font-display text-lg font-extrabold tracking-tight transition-colors duration-300 ${scrolled ? "text-[#0a0f1a]" : "text-white"}`}>
+          <span className="font-display text-lg font-extrabold tracking-tight text-white">
             Robo<span className="text-[#00e0ef]">Founders</span>
           </span>
         </a>
@@ -36,7 +36,7 @@ export default function Navbar() {
               key={l.href}
               href={l.href}
               data-testid={`nav-link-${l.href.replace("#", "")}`}
-              className="text-sm font-medium text-[#5b6b7e] transition-colors hover:text-[#0a0f1a]"
+              className="text-sm font-medium text-white/70 transition-colors hover:text-white"
             >
               {l.label}
             </a>
@@ -55,7 +55,7 @@ export default function Navbar() {
           <button
             data-testid="nav-mobile-toggle"
             onClick={() => setOpen((v) => !v)}
-            className="rounded-lg border border-[#e4ecf2] bg-white/70 p-2 text-[#0a0f1a] md:hidden"
+            className="rounded-lg border border-white/20 bg-white/10 p-2 text-white md:hidden"
             aria-label="Toggle menu"
           >
             {open ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
@@ -64,14 +64,14 @@ export default function Navbar() {
       </nav>
 
       {open && (
-        <div className="border-t border-[#e4ecf2] bg-white/95 backdrop-blur-xl md:hidden">
+        <div className="border-t border-white/10 bg-[#040a12]/95 backdrop-blur-xl md:hidden">
           <div className="flex flex-col px-6 py-4">
             {NAV_LINKS.map((l) => (
               <a
                 key={l.href}
                 href={l.href}
                 onClick={() => setOpen(false)}
-                className="py-3 text-base font-medium text-[#0a0f1a]"
+                className="py-3 text-base font-medium text-white/80"
               >
                 {l.label}
               </a>
