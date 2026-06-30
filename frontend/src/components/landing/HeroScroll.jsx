@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { ChevronDown, ArrowUpRight } from "lucide-react";
-import { HERO_SCENES } from "../../data/content";
+import { HERO_SCENES, MEDIA } from "../../data/content";
 
 function SceneText({ progress, index, total, tag, title, sub }) {
   const seg = 1 / total;
@@ -124,6 +124,7 @@ export default function HeroScroll() {
           ref={videoRef}
           data-testid="hero-video"
           src="/media/hero.mp4"
+          poster={MEDIA.robotPortrait}
           className="absolute inset-0 h-full w-full object-cover"
           muted
           playsInline
