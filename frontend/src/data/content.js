@@ -1,10 +1,10 @@
 // RoboFounders content + media constants
 
-export const LOGO =
-  "https://static.prod-images.emergentagent.com/jobs/52d9fc56-f05a-42e7-868b-a74b06701b05/images/68c9092cfda2be454339d2d754ce2f76fc2db9e593f6680674706d65807bf9f4.png";
+export const LOGO = "/images/logo-icon.png";
+export const LOGO_FULL = "/images/logo-full.png";
 
 export const MEDIA = {
-  heroVideo: "/media/hero.mp4",
+  heroVideo: "/videos/hero.mp4",
   robotPortrait: "https://images.pexels.com/photos/8294558/pexels-photo-8294558.jpeg",
   robotWhite: "https://images.unsplash.com/photo-1535378273068-9bb67d5beacd",
   network: "https://images.unsplash.com/photo-1637166185518-058f5896a2e9",

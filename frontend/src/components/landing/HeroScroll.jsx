@@ -130,8 +130,8 @@ export default function HeroScroll() {
           preload="auto"
           autoPlay={false}
         >
-          <source src="/media/hero.webm" type="video/webm" />
-          <source src="/media/hero.mp4" type="video/mp4" />
+          <source src="/videos/hero.mp4" type="video/mp4" />
+          <source src="/videos/hero.webm" type="video/webm" />
         </video>
         {/* legibility overlays */}
         <div className="absolute inset-0 rf-hero-vignette" />
