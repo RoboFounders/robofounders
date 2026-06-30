@@ -6,6 +6,7 @@ import StatsBar from "@/components/landing/StatsBar";
 import HowItWorks from "@/components/landing/HowItWorks";
 import ValueProp from "@/components/landing/ValueProp";
 import Momentum from "@/components/landing/Momentum";
+import Gallery from "@/components/landing/Gallery";
 import Works from "@/components/landing/Works";
 import ForFounders from "@/components/landing/ForFounders";
 import Founder from "@/components/landing/Founder";
@@ -23,6 +24,7 @@ export default function App() {
         <HowItWorks />
         <ValueProp />
         <Momentum />
+        <Gallery />
         <Works />
         <ForFounders />
         <Founder />

@@ -19,6 +19,7 @@ export const NAV_LINKS = [
   { label: "How It Works", href: "#how" },
   { label: "Capabilities", href: "#value" },
   { label: "Momentum", href: "#momentum" },
+  { label: "Moments", href: "#moments" },
   { label: "Works", href: "#works" },
   { label: "Founder", href: "#founder" },
 ];
@@ -100,9 +101,27 @@ export const MOMENTUM = [
 ];
 
 export const WORKS = [
-  { tag: "Market Entry", title: "Japan Beachhead", body: "Set up local sales, partnerships and event presence for a US deeptech startup entering Tokyo.", img: MEDIA.event2 },
-  { tag: "Live Demos", title: "Robot COO at Conferences", body: "Rofi the Robot COO running live booth demos and lead capture at major exhibitions.", img: MEDIA.event1 },
-  { tag: "Partnerships", title: "ASEAN Expansion", body: "Built distributor and channel partnerships across Malaysia and Southeast Asia.", img: MEDIA.event3 },
+  { tag: "Market Entry", title: "Japan Beachhead", body: "Set up local sales, partnerships and event presence for a US deeptech startup entering Tokyo.", img: "/images/events/team-ivs.jpeg" },
+  { tag: "Live Demos", title: "Robot COO at Conferences", body: "Rofi the Robot COO running live booth demos and lead capture at major exhibitions.", img: "/images/events/robot-hug.jpeg" },
+  { tag: "Partnerships", title: "ASEAN Expansion", body: "Built distributor and channel partnerships across Malaysia and Southeast Asia.", img: "/images/events/banner-booth.jpeg" },
+];
+
+// Real moments from RoboFounders events, booths and demos.
+export const GALLERY = [
+  { src: "/images/events/robot-hug.jpeg", caption: "A founder shares a moment with Rofi, our Robot COO", span: "wide" },
+  { src: "/images/events/team-ivs.jpeg", caption: "The team on the ground at IVS2026, Japan" },
+  { src: "/images/events/team-banner.jpeg", caption: "Partnership conversations at the booth" },
+  { src: "/images/events/booth-laptop.jpeg", caption: "Live demos and lead capture in session" },
+  { src: "/images/events/founder-laptop.jpeg", caption: "Empowering founders, one expansion at a time" },
+  { src: "/images/events/banner-booth.jpeg", caption: "\u201cStop flying. We will be there.\u201d \u2014 our event stand" },
+  { src: "/images/events/stickers.jpeg", caption: "Limited-edition IVS2026 boarding pass stickers" },
+  { src: "/images/events/ivs-poster.jpeg", caption: "Booth SC-16 \u2014 see you at IVS2026", span: "tall" },
+];
+
+export const EVENT_VIDEOS = [
+  "/videos/event-demo.mp4",
+  "/videos/event-clip1.mp4",
+  "/videos/event-clip2.mp4",
 ];
 
 export const NEWS = [
