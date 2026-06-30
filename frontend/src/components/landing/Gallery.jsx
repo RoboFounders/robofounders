@@ -41,7 +41,7 @@ export default function Gallery() {
         </Reveal>
 
         {/* Pinterest-style masonry: photos shown full at natural aspect, clips sized to the same column width */}
-        <div className="mt-12 columns-2 gap-4 lg:columns-3 [column-fill:balance]">
+        <div className="mt-12 columns-2 gap-4 sm:columns-3 lg:columns-4 xl:columns-5 [column-fill:balance]">
           {items.map((item, i) =>
             item.type === "photo" ? (
               <Reveal
