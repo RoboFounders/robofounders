@@ -23,12 +23,11 @@ export const NAV_LINKS = [
   { label: "Founder", href: "#founder" },
 ];
 
+// from/to are scroll progress values [0–1] for when each text appears/disappears.
+// 0.18–0.82 is left as pure unobstructed video.
 export const HERO_SCENES = [
-  { tag: "Scene 01", title: "Your Robot COO is Here", sub: "Meet the AI-powered operator built to run your global expansion." },
-  { tag: "Scene 02", title: "Expand Globally\nWithout Jet Lag", sub: "We do the on-the-ground heavy lifting while you stay in the office." },
-  { tag: "Scene 03", title: "6 Hubs •\nOn-the-Ground Execution", sub: "Sales, partnerships, demos and market entry across key regions." },
-  { tag: "Scene 04", title: "From Idea to Global Scale", sub: "Powered by AI, robotics and local human expert teams." },
-  { tag: "Scene 05", title: "Build the Future.\nGo Global.", sub: "Performance-driven partnership. We win when you win." },
+  { from: 0, to: 0.18, tag: "Robot COO", title: "Your Robot COO\nis Here", sub: "Meet the AI-powered operator built to run your global expansion." },
+  { from: 0.82, to: 1, tag: "Go Global", title: "Build the Future.\nGo Global.", sub: "Performance-driven partnership. We win when you win." },
 ];
 
 export const STATS = [

@@ -3,35 +3,20 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import { ChevronDown, ArrowUpRight } from "lucide-react";
 import { HERO_SCENES, MEDIA } from "../../data/content";
 
-function SceneText({ progress, index, total, tag, title, sub }) {
-  const seg = 1 / total;
-  const start = index * seg;
-  const isLast = index === total - 1;
-  const isFirst = index === 0;
-  // fade-in window, hold, fade-out window
-  const inEnd = start + seg * 0.18;
-  const outStart = start + seg * 0.78;
-  const end = start + seg;
+// from / to define the scroll window [0‒1] where this text is visible.
+// A short fade-in at `from`, hold until near `to`, then fade-out at `to`.
+function SceneText({ progress, from, to, tag, title, sub }) {
+  const FADE = 0.04;
+  const isFirst = from === 0;
 
-  let stops;
-  let opVals;
-  let yVals;
-  if (isFirst) {
-    stops = [start, outStart, end];
-    opVals = [1, 1, 0];
-    yVals = [0, 0, -40];
-  } else if (isLast) {
-    stops = [start, inEnd, 1];
-    opVals = [0, 1, 1];
-    yVals = [40, 0, 0];
-  } else {
-    stops = [start, inEnd, outStart, end];
-    opVals = [0, 1, 1, 0];
-    yVals = [40, 0, 0, -40];
-  }
+  const stops = isFirst
+    ? [0, to - FADE, to]
+    : [from, from + FADE, to - FADE, to];
+  const opVals = isFirst ? [1, 1, 0] : [0, 1, 1, 0];
+  const yVals  = isFirst ? [0, 0, -30] : [30, 0, 0, -30];
 
   const opacity = useTransform(progress, stops, opVals);
-  const y = useTransform(progress, stops, yVals);
+  const y       = useTransform(progress, stops, yVals);
 
   return (
     <motion.div
@@ -43,9 +28,7 @@ function SceneText({ progress, index, total, tag, title, sub }) {
       </span>
       <h1 className="font-display text-4xl font-extrabold leading-[1.05] tracking-tight text-white drop-shadow-[0_2px_20px_rgba(0,0,0,0.45)] sm:text-6xl lg:text-7xl">
         {title.split("\n").map((line, i) => (
-          <span key={i} className="block">
-            {line}
-          </span>
+          <span key={i} className="block">{line}</span>
         ))}
       </h1>
       <p className="mx-auto mt-5 max-w-xl text-base text-white/80 sm:text-lg">{sub}</p>
@@ -118,7 +101,7 @@ export default function HeroScroll() {
   }, [scrollYProgress, duration]);
 
   return (
-    <section id="hero" ref={containerRef} className="relative h-[420vh] bg-[#040a12]">
+    <section id="hero" ref={containerRef} className="relative h-[300vh] bg-[#040a12]">
       <div className="sticky top-0 h-screen w-full overflow-hidden">
         <video
           ref={videoRef}
@@ -138,13 +121,13 @@ export default function HeroScroll() {
         <div className="absolute inset-0 bg-gradient-to-b from-[#040a12]/40 via-transparent to-[#040a12]/70" />
         <div className="pointer-events-none absolute -left-32 top-1/3 h-[420px] w-[420px] rounded-full rf-radial-glow blur-2xl" />
 
-        {/* synchronized scene overlays */}
+        {/* synchronized scene overlays — show briefly at start and end only */}
         {HERO_SCENES.map((s, i) => (
           <SceneText
             key={i}
             progress={scrollYProgress}
-            index={i}
-            total={HERO_SCENES.length}
+            from={s.from}
+            to={s.to}
             tag={s.tag}
             title={s.title}
             sub={s.sub}
