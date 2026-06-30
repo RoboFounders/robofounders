@@ -6,7 +6,7 @@ const POINTS = [
   "You keep your focus on product, vision and fundraising",
   "We own global sales, partnerships, events and operations",
   "Local human teams + Robot COO across 6 hubs",
-  "Performance-driven — we win when you win",
+  "Performance-driven, we win when you win",
 ];
 
 export default function ForFounders() {
@@ -25,7 +25,7 @@ export default function ForFounders() {
             <span className="rf-text-gradient">Go global anyway.</span>
           </h2>
           <p className="mt-5 max-w-lg text-lg leading-relaxed text-white/70">
-            RoboFounders acts as your AI-Powered Robot COO — handling the on-the-ground heavy
+            RoboFounders acts as your AI-Powered Robot COO, handling the on-the-ground heavy
             lifting for 3,000+ companies so founders can focus on what only they can do.
           </p>
           <ul className="mt-8 space-y-4">
@@ -64,7 +64,7 @@ export default function ForFounders() {
             <div className="absolute bottom-5 left-5 right-5 rounded-2xl rf-chip p-5">
               <p className="font-display text-sm font-bold text-white">Meet &ldquo;Rofi&rdquo;</p>
               <p className="mt-1 text-sm text-white/70">
-                Your embodied Robot COO — live at hackathons, exhibitions and the Startup World Cup.
+                Your embodied Robot COO, live at hackathons, exhibitions and the Startup World Cup.
               </p>
             </div>
           </div>

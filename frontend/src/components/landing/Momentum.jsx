@@ -12,7 +12,7 @@ export default function Momentum() {
             <span className="rf-text-gradient">showing up next.</span>
           </h2>
           <p className="mt-5 text-lg leading-relaxed text-[#5b6b7e]">
-            We don&apos;t just advise from a deck — we&apos;re on stage, on the floor, and in the
+            We don&apos;t just advise from a deck, we&apos;re on stage, on the floor, and in the
             room across the world&apos;s most important startup ecosystems.
           </p>
         </Reveal>

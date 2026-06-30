@@ -53,7 +53,7 @@ export default function ValueProp() {
             <div className="absolute inset-0 bg-gradient-to-r from-[#04141a]/80 via-[#04141a]/40 to-transparent" />
             <div className="absolute inset-0 flex flex-col justify-center px-8 sm:px-14">
               <p className="max-w-lg font-display text-2xl font-bold text-white sm:text-3xl">
-                A Robot COO that never sleeps — operating across six hubs, in real time.
+                A Robot COO that never sleeps, operating across six hubs, in real time.
               </p>
               <p className="mt-3 max-w-md text-white/75">
                 Real-world presence at Startup World Cup, Diffusion Sarawak, IVS2026 and more.

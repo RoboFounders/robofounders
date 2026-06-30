@@ -20,7 +20,7 @@ export default function Contact() {
     setTimeout(() => {
       setSubmitting(false);
       setForm({ name: "", email: "", company: "", message: "" });
-      toast.success("Request received — your Robot COO team will be in touch shortly.");
+      toast.success("Request received, your Robot COO team will be in touch shortly.");
     }, 700);
   };
 
@@ -39,7 +39,7 @@ export default function Contact() {
           </h2>
           <p className="mt-5 max-w-md text-lg leading-relaxed text-[#5b6b7e]">
             Tell us where you want to expand. We&apos;ll deploy AI, robotics and local human teams
-            to handle the heavy lifting — performance-driven, founder-friendly.
+            to handle the heavy lifting, performance-driven, founder-friendly.
           </p>
 
           <div className="mt-9 space-y-3">
@@ -117,7 +117,7 @@ export default function Contact() {
                 data-testid="contact-message"
                 rows={4}
                 className={`${inputCls} resize-none`}
-                placeholder="Tell us about your goals — markets, timeline, what you need on the ground..."
+                placeholder="Tell us about your goals, markets, timeline, what you need on the ground..."
                 value={form.message}
                 onChange={update("message")}
               />

@@ -35,7 +35,7 @@ export default function Gallery() {
             <span className="rf-text-gradient">the field.</span>
           </h2>
           <p className="mt-5 text-lg leading-relaxed text-[#9fb2c4]">
-            Booths, demos, partnerships and real human connection — here&apos;s the Robot COO
+            Booths, demos, partnerships and real human connection, here&apos;s the Robot COO
             and the RoboFounders team out in the world, from Sarawak to Japan.
           </p>
         </Reveal>

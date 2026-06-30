@@ -37,7 +37,7 @@ export default function Hero() {
           </h1>
 
           <p className="mt-6 max-w-md text-lg leading-relaxed text-white/75">
-            Meet the AI-powered operator built to run your global expansion — robotics, AI and local human teams, all in one.
+            Meet the AI-powered operator built to run your global expansion, robotics, AI and local human teams, all in one.
           </p>
 
           <div className="mt-10 flex flex-wrap items-center gap-4">
@@ -68,7 +68,7 @@ export default function Hero() {
           </span>
           <div>
             <p className="text-xs font-semibold text-[#8a9bff]">24/7 Active</p>
-            <p className="text-[11px] text-white/60">Robot COO — Rofi</p>
+            <p className="text-[11px] text-white/60">Robot COO, Rofi</p>
           </div>
           <span className="ml-1 h-2 w-2 rounded-full bg-[#5b6cff] animate-pulse" />
         </div>

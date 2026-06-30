@@ -72,7 +72,7 @@ export const VALUES = [
   {
     icon: "CalendarCheck",
     title: "Events, Demos & Presence",
-    body: "Real, physical presence at major events — Startup World Cup, Diffusion Sarawak, IVS2026 and beyond.",
+    body: "Real, physical presence at major events, Startup World Cup, Diffusion Sarawak, IVS2026 and beyond.",
   },
   {
     icon: "Bot",
@@ -87,7 +87,7 @@ export const VALUES = [
   {
     icon: "Globe2",
     title: "On-Ground Market Entry",
-    body: "We become your local face — operations, logistics and relationships handled in-region, in-language.",
+    body: "We become your local face, operations, logistics and relationships handled in-region, in-language.",
   },
   {
     icon: "TrendingUp",
@@ -97,9 +97,9 @@ export const VALUES = [
 ];
 
 export const MOMENTUM = [
-  { date: "2026", title: "Startup World Cup 2026", body: "Competing with a human–robot mixed team on the world\u2019s biggest startup stage.", tag: "Competing" },
-  { date: "2026", title: "Diffusion 2026 — Sarawak", body: "Exhibiting embodied AI and the Robot COO experience to the ASEAN ecosystem.", tag: "Exhibiting" },
-  { date: "2026", title: "IVS2026 — Japan", body: "On-ground demos and partnership building across the Japanese startup landscape.", tag: "Exhibiting" },
+  { date: "2026", title: "Startup World Cup 2026", body: "Competing with a human-robot mixed team on the world\u2019s biggest startup stage.", tag: "Competing" },
+  { date: "2026", title: "Diffusion 2026, Sarawak", body: "Exhibiting embodied AI and the Robot COO experience to the ASEAN ecosystem.", tag: "Exhibiting" },
+  { date: "2026", title: "IVS2026, Japan", body: "On-ground demos and partnership building across the Japanese startup landscape.", tag: "Exhibiting" },
   { date: "Now", title: "Silicon Valley Launch", body: "New company launch with an aggressive San Francisco / Silicon Valley expansion push.", tag: "Launching" },
   { date: "Ongoing", title: "BuildClub Tokyo", body: "Active organizer involvement, building a founder + robotics community in Tokyo.", tag: "Community" },
 ];
