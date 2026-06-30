@@ -4,7 +4,7 @@
 
 services:
   - type: web
-    name: robofounders-landing
+    name: robofounders
     runtime: static
     
     # Build settings for React CRACO application
