@@ -9,7 +9,7 @@ export const MEDIA = {
   globalVideo: "/videos/global-expansion.mp4",
   founderVideo: "/videos/founder-rofi.mp4",
   network: "/images/network.png",
-  founder: "/images/mariel.png",
+  founder: "/images/mariel.jpg",
 };
 
 export const NAV_LINKS = [

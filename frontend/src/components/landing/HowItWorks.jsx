@@ -25,10 +25,10 @@ export default function HowItWorks() {
                 data-testid={`step-${s.n}`}
                 className="group relative h-full overflow-hidden rounded-2xl border border-[#e4ecf2] bg-white p-8 transition-all duration-300 hover:-translate-y-1.5 hover:border-[#b9c2ff] hover:rf-glow"
               >
-                <div className="pointer-events-none absolute -right-6 -top-8 font-display text-[120px] font-black leading-none text-[#eef1ff] transition-colors group-hover:text-[#d6ddff]">
+                <div className="pointer-events-none absolute right-4 top-2 font-display text-[90px] font-black leading-none text-[#eef1ff] transition-colors group-hover:text-[#d6ddff]">
                   {s.n}
                 </div>
-                <div className="relative">
+                <div className="relative z-10">
                   <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#4d6bff]">
                     {s.kicker}
                   </span>

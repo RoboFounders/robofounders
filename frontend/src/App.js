@@ -7,14 +7,14 @@ import GlobalReach from "@/components/landing/GlobalReach";
 import RobotShowcase from "@/components/landing/RobotShowcase";
 import HowItWorks from "@/components/landing/HowItWorks";
 import ValueProp from "@/components/landing/ValueProp";
-import Momentum from "@/components/landing/Momentum";
+import Updates from "@/components/landing/Updates";
 import Gallery from "@/components/landing/Gallery";
 import Works from "@/components/landing/Works";
 import ForFounders from "@/components/landing/ForFounders";
 import Founder from "@/components/landing/Founder";
-import News from "@/components/landing/News";
 import Contact from "@/components/landing/Contact";
 import Footer from "@/components/landing/Footer";
+import ScrollToTop from "@/components/landing/ScrollToTop";
 
 export default function App() {
   return (
@@ -27,15 +27,15 @@ export default function App() {
         <HowItWorks />
         <ValueProp />
         <RobotShowcase />
-        <Momentum />
+        <Updates />
         <Gallery />
         <Works />
         <ForFounders />
         <Founder />
-        <News />
         <Contact />
       </main>
       <Footer />
+      <ScrollToTop />
       <Toaster position="top-center" richColors />
     </div>
   );

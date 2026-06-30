@@ -12,14 +12,14 @@ export default function Founder() {
   return (
     <section id="founder" className="bg-white py-24 lg:py-32">
       <div className="mx-auto max-w-7xl px-6">
-        <div className="grid items-center gap-14 lg:grid-cols-[0.85fr_1fr]">
+        <div className="grid items-start gap-14 lg:grid-cols-[0.5fr_1fr]">
           <Reveal>
-            <div className="relative mx-auto max-w-md">
-              <div className="absolute -inset-3 rounded-[2rem] bg-gradient-to-tr from-[#4d6bff]/30 to-transparent blur-xl" />
+            <div className="relative mx-auto lg:mx-0 max-w-[280px]">
+              <div className="absolute -inset-2 rounded-[2rem] bg-gradient-to-tr from-[#4d6bff]/20 to-transparent blur-xl" />
               <img
                 src={MEDIA.founder}
                 alt="Mariel Asami Fukase"
-                className="relative aspect-[4/5] w-full rounded-[1.75rem] border border-[#e4ecf2] object-cover"
+                className="relative aspect-[4/5] w-full rounded-[1.5rem] border border-[#e4ecf2] object-cover"
               />
             </div>
           </Reveal>

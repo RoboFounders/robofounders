@@ -1,1 +1,0 @@
-- [RoboFounders theme/accent system](theme-system.md) — accent is split between index.css rf-* utilities/vars AND per-component hex literals; recolor needs both + a leftover-hex grep.

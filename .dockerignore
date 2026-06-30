@@ -1,0 +1,11 @@
+node_modules
+build
+.git
+.gitignore
+.gitconfig
+Dockerfile
+.dockerignore
+package-lock.json
+package.json
+design_guidelines.json
+README.md
