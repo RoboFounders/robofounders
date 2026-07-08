@@ -26,7 +26,7 @@ export default function ForFounders() {
           </h2>
           <p className="mt-5 max-w-lg text-lg leading-relaxed text-white/70">
             RoboFounders acts as your AI-Powered Robot COO, handling the on-the-ground heavy
-            lifting for 3,000+ companies so founders can focus on what only they can do.
+            lifting in global hubs so founders can focus on what only they can do.
           </p>
           <ul className="mt-8 space-y-4">
             {POINTS.map((p) => (

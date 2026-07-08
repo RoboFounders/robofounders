@@ -17,9 +17,7 @@ export default function GlobalReach() {
           <p className="mt-6 max-w-xl text-lg leading-relaxed text-white/70">
             RoboFounders acts as your AI-Powered Robot COO across{" "}
             <span className="font-semibold text-white">6 global hubs</span>. We handle the
-            on-the-ground heavy lifting for{" "}
-            <span className="font-semibold text-white">3,000+ companies</span> so founders can
-            focus on vision and strategy.
+            on-the-ground heavy lifting so founders can focus on vision and strategy.
           </p>
 
           <div className="mt-9 flex flex-wrap gap-8">
@@ -28,8 +26,8 @@ export default function GlobalReach() {
               <p className="mt-1 text-sm text-white/50">Global Hubs</p>
             </div>
             <div className="border-l border-white/15 pl-8">
-              <p className="font-display text-3xl font-bold text-white sm:text-4xl">3,000+</p>
-              <p className="mt-1 text-sm text-white/50">Companies Served</p>
+              <p className="font-display text-3xl font-bold text-white sm:text-4xl">4</p>
+              <p className="mt-1 text-sm text-white/50">IPOs by Founder</p>
             </div>
             <div className="border-l border-white/15 pl-8">
               <p className="font-display text-3xl font-bold text-white sm:text-4xl">24/7</p>
