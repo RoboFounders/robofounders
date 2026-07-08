@@ -3,7 +3,7 @@ import { Reveal, SectionLabel } from "./Reveal";
 import { MEDIA, CONTACT, TEAM, FOUNDER_VENTURES } from "../../data/content";
 
 const FACTS = [
-  { icon: Award, text: "Venture Capitalist, 4 IPOs" },
+  { icon: Award, text: "Venture Capitalist & Investor" },
   { icon: Plane, text: "Bridging Japan • Malaysia • US • ASEAN • Vietnam" },
   { icon: Globe, text: "Serial founder & AI robotics innovator" },
 ];
@@ -33,7 +33,7 @@ export default function Founder() {
               Founder &amp; CEO, RoboFounders
             </p>
             <p className="mt-5 max-w-xl text-lg leading-relaxed text-[#5b6b7e]">
-              A venture capitalist behind four IPOs and a serial founder, Mariel built RoboFounders
+              A venture capitalist and a serial founder, Mariel built RoboFounders
               to give every ambitious founder a Robot COO, pairing embodied AI with on-the-ground
               human teams to make global expansion effortless. She also organizes BuildClub Tokyo,
               connecting founders and ecosystems across Asia and the US.

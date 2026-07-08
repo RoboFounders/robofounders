@@ -75,7 +75,7 @@ export default function Footer() {
             © {new Date().getFullYear()} RoboFounders. Build the future. Go global.
           </p>
           <p className="text-xs text-white/40">
-            Japan • Malaysia • United States • ASEAN • Vietnam
+            United States • Japan • Malaysia • ASEAN • Vietnam
           </p>
         </div>
       </div>

@@ -31,7 +31,6 @@ export const HERO_SCENES = [
 
 export const STATS = [
   { value: "6", label: "Global Hubs" },
-  { value: "4", label: "IPOs by Founder" },
   { value: "24/7", label: "Robot COO Uptime" },
 ];
 

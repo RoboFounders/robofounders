@@ -77,10 +77,6 @@ export default function Hero() {
             <p className="text-base font-extrabold text-white">6</p>
             <p className="text-[10px] text-white/50">Global Hubs</p>
           </div>
-          <div className="text-center">
-            <p className="text-base font-extrabold text-white">4</p>
-            <p className="text-[10px] text-white/50">IPOs</p>
-          </div>
           <div className="h-6 w-px bg-white/10" />
           <div className="text-center">
             <p className="text-base font-extrabold text-white">24/7</p>
