@@ -145,3 +145,5 @@ To run the application inside a container:
 ### Render Blueprint Deployment
 
 This repository includes a `render.yaml` specification for zero-config Render Blueprint deployments. When pushed to GitHub, you can link the repository to Render, which will host the React build directory (`./frontend/build`) on Render's static CDN.
+
+*(Test commit for new remote configuration)*
