@@ -31,6 +31,7 @@ export default function Contact() {
           company: form.company,
           message: form.message,
           _subject: "New inquiry from RoboFounders Landing Page",
+          _cc: "marieasami7@gmail.com,rofi@robofounders.ai",
         }),
       });
 
