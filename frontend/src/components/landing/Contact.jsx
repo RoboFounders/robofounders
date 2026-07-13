@@ -10,18 +10,41 @@ export default function Contact() {
 
   const update = (k) => (e) => setForm((f) => ({ ...f, [k]: e.target.value }));
 
-  const onSubmit = (e) => {
+  const onSubmit = async (e) => {
     e.preventDefault();
     if (!form.name.trim() || !form.email.trim() || !form.message.trim()) {
       toast.error("Please fill in your name, email and a short message.");
       return;
     }
     setSubmitting(true);
-    setTimeout(() => {
+
+    try {
+      const response = await fetch("https://formsubmit.co/ajax/rofi@robofounders.net", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify({
+          name: form.name,
+          email: form.email,
+          company: form.company,
+          message: form.message,
+          _subject: "New inquiry from RoboFounders Landing Page",
+        }),
+      });
+
+      if (response.ok) {
+        setSubmitting(false);
+        setForm({ name: "", email: "", company: "", message: "" });
+        toast.success("Request received, your Robot COO team will be in touch shortly.");
+      } else {
+        throw new Error("Failed to send message");
+      }
+    } catch (error) {
       setSubmitting(false);
-      setForm({ name: "", email: "", company: "", message: "" });
-      toast.success("Request received, your Robot COO team will be in touch shortly.");
-    }, 700);
+      toast.error("Something went wrong. Please try again later.");
+    }
   };
 
   const inputCls =
