@@ -1,5 +1,7 @@
 import "@/App.css";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Toaster } from "@/components/ui/sonner";
+import ROICalculator from "@/pages/ROICalculator";
 import Navbar from "@/components/landing/Navbar";
 import HeroScroll from "@/components/landing/HeroScroll";
 import StatsBar from "@/components/landing/StatsBar";
@@ -16,9 +18,9 @@ import Contact from "@/components/landing/Contact";
 import Footer from "@/components/landing/Footer";
 import ScrollToTop from "@/components/landing/ScrollToTop";
 
-export default function App() {
+function LandingPage() {
   return (
-    <div className="App bg-white" data-testid="app-root">
+    <>
       <Navbar />
       <main>
         <HeroScroll />
@@ -36,6 +38,19 @@ export default function App() {
       </main>
       <Footer />
       <ScrollToTop />
+    </>
+  );
+}
+
+export default function App() {
+  return (
+    <div className="App bg-white" data-testid="app-root">
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<LandingPage />} />
+          <Route path="/roi-calculator" element={<ROICalculator />} />
+        </Routes>
+      </BrowserRouter>
       <Toaster position="top-center" richColors />
     </div>
   );
