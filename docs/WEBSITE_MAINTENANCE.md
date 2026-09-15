@@ -4,7 +4,7 @@
 
 The launch website is English by default. The visible EN / 日本語 header buttons switch all first-party page content and save the visitor's choice locally. Both languages share the same URLs. Update matching keys in `frontend/src/content/en.js` and `ja.js` together; the tests check that their structures match.
 
-The client's original `RoboFounders_WEB_Request.xlsx` and the later shared Google Sheet inform the copy. Yellow-highlighted requests in the shared sheet were treated as priorities. Japanese website translations should receive the client's final editorial review. Existing news posts retain their original language and source attribution; their interface is translated.
+The client's original `RoboFounders_WEB_Request.xlsx` and the later shared Google Sheet inform the copy. Yellow-highlighted requests in the shared sheet were treated as priorities. Japanese website translations should receive the client's final editorial review.
 
 Launch scope is limited to roller screws and robotic hands. Roller-screw figures are development targets relative to a ball screw of the same screw diameter and lead, not certified performance guarantees. Do not reintroduce rolled-manufacturing, patent, shipment readiness, or guaranteed response-time claims without client approval. The later sheet specifically approves Morita's Toyota manufacturing background as part of the company origin story; do not broaden that biographical statement into a product or production claim.
 
@@ -16,13 +16,12 @@ The September client update replaces the earlier team illustrations with supplie
 frontend/src/
   content/                 English, Japanese, and shared media/contact data
   contexts/                Shared language state
-  pages/                   Home, catalog, product details, news, ROI, 404
+  pages/                   Home, catalog, product details, privacy, ROI, 404
   components/
     layout/                Consistent navigation and footer
     home/                  Homepage-only sections
     products/              Product inquiry dialog
     shared/                Forms, images, metadata, motion, back-to-top
-    news/                  Existing attributed news feed
     ui/                    Existing UI primitives
   styles/site.css          Responsive website styling
 frontend/public/
@@ -35,7 +34,6 @@ frontend/public/
     robotic-hand/          Approved, optimized product photography
   videos/events/           Existing field clips
   videos/products/roller-screw/demonstration.mp4
-  data/                    Existing news feed and source configuration
 ```
 
 `content/media.js` owns paths, product IDs, image dimensions, and contact recipients. Product photography and product video appear only on product routes. Homepage product previews use text and icons. Full-size links accompany detail-page gallery images, including the client's image with embedded English labels.
@@ -64,19 +62,16 @@ The 640/1600 filename suffix describes maximum image edge, not always width. If 
 - `/products`: two-product catalog.
 - `/products/roller-screw` and `/products/robotic-hand`: detail pages.
 - `/products/robot-hand`: redirects to the canonical robotic-hand route for existing links.
-- `/news`: existing attributed news feed.
 - `/roi-calculator`: retained calculator using the shared language setting.
 - Other URLs display a bilingual not-found page.
 
 The fixed header becomes a compact menu on smaller screens. Product navigation remains in normal document flow. Forms and images reserve responsive space rather than overlaying copy.
 
-## Inquiries and news
+## Inquiries
 
 The shared inquiry form retains the existing FormSubmit endpoint and CC recipients in `content/media.js`. Validation, sending, success, and failure states are bilingual. Requests time out after 15 seconds; failed submissions retain entered text. Product inquiries include product context. No response-time guarantee is shown.
 
 Automated tests mock the provider; they do not prove mailbox delivery. Before launch, the site owner should confirm FormSubmit activation and send a deliberate test from the production domain, then check the recipient and CC inboxes. No real test inquiry was sent during implementation.
-
-The existing news ingestion scripts and workflow are retained. Provider credentials/activation remain a separate owner configuration step, documented in the README. No LinkedIn automation was added.
 
 ## Verification and launch
 

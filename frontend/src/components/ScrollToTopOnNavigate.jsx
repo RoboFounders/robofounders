@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 
 // React Router preserves scroll position across route changes, so navigating
-// (e.g. Home -> /news) can open the new page scrolled part-way down. This resets
+// (e.g. Home -> /products) can open the new page scrolled part-way down. This resets
 // scroll to the top whenever the pathname changes, so every page opens at the top.
 //
 // Route-based hash links wait for the new page to mount before scrolling.

@@ -29,8 +29,6 @@ const en = {
     pauseMarquee: "Pause scrolling message",
     resumeMarquee: "Resume scrolling message",
     next: "Discover our other product",
-    source: "Source",
-    viewX: "View on X",
     home: "Home",
     products: "Products",
     top: "Back to top",
@@ -42,7 +40,6 @@ const en = {
   meta: {
     home: "The Physical AI Platform for Dangerous Manufacturing",
     products: "Robotics Products & Components",
-    news: "Robotics News",
     description:
       "RoboFounders builds Physical AI solutions that automate dangerous and high-risk work in manufacturing while protecting people.",
   },

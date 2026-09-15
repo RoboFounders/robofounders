@@ -29,8 +29,6 @@ const ja = {
     pauseMarquee: "スクロールメッセージを一時停止",
     resumeMarquee: "スクロールメッセージを再開",
     next: "こちらの製品もご覧ください",
-    source: "出典",
-    viewX: "Xで見る",
     home: "ホーム",
     products: "製品",
     top: "ページの先頭へ",
@@ -42,7 +40,6 @@ const ja = {
   meta: {
     home: "危険な製造現場をPhysical AIで変える",
     products: "ロボティクス製品・コンポーネント",
-    news: "ロボティクスニュース",
     description:
       "RoboFoundersは、製造現場の危険・高リスク作業をロボットで自動化し、人を守るPhysical AIプラットフォームです。",
   },
