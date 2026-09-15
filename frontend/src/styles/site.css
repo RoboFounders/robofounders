@@ -666,15 +666,17 @@ button:disabled {
 .concept-film-brandmark {
   position: absolute;
   z-index: 1;
-  right: clamp(8px, 1.5vw, 12px);
-  bottom: clamp(8px, 1.5vw, 12px);
-  width: clamp(42px, 5vw, 54px);
+  right: 5%;
+  bottom: 10%;
+  width: 9%;
+  min-width: 44px;
+  max-width: 68px;
   height: auto;
   box-sizing: content-box;
-  padding: 3px;
-  background: rgba(255, 255, 255, 0.96);
+  padding: 4px;
+  background: #ffffff;
   border-radius: 5px;
-  box-shadow: 0 5px 18px rgba(5, 8, 36, 0.28);
+  box-shadow: 0 4px 16px rgba(5, 8, 36, 0.32);
   pointer-events: none;
   user-select: none;
 }
