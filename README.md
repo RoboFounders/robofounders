@@ -1,114 +1,69 @@
-# RoboFounders — Landing Page
+# RoboFounders — Bilingual Website
 
-A high-end, fully static marketing landing page for **RoboFounders**, an "AI-Powered Robot COO for Global Expansion" service. The page pairs a scroll-controlled hero video with synchronized text overlays and a series of storytelling sections (value props, the Rofi robot showcase, event updates, photo/video gallery, founder bio, leadership team, and a contact form).
+A React website for RoboFounders' Physical AI ecosystem, with English and Japanese content, a section-based homepage, dedicated product catalog and detail pages, and a separate attributed news feed. Initial products are roller screws and robotic hands.
 
-The visual language is a futuristic AI-robotics aesthetic: deep royal-blue / indigo accents (`#4d6bff` → `#6a4dff`) on clean white and near-black sections.
+The redesign uses a consistent navy/purple visual system, responsive layouts, client-approved product photography, and an explicit language toggle. Product media is confined to product pages.
 
----
+## Development
 
-## Tech Stack
+The frontend uses React 19, CRACO, Tailwind CSS, custom CSS, React Router, Framer Motion, and lucide-react. Run commands from `frontend/`:
 
-| Layer        | Choice                                                        |
-|--------------|--------------------------------------------------------------|
-| Framework    | React 19                                                     |
-| Build tool   | CRACO (Create React App Configuration Override)             |
-| Styling      | Tailwind CSS (compiled via PostCSS) + custom CSS utilities   |
-| Animation    | Framer Motion (scroll + reveal animations)                  |
-| Icons        | lucide-react                                                 |
-| UI primitives| shadcn/ui (Radix UI) components in `src/components/ui`       |
-| Toasts       | sonner                                                       |
-| Served on    | Port **5000** (`cd frontend && yarn start`)                  |
-| Deployment   | Render (Static Site CDN) or Docker                           |
-
----
-
-## Project Structure
-
-```
-.
-├── README.md                 # This file
-├── Dockerfile                # Production Docker configuration
-├── .dockerignore             # Files ignored during Docker builds
-├── render.yaml               # Render Blueprint deployment configuration
-└── frontend/
-    ├── craco.config.js       # CRACO overrides (incl. "@" → src alias)
-    ├── tailwind.config.js     # Tailwind theme + content globs
-    ├── postcss.config.js      # PostCSS (tailwind + autoprefixer)
-    ├── jsconfig.json          # Editor path mapping for "@/..."
-    ├── components.json         # shadcn/ui generator config
-    ├── public/
-    │   ├── index.html
-    │   ├── images/
-    │   │   ├── logo-*.png          # Brand logos / marks
-    │   │   ├── hero-bg.jpeg
-    │   │   ├── mariel.jpg          # Founder photo (updated)
-    │   │   ├── rofi-3d.png         # Transparent Rofi render (showcase)
-    │   │   ├── team/               # Cartoon avatars (hiro, mai, bong, celine)
-    │   │   └── events/             # Event/booth gallery photos
-    │   └── videos/
-    │       ├── hero.mp4 / hero.webm   # Scroll-controlled hero video
-    │       ├── global-expansion.mp4   # Global reach section
-    │       ├── founder-rofi.mp4       # For Founders section
-    │       └── event-*.mp4            # Gallery clips
-    └── src/
-        ├── index.js              # React entry point
-        ├── index.css             # Tailwind directives + design tokens + utilities
-        ├── App.js                # Page composition — renders all sections in order
-        ├── App.css
-        ├── data/
-        │   └── content.js        # SINGLE SOURCE OF TRUTH for all copy + media
-        ├── components/
-        │   ├── landing/          # All page sections (see below)
-        │   └── ui/               # shadcn/ui primitives (Radix-based)
-        ├── hooks/
-        │   └── use-toast.js
-        ├── lib/
-        │   └── utils.js          # `cn()` class-merge helper
-        └── constants/
-            └── testIds/          # Central registry of data-testid values
+```powershell
+npm start
+npm test -- --watchAll=false --runInBand
+npm run build
 ```
 
----
+## Content and project organization
 
-## Architecture
+- `frontend/src/content/en.js` and `ja.js`: matching localized content dictionaries.
+- `frontend/src/content/media.js`: centralized media paths and contacts.
+- `frontend/src/pages/`: route-level pages.
+- `frontend/src/components/{layout,home,products,shared,news}/`: focused, reusable components.
+- `frontend/src/styles/site.css`: responsive website styles.
+- `frontend/public/images/{brand,home,team,events,products}/`: organized images.
+- `frontend/public/videos/{events,products}/`: organized videos.
 
-The app follows a simple, content-driven single-page architecture:
+See [Website maintenance](docs/WEBSITE_MAINTENANCE.md) for editing guidance, media preparation, inquiry behavior, retained content, and launch checks.
 
-1. **`src/App.js`** is the composition root. It renders `<Navbar />`, then a `<main>` containing every section component in display order, followed by `<Footer />`, a global `<Toaster />`, and the `<ScrollToTop />` controller.
+The existing news workflow documentation below is retained from the prior implementation; this redesign does not activate external providers or alter their commercial terms.
 
-2. **`src/data/content.js`** is the single source of truth. Every piece of copy, every media path (images/videos), nav links, stats, steps, team members, events, and contact details are exported as plain constants.
+## Robotics News (`/news`) — Phase 1
 
-3. **Section components** in `src/components/landing/` pull their data from `content.js` and use the shared `Reveal` helper for scroll-in animation.
+A dedicated, continuously-updated news feed that aggregates posts from **approved** X (Twitter) accounts, with full source attribution and links back to each original post. This is the first section of the larger platform roadmap in [`docs/ROADMAP.md`](docs/ROADMAP.md).
 
-4. **`Reveal.jsx`** exports reusable transition elements:
-   - `Reveal` — a Framer Motion wrapper that fades/slides children in on scroll.
-   - `SectionLabel` — the small uppercase eyebrow label above each headline.
+**Route:** `/news` (`src/pages/RoboticsNews.jsx`) — reachable from the "Robotics News" nav link and the "View all robotics news" button in the landing news section.
 
-5. **Path alias**: `@/` maps to `src/` (configured in `craco.config.js` / `jsconfig.json`).
+**Key files**
 
----
+- `public/data/news-sources.json` — approved accounts (add/remove accounts here).
+- `public/data/news-posts.json` — the normalized feed the UI renders (generated).
+- `src/lib/newsApi.js` — data layer; fetches + auto-refreshes the feed (SWR, 5-minute interval).
+- `src/components/news/NewsCard.jsx` / `NewsFeed.jsx` — the feed UI.
+- `scripts/fetch-news.mjs` — manual/curated feed generator (Phase 1a).
+- `scripts/refresh-news.mjs` + `.github/workflows/refresh-news.yml` — scheduled automated ingestion (Phase 1b).
 
-## Page Sections (render order)
+**Add a post (manual):** add an entry to `scripts/curated-posts.json`, then run:
 
-Defined in `src/App.js`. Each section reads its content from `content.js`.
+```bash
+yarn news            # regenerate public/data/news-posts.json
+yarn news --hydrate  # optional: pull missing text/author from X oEmbed
+```
 
-| # | Component          | Section id   | What it shows | Data used |
-|---|--------------------|--------------|---------------|-----------|
-| — | `Navbar.jsx`       | —            | Sticky top nav: logo, anchor links, primary CTA | `NAV_LINKS`, `LOGO` |
-| 1 | `HeroScroll.jsx`   | `#hero`      | Scroll-controlled hero video with text overlays; floating "24/7 Active" badge | `MEDIA.heroVideo`, `HERO_SCENES` |
-| 2 | `StatsBar.jsx`     | `#stats`     | Headline stats strip (hubs, companies, etc.) | `STATS` |
-| 3 | `GlobalReach.jsx`  | —            | Global-expansion video feature | `MEDIA.globalVideo` |
-| 4 | `HowItWorks.jsx`   | `#how`       | "Your Global Expansion, Powered by Robot COO" — step-by-step process | `STEPS` |
-| 5 | `ValueProp.jsx`    | —            | Full-width value statement over imagery | `VALUES` |
-| 6 | `RobotShowcase.jsx`| `#meet-rofi` | Interactive 3D-tilt showcase of "Rofi" with capability highlights | `rofi-3d.png` |
-| 7 | `Gallery.jsx`      | —            | Masonry of event photos + autoplaying clips from the field | `GALLERY`, `EVENT_VIDEOS` |
-| 8 | `Works.jsx`        | `#works`     | "Our Works / Case Studies" | `WORKS` |
-| 9 | `ForFounders.jsx`  | `#founders`  | "Stay in the office. Go global anyway." pitch with a looping Rofi video | `MEDIA.founderVideo` |
-| 10| `Updates.jsx`      | `#news`      | Tabbed updates interface: toggles between **Events Timeline** & **Press & News** | `MOMENTUM`, `NEWS` |
-| 11| `Founder.jsx`      | `#founder`   | Founder bio (Mariel Asami Fukase) and leadership team grid | `MEDIA.founder`, `TEAM`, `FOUNDER_VENTURES`, `CONTACT` |
-| 12| `Contact.jsx`      | `#contact`   | Contact form (client-side, toast confirmation) + social links | `CONTACT` |
-| — | `ScrollToTop.jsx`  | —            | Floating scroll-to-top button that appears on scroll | — |
-| — | `Footer.jsx`       | —            | Logo, explore links, social icons, CTA | `NAV_LINKS`, `CONTACT` |
+**Add / remove an account:** edit `public/data/news-sources.json`. Only sources with `enabled: true` and `permission: "owner"` or `"granted"` are ever shown.
+
+**Enable automatic updates (Phase 1b):** the GitHub Actions workflow runs every 30 minutes and is a **no-op until configured**. To turn it on, set:
+
+- repo **variable** `NEWS_PROVIDER` = `x` (official API) or `twitterapi_io` (third-party)
+- repo **secret** `X_BEARER_TOKEN` (for `x`) or `TWITTERAPI_IO_KEY` (for `twitterapi_io`)
+- optional variable `NEWS_MAX_PER_ACCOUNT` (default 10)
+- optional variable `NEWS_FULL_SYNC` = `1` to periodically re-sync and drop upstream-deleted posts
+
+The refresher uses **`since_id`** (derived from the newest post already saved), so X only returns posts newer than what we have — if no one posted, it fetches nothing and the run costs ~$0. It also **caches each account's numeric X user ID** back into `news-sources.json` after the first run, so later runs skip the username→ID lookup. Combined with the 30-minute schedule, this keeps API usage minimal.
+
+> **X API note (2026):** the X API is pay-per-use (~$0.005/post read), has no free tier, and requires server-side keys — which is why keys live only in CI/serverless, never in the frontend.
+
+**Attribution & compliance:** every card credits the original author + source and links back to the post; only approved accounts are shown; the scheduled sync replaces each refreshed account's posts so upstream deletions drop out.
 
 ---
 
