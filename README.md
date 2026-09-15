@@ -55,8 +55,6 @@ robofounders/
 ├── Dockerfile                 Two-stage React build and Nginx image
 ├── render.yaml                Render static-site deployment settings
 ├── vercel.json                Vercel settings when the repository is the root
-├── docs/
-│   └── WEBSITE_MAINTENANCE.md Detailed content and media maintenance notes
 └── frontend/
     ├── package.json           Dependencies and npm scripts
     ├── package-lock.json      Reproducible npm dependency lockfile
@@ -259,9 +257,7 @@ docker run --rm -p 8080:80 --name robofounders-web robofounders-web
 
 Then open `http://localhost:8080`.
 
-## Maintenance and release guidance
-
-See [`docs/WEBSITE_MAINTENANCE.md`](docs/WEBSITE_MAINTENANCE.md) for client-content constraints, media preparation details, inquiry behavior, and the production launch checklist.
+## Git and release workflow
 
 Recommended Git workflow:
 

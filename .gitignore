@@ -11,6 +11,9 @@
 /.gitconfig
 /design_guidelines.json
 
+# Private owner notes
+/docs/WEBSITE_MAINTENANCE.md
+
 # Temporary working and extracted-source files
 /.tmp*/
 /tmp/
