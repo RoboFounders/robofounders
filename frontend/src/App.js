@@ -1,56 +1,34 @@
 import "@/App.css";
+import "@/styles/site.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Toaster } from "@/components/ui/sonner";
 import ROICalculator from "@/pages/ROICalculator";
-import Navbar from "@/components/landing/Navbar";
-import HeroScroll from "@/components/landing/HeroScroll";
-import StatsBar from "@/components/landing/StatsBar";
-import GlobalReach from "@/components/landing/GlobalReach";
-import RobotShowcase from "@/components/landing/RobotShowcase";
-import HowItWorks from "@/components/landing/HowItWorks";
-import ValueProp from "@/components/landing/ValueProp";
-import Updates from "@/components/landing/Updates";
-import Gallery from "@/components/landing/Gallery";
-import Works from "@/components/landing/Works";
-import ForFounders from "@/components/landing/ForFounders";
-import Founder from "@/components/landing/Founder";
-import Contact from "@/components/landing/Contact";
-import Footer from "@/components/landing/Footer";
-import ScrollToTop from "@/components/landing/ScrollToTop";
-
-function LandingPage() {
-  return (
-    <>
-      <Navbar />
-      <main>
-        <HeroScroll />
-        <StatsBar />
-        <GlobalReach />
-        <HowItWorks />
-        <ValueProp />
-        <RobotShowcase />
-        <Gallery />
-        <Works />
-        <ForFounders />
-        <Updates />
-        <Founder />
-        <Contact />
-      </main>
-      <Footer />
-      <ScrollToTop />
-    </>
-  );
-}
+import Home from "@/pages/Home";
+import ProductCatalog from "@/pages/ProductCatalog";
+import ProductDetail from "@/pages/ProductDetail";
+import NotFound from "@/pages/NotFound";
+import Privacy from "@/pages/Privacy";
+import { LanguageProvider } from "@/contexts/LanguageContext";
+import BackToTop from "@/components/shared/BackToTop";
+import ScrollToTopOnNavigate from "@/components/ScrollToTopOnNavigate";
 
 export default function App() {
   return (
     <div className="App bg-white" data-testid="app-root">
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<LandingPage />} />
-          <Route path="/roi-calculator" element={<ROICalculator />} />
-        </Routes>
-      </BrowserRouter>
+      <LanguageProvider>
+        <BrowserRouter>
+          <ScrollToTopOnNavigate />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/products" element={<ProductCatalog />} />
+            <Route path="/products/:productId" element={<ProductDetail />} />
+            <Route path="/roi-calculator" element={<ROICalculator />} />
+            <Route path="/privacy" element={<Privacy />} />
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+          <BackToTop />
+        </BrowserRouter>
+      </LanguageProvider>
       <Toaster position="top-center" richColors />
     </div>
   );

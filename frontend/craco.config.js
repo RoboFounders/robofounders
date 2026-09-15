@@ -31,6 +31,7 @@ function makeDevServerV5Compatible(devServerConfig) {
     ...compatibleConfig.headers,
     "Cross-Origin-Resource-Policy": "same-origin",
   };
+  compatibleConfig.historyApiFallback = true;
 
   if (onBeforeSetupMiddleware || setupMiddlewares) {
     compatibleConfig.setupMiddlewares = (middlewares, devServer) => {
@@ -70,6 +71,11 @@ if (config.enableHealthCheck) {
 }
 
 let webpackConfig = {
+  jest: {
+    configure: {
+      moduleNameMapper: { '^@/(.*)$': '<rootDir>/src/$1' },
+    },
+  },
   eslint: {
     configure: {
       extends: ["plugin:react-hooks/recommended"],

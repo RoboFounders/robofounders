@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { toast } from "sonner";
+import { useLanguage } from "@/contexts/LanguageContext";
+import PageMeta from "@/components/shared/PageMeta";
 import {
   Bot,
   Calculator,
@@ -13,7 +15,7 @@ import {
   Home,
   Languages,
 } from "lucide-react";
-import { Reveal, SectionLabel } from "@/components/landing/Reveal";
+import { Reveal, SectionLabel } from "@/components/shared/Reveal";
 
 /* =====================================================================
    ADMIN / CONFIGURABLE VALUES — edit these to tune the calculator
@@ -223,7 +225,7 @@ function ResultCard({ icon: Icon, label, value, highlight, delay = 0 }) {
 }
 
 export default function ROICalculator() {
-  const [lang, setLang] = useState("en");
+  const { lang, setLang } = useLanguage();
   const t = STRINGS[lang];
 
   const [employees, setEmployees] = useState(null);
@@ -324,10 +326,11 @@ export default function ROICalculator() {
     "w-full rounded-xl border border-[#e4ecf2] bg-white px-4 py-3.5 text-[#0a0f1a] placeholder:text-[#9aa9b8] outline-none transition-all focus:border-[#4d6bff] focus:ring-2 focus:ring-[#4d6bff]/30";
 
   return (
-    <div className="relative min-h-screen bg-white">
+    <div className="relative min-h-screen bg-white" id="main-content">
+      <PageMeta title={`${t.title1} ${t.title2}`} />
       {/* Background accents */}
       <div className="pointer-events-none absolute inset-0 rf-grid-bg opacity-40" />
-      <div className="pointer-events-none absolute left-1/2 top-0 h-[420px] w-[720px] -translate-x-1/2 rf-radial-glow blur-2xl" />
+      <div className="pointer-events-none absolute left-1/2 top-0 h-[420px] w-[720px] max-w-full -translate-x-1/2 rf-radial-glow blur-2xl" />
 
       <div className="relative mx-auto max-w-2xl px-5 py-10 sm:py-14">
         {/* Header row: back link + language toggle */}
@@ -353,7 +356,7 @@ export default function ROICalculator() {
           <div className="relative mx-auto mb-2 w-fit">
             <div className="pointer-events-none absolute inset-0 scale-125 rf-radial-glow blur-xl" />
             <img
-              src="/images/rofi-3d.png"
+              src="/images/home/rofi-3d.png"
               alt="Rofi — your Robot COO"
               className="rf-float relative mx-auto h-36 w-36 object-contain drop-shadow-xl sm:h-44 sm:w-44"
               loading="eager"

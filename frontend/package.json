@@ -63,7 +63,9 @@
   "scripts": {
     "start": "craco start",
     "build": "craco build",
-    "test": "craco test"
+    "test": "craco test",
+    "news": "node scripts/fetch-news.mjs",
+    "news:refresh": "node scripts/refresh-news.mjs"
   },
   "browserslist": {
     "production": [
