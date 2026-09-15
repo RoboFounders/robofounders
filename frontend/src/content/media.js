@@ -75,8 +75,8 @@ export const productImageSizes = {
   "precision-handling": { small: 640, width: 1600, height: 606 },
 };
 export const contacts = {
-  endpoint: "https://formsubmit.co/ajax/rofi@robofounders.net",
-  cc: "marieasami7@gmail.com,rofi@robofounders.ai",
+  endpoint: "https://formsubmit.co/ajax/r@robofounders.ai",
+  cc: "tak@robofounders.net,mai.robofounders@gmail.com,marieasami7@gmail.com",
   linkedin: "https://www.linkedin.com/company/robofounders/",
   founderLinkedin: "https://www.linkedin.com/in/marie-asami/",
   x: "https://x.com/maripto7",
