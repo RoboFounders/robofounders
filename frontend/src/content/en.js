@@ -66,7 +66,7 @@ const en = {
     ],
     foot: "Made in Japan. Built for global manufacturing.",
     visualAlt:
-      "A connected Earth spanning Japan, ASEAN and the USA above robotics components and a smart factory",
+      "A manufacturing worker welding metal amid sparks on an active factory floor",
     diagram: "One connected ecosystem",
     core: "PHYSICAL AI",
     nodes: [

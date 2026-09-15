@@ -7,6 +7,7 @@ export const media = {
   homeVideo: "/videos/home/physical-ai-concept.mp4",
   home: {
     hero: "/images/home/physical-ai-hero.webp",
+    heroDangerousWork: "/images/home/dangerous-manufacturing.webp",
     about: "/images/home/about-origin.webp",
     regions: "/images/home/global-ecosystem.webp",
     why: "/images/home/why-robofounders.webp",

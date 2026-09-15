@@ -92,10 +92,10 @@ export default function Home() {
             </div>
             <figure className="hero-media">
               <img
-                src={media.home.hero}
+                src={media.home.heroDangerousWork}
                 alt={t.hero.visualAlt}
-                width="1672"
-                height="941"
+                width="1532"
+                height="957"
                 fetchPriority="high"
               />
             </figure>
