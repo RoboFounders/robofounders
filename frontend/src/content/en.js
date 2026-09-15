@@ -1,0 +1,632 @@
+const en = {
+  nav: [
+    "Home",
+    "About Us",
+    "Products",
+    "Our Works",
+    "For Startups",
+    "News & Events",
+    "Our Teams",
+    "Contact",
+  ],
+  ui: {
+    contact: "Contact us",
+    explore: "Explore products",
+    details: "Explore product",
+    back: "All products",
+    engineering: "Talk to our engineering team",
+    menu: "Open menu",
+    close: "Close",
+    skip: "Skip to content",
+    overview: "Overview",
+    gallery: "Gallery",
+    enlarge: "View full-size image",
+    performance: "Performance",
+    applications: "Applications",
+    play: "Product demonstration",
+    playVideo: "Play video",
+    pauseVideo: "Pause video",
+    pauseMarquee: "Pause scrolling message",
+    resumeMarquee: "Resume scrolling message",
+    next: "Discover our other product",
+    source: "Source",
+    viewX: "View on X",
+    home: "Home",
+    products: "Products",
+    top: "Back to top",
+    notFound: "Page not found",
+    notFoundBody:
+      "The page you are looking for is unavailable. Explore our products or return home.",
+    backHome: "Back to home",
+  },
+  meta: {
+    home: "The Physical AI Platform for Dangerous Manufacturing",
+    products: "Robotics Products & Components",
+    news: "Robotics News",
+    description:
+      "RoboFounders builds Physical AI solutions that automate dangerous and high-risk work in manufacturing while protecting people.",
+  },
+  hero: {
+    label: "Japan × ASEAN × USA",
+    title: "The Physical AI Platform",
+    accent: "for Dangerous Manufacturing.",
+    line: "Protect People. Automate Danger.",
+    body: "RoboFounders builds Physical AI solutions that automate dangerous and high-risk work in manufacturing.",
+    bodySecondary:
+      "From robotics components and AI-powered systems to real-world deployment, we connect Japanese manufacturing expertise with global robotics technology.",
+    statements: [
+      "From dangerous work to intelligent robots.",
+      "From the factory floor to Physical AI.",
+    ],
+    buildLabel: "What We Build",
+    primaryCta: "Explore technology",
+    secondaryCta: "Contact us",
+    capabilities: [
+      "Robotics & Critical Components",
+      "AI & Robotics Integration",
+      "Manufacturing Automation",
+      "Worker Safety",
+    ],
+    foot: "Made in Japan. Built for global manufacturing.",
+    visualAlt:
+      "A connected Earth spanning Japan, ASEAN and the USA above robotics components and a smart factory",
+    diagram: "One connected ecosystem",
+    core: "PHYSICAL AI",
+    nodes: [
+      "Components",
+      "Robots",
+      "AI",
+      "Data",
+      "Manufacturing",
+      "Connectivity",
+      "Capital",
+    ],
+  },
+  marquee: {
+    label: "RoboFounders mission and capabilities",
+    items: [
+      "Protect People. Automate Danger.",
+      "The Physical AI Platform for Dangerous Manufacturing",
+      "Robotics & Critical Components",
+      "AI & Robotics Integration",
+      "Manufacturing Automation",
+      "Worker Safety",
+      "Japan × ASEAN × USA",
+      "Made in Japan. Built for Global Manufacturing.",
+    ],
+  },
+  about: {
+    label: "02 / What we are building",
+    title: "Building the infrastructure for Physical AI.",
+    body: "We enable AI and robotics to take on dangerous, demanding, and repetitive work in the real world.",
+  },
+  services: {
+    label: "03 / What we do",
+    title: "We design. We build. We deploy. We trade. We invest.",
+    body: "From technology and components to deployment, manufacturing, distribution, and investment.",
+    items: [
+      [
+        "Design",
+        "Design the future of robotics.",
+        "Physical AI solutions, robotic systems, AI applications, and technologies for real-world environments.",
+      ],
+      [
+        "Build",
+        "Build the technologies that make robots move.",
+        "Critical components, robotic hardware, and AI technologies that enable the next generation of robots.",
+      ],
+      [
+        "Deploy",
+        "Bring Physical AI into the factory.",
+        "Working with manufacturers to bring robots, AI, and automation into real production environments.",
+      ],
+      [
+        "Trade",
+        "Connect technology with demand.",
+        "Connecting technologies, components, manufacturers, and customers across Japan, ASEAN, and the USA.",
+      ],
+      [
+        "Invest",
+        "Back the next generation of robotics.",
+        "Identifying and supporting the technologies, founders, and companies shaping Physical AI.",
+      ],
+    ],
+  },
+  company: {
+    label: "About us / Global ecosystem",
+    title: "From Japan to the world.",
+    body: "RoboFounders is building the infrastructure for the next generation of manufacturing through Physical AI. We are building a global robotics platform connecting AI, robots, critical components, software, data, and manufacturers.",
+    facts: [
+      ["June 2026", "RoboFounders, Inc. established in Delaware, USA."],
+      ["August 19, 2026", "RoboFounders Co., Ltd. established in Japan."],
+    ],
+    encounterLabel: "A chance encounter",
+    encounterTitle: "It all started with a simple hello.",
+    encounter: [
+      "At a Japanese cemetery in Kuala Lumpur, we happened to meet Yasumitsu Morita, who would later become a strategic advisor to RoboFounders.",
+      "Morita began his career in manufacturing at Toyota. He later served as a Senior Vice President in South Africa, leading approximately 8,000 employees and driving manufacturing transformation.",
+      "Meeting him where generations of people who connected Japan and Malaysia now rest felt like a call to connect Japan’s manufacturing expertise with AI and robotics—and help build the future of Japan and ASEAN.",
+    ],
+    missionTitle: "Manufacturing challenges we are addressing",
+    challenges: [
+      "Dangerous work",
+      "Heavy labor",
+      "Repetitive tasks",
+      "Labor shortages",
+    ],
+    mission:
+      "Today, we are developing critical robotics technologies, including roller screws for humanoid robots and advanced robotic hands for manufacturing. Our vision connects AI, robotics, components, software, data, and manufacturing to accelerate Physical AI in the real world.",
+    imageAlt:
+      "RoboFounders team and manufacturing partners together on a factory floor",
+  },
+  showcase: {
+    label: "Physical AI concept film",
+    title: "Transform dangerous work. Protect people.",
+    body: "See how robotics, AI, critical components, and manufacturing systems come together to move dangerous work away from people and into intelligent machines.",
+    points: [
+      ["Protect people", "Reduce human exposure to dangerous and high-risk work."],
+      ["Automate danger", "Bring intelligent robotics into real production environments."],
+      ["Deploy globally", "Connect Japanese manufacturing expertise with global robotics technology."],
+    ],
+    cta: "Explore our technology",
+    caption: "Physical AI concept preview",
+    videoLabel:
+      "Physical AI concept film showing robotic systems and connected manufacturing",
+  },
+  regions: {
+    label: "04 / Global ecosystem",
+    title: "One ecosystem. Three regions.",
+    body: "Connecting these three regions to build a new industrial foundation for Physical AI. From Japan to the world. From technology to the factory floor.",
+    items: [
+      [
+        "Japan",
+        "Precision machinery & manufacturing technology",
+        "Precision machinery and manufacturing expertise developed in Japan.",
+        "Technology & manufacturing",
+      ],
+      [
+        "ASEAN",
+        "AI, engineering & manufacturing expertise",
+        "Regional AI, engineering, and manufacturing capabilities.",
+        "AI & engineering",
+      ],
+      [
+        "USA",
+        "Technology, global markets & capital",
+        "Technology networks, global customers, and capital.",
+        "Markets & capital",
+      ],
+    ],
+    imageAlt:
+      "Manufacturing specialists reviewing precision production work together",
+  },
+  technology: {
+    label: "05 / Robotics technology",
+    title: "From components to humanoids.",
+    body: "The future of Physical AI depends on the technologies inside the robot. RoboFounders develops and connects critical technologies across the robotics stack.",
+    note: "Two technologies. A world of applications.",
+  },
+  factory: {
+    label: "06 / Factory deployment",
+    title: "Bringing AI and robotics into the real world.",
+    body: "Automating dangerous, demanding, and repetitive tasks to make workplaces safer and more efficient.",
+    items: [
+      ["AI inspection", "AI-powered visual inspection and anomaly detection."],
+      [
+        "Factory AI",
+        "AI-driven monitoring for manufacturing environments.",
+      ],
+      [
+        "Robot collaboration",
+        "Connecting people, robots, and AI on the factory floor.",
+      ],
+    ],
+    imageAlt:
+      "RoboFounders founder presenting a physical robot at an industry event",
+  },
+  platform: {
+    label: "07 / The platform",
+    title: "One platform for the Physical AI stack.",
+    body: "From the smallest component to the entire factory.",
+    items: [
+      ["Components", "Critical robotics components"],
+      ["Robots", "Industrial robots and humanoids"],
+      ["AI", "Vision, intelligence, and autonomy"],
+      ["Data", "Operational and manufacturing data"],
+      ["Factories", "Real-world deployment environments"],
+      ["Fleet", "Robot operations and management"],
+    ],
+    closing: "Connect. Deploy. Scale.",
+  },
+  brand: {
+    label: "08 / Brand concept",
+    title: "The Sogo Shosha of Robotics.",
+    body: "We don’t just build robots. We build the ecosystem around them. We source technology, develop components, connect manufacturers, deploy robots, create data, and invest in the next generation.",
+    line: "Trade. Build. Deploy. Invest.",
+  },
+  why: {
+    label: "09 / Why RoboFounders",
+    title: "Japan-born. Globally connected.",
+    body: "RoboFounders brings together Japan’s engineering heritage with the speed and scale of ASEAN and the innovation ecosystem of the USA.",
+    items: [
+      ["Made in Japan", "Precision engineering and robotics expertise."],
+      ["Built in ASEAN", "Manufacturing, deployment, and regional scale."],
+      [
+        "Connected to the USA",
+        "AI, robotics innovation, customers, and capital.",
+      ],
+    ],
+    imageAlt: "A manufacturing specialist performing precision inspection",
+  },
+  story: {
+    label: "Founder story",
+    title: "Manufacturing worth passing on.",
+    quote:
+      "Technology should empower craftsmanship, protect it, and ensure it can be inherited by future generations.",
+    paragraphs: [
+      "My grandfather founded a small manufacturing factory, and my father proudly carried on the business for many years. A few years ago, however, the factory was forced to close due to a severe labor shortage.",
+      "Watching our family business disappear made me realize that this is not an isolated story. Japan is home to some of the world’s finest manufacturing technologies, craftsmanship, and industrial heritage. Yet many of these businesses are disappearing because there are simply not enough people to continue them.",
+      "This challenge is not unique to Japan. Around the world, exceptional manufacturers and skilled businesses are struggling to survive as labor shortages become increasingly severe.",
+      "That experience inspired the creation of RoboFounders. Our mission is to preserve and pass on the world’s manufacturing excellence by combining robotics and AI to solve labor shortages.",
+      "We are building a future where people and robots work together, allowing the world’s manufacturing legacy to continue for generations to come.",
+    ],
+    more: "Read the founder story",
+  },
+  gallery: {
+    label: "On the Ground",
+    title: "Moments from the field.",
+    body: "Booths, demos, partnerships and real human connection, here’s the Robot COO and the RoboFounders team out in the world, from Sarawak to Japan.",
+    captions: [
+      "A founder shares a moment with Rofi, our Robot COO",
+      "The team on the ground at IVS2026, Japan",
+      "Partnership conversations at the booth",
+      "Live demos and lead capture in session",
+      "Empowering founders, one expansion at a time",
+      "“Stop flying. We will be there.” — our event stand",
+      "Limited-edition IVS2026 boarding pass stickers",
+      "Booth SC-16 — see you at IVS2026",
+    ],
+    video: "RoboFounders event clip",
+  },
+  works: {
+    label: "Our Works / Case Studies",
+    title: "Execution you can point to.",
+    cta: "Start your case study",
+    items: [
+      [
+        "Market Entry",
+        "Japan Beachhead",
+        "Set up local sales, partnerships and event presence for a US deeptech startup entering Tokyo.",
+      ],
+      [
+        "Live Demos",
+        "Robot COO at Conferences",
+        "Rofi the Robot COO running live booth demos and lead capture at major exhibitions.",
+      ],
+      [
+        "Partnerships",
+        "ASEAN Expansion",
+        "Built distributor and channel partnerships across Malaysia and Southeast Asia.",
+      ],
+    ],
+  },
+  startups: {
+    label: "10 / Partners",
+    title: "Build with us.",
+    body: "We help robotics and Physical AI startups move from technology to manufacturing, deployment, and global markets.",
+    partners: [
+      "Robot makers",
+      "Component manufacturers",
+      "AI companies",
+      "Factories",
+      "Researchers",
+      "Investors",
+      "Global partners",
+    ],
+    line: "The future of Physical AI will not be built by one company.",
+    cta: "Become a partner",
+  },
+  updates: {
+    label: "News & events",
+    title: "Fresh from the global floor.",
+    events: "Events timeline",
+    press: "Press & news",
+    items: [
+      [
+        "2026",
+        "Competing",
+        "Startup World Cup 2026",
+        "Competing with a human-robot mixed team on the world’s biggest startup stage.",
+      ],
+      [
+        "2026",
+        "Exhibiting",
+        "Diffusion 2026, Sarawak",
+        "Exhibiting embodied AI and the Robot COO experience to the ASEAN ecosystem.",
+      ],
+      [
+        "2026",
+        "Exhibiting",
+        "IVS2026, Japan",
+        "On-ground demos and partnership building across the Japanese startup landscape.",
+      ],
+      [
+        "Now",
+        "Launching",
+        "Silicon Valley Launch",
+        "New company launch with an aggressive San Francisco / Silicon Valley expansion push.",
+      ],
+      [
+        "Ongoing",
+        "Community",
+        "BuildClub Tokyo",
+        "Active organizer involvement, building a founder + robotics community in Tokyo.",
+      ],
+    ],
+    news: [
+      [
+        "Jun 2026",
+        "RoboFounders opens San Francisco hub",
+        "Doubling down on Silicon Valley to support founders going global.",
+      ],
+      [
+        "May 2026",
+        "Rofi debuts at Startup World Cup",
+        "Our Robot COO joins the human team on stage for live execution.",
+      ],
+      [
+        "Apr 2026",
+        "ASEAN partnership network expands",
+        "New on-ground partners added across Malaysia and the region.",
+      ],
+    ],
+  },
+  team: {
+    label: "Our teams",
+    title: "People building the future of Physical AI.",
+    founderRole: "CEO",
+    bio: "Founder and CEO leading RoboFounders’ vision, cross-border partnerships, and Physical AI ecosystem across Japan, ASEAN, and the USA.",
+    heading: "One team across regions and disciplines.",
+    body: "Our team brings together company building, robotics engineering, manufacturing strategy, AI, finance, marketing, and regional execution.",
+    photoPending: "Profile photo coming soon",
+    members: [
+      {
+        id: "takeshi",
+        name: "Takeshi Kanamori",
+        role: "COO",
+        bio: "Leads company operations and cross-functional execution.",
+      },
+      {
+        id: "hiromichi",
+        name: "Hiromichi Sasaki",
+        role: "Robotics Engineering Director",
+        bio: "Leads robotics engineering and product development.",
+      },
+      {
+        id: "eiichiro",
+        name: "Eiichiro Nakamizo",
+        role: "Regional Director, Kansai",
+        bio: "Leads regional relationships and business development across Kansai.",
+      },
+      {
+        id: "yasumitsu",
+        name: "Yasumitsu Morita",
+        role: "Strategic Advisor",
+        bio: "Advises on manufacturing strategy and robotics deployment in production environments.",
+      },
+      {
+        id: "hiro",
+        name: "Hiro Umemoto",
+        role: "CFO Office",
+        bio: "Supports finance, governance, and corporate operations.",
+      },
+      {
+        id: "hao",
+        name: "Hao Jie Bong",
+        role: "AI Office",
+        bio: "Supports AI technology and its application within Physical AI solutions.",
+      },
+      {
+        id: "mai",
+        name: "Mai Okazawa",
+        role: "Chief Marketing Officer",
+        bio: "Leads brand, communications, and market development.",
+      },
+      {
+        id: "celine",
+        name: "Celine Tan",
+        role: "Head of Borneo Office",
+        bio: "Leads regional partnerships and operations across Borneo.",
+      },
+      {
+        id: "thao",
+        name: "Thao Le",
+        role: "Head of Da Nang Office, Vietnam",
+        bio: "Leads local coordination and team operations from Da Nang, Vietnam.",
+      },
+    ],
+  },
+  contact: {
+    label: "11 / Final CTA",
+    title: "The future of robotics is physical.",
+    accent: "Let’s build it.",
+    body: "Whether you’re looking for technology, manufacturing, deployment, partnerships, or investment, let’s build what comes next.",
+    formTitle: "Start a conversation",
+    name: "Full name",
+    email: "Work email",
+    company: "Company / organization",
+    category: "I’m interested in",
+    categories: [
+      "Technology",
+      "Partnership",
+      "PoC",
+      "Investment",
+      "Startup",
+      "Media",
+      "Careers",
+    ],
+    message: "Tell us about your requirements",
+    placeholder: "Your application, goals, requirements, and timeline…",
+    submit: "Send inquiry",
+    sending: "Sending…",
+    required: "Please complete your name, a valid email, and your message.",
+    success: "Thank you. Your inquiry has been received.",
+    error:
+      "We could not send your inquiry. Please try again or email us directly.",
+    consent:
+      "Your details will be sent to RoboFounders through FormSubmit to respond to your inquiry.",
+    optional: "Optional",
+    productPrompt:
+      "Your application, target load or objects to handle, dimensions, and timeline…",
+    dialogTitle: "Talk to our engineering team",
+    dialogIntro:
+      "Tell us what you are building and what your application needs.",
+    imageAlt: "RoboFounders team and Robot COO presenting at an industry event",
+  },
+  footer: {
+    tagline: "The Physical AI Platform for Dangerous Manufacturing.",
+    line: "Protect People. Automate Danger.",
+    explore: "Explore",
+    connect: "Connect",
+    privacy: "Privacy notice",
+    rights: "All rights reserved.",
+  },
+  productsPage: {
+    label: "Products / Core technologies",
+    title: "Technologies for the physical world.",
+    body: "Motion and manipulation technologies for the next generation of intelligent machines.",
+    intro: "Explore our products",
+    featured: "01 / Motion technology",
+    second: "02 / Manipulation technology",
+    ask: "Building your next robot?",
+    askBody: "Tell us your application. Let’s explore the technology it needs.",
+    made: "Made in Japan",
+    overview: "Designed around your application.",
+    processTitle: "Built for robotics.",
+    processBody:
+      "Explore custom design, prototyping, and production requirements with our team.",
+    process: [
+      ["Custom design", "Share your application and robot specifications."],
+      ["Prototype", "Discuss development and evaluation needs."],
+      ["Production", "Discuss your production requirements."],
+    ],
+    ecosystem: "More than a component.",
+    ecosystemBody:
+      "RoboFounders is building the Physical AI ecosystem connecting components, robots, AI, data, and manufacturing.",
+    target: "Performance targets",
+    targetIntro:
+      "Compared with a ball screw of the same screw diameter and lead.",
+    targetNote:
+      "Development targets, not guaranteed specifications. Approximately 4× values refer to an equivalent ball screw of the same diameter and lead. Application-specific performance requires evaluation.",
+    targetLabels: [
+      "Longer life",
+      "Basic static load rating",
+      "Basic dynamic load rating",
+    ],
+    gallery: "A closer look.",
+    videoCaption: "Roller screw demonstration supplied by RoboFounders.",
+    specification: "Have a specific application in mind?",
+  },
+  products: {
+    "roller-screw": {
+      name: "Planetary Roller Screws",
+      short: "Roller Screw",
+      eyebrow: "Powering the next generation of humanoids.",
+      tagline: "Higher load. Higher stiffness. Longer life.",
+      description:
+        "Designed for high-load, high-cycle motion in next-generation robotic actuators, our planetary roller screws distribute load across multiple threaded rollers to deliver high performance in a compact form factor.",
+      preview:
+        "Core motion technology for high-load, high-cycle robotic actuators.",
+      imageAlt:
+        "Close-up of the RoboFounders roller screw assembly and threaded shaft",
+      galleryAlts: [
+        "Roller screw assembly showing the nut and precision threaded shaft",
+      ],
+      benefits: [
+        [
+          "High-load motion",
+          "Multiple threaded rollers distribute loads across the mechanism.",
+        ],
+        [
+          "Compact actuators",
+          "Designed for the demanding motion needs of next-generation robots.",
+        ],
+        [
+          "Your robot. Your requirements.",
+          "Talk with our engineers about your application and component requirements.",
+        ],
+      ],
+      applications: [
+        "Humanoid actuators",
+        "Robotic motion",
+        "High-cycle applications",
+      ],
+    },
+    "robotic-hand": {
+      name: "Robotic Hand",
+      short: "Robotic Hand",
+      eyebrow: "Next-generation robotic hands for manufacturing.",
+      tagline: "Lightweight. Flexible. Power-efficient.",
+      description:
+        "Developed by robotics experts and a team with deep experience in manufacturing across Japan and ASEAN, our robotic hands are designed for real-world industrial applications—not just laboratories.",
+      preview:
+        "Lightweight, flexible manipulation technology for manufacturing and intelligent machines.",
+      proof:
+        "48 years of manufacturing expertise, engineered for the future of Physical AI.",
+      collaboration:
+        "We work with robotics companies and manufacturers on joint development, PoCs, custom design, and mass production.",
+      imageAlt:
+        "Client-supplied robotic hand visual showing delicate sushi handling",
+      galleryAlts: [
+        "Robotic hand applications in food handling and manufacturing",
+        "Robotic hand visual showing precision parts handling",
+      ],
+      benefits: [
+        [
+          "Built for real factories",
+          "Developed around demanding manufacturing work, not laboratory use alone.",
+        ],
+        [
+          "Lightweight & flexible",
+          "Adapts to different shapes and materials for delicate work and human collaboration.",
+        ],
+        [
+          "Power-efficient",
+          "Designed with efficient operation and real-world deployment in mind.",
+        ],
+      ],
+      applications: [
+        "Welding",
+        "Plating",
+        "Assembly",
+        "Inspection",
+        "Material handling",
+        "Human–robot collaboration",
+      ],
+    },
+  },
+  newsPage: {
+    label: "Robotics news",
+    title: "The latest from the robotics frontier.",
+    body: "Updates from approved robotics companies and industry leaders on X, credited and linked to the original post.",
+    all: "All",
+    error: "We couldn’t load the feed",
+    retry: "Please try again in a moment.",
+    empty: "No posts yet",
+    emptyBody: "Approved robotics updates will appear here.",
+    attribution:
+      "Posts are shown in their original language with source attribution. All trademarks, names, and content belong to their respective owners.",
+    categories: {
+      "Company News": "Company News",
+      Events: "Events",
+      Robotics: "Robotics",
+      Humanoids: "Humanoids",
+      AI: "AI",
+      Research: "Research",
+      Funding: "Funding",
+      Industry: "Industry",
+      Components: "Components",
+    },
+  },
+};
+export default en;

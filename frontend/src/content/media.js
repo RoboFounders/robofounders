@@ -1,0 +1,81 @@
+// Public media paths are kept here so reorganizing assets never requires JSX edits.
+export const media = {
+  logoOnDark: "/images/brand/robofounders-navy-white.webp",
+  logoOnLight: "/images/brand/robofounders-color.webp",
+  founder: "/images/team/mariel.webp",
+  rofi: "/images/home/rofi-3d.png",
+  homeVideo: "/videos/home/physical-ai-concept.mp4",
+  home: {
+    hero: "/images/home/physical-ai-hero.webp",
+    about: "/images/home/about-origin.webp",
+    regions: "/images/home/global-ecosystem.webp",
+    why: "/images/home/why-robofounders.webp",
+    factory: "/images/home/factory-deployment.webp",
+    contact: "/images/home/contact-team.webp",
+  },
+  team: {
+    takeshi: "/images/team/takeshi.webp",
+    hiromichi: "/images/team/hiromichi.png",
+    eiichiro: "/images/team/eiichiro.webp",
+    yasumitsu: "/images/team/yasumitsu.webp",
+    hiro: "/images/team/hiro.webp",
+    hao: "/images/team/hao.webp",
+    mai: "/images/team/mai.webp",
+    celine: "/images/team/celine.webp",
+    thao: "/images/team/thao.webp",
+  },
+  events: [
+    "robot-hug",
+    "team-ivs",
+    "team-banner",
+    "booth-laptop",
+    "founder-laptop",
+    "banner-booth",
+    "stickers",
+    "ivs-poster",
+  ].map((name) => `/images/events/${name}.jpeg`),
+  eventSizes: [
+    [1246, 1313],
+    [1481, 1105],
+    [960, 1280],
+    [960, 1280],
+    [1280, 1707],
+    [720, 1280],
+    [1280, 1707],
+    [1169, 1568],
+  ],
+  eventVideos: ["event-demo", "event-clip2", "event-clip1"].map(
+    (name) => `/videos/events/${name}.mp4`,
+  ),
+  products: {
+    "roller-screw": {
+      hero: "/images/products/roller-screw/assembly",
+      gallery: ["/images/products/roller-screw/assembly"],
+      video: "/videos/products/roller-screw/demonstration.mp4",
+    },
+    "robotic-hand": {
+      hero: "/images/products/robotic-hand/food-handling",
+      gallery: [
+        "/images/products/robotic-hand/applications",
+        "/images/products/robotic-hand/precision-handling",
+      ],
+    },
+  },
+};
+export const productIds = ["roller-screw", "robotic-hand"];
+// Actual exported dimensions; portrait variants are constrained by height.
+export const productImageSizes = {
+  assembly: { small: 480, width: 1200, height: 1600 },
+  "close-up": { small: 640, width: 1600, height: 1200 },
+  "food-handling": { small: 640, width: 1600, height: 901 },
+  applications: { small: 640, width: 1600, height: 900 },
+  "precision-handling": { small: 640, width: 1600, height: 606 },
+};
+export const contacts = {
+  email: "rofi@robofounders.net",
+  endpoint: "https://formsubmit.co/ajax/rofi@robofounders.net",
+  cc: "marieasami7@gmail.com,rofi@robofounders.ai",
+  linkedin: "https://www.linkedin.com/company/robofounders/",
+  founderLinkedin: "https://www.linkedin.com/in/marie-asami/",
+  x: "https://x.com/maripto7",
+};
