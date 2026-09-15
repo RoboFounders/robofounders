@@ -1,0 +1,18 @@
+export const PRODUCTS = {
+  page: "products-page",
+  tabHand: "product-tab-robot-hand",
+  tabScrew: "product-tab-roller-screw",
+  hero: "product-hero",
+  heroTitle: "product-hero-title",
+  ctaTalk: "product-cta-talk",
+  ctaWhy: "product-cta-why",
+  whySection: "product-why-section",
+  pointsSection: "product-points-section",
+  gallerySection: "product-gallery-section",
+  statusSection: "product-status-section",
+  talkSection: "product-talk-section",
+  otherSection: "product-other-section",
+  otherLink: "product-other-link",
+  inquiryModal: "product-inquiry-modal",
+  inquirySubmit: "product-inquiry-submit",
+};
