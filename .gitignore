@@ -4,6 +4,22 @@
 .idea/
 .vscode/
 
+# Local Codex / agent tooling (never deploy)
+/.agents/
+/.codex/
+/.codex-*/
+/.gitconfig
+/design_guidelines.json
+
+# Temporary working and extracted-source files
+/.tmp*/
+/tmp/
+~$*
+
+# Local visual references and unused concept drafts
+/frontend/public/images/Screenshot *.png
+/frontend/public/images/home/concepts/
+
 # Dependencies
 node_modules/
 /node_modules
@@ -60,6 +76,9 @@ chainlit.md
 
 # Deployment
 .vercel
+
+# Accidental root-level package artifacts (the app lives in /frontend)
+/yarn.lock
 
 # Data and databases
 agenthub/agents/youtube/db
