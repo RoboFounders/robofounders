@@ -2,6 +2,8 @@
 export const media = {
   logoOnDark: "/images/brand/robofounders-navy-white.webp",
   logoOnLight: "/images/brand/robofounders-color.webp",
+  contactAddressLight: "/images/brand/contact-address-light.png",
+  contactAddressDark: "/images/brand/contact-address-dark.png",
   founder: "/images/team/mariel.webp",
   rofi: "/images/home/rofi-3d.png",
   homeVideo: "/videos/home/physical-ai-concept.mp4",
@@ -73,7 +75,6 @@ export const productImageSizes = {
   "precision-handling": { small: 640, width: 1600, height: 606 },
 };
 export const contacts = {
-  email: "rofi@robofounders.net",
   endpoint: "https://formsubmit.co/ajax/rofi@robofounders.net",
   cc: "marieasami7@gmail.com,rofi@robofounders.ai",
   linkedin: "https://www.linkedin.com/company/robofounders/",

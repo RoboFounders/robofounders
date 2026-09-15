@@ -449,6 +449,7 @@ const en = {
     accent: "Let’s build it.",
     body: "Whether you’re looking for technology, manufacturing, deployment, partnerships, or investment, let’s build what comes next.",
     formTitle: "Start a conversation",
+    emailImageAlt: "RoboFounders contact email address",
     name: "Full name",
     email: "Work email",
     company: "Company / organization",

@@ -1684,10 +1684,14 @@ button:disabled {
 .contact-email {
   display: inline-flex;
   align-items: center;
-  gap: 12px;
-  color: white;
-  font-size: 16px;
   margin-top: 22px;
+}
+.contact-address-image {
+  display: block;
+  width: 145px;
+  height: auto;
+  object-fit: contain;
+  object-position: left center;
 }
 .contact-form-panel {
   background: white;
@@ -1778,9 +1782,8 @@ button:disabled {
   background: #e5f5ec;
   color: #1d6740;
 }
-.form-result a {
-  display: block;
-  text-decoration: underline;
+.form-error-email {
+  margin-top: 8px;
 }
 .inquiry-dialog {
   padding: 30px;
@@ -2184,6 +2187,11 @@ button:disabled {
 .footer-grid a:hover {
   color: white;
 }
+.footer-email-image {
+  width: 106px;
+  margin-bottom: 16px;
+  opacity: 0.84;
+}
 .footer-grid .eyebrow {
   color: var(--brand-blue-light);
   font-size: 10px;
@@ -2259,6 +2267,9 @@ button:disabled {
   color: var(--brand-blue);
   text-decoration: underline;
   text-underline-offset: 4px;
+}
+.legal-contact-email {
+  margin-block: 2px 4px;
 }
 /* Responsive layouts adapt content, including longer Japanese labels. */
 @media (max-width: 700px) {
@@ -2892,9 +2903,6 @@ button:disabled {
   .form-grid {
     grid-template-columns: 1fr;
     gap: 0;
-  }
-  .contact-email {
-    font-size: 15px;
   }
   .inquiry-dialog {
     padding: 24px 20px;

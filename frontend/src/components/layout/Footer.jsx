@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { ArrowUpRight } from "lucide-react";
 import { contacts, media } from "@/content/media";
 import { useLanguage } from "@/contexts/LanguageContext";
+import ContactAddressImage from "@/components/shared/ContactAddressImage";
 import { navTargets } from "./Navbar";
 export default function Footer() {
   const { t } = useLanguage();
@@ -39,7 +40,7 @@ export default function Footer() {
             <a href={contacts.x} target="_blank" rel="noopener noreferrer">
               X <ArrowUpRight size={14} />
             </a>
-            <a href={`mailto:${contacts.email}`}>{contacts.email}</a>
+            <ContactAddressImage className="footer-email-image" />
           </div>
         </div>
         <div className="footer-bottom">

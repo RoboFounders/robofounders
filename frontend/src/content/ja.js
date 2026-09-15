@@ -423,6 +423,7 @@ const ja = {
     accent: "その未来を、ともにつくる。",
     body: "テクノロジー、製造、導入、パートナーシップ、投資。次の可能性を、ともに形にしましょう。",
     formTitle: "まずはご相談ください",
+    emailImageAlt: "RoboFoundersのお問い合わせ用メールアドレス",
     name: "お名前",
     email: "メールアドレス",
     company: "会社名・組織名",

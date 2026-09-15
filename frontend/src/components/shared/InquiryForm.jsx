@@ -2,6 +2,7 @@ import { useId, useState } from "react";
 import { ArrowUpRight, LoaderCircle } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { contacts } from "@/content/media";
+import ContactAddressImage from "./ContactAddressImage";
 export default function InquiryForm({ product }) {
   const { t, lang } = useLanguage();
   const id = useId();
@@ -173,7 +174,7 @@ export default function InquiryForm({ product }) {
         >
           {t.contact[result]}
           {result === "error" && (
-            <a href={`mailto:${contacts.email}`}>{contacts.email}</a>
+            <ContactAddressImage tone="dark" className="form-error-email" />
           )}
         </div>
       )}

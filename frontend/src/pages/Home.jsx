@@ -24,12 +24,13 @@ import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import PageMeta from "@/components/shared/PageMeta";
 import InquiryForm from "@/components/shared/InquiryForm";
+import ContactAddressImage from "@/components/shared/ContactAddressImage";
 import FieldGallery from "@/components/home/FieldGallery";
 import Team from "@/components/home/Team";
 import Updates from "@/components/home/Updates";
 import AccessibleLoopVideo from "@/components/shared/AccessibleLoopVideo";
 import { useLanguage } from "@/contexts/LanguageContext";
-import { media, productIds, contacts } from "@/content/media";
+import { media, productIds } from "@/content/media";
 
 const serviceIcons = [PencilRuler, Boxes, Factory, Globe2, Orbit];
 const factoryIcons = [ScanEye, Factory, Bot];
@@ -528,10 +529,9 @@ export default function Home() {
               </h2>
               <p className="section-lead">{t.contact.body}</p>
               <span className="eyebrow">{t.hero.label}</span>
-              <a className="contact-email" href={`mailto:${contacts.email}`}>
-                {contacts.email}
-                <ArrowUpRight size={18} />
-              </a>
+              <div className="contact-email">
+                <ContactAddressImage />
+              </div>
               <img
                 className="contact-image"
                 src={media.home.contact}

@@ -2,8 +2,8 @@ import { Link } from "react-router-dom";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import PageMeta from "@/components/shared/PageMeta";
+import ContactAddressImage from "@/components/shared/ContactAddressImage";
 import { useLanguage } from "@/contexts/LanguageContext";
-import { contacts } from "@/content/media";
 
 const copy = {
   en: {
@@ -97,7 +97,10 @@ export default function Privacy() {
             </div>
             <div className="legal-contact">
               <h2>{content.contact}</h2>
-              <a href={`mailto:${contacts.email}`}>{contacts.email}</a>
+              <ContactAddressImage
+                tone="dark"
+                className="legal-contact-email"
+              />
               <a
                 href="https://formsubmit.co/privacy.pdf"
                 target="_blank"
