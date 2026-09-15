@@ -1,0 +1,35 @@
+[
+  {
+    "accountId": "robofounders",
+    "handle": "maripto7",
+    "displayName": "RoboFounders",
+    "sourceLabel": "RoboFounders Official X",
+    "category": "Company News",
+    "enabled": true,
+    "permission": "owner",
+    "avatarUrl": "/images/team/mariel.webp",
+    "profileUrl": "https://x.com/maripto7"
+  },
+  {
+    "accountId": "figure",
+    "handle": "Figure_robot",
+    "displayName": "Figure AI",
+    "sourceLabel": "Figure AI Official X",
+    "category": "Humanoid",
+    "enabled": false,
+    "permission": "pending",
+    "avatarUrl": "",
+    "profileUrl": "https://x.com/Figure_robot"
+  },
+  {
+    "accountId": "bostondynamics",
+    "handle": "BostonDynamics",
+    "displayName": "Boston Dynamics",
+    "sourceLabel": "Boston Dynamics Official X",
+    "category": "Robotics",
+    "enabled": false,
+    "permission": "pending",
+    "avatarUrl": "",
+    "profileUrl": "https://x.com/BostonDynamics"
+  }
+]

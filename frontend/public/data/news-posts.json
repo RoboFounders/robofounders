@@ -1,0 +1,112 @@
+[
+  {
+    "id": "seed-rf-004",
+    "type": "x_post",
+    "author": {
+      "name": "RoboFounders",
+      "handle": "maripto7",
+      "avatarUrl": "/images/team/mariel.webp",
+      "profileUrl": "https://x.com/maripto7",
+      "verified": true
+    },
+    "source": {
+      "label": "RoboFounders Official X",
+      "platform": "x",
+      "accountId": "robofounders"
+    },
+    "category": "Company News",
+    "text": "Rofi, our Robot COO, is heading to IVS2026 in Japan. 🤖🇯🇵\n\nCome meet an embodied AI operator running live booth demos at Booth SC-16. See you there.",
+    "media": [
+      {
+        "type": "image",
+        "url": "/images/events/team-ivs.jpeg",
+        "alt": "RoboFounders team at IVS2026 in Japan"
+      }
+    ],
+    "originalUrl": "https://x.com/maripto7",
+    "createdAt": "2026-08-03T09:30:00Z",
+    "fetchedAt": "2026-08-04T05:28:56.350Z",
+    "permissionStatus": "owner"
+  },
+  {
+    "id": "seed-rf-003",
+    "type": "x_post",
+    "author": {
+      "name": "RoboFounders",
+      "handle": "maripto7",
+      "avatarUrl": "/images/team/mariel.webp",
+      "profileUrl": "https://x.com/maripto7",
+      "verified": true
+    },
+    "source": {
+      "label": "RoboFounders Official X",
+      "platform": "x",
+      "accountId": "robofounders"
+    },
+    "category": "Company News",
+    "text": "The future of global expansion is human + robot. Our on-the-ground teams and embodied AI are opening doors across Japan, the US, Malaysia and ASEAN.",
+    "media": [
+      {
+        "type": "image",
+        "url": "/images/events/banner-booth.jpeg",
+        "alt": "RoboFounders event booth"
+      }
+    ],
+    "originalUrl": "https://x.com/maripto7",
+    "createdAt": "2026-07-29T14:10:00Z",
+    "fetchedAt": "2026-08-04T05:28:56.370Z",
+    "permissionStatus": "owner"
+  },
+  {
+    "id": "seed-rf-002",
+    "type": "x_post",
+    "author": {
+      "name": "RoboFounders",
+      "handle": "maripto7",
+      "avatarUrl": "/images/team/mariel.webp",
+      "profileUrl": "https://x.com/maripto7",
+      "verified": true
+    },
+    "source": {
+      "label": "RoboFounders Official X",
+      "platform": "x",
+      "accountId": "robofounders"
+    },
+    "category": "Events",
+    "text": "Big moment at the booth today — founders meeting Rofi face-to-face and seeing what a Robot COO can really do. This is why we build. 💙",
+    "media": [
+      {
+        "type": "image",
+        "url": "/images/events/robot-hug.jpeg",
+        "alt": "A founder with Rofi the Robot COO"
+      }
+    ],
+    "originalUrl": "https://x.com/maripto7",
+    "createdAt": "2026-07-22T08:00:00Z",
+    "fetchedAt": "2026-08-04T05:28:56.370Z",
+    "permissionStatus": "owner"
+  },
+  {
+    "id": "seed-rf-001",
+    "type": "x_post",
+    "author": {
+      "name": "RoboFounders",
+      "handle": "maripto7",
+      "avatarUrl": "/images/team/mariel.webp",
+      "profileUrl": "https://x.com/maripto7",
+      "verified": true
+    },
+    "source": {
+      "label": "RoboFounders Official X",
+      "platform": "x",
+      "accountId": "robofounders"
+    },
+    "category": "Company News",
+    "text": "We just launched in Silicon Valley 🚀 An aggressive San Francisco expansion push to help founders go global with an AI-powered Robot COO.",
+    "media": [],
+    "originalUrl": "https://x.com/maripto7",
+    "createdAt": "2026-07-15T17:45:00Z",
+    "fetchedAt": "2026-08-04T05:28:56.370Z",
+    "permissionStatus": "owner"
+  }
+]

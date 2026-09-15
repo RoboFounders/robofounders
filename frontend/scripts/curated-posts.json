@@ -1,0 +1,38 @@
+[
+  {
+    "id": "seed-rf-004",
+    "accountId": "robofounders",
+    "category": "Company News",
+    "url": "https://x.com/maripto7",
+    "text": "Rofi, our Robot COO, is heading to IVS2026 in Japan. 🤖🇯🇵\n\nCome meet an embodied AI operator running live booth demos at Booth SC-16. See you there.",
+    "media": [{ "type": "image", "url": "/images/events/team-ivs.jpeg", "alt": "RoboFounders team at IVS2026 in Japan" }],
+    "createdAt": "2026-08-03T09:30:00Z"
+  },
+  {
+    "id": "seed-rf-003",
+    "accountId": "robofounders",
+    "category": "Company News",
+    "url": "https://x.com/maripto7",
+    "text": "The future of global expansion is human + robot. Our on-the-ground teams and embodied AI are opening doors across Japan, the US, Malaysia and ASEAN.",
+    "media": [{ "type": "image", "url": "/images/events/banner-booth.jpeg", "alt": "RoboFounders event booth" }],
+    "createdAt": "2026-07-29T14:10:00Z"
+  },
+  {
+    "id": "seed-rf-002",
+    "accountId": "robofounders",
+    "category": "Events",
+    "url": "https://x.com/maripto7",
+    "text": "Big moment at the booth today — founders meeting Rofi face-to-face and seeing what a Robot COO can really do. This is why we build. 💙",
+    "media": [{ "type": "image", "url": "/images/events/robot-hug.jpeg", "alt": "A founder with Rofi the Robot COO" }],
+    "createdAt": "2026-07-22T08:00:00Z"
+  },
+  {
+    "id": "seed-rf-001",
+    "accountId": "robofounders",
+    "category": "Company News",
+    "url": "https://x.com/maripto7",
+    "text": "We just launched in Silicon Valley 🚀 An aggressive San Francisco expansion push to help founders go global with an AI-powered Robot COO.",
+    "media": [],
+    "createdAt": "2026-07-15T17:45:00Z"
+  }
+]
