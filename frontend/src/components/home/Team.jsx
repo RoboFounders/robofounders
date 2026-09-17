@@ -11,6 +11,11 @@ const initials = (name) =>
 
 export default function Team() {
   const { t } = useLanguage();
+  // Yasumitsu Morita is temporarily hidden pending client approval.
+  const visibleMembers = t.team.members.filter(
+    (member) => member.id !== "yasumitsu",
+  );
+
   return (
     <section id="founder" className="section">
       <div className="wrap">
@@ -44,7 +49,7 @@ export default function Team() {
           <p>{t.team.body}</p>
         </div>
         <div className="team-grid">
-          {t.team.members.map((member) => (
+          {visibleMembers.map((member) => (
             <article key={member.id}>
               <div className="team-photo-frame">
                 {media.team[member.id] ? (
