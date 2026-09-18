@@ -8,6 +8,7 @@ export default function AccessibleLoopVideo({
   label,
   preload = "metadata",
   startWhenVisible = false,
+  showToggle = true,
 }) {
   const { t } = useLanguage();
   const videoRef = useRef(null);
@@ -89,19 +90,21 @@ export default function AccessibleLoopVideo({
         aria-label={label}
         src={src}
       />
-      <button
-        type="button"
-        className="video-motion-toggle"
-        onClick={togglePlayback}
-        aria-label={playing ? t.ui.pauseVideo : t.ui.playVideo}
-        aria-pressed={playing}
-      >
-        {playing ? (
-          <Pause size={16} aria-hidden="true" />
-        ) : (
-          <Play size={16} aria-hidden="true" />
-        )}
-      </button>
+      {showToggle && (
+        <button
+          type="button"
+          className="video-motion-toggle"
+          onClick={togglePlayback}
+          aria-label={playing ? t.ui.pauseVideo : t.ui.playVideo}
+          aria-pressed={playing}
+        >
+          {playing ? (
+            <Pause size={16} aria-hidden="true" />
+          ) : (
+            <Play size={16} aria-hidden="true" />
+          )}
+        </button>
+      )}
     </>
   );
 }
