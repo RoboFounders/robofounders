@@ -1,18 +1,20 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
+import { ArrowUpRight } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { media } from "@/content/media";
 
 const eventImages = [
-  media.events[8], // boston-ai-week
+  media.bostonAiWeek, // boston-ai-week
   media.events[0], // robot-hug / Startup World Cup
   media.events[2], // team-banner / Diffusion Sarawak
   media.events[1], // team-ivs / IVS Japan
-  media.events[5], // banner-booth / Silicon Valley launch
-  media.events[4], // founder-laptop / BuildClub Tokyo
+  media.events[4], // banner-booth / Silicon Valley launch
+  media.events[7], // startups-jungle / BuildClub Tokyo
 ];
 
 const newsImages = [
-  media.home.startups, // partners/team group photo for X-HUB Boston
+  media.newsEvent, // Tokyo to Boston / JETRO X-HUB TOKYO full image
   media.events[3], // booth-laptop / SF hub
   media.events[0], // robot-hug / Startup World Cup
   media.events[2], // team-banner / ASEAN network
@@ -69,24 +71,41 @@ export default function Updates() {
                   </div>
                 </article>
               ))
-            : t.updates.news.map(([date, title, body], index) => (
-                <article key={title} className="news-tile-card">
-                  <div className="news-media">
-                    <img
-                      src={newsImages[index % newsImages.length]}
-                      alt={title}
-                      loading="lazy"
-                      width="400"
-                      height="240"
-                    />
-                  </div>
-                  <div className="news-card-body">
-                    <p className="eyebrow">{date}</p>
-                    <h3>{title}</h3>
-                    <p>{body}</p>
-                  </div>
-                </article>
-              ))}
+            : t.updates.news.map(([date, title, body], index) => {
+                const isLinked = index === 0;
+                const CardTag = isLinked ? Link : "article";
+                const cardProps = isLinked
+                  ? { to: "/news/x-hub-tokyo-boston", className: "news-tile-card is-link" }
+                  : { className: "news-tile-card" };
+
+                return (
+                  <CardTag key={title} {...cardProps}>
+                    <div className="news-media">
+                      <img
+                        src={newsImages[index % newsImages.length]}
+                        alt={title}
+                        loading="lazy"
+                        width="400"
+                        height="240"
+                      />
+                    </div>
+                    <div className="news-card-body">
+                      <p className="eyebrow">{date}</p>
+                      <h3>
+                        {title}
+                        {isLinked && <ArrowUpRight size={16} className="news-link-arrow" />}
+                      </h3>
+                      <p>{body}</p>
+                      {isLinked && (
+                        <span className="news-read-more">
+                          {t.ui?.readArticle || (t.lang === "ja" ? "記事を読む" : "Read full article")}
+                          <ArrowUpRight size={14} />
+                        </span>
+                      )}
+                    </div>
+                  </CardTag>
+                );
+              })}
         </div>
       </div>
     </section>
