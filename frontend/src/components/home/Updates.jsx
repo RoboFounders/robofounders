@@ -1,5 +1,23 @@
 import { useState } from "react";
 import { useLanguage } from "@/contexts/LanguageContext";
+import { media } from "@/content/media";
+
+const eventImages = [
+  media.events[8], // boston-ai-week
+  media.events[0], // robot-hug / Startup World Cup
+  media.events[2], // team-banner / Diffusion Sarawak
+  media.events[1], // team-ivs / IVS Japan
+  media.events[5], // banner-booth / Silicon Valley launch
+  media.events[4], // founder-laptop / BuildClub Tokyo
+];
+
+const newsImages = [
+  media.home.startups, // partners/team group photo for X-HUB Boston
+  media.events[3], // booth-laptop / SF hub
+  media.events[0], // robot-hug / Startup World Cup
+  media.events[2], // team-banner / ASEAN network
+];
+
 export default function Updates() {
   const { t } = useLanguage();
   const [events, setEvents] = useState(true);
@@ -30,21 +48,43 @@ export default function Updates() {
         </div>
         <div className={events ? "events-list" : "news-tiles"}>
           {events
-            ? t.updates.items.map(([date, tag, title, body]) => (
-                <article key={title}>
+            ? t.updates.items.map(([date, tag, title, body], index) => (
+                <article key={title} className="event-item-card">
+                  <div className="event-media">
+                    <img
+                      src={eventImages[index % eventImages.length]}
+                      alt={title}
+                      loading="lazy"
+                      width="400"
+                      height="260"
+                    />
+                  </div>
                   <div className="event-date">
                     {date}
                     <span>{tag}</span>
                   </div>
-                  <h3>{title}</h3>
-                  <p>{body}</p>
+                  <div className="event-content">
+                    <h3>{title}</h3>
+                    <p>{body}</p>
+                  </div>
                 </article>
               ))
-            : t.updates.news.map(([date, title, body]) => (
-                <article key={title}>
-                  <p className="eyebrow">{date}</p>
-                  <h3>{title}</h3>
-                  <p>{body}</p>
+            : t.updates.news.map(([date, title, body], index) => (
+                <article key={title} className="news-tile-card">
+                  <div className="news-media">
+                    <img
+                      src={newsImages[index % newsImages.length]}
+                      alt={title}
+                      loading="lazy"
+                      width="400"
+                      height="240"
+                    />
+                  </div>
+                  <div className="news-card-body">
+                    <p className="eyebrow">{date}</p>
+                    <h3>{title}</h3>
+                    <p>{body}</p>
+                  </div>
                 </article>
               ))}
         </div>
