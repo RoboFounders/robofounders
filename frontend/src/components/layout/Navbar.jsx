@@ -104,8 +104,12 @@ export default function Navbar() {
             aria-label="RoboFounders"
             data-testid="nav-logo"
           >
-            <img src={media.logoOnDark} alt="" width="40" height="40" />
-            <span>RoboFounders</span>
+            <img
+              src={media.logoOnDark}
+              alt="RoboFounders"
+              width="180"
+              height="34"
+            />
           </Link>
           <div className="nav-actions">
             <div
