@@ -296,6 +296,7 @@ const ja = {
     ],
     line: "Physical AIの未来は、一社だけではつくれません。",
     cta: "パートナーになる",
+    imageAlt: "現場で共創するRoboFoundersチームとパートナー",
   },
   updates: {
     label: "ニュース・イベント",
@@ -303,6 +304,12 @@ const ja = {
     events: "イベント",
     press: "プレス・ニュース",
     items: [
+      [
+        "2026",
+        "参加",
+        "Boston AI Week 2026",
+        "X-HUB TOKYO Bostonコースを通じて、BostonのAI・ロボティクス・ディープテックエコシステムとの連携を構築。",
+      ],
       [
         "2026",
         "出場",
@@ -335,6 +342,11 @@ const ja = {
       ],
     ],
     news: [
+      [
+        "2026年8月",
+        "創業1か月未満で採択。Made in JapanのPhysical AI・ロボティクス技術を世界へ",
+        "東京都・JETRO「X-HUB TOKYO GLOBAL STARTUP ACCELERATOR OUTBOUND PROGRAM」Bostonコースに採択。米国Bostonでヒューマノイドロボット・製造業向け事業の展開を加速。",
+      ],
       [
         "2026年6月",
         "サンフランシスコ拠点を開設",
