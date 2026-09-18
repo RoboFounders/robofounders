@@ -93,12 +93,12 @@ const en = {
     ],
   },
   about: {
-    label: "02 / What we are building",
+    label: "What we are building",
     title: "Building the infrastructure for Physical AI.",
     body: "We enable AI and robotics to take on dangerous, demanding, and repetitive work in the real world.",
   },
   services: {
-    label: "03 / What we do",
+    label: "What we do",
     title: "We design. We build. We deploy. We trade. We invest.",
     body: "From technology and components to deployment, manufacturing, distribution, and investment.",
     items: [
@@ -171,7 +171,7 @@ const en = {
       "Physical AI concept film showing robotic systems and connected manufacturing",
   },
   regions: {
-    label: "04 / Global ecosystem",
+    label: "Global ecosystem",
     title: "One ecosystem. Three regions.",
     body: "Connecting these three regions to build a new industrial foundation for Physical AI. From Japan to the world. From technology to the factory floor.",
     items: [
@@ -198,13 +198,13 @@ const en = {
       "Manufacturing specialists reviewing precision production work together",
   },
   technology: {
-    label: "05 / Robotics technology",
+    label: "Robotics technology",
     title: "From components to humanoids.",
     body: "The future of Physical AI depends on the technologies inside the robot. RoboFounders develops and connects critical technologies across the robotics stack.",
     note: "Two technologies. A world of applications.",
   },
   factory: {
-    label: "06 / Factory deployment",
+    label: "Factory deployment",
     title: "Bringing AI and robotics into the real world.",
     body: "Automating dangerous, demanding, and repetitive tasks to make workplaces safer and more efficient.",
     items: [
@@ -222,7 +222,7 @@ const en = {
       "RoboFounders founder presenting a physical robot at an industry event",
   },
   platform: {
-    label: "07 / The platform",
+    label: "The platform",
     title: "One platform for the Physical AI stack.",
     body: "From the smallest component to the entire factory.",
     items: [
@@ -236,13 +236,13 @@ const en = {
     closing: "Connect. Deploy. Scale.",
   },
   brand: {
-    label: "08 / Brand concept",
+    label: "Brand concept",
     title: "The Sogo Shosha of Robotics.",
     body: "We don’t just build robots. We build the ecosystem around them. We source technology, develop components, connect manufacturers, deploy robots, create data, and invest in the next generation.",
     line: "Trade. Build. Deploy. Invest.",
   },
   why: {
-    label: "09 / Why RoboFounders",
+    label: "Why RoboFounders",
     title: "Japan-born. Globally connected.",
     body: "RoboFounders brings together Japan’s engineering heritage with the speed and scale of ASEAN and the innovation ecosystem of the USA.",
     items: [
@@ -278,10 +278,11 @@ const en = {
       "The team on the ground at IVS2026, Japan",
       "Partnership conversations at the booth",
       "Live demos and lead capture in session",
-      "Empowering founders, one expansion at a time",
       "“Stop flying. We will be there.” — our event stand",
       "Limited-edition IVS2026 boarding pass stickers",
       "Booth SC-16 — see you at IVS2026",
+      "Community connections and founder ecosystem at Startup Jungle",
+      "Engaging with the global deep tech and AI ecosystem in Boston",
     ],
     video: "RoboFounders event clip",
   },
@@ -308,7 +309,7 @@ const en = {
     ],
   },
   startups: {
-    label: "10 / Partners",
+    label: "Partners",
     title: "Build with us.",
     body: "We help robotics and Physical AI startups move from technology to manufacturing, deployment, and global markets.",
     partners: [
@@ -369,8 +370,8 @@ const en = {
     ],
     news: [
       [
-        "Aug 2026",
-        "Selected for Tokyo & JETRO X-HUB TOKYO Boston Course",
+        "Sep 2026",
+        "Selected for Tokyo & JETRO X-HUB TOKYO Global Startup Accelerator Boston Course",
         "Selected within one month of founding to accelerate Physical AI and humanoid robotics deployment across Boston and global manufacturing markets.",
       ],
       [
@@ -456,7 +457,7 @@ const en = {
     ],
   },
   contact: {
-    label: "11 / Final CTA",
+    label: "Contact",
     title: "The future of robotics is physical.",
     accent: "Let’s build it.",
     body: "Whether you’re looking for technology, manufacturing, deployment, partnerships, or investment, let’s build what comes next.",
