@@ -91,14 +91,23 @@ export default function Home() {
               </div>
               <p className="hero-foot">{t.hero.foot}</p>
             </div>
-            <figure className="hero-media">
-              <img
-                src={media.home.heroDangerousWork}
-                alt={t.hero.visualAlt}
-                width="1532"
-                height="957"
-                fetchPriority="high"
-              />
+            <figure className="hero-media hero-video-media">
+              <div className="hero-video-container">
+                <AccessibleLoopVideo
+                  src={media.homeVideo}
+                  poster={media.home.hero}
+                  label={t.showcase.videoLabel}
+                  showToggle={false}
+                />
+                <img
+                  className="hero-video-brandmark"
+                  src={media.logoGalaxy}
+                  width="64"
+                  height="45"
+                  alt="RoboFounders"
+                  aria-hidden="true"
+                />
+              </div>
             </figure>
           </div>
           <div className="hero-bottom wrap">
@@ -144,24 +153,15 @@ export default function Home() {
         <section id="physical-ai-film" className="section concept-film-section">
           <div className="wrap concept-film-grid">
             <figure className="concept-film-media">
-              <div className="concept-film-video">
-                <AccessibleLoopVideo
-                  src={media.homeVideo}
-                  poster={media.home.hero}
-                  label={t.showcase.videoLabel}
-                />
-                <img
-                  className="concept-film-brandmark"
-                  src={media.logoOnLight}
-                  width="54"
-                  height="51"
-                  alt=""
-                  aria-hidden="true"
-                />
-              </div>
+              <img
+                src={media.home.heroDangerousWork}
+                alt={t.hero.visualAlt}
+                width="1532"
+                height="957"
+                loading="lazy"
+              />
               <figcaption>
-                <PlayCircle size={17} aria-hidden="true" />
-                {t.showcase.caption}
+                <span>{t.showcase.caption}</span>
               </figcaption>
             </figure>
             <div className="concept-film-copy">
@@ -495,7 +495,7 @@ export default function Home() {
         </section>
         <section id="founders" className="section startup-section">
           <div className="wrap startup-grid">
-            <div>
+            <div className="startup-copy">
               <p className="eyebrow">{t.startups.label}</p>
               <h2>{t.startups.title}</h2>
               <p className="section-lead">{t.startups.body}</p>
@@ -504,7 +504,7 @@ export default function Home() {
                 <ArrowUpRight size={18} />
               </Link>
             </div>
-            <div>
+            <div className="startup-details">
               <p className="startup-line">{t.startups.line}</p>
               <div className="partner-types">
                 {t.startups.partners.map((x) => (
@@ -515,6 +515,16 @@ export default function Home() {
                 ))}
               </div>
             </div>
+          </div>
+          <div className="wrap startup-media-wrap">
+            <img
+              className="section-wide-image startup-reference-image"
+              src={media.home.startups}
+              alt={t.startups.imageAlt}
+              loading="lazy"
+              width="1600"
+              height="1066"
+            />
           </div>
         </section>
         <Updates />
