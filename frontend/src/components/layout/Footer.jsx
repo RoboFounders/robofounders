@@ -11,9 +11,17 @@ export default function Footer() {
       <div className="wrap">
         <div className="footer-grid">
           <div>
-            <Link to="/" className="brand">
-              <img src={media.logoOnDark} alt="" width="40" height="40" />
-              <span>RoboFounders</span>
+            <Link
+              to="/"
+              className="brand footer-brand"
+              aria-label="RoboFounders"
+            >
+              <img
+                src={media.logoOnDark}
+                alt="RoboFounders"
+                width="180"
+                height="34"
+              />
             </Link>
             <p>{t.footer.tagline}</p>
             <span className="eyebrow">{t.hero.label}</span>
