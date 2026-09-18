@@ -305,6 +305,59 @@ export default function Home() {
             </div>
           </div>
         </section>
+        <section className="section">
+          <div className="wrap">
+            <div className="split-heading">
+              <div>
+                <p className="eyebrow">{t.why.label}</p>
+                <h2>{t.why.title}</h2>
+              </div>
+              <p className="section-lead">{t.why.body}</p>
+            </div>
+            <div className="why-grid">
+              {t.why.items.map(([title, body], i) => (
+                <article key={title}>
+                  <span>0{i + 1}</span>
+                  <h3>{title}</h3>
+                  <p>{body}</p>
+                </article>
+              ))}
+            </div>
+            <img
+              className="section-wide-image why-reference-image"
+              src={media.home.why}
+              alt={t.why.imageAlt}
+              loading="lazy"
+              width="1800"
+              height="1200"
+            />
+          </div>
+        </section>
+        <section className="section soft-section story-section">
+          <div className="wrap story-grid">
+            <div>
+              <p className="eyebrow">{t.story.label}</p>
+              <h2>{t.story.title}</h2>
+              <blockquote>"{t.story.quote}"</blockquote>
+              <span className="small-label">
+                Mariel Asami Fukase / {t.team.founderRole}
+              </span>
+            </div>
+            <div className="story-copy">
+              <p>{t.story.paragraphs[0]}</p>
+              <details>
+                <summary>
+                  {t.story.more}
+                  <Plus size={18} />
+                </summary>
+                {t.story.paragraphs.slice(1).map((p) => (
+                  <p key={p}>{p}</p>
+                ))}
+              </details>
+            </div>
+          </div>
+        </section>
+        <FieldGallery />
         <section className="section" id="technology">
           <div className="wrap">
             <div className="section-heading">
@@ -348,6 +401,26 @@ export default function Home() {
             </div>
           </div>
         </section>
+        <section className="section platform-section">
+          <div className="wrap">
+            <p className="eyebrow">{t.platform.label}</p>
+            <h2>{t.platform.title}</h2>
+            <p className="section-lead">{t.platform.body}</p>
+            <div className="platform-grid">
+              {t.platform.items.map(([name, body], i) => (
+                <div key={name}>
+                  <span className="small-label">0{i + 1}</span>
+                  <h3>{name}</h3>
+                  <p>{body}</p>
+                </div>
+              ))}
+            </div>
+            <p className="platform-closing">
+              <Network size={25} />
+              {t.platform.closing}
+            </p>
+          </div>
+        </section>
         <section className="section dark-section">
           <div className="wrap">
             <div className="split-heading">
@@ -379,90 +452,6 @@ export default function Home() {
             />
           </div>
         </section>
-        <section className="section platform-section">
-          <div className="wrap">
-            <p className="eyebrow">{t.platform.label}</p>
-            <h2>{t.platform.title}</h2>
-            <p className="section-lead">{t.platform.body}</p>
-            <div className="platform-grid">
-              {t.platform.items.map(([name, body], i) => (
-                <div key={name}>
-                  <span className="small-label">0{i + 1}</span>
-                  <h3>{name}</h3>
-                  <p>{body}</p>
-                </div>
-              ))}
-            </div>
-            <p className="platform-closing">
-              <Network size={25} />
-              {t.platform.closing}
-            </p>
-          </div>
-        </section>
-        <section className="brand-section">
-          <div className="wrap">
-            <p className="eyebrow">{t.brand.label}</p>
-            <h2>{t.brand.title}</h2>
-            <p>{t.brand.body}</p>
-            <div className="brand-line">
-              {t.brand.line}
-              <ArrowUpRight size={32} />
-            </div>
-          </div>
-        </section>
-        <section className="section">
-          <div className="wrap">
-            <div className="split-heading">
-              <div>
-                <p className="eyebrow">{t.why.label}</p>
-                <h2>{t.why.title}</h2>
-              </div>
-              <p className="section-lead">{t.why.body}</p>
-            </div>
-            <div className="why-grid">
-              {t.why.items.map(([title, body], i) => (
-                <article key={title}>
-                  <span>0{i + 1}</span>
-                  <h3>{title}</h3>
-                  <p>{body}</p>
-                </article>
-              ))}
-            </div>
-            <img
-              className="section-wide-image why-reference-image"
-              src={media.home.why}
-              alt={t.why.imageAlt}
-              loading="lazy"
-              width="1800"
-              height="1200"
-            />
-          </div>
-        </section>
-        <section className="section soft-section story-section">
-          <div className="wrap story-grid">
-            <div>
-              <p className="eyebrow">{t.story.label}</p>
-              <h2>{t.story.title}</h2>
-              <blockquote>“{t.story.quote}”</blockquote>
-              <span className="small-label">
-                Mariel Asami Fukase / {t.team.founderRole}
-              </span>
-            </div>
-            <div className="story-copy">
-              <p>{t.story.paragraphs[0]}</p>
-              <details>
-                <summary>
-                  {t.story.more}
-                  <Plus size={18} />
-                </summary>
-                {t.story.paragraphs.slice(1).map((p) => (
-                  <p key={p}>{p}</p>
-                ))}
-              </details>
-            </div>
-          </div>
-        </section>
-        <FieldGallery />
         <section className="section" id="works">
           <div className="wrap">
             <div className="section-heading">
@@ -479,11 +468,11 @@ export default function Home() {
               {t.works.items.map(([tag, title, body], i) => (
                 <article key={title}>
                   <img
-                    src={media.events[[1, 0, 5][i]]}
+                    src={media.events[[1, 0, 4][i]]}
                     alt={title}
                     loading="lazy"
-                    width={media.eventSizes[[1, 0, 5][i]][0]}
-                    height={media.eventSizes[[1, 0, 5][i]][1]}
+                    width={media.eventSizes[[1, 0, 4][i]][0]}
+                    height={media.eventSizes[[1, 0, 4][i]][1]}
                   />
                   <p className="eyebrow">{tag}</p>
                   <h3>{title}</h3>
@@ -557,6 +546,7 @@ export default function Home() {
             </div>
           </div>
         </section>
+
       </main>
       <Footer />
     </>
