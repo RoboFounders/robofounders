@@ -322,6 +322,7 @@ const en = {
     ],
     line: "The future of Physical AI will not be built by one company.",
     cta: "Become a partner",
+    imageAlt: "RoboFounders team and partners on the ground with robot technologies",
   },
   updates: {
     label: "News & events",
@@ -329,6 +330,12 @@ const en = {
     events: "Events timeline",
     press: "Press & news",
     items: [
+      [
+        "2026",
+        "Participating",
+        "Boston AI Week 2026",
+        "Connecting with the Boston AI, robotics, and deeptech ecosystem through the X-HUB TOKYO Boston program.",
+      ],
       [
         "2026",
         "Competing",
@@ -361,6 +368,11 @@ const en = {
       ],
     ],
     news: [
+      [
+        "Aug 2026",
+        "Selected for Tokyo & JETRO X-HUB TOKYO Boston Course",
+        "Selected within one month of founding to accelerate Physical AI and humanoid robotics deployment across Boston and global manufacturing markets.",
+      ],
       [
         "Jun 2026",
         "RoboFounders opens San Francisco hub",
