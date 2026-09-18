@@ -2,6 +2,8 @@
 export const media = {
   logoOnDark: "/images/brand/robofounders-navy-white.webp",
   logoOnLight: "/images/brand/robofounders-color.webp",
+  logoSquare: "/images/brand/robofounders-mark-square.webp",
+  logoGalaxy: "/images/brand/robofounders-galaxy-mark.webp",
   contactAddressLight: "/images/brand/contact-address-light.png",
   contactAddressDark: "/images/brand/contact-address-dark.png",
   founder: "/images/team/mariel.webp",
@@ -14,6 +16,7 @@ export const media = {
     regions: "/images/home/global-ecosystem.webp",
     why: "/images/home/why-robofounders.webp",
     factory: "/images/home/factory-deployment.webp",
+    startups: "/images/home/partners-team.webp",
     contact: "/images/home/contact-team.webp",
   },
   team: {
@@ -36,6 +39,7 @@ export const media = {
     "banner-booth",
     "stickers",
     "ivs-poster",
+    "boston-ai-week",
   ].map((name) => `/images/events/${name}.jpeg`),
   eventSizes: [
     [1246, 1313],
@@ -46,6 +50,7 @@ export const media = {
     [720, 1280],
     [1280, 1707],
     [1169, 1568],
+    [1024, 1024],
   ],
   eventVideos: ["event-demo", "event-clip2", "event-clip1"].map(
     (name) => `/videos/events/${name}.mp4`,
