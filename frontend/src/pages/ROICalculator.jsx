@@ -173,7 +173,7 @@ function OptionGroup({ label, hint, options, selected, onSelect, cols = 2, testI
     <div>
       <p className="text-sm font-semibold text-[#0a0f1a]">{label}</p>
       {hint && <p className="mt-0.5 mb-2.5 text-xs text-[#5b6b7e]">{hint}</p>}
-      <div className={`grid gap-2.5 ${cols === 3 ? "grid-cols-3" : "grid-cols-2"}`}>
+      <div className={`grid gap-2.5 ${cols === 3 ? "grid-cols-1 sm:grid-cols-3" : "grid-cols-2"}`}>
         {options.map((opt) => {
           const value = typeof opt === "string" ? opt : opt.label;
           const active = selected === value;
@@ -326,11 +326,11 @@ export default function ROICalculator() {
     "w-full rounded-xl border border-[#e4ecf2] bg-white px-4 py-3.5 text-[#0a0f1a] placeholder:text-[#9aa9b8] outline-none transition-all focus:border-[#4d6bff] focus:ring-2 focus:ring-[#4d6bff]/30";
 
   return (
-    <div className="relative min-h-screen bg-white" id="main-content">
+    <div className="relative min-h-screen bg-white overflow-x-clip max-w-[100vw]" id="main-content">
       <PageMeta title={`${t.title1} ${t.title2}`} />
       {/* Background accents */}
-      <div className="pointer-events-none absolute inset-0 rf-grid-bg opacity-40" />
-      <div className="pointer-events-none absolute left-1/2 top-0 h-[420px] w-[720px] max-w-full -translate-x-1/2 rf-radial-glow blur-2xl" />
+      <div className="pointer-events-none absolute inset-0 rf-grid-bg opacity-40 overflow-hidden" />
+      <div className="pointer-events-none absolute left-1/2 top-0 h-[420px] w-[720px] max-w-[100vw] -translate-x-1/2 rf-radial-glow blur-2xl" />
 
       <div className="relative mx-auto max-w-2xl px-5 py-10 sm:py-14">
         {/* Header row: back link + language toggle */}
