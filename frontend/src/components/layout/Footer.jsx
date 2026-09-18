@@ -19,8 +19,8 @@ export default function Footer() {
               <img
                 src={media.logoOnDark}
                 alt="RoboFounders"
-                width="180"
-                height="34"
+                width="240"
+                height="48"
               />
             </Link>
             <p>{t.footer.tagline}</p>
