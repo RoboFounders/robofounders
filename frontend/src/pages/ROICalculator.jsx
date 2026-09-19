@@ -70,7 +70,7 @@ const COST_OPTIONS = [
 // UI strings — English first, Japanese support
 const STRINGS = {
   en: {
-    sectionLabel: "Robot COO Tools",
+    sectionLabel: "Physical AI Tools",
     title1: "30-Second Robot",
     title2: "ROI Assessment",
     subtitle: "Answer 4 quick questions to see how much a robot could save your business.",
@@ -95,7 +95,7 @@ const STRINGS = {
     payback: "Estimated Payback Period",
     months: "months",
     leadTitle: "Receive a Free Customized Robot ROI Report",
-    leadSub: "Our Robot COO team will prepare a detailed report for your exact use case.",
+    leadSub: "Our engineering team will prepare a detailed report for your exact use case.",
     name: "Name *",
     company: "Company *",
     email: "Email *",
@@ -111,7 +111,7 @@ const STRINGS = {
     interests: { Yes: "Yes", Considering: "Considering", "Just Exploring": "Just Exploring" },
   },
   ja: {
-    sectionLabel: "Robot COOツール",
+    sectionLabel: "Physical AI 診断ツール",
     title1: "30秒ロボット",
     title2: "ROI診断",
     subtitle: "4つの質問に答えるだけで、ロボット導入による削減額がすぐわかります。",
@@ -136,7 +136,7 @@ const STRINGS = {
     payback: "推定投資回収期間",
     months: "ヶ月",
     leadTitle: "無料カスタマイズROIレポートを受け取る",
-    leadSub: "Robot COOチームが御社向けの詳細レポートを作成します。",
+    leadSub: "RoboFoundersチームが御社向けの詳細レポートを作成します。",
     name: "お名前 *",
     company: "会社名 *",
     email: "メールアドレス *",
