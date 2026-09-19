@@ -49,7 +49,7 @@ export default function Updates() {
           </div>
           <figure className="updates-hero-media">
             <img
-              src={media.newsEvent}
+              src={media.newsBanner}
               alt={t.updates.title}
               className="updates-hero-image"
               loading="lazy"

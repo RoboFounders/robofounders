@@ -30,6 +30,7 @@ export const media = {
     celine: "/images/team/celine.webp",
     thao: "/images/team/thao.webp",
   },
+  newsBanner: "/images/events/news-banner.jpg",
   newsEvent: "/images/events/news-event-new.jpg",
   robotHandNew: "/images/products/robot-hand-new.jpg",
   bostonAiWeek: "/images/events/boston-ai-week.jpeg",
