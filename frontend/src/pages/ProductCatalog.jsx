@@ -14,10 +14,22 @@ export default function ProductCatalog() {
       <Navbar />
       <main id="main-content" className="page-main">
         <section className="catalog-hero dark-section">
-          <div className="wrap">
-            <p className="eyebrow">{t.productsPage.label}</p>
-            <h1>{t.productsPage.title}</h1>
-            <p className="section-lead">{t.productsPage.body}</p>
+          <div className="wrap catalog-hero-card">
+            <div className="catalog-hero-copy">
+              <p className="eyebrow">{t.productsPage.label}</p>
+              <h1>{t.productsPage.title}</h1>
+              <p className="section-lead">{t.productsPage.body}</p>
+            </div>
+            <figure className="catalog-hero-media">
+              <img
+                src={media.robotHandNew}
+                alt={t.productsPage.title}
+                className="catalog-hero-image"
+                loading="eager"
+                width="1600"
+                height="900"
+              />
+            </figure>
           </div>
         </section>
         <section className="section">
