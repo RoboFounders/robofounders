@@ -11,6 +11,10 @@ export const newsArticles = {
       event: "/images/news/x-hub-boston/image-2.jpg",
       program: "/images/news/x-hub-boston/image-3.jpg",
     },
+    video: {
+      src: "/videos/events/event-clip1.mp4",
+      poster: "/images/events/team-ivs.jpeg",
+    },
     en: {
       title:
         "RoboFounders Selected for Tokyo & JETRO “X-HUB TOKYO GLOBAL STARTUP ACCELERATOR OUTBOUND PROGRAM” Boston Course",
@@ -220,6 +224,152 @@ export const newsArticles = {
         "AI・ロボティクス技術の共同研究",
         "米国・ASEANにおける事業・販売パートナーシップ",
         "戦略的投資・資金調達",
+      ],
+      ctaTitle: "Tell us your requirements.",
+      ctaSubtitle: "Let’s build the future of Physical AI together.",
+      ctaButton: "お問い合わせ",
+      backLink: "← ニュース一覧へ戻る",
+    },
+  },
+  "startup-world-cup-malaysia": {
+    id: "startup-world-cup-malaysia",
+    date: "2026.05.15",
+    category: {
+      en: "Awards & Events",
+      ja: "アワード・イベント",
+    },
+    images: {
+      hero: "/images/events/robot-hug.jpeg",
+      event: "/images/events/team-banner.jpeg",
+      program: "/images/events/team-ivs.jpeg",
+    },
+    video: {
+      src: "/videos/events/event-clip1.mp4",
+      poster: "/images/events/robot-hug.jpeg",
+    },
+    en: {
+      title:
+        "RoboFounders Selected as a Semi-Finalist at Startup World Cup Malaysia 2026",
+      subtitles: [
+        "― Competing with a human-robot mixed team on Malaysia’s biggest startup stage ―",
+        "― Connecting Japan, ASEAN, and the United States to accelerate Physical AI deployment ―",
+      ],
+      lead: "RoboFounders has been selected as a Semi-Finalist at Startup World Cup Malaysia 2026. We are honored to have the opportunity to showcase our work in Physical AI and robotics on a global startup stage.",
+      sections: [
+        {
+          heading: "Showcasing Physical AI on a Global Startup Stage",
+          paragraphs: [
+            "Startup World Cup is one of the world’s premier startup pitch competitions organized by Pegasus Tech Ventures, connecting top innovators, investors, and corporate leaders worldwide.",
+            "At the Malaysia regional competition, RoboFounders stood out as a Semi-Finalist, taking the stage with a unique human-robot collaborative team featuring Rofi, our Robot COO.",
+            "This selection highlights the growing international interest in Physical AI solutions engineered to automate dangerous and repetitive manufacturing labor while protecting worker safety.",
+          ],
+        },
+        {
+          heading: "Human-Robot Collaboration in Action",
+          paragraphs: [
+            "Rather than presenting abstract software concepts, RoboFounders demonstrated the power of physical embodiment and real-world execution.",
+            "Our pitch featured live collaboration between our executive leadership and robotic systems, embodying our core philosophy: Physical AI starts with the physical layer.",
+            "The presentation captivated the judges and audience, demonstrating how robotics hardware, AI vision, and industrial manufacturing expertise come together to solve critical shop-floor challenges across ASEAN and global markets.",
+          ],
+        },
+        {
+          heading: "Connecting Japan, ASEAN, and the USA",
+          paragraphs: [
+            "RoboFounders operates across three pivotal regions: precision engineering from Japan, agile production and deployment in ASEAN (Malaysia & Vietnam), and AI innovation and capital in the United States.",
+            "Our participation in Startup World Cup Malaysia reinforces our deep commitment to the Southeast Asian deep-tech ecosystem as a regional launchpad for global manufacturing automation.",
+          ],
+          bullets: [
+            "Deepening partnerships with ASEAN manufacturing and technology leaders",
+            "Expanding real-world PoCs across hazardous and high-precision factory environments",
+            "Accelerating commercialization of roller screws and dexterous robotic hands",
+          ],
+          closing:
+            "We will continue connecting Japan, ASEAN, and the United States to accelerate the development and real-world deployment of next-generation robotics.",
+        },
+      ],
+      quote: {
+        speaker: "Mariel Fukase (深瀬マリエル麻美)",
+        role: "Founder & CEO, RoboFounders",
+        text: "“Being recognized as a Semi-Finalist at Startup World Cup Malaysia is an exciting milestone for RoboFounders. Our goal is to bring Physical AI from laboratories into real factories to protect people from hazardous work. Showcasing our vision on Malaysia's biggest startup stage alongside our robot team proved that the future of robotics is physical and collaborative.”",
+      },
+      visionHeading: "Japan × ASEAN × USA",
+      visionText: [
+        "RoboFounders is building the global ecosystem connecting robots, AI, components, data, and manufacturing.",
+        "We will continue connecting Japan, ASEAN, and the United States to accelerate the development and real-world deployment of next-generation robotics.",
+        "From critical components to intelligent robots — from robots to the factory floor.",
+      ],
+      collaborationHeading: "Collaboration & Partnerships",
+      collaborationIntro:
+        "RoboFounders welcomes collaboration across the following areas:",
+      collaborationItems: [
+        "Physical AI and industrial automation PoCs",
+        "Humanoid robotics component co-development",
+        "ASEAN regional distribution and manufacturing partnerships",
+        "Strategic investment and joint development",
+      ],
+      ctaTitle: "Tell us your requirements.",
+      ctaSubtitle: "Let’s build the future of Physical AI together.",
+      ctaButton: "Get in touch",
+      backLink: "← Back to News & Events",
+    },
+    ja: {
+      title: "Startup World Cup Malaysia 2026 セミファイナリストに選出",
+      subtitles: [
+        "― マレーシア最大のスタートアップの舞台に、人とロボットの混成チームで出場 ―",
+        "― 日本・ASEAN・米国をつなぎ、Physical AIの社会実装を加速 ―",
+      ],
+      lead: "RoboFoundersは、世界最大級のピッチコンテスト「Startup World Cup Malaysia 2026」において、セミファイナリストに選出されましたことをお知らせいたします。グローバルな舞台で、RoboFoundersのPhysical AIおよびロボティクスへの取り組みを発信する機会をいただきました。",
+      sections: [
+        {
+          heading: "世界的な舞台でPhysical AIの取り組みを発信",
+          paragraphs: [
+            "Startup World Cup（スタートアップワールドカップ）は、米Pegasus Tech Venturesが主催する世界最大級のグローバルピッチコンテストです。世界各国のトップイノベーター、投資家、企業リーダーが集う本大会のマレーシア予選において、RoboFoundersがセミファイナリストとして選出されました。",
+            "今回のピッチでは、Robot COOであるRofiと人間のチームが共に登壇する混成チームでのプレゼンテーションを実施し、国内外から大きな注目を集めました。",
+            "製造現場における危険・過酷・反復作業をロボットで自動化し、人を守るPhysical AIプラットフォームの重要性と独自性を広くアピールしました。",
+          ],
+        },
+        {
+          heading: "人とロボットの協働をステージで体現",
+          paragraphs: [
+            "RoboFoundersは、単なるソフトウェアの提案にとどまらず、「身体性を持つAI」が現実世界の課題をどう解決するかを実演しました。",
+            "創業チームと実機ロボットがステージ上で息を合わせたライブデモンストレーションは、RoboFoundersの核となる思想「Physical AI starts with the physical layer（Physical AIは物理層から始まる）」を象徴するものとなりました。",
+            "日本の精密加工技術と、ASEANのスピード感・製造力、米国のイノベーションをつなぐビジネスモデルが高く評価されました。",
+          ],
+        },
+        {
+          heading: "日本 × ASEAN × 米国をつなぐ展開",
+          paragraphs: [
+            "RoboFoundersは、日本・ASEAN・米国を横断するグローバルなロボティクスエコシステムの構築を推進しています。",
+            "マレーシア大会でのセミファイナリスト選出を弾みに、東南アジア地域における製造業パートナーとの連携および現場PoCの展開をさらに加速してまいります。",
+          ],
+          bullets: [
+            "ASEAN製造業およびテクノロジー企業とのアライアンス強化",
+            "危険作業・高精度作業現場におけるPhysical AI PoCの推進",
+            "ローラースクリューおよびロボットハンドの社会実装と量産化",
+          ],
+          closing:
+            "今後も、日本・ASEAN・米国をつなぎながら、次世代ロボティクスの社会実装に取り組んでまいります。",
+        },
+      ],
+      quote: {
+        speaker: "深瀬マリエル麻美（Mariel Fukase）",
+        role: "Founder & CEO, RoboFounders",
+        text: "「Startup World Cup Malaysiaでセミファイナリストに選出いただき、大変光栄に思います。私たちが目指すのは、AIとロボティクスによって人が危険な仕事を担わなくてよい未来をつくることです。マレーシア最大のスタートアップステージで人とロボットが共に登壇し、私たちのPhysical AIビジョンを伝えられたことは大きな前進です。今後も日本・ASEAN・米国をつなぎながら、次世代ロボティクスの社会実装に取り組んでまいります。」",
+      },
+      visionHeading: "日本からASEAN、そして世界へ",
+      visionText: [
+        "RoboFoundersは、部品、ロボット、AI、データ、製造をつなぐグローバルエコシステムの構築を進めています。",
+        "今後も、日本・ASEAN・米国をつなぎながら、次世代ロボティクスの社会実装に取り組んでまいります。",
+        "From critical components to intelligent robots — from robots to the factory floor.",
+      ],
+      collaborationHeading: "連携・協業について",
+      collaborationIntro:
+        "RoboFoundersでは、以下の領域における企業・研究機関・投資家の皆さまとの連携を歓迎しています。",
+      collaborationItems: [
+        "製造現場におけるPhysical AIのPoC・現場導入",
+        "ヒューマノイドロボット・重要部品の共同開発",
+        "ASEAN・グローバル市場における販売・製造パートナーシップ",
+        "戦略的投資および事業連携",
       ],
       ctaTitle: "Tell us your requirements.",
       ctaSubtitle: "Let’s build the future of Physical AI together.",
