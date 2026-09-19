@@ -15,13 +15,14 @@ const eventImages = [
 
 const newsImages = [
   media.newsEvent, // Tokyo to Boston / JETRO X-HUB TOKYO full image
-  media.events[3], // booth-laptop / SF hub
+  media.diffusionBorneo, // Diffusion Borneo 2026 image from doc
   media.events[0], // robot-hug / Startup World Cup
-  media.events[2], // team-banner / ASEAN network
+  media.events[3], // booth-laptop / ASEAN network
 ];
 
 const newsSlugMap = {
   0: "/news/x-hub-tokyo-boston",
+  1: "/news/diffusion-borneo-2026",
   2: "/news/startup-world-cup-malaysia",
 };
 
