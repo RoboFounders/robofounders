@@ -23,7 +23,7 @@ export default function ScrollToTopOnNavigate() {
           (id === "press" || id === "news-press"
             ? document.getElementById("news")
             : null);
-        target?.scrollIntoView({ behavior: "smooth", block: "start" });
+        target?.scrollIntoView({ behavior: "instant", block: "start" });
       });
       return () => cancelAnimationFrame(frame);
     }
