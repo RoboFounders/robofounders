@@ -76,7 +76,7 @@ export const newsArticles = {
           heading: "Accelerating US Market Expansion in Boston",
           paragraphs: [
             "Through the X-HUB TOKYO Boston Course, RoboFounders will accelerate business development across North America.",
-            "From September 28 to October 2, 2026, RoboFounders will participate in Boston AI Week, engaging directly with the Massachusetts AI, Robotics, and Deep Tech ecosystem. Boston AI Week connects AI companies, startups, manufacturers, universities, research institutions, and investors across the state.",
+            "From September 28 to October 2, 2026, RoboFounders will participate in Boston AI Week, engaging directly with the Massachusetts AI, Robotics, and Deep Tech ecosystem. Boston AI Week connects AI companies, startups, manufacturers, universities, and research institutions across the state.",
             "In Boston, we target partnerships with:",
           ],
           bullets: [
@@ -84,7 +84,6 @@ export const newsArticles = {
             "Robotics OEMs and system integrators",
             "Physical AI / AI companies",
             "Industrial manufacturing enterprises",
-            "VCs and Corporate Venture Capital funds",
             "Universities and research institutions",
             "Strategic industrial partners",
           ],
@@ -95,7 +94,7 @@ export const newsArticles = {
       quote: {
         speaker: "Mariel Fukase (深瀬マリエル麻美)",
         role: "Founder & CEO, RoboFounders",
-        text: "“RoboFounders was built from day one with a global perspective. Our mission is not merely to build hardware, but to create the integrated platform connecting AI, robots, core components, software, and the factory floor to realize Physical AI in practice.\n\nWe are deeply honored to be selected for the X-HUB TOKYO Boston Course so soon after our founding. Boston boasts one of the world’s foremost hubs for AI, robotics, and deep tech. Through partnerships with local robot manufacturers, industrial leaders, research institutes, and investors, we will bring Japan’s manufacturing excellence to global production floors.”",
+        text: "“RoboFounders was built from day one with a global perspective. Our mission is not merely to build hardware, but to create the integrated platform connecting AI, robots, core components, software, and the factory floor to realize Physical AI in practice.\n\nWe are deeply honored to be selected for the X-HUB TOKYO Boston Course so soon after our founding. Boston boasts one of the world’s foremost hubs for AI, robotics, and deep tech. Through partnerships with local robot manufacturers, industrial leaders, research institutes, and technology partners, we will bring Japan’s manufacturing excellence to global production floors.”",
       },
       visionHeading: "Japan × ASEAN × USA",
       visionText: [
@@ -105,9 +104,9 @@ export const newsArticles = {
         "Our ultimate vision is a future where Physical AI eliminates the need for humans to perform hazardous labor.",
         "To realize this future, we advance technology and business as one—spanning core mechanical components, robotic hands, AI intelligence, and factory PoC deployment.",
       ],
-      collaborationHeading: "Collaboration & Partnerships",
+      collaborationHeading: "Business Partnerships & Strategic Collaboration",
       collaborationIntro:
-        "RoboFounders welcomes collaboration across the following areas:",
+        "RoboFounders welcomes collaboration with enterprises, research institutions, and technology partners across the following areas:",
       collaborationItems: [
         "Co-development & volume production of roller screws",
         "Dexterous robotic hand co-development & PoC trials",
@@ -115,7 +114,7 @@ export const newsArticles = {
         "Physical AI shop-floor PoCs and plant deployments",
         "Joint R&D in AI and robotics systems",
         "Commercial and distribution partnerships in the US & ASEAN",
-        "Strategic investment and funding",
+        "Business partnerships and strategic collaboration",
       ],
       ctaTitle: "Tell us your requirements.",
       ctaSubtitle: "Let’s build the future of Physical AI together.",
@@ -184,7 +183,7 @@ export const newsArticles = {
           heading: "Bostonで、米国市場への展開を加速",
           paragraphs: [
             "今回のX-HUB TOKYO Bostonコースへの採択を機に、RoboFoundersは米国での事業開発をさらに加速します。",
-            "2026年9月28日〜10月2日にはBoston AI Weekに参加し、BostonのAI・Robotics・Deep Techエコシステムとの接点を構築します。Boston AI Weekは、AI企業、スタートアップ、製造業、大学・研究機関、投資家など、マサチューセッツ州のAIエコシステムをつなぐイベントとして開催されています。",
+            "2026年9月28日〜10月2日にはBoston AI Weekに参加し、BostonのAI・Robotics・Deep Techエコシステムとの接点を構築します。Boston AI Weekは、AI企業、スタートアップ、製造業、大学・研究機関など、マサチューセッツ州のAIエコシステムをつなぐイベントとして開催されています。",
             "Bostonでは、以下の企業・組織との連携を目指します。",
           ],
           bullets: [
@@ -192,7 +191,6 @@ export const newsArticles = {
             "ロボティクス企業",
             "Physical AI / AI企業",
             "製造業",
-            "VC・CVC",
             "大学・研究機関",
             "戦略的パートナー",
           ],
@@ -203,7 +201,7 @@ export const newsArticles = {
       quote: {
         speaker: "深瀬マリエル麻美（Mariel Fukase）",
         role: "Founder & CEO, RoboFounders",
-        text: "「RoboFoundersは、創業直後から世界市場を見据えて事業をスタートしました。\n\n私たちが目指しているのは、単なるロボットメーカーではありません。\nAI、ロボット、コアコンポーネント、ソフトウェア、そして製造現場をつなぎ、Physical AIを実際の現場に実装していくためのプラットフォームを構築することです。\n\n今回、創業から間もないタイミングでX-HUB TOKYO Bostonコースに採択いただいたことを大変光栄に思っています。\nBostonには、AI、Robotics、Deep Techを中心とした世界有数のエコシステムがあります。\n現地のロボットメーカー、製造業、研究機関、投資家の皆様との出会いを通じて、日本で培われた技術を世界の製造現場へ届けるための事業機会を創出していきます。」",
+        text: "「RoboFoundersは、創業直後から世界市場を見据えて事業をスタートしました。\n\n私たちが目指しているのは、単なるロボットメーカーではありません。\nAI、ロボット、コアコンポーネント、ソフトウェア、そして製造現場をつなぎ、Physical AIを実際の現場に実装していくためのプラットフォームを構築することです。\n\n今回、創業から間もないタイミングでX-HUB TOKYO Bostonコースに採択いただいたことを大変光栄に思っています。\nBostonには、AI、Robotics、Deep Techを中心とした世界有数のエコシステムがあります。\n現地のロボットメーカー、製造業、研究機関、パートナーの皆様との出会いを通じて、日本で培われた技術を世界の製造現場へ届けるための事業機会を創出していきます。」",
       },
       visionHeading: "Japan × ASEAN × USA",
       visionText: [
@@ -213,9 +211,9 @@ export const newsArticles = {
         "そして、RoboFoundersが目指すのは、Physical AIによって、人が危険な仕事をしなくていい未来。",
         "その実現に向けて、ロボットの基盤となるコンポーネントから、ロボットハンド、AI、そして製造現場へのPoC・導入まで、技術と事業を一体で進めていきます。",
       ],
-      collaborationHeading: "連携・協業について",
+      collaborationHeading: "Business Partnerships & Strategic Collaboration",
       collaborationIntro:
-        "RoboFoundersでは、以下の領域における企業・研究機関・投資家との連携を歓迎しています。",
+        "企業・研究機関・技術パートナーの皆さまとの連携を歓迎しています。",
       collaborationItems: [
         "ローラースクリューの共同開発・量産",
         "ロボットハンドの共同開発・PoC",
@@ -223,7 +221,150 @@ export const newsArticles = {
         "製造業におけるPhysical AIのPoC・導入",
         "AI・ロボティクス技術の共同研究",
         "米国・ASEANにおける事業・販売パートナーシップ",
-        "戦略的投資・資金調達",
+        "事業連携および戦略的アライアンス",
+      ],
+      ctaTitle: "Tell us your requirements.",
+      ctaSubtitle: "Let’s build the future of Physical AI together.",
+      ctaButton: "お問い合わせ",
+      backLink: "← ニュース一覧へ戻る",
+    },
+  },
+  "diffusion-borneo-2026": {
+    id: "diffusion-borneo-2026",
+    date: "2026.06.24",
+    category: {
+      en: "Exhibitions & Conferences",
+      ja: "展示会・カンファレンス",
+    },
+    images: {
+      hero: "/images/events/diffusion-borneo.jpeg",
+      event: "/images/events/diffusion-borneo.jpeg",
+      program: "/images/events/team-banner.jpeg",
+    },
+    video: null,
+    en: {
+      title:
+        "RoboFounders Makes Its First Exhibition at Diffusion Borneo 2026 Shortly After Launch",
+      subtitles: [
+        "― First conference exhibition shortly after founding on June 12, 2026 ―",
+        "― Accelerating Physical AI and robotics deployment across ASEAN from Kuching, Sarawak ―",
+      ],
+      lead: "On June 23–24, 2026, RoboFounders, Inc. exhibited at Diffusion Borneo 2026 | Ignited by Slush'D held in Kuching, Sarawak, Malaysia, marking its first conference exhibition shortly after its founding on June 12, 2026.",
+      sections: [
+        {
+          heading: "First Exhibition Shortly After Founding",
+          paragraphs: [
+            "Diffusion Borneo is a premier global innovation and ecosystem summit derived from Slush’D Malaysia, gathering startups, enterprises, researchers, and ecosystem builders across ASEAN and international markets to discuss innovation and cross-border collaboration.",
+            "During the exhibition, RoboFounders showcased its Physical AI platform, robotics technologies, core motion components, and solutions engineered for dangerous and demanding manufacturing environments.",
+            "The event served as an important platform to engage with startups, manufacturing leaders, and ecosystem partners across the region.",
+          ],
+        },
+        {
+          heading: "Beyond POC: Keynote by Founder & CEO Mariel Fukase",
+          paragraphs: [
+            "At the summit, RoboFounders Founder & CEO Mariel Fukase was invited as a featured speaker to address the theme of “Beyond POC.”",
+            "During the session, Mariel shared insights on how to move beyond Proof of Concept (POC) to achieve real-world factory floor implementation, commercialization, and sustainable business value.",
+            "Drawing on practical experience connecting Japanese precision engineering with ASEAN and global markets, she emphasized how cross-border open innovation bridges technology, hardware, and shop-floor manufacturing to solve real industry challenges.",
+          ],
+        },
+        {
+          heading: "Connecting Japan × ASEAN × USA",
+          paragraphs: [
+            "RoboFounders is building a global robotics ecosystem connecting precision Japanese component engineering, agile ASEAN manufacturing hubs, and US deep-tech innovation.",
+            "Starting from this debut exhibition in Sarawak, RoboFounders will continue forging cross-border partnerships to accelerate the social implementation and global deployment of Physical AI.",
+          ],
+          bullets: [
+            "Expanding shop-floor PoCs and manufacturing automation across ASEAN",
+            "Co-developing roller screws and dexterous robotic hands with global partners",
+            "Fostering cross-border open innovation connecting Japan, ASEAN, and the US",
+          ],
+          closing:
+            "We will continue connecting critical components, AI intelligence, and real manufacturing floors to build a safer future for industrial workers.",
+        },
+      ],
+      quote: {
+        speaker: "Mariel Fukase (深瀬マリエル麻美)",
+        role: "Founder & CEO, RoboFounders",
+        text: "“Diffusion Borneo was our very first exhibition right after founding RoboFounders. Our mission is to ensure technology doesn't just stop at POC, but moves into real factories to solve labor shortages and protect workers from hazardous environments. Connecting Japanese manufacturing excellence with ASEAN's dynamic ecosystem is central to our vision for Physical AI.”",
+      },
+      visionHeading: "Japan × ASEAN × USA",
+      visionText: [
+        "RoboFounders is building the global ecosystem connecting robots, AI, components, data, and manufacturing.",
+        "We will continue connecting Japan, ASEAN, and the United States to accelerate the development and real-world deployment of next-generation robotics.",
+        "From critical components to intelligent robots — from robots to the factory floor.",
+      ],
+      collaborationHeading: "Business Partnerships & Strategic Collaboration",
+      collaborationIntro:
+        "RoboFounders welcomes collaboration with enterprises, research institutions, and technology partners across the following areas:",
+      collaborationItems: [
+        "Physical AI and industrial automation PoCs",
+        "Humanoid robotics component co-development",
+        "ASEAN regional distribution and manufacturing partnerships",
+        "Business partnerships and strategic collaboration",
+      ],
+      ctaTitle: "Tell us your requirements.",
+      ctaSubtitle: "Let’s build the future of Physical AI together.",
+      ctaButton: "Get in touch",
+      backLink: "← Back to News & Events",
+    },
+    ja: {
+      title: "RoboFounders、Diffusion Borneo 2026に創業直後の初出展",
+      subtitles: [
+        "― 2026年6月12日の米国法人創業直後、初のカンファレンス出展 ―",
+        "― マレーシア・サラワク州クチンから、Physical AIとクロスボーダー連携を発信 ―",
+      ],
+      lead: "2026年6月23日・24日、マレーシア・サラワク州クチンで開催された Diffusion Borneo 2026 | Ignited by Slush'D に、RoboFounders, Inc.が出展いたしました。",
+      sections: [
+        {
+          heading: "創業直後の初出展",
+          paragraphs: [
+            "Diffusion Borneoは、Slush’D Malaysiaから派生したグローバルなイノベーション・エコシステム・サミットで、ASEANをはじめとする各地域から、スタートアップ、企業、エコシステムビルダーなどが集まり、イノベーションやクロスボーダー連携について議論・交流する場です。",
+            "今回の出展は、2026年6月12日のRoboFounders, Inc.の創業直後に行った初めてのカンファレンス出展となりました。",
+            "ブースでは、RoboFoundersが取り組むPhysical AI、ロボティクス、重要部品、製造業向けソリューションを紹介し、国内外のスタートアップ、企業、エコシステム支援者の皆さまと交流する機会となりました。",
+          ],
+        },
+        {
+          heading: "「Beyond POC」をテーマにCEOが登壇",
+          paragraphs: [
+            "本サミットにおいて、RoboFounders Founder & CEOの深瀬マリエル麻美が「Beyond POC」をテーマにスピーカーとして登壇いたしました。",
+            "セッションでは、「POCを実施して終わり」にするのではなく、実際の現場導入・事業化へとつなげ、さらに国境を越えたオープンイノベーションをどのように生み出していくかについて、RoboFoundersの視点からお話ししました。",
+            "日本企業とのオープンイノベーション事例も交え、異なる国・企業・技術をつなぎながら、新たな事業や社会実装につなげていくための実践的なポイントを共有しました。",
+          ],
+        },
+        {
+          heading: "Japan × ASEAN × USAの連携",
+          paragraphs: [
+            "RoboFoundersは、Japan × ASEAN × USAを軸に、ロボティクス、AI、重要部品、ソフトウェア、そして製造現場の知見をつなぎ、製造業のためのPhysical AIプラットフォームの構築を目指しています。",
+            "創業直後の初出展となった今回の機会を起点に、今後も国境を越えたパートナーシップを構築し、Physical AI・ロボティクス技術の社会実装とグローバル展開を進めてまいります。",
+          ],
+          bullets: [
+            "ASEAN製造業におけるPhysical AI PoCおよび現場導入の推進",
+            "ローラースクリュー・ロボットハンド等の重要部品の共同開発",
+            "日本・ASEAN・米国をつなぐクロスボーダー・オープンイノベーション",
+          ],
+          closing:
+            "技術を「POC」で終わらせず、現場導入・量産化・世界展開へつなげる取り組みを加速してまいります。",
+        },
+      ],
+      quote: {
+        speaker: "深瀬マリエル麻美（Mariel Fukase）",
+        role: "Founder & CEO, RoboFounders",
+        text: "「Diffusion Borneoは、創業直後におけるRoboFoundersの最初のカンファレンス出展となりました。私たちが目指すのは、技術を単なるPOCで終わらせず、実際の工場現場へ導入し、人手不足の解消や危険作業からの解放を実現することです。日本の製造業の強みとASEANのダイナミックなエコシステムをつなぎ、Physical AIの実装を加速してまいります。」",
+      },
+      visionHeading: "日本からASEAN、そして世界へ",
+      visionText: [
+        "RoboFoundersは、部品、ロボット、AI、データ、製造をつなぐグローバルエコシステムの構築を進めています。",
+        "今後も、日本・ASEAN・米国をつなぎながら、次世代ロボティクスの社会実装に取り組んでまいります。",
+        "From critical components to intelligent robots — from robots to the factory floor.",
+      ],
+      collaborationHeading: "Business Partnerships & Strategic Collaboration",
+      collaborationIntro:
+        "企業・研究機関・技術パートナーの皆さまとの連携を歓迎しています。",
+      collaborationItems: [
+        "製造現場におけるPhysical AIのPoC・現場導入",
+        "ヒューマノイドロボット・重要部品の共同開発",
+        "ASEAN・グローバル市場における販売・製造パートナーシップ",
+        "事業連携および戦略的アライアンス",
       ],
       ctaTitle: "Tell us your requirements.",
       ctaSubtitle: "Let’s build the future of Physical AI together.",
