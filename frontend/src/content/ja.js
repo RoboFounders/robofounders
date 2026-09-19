@@ -314,8 +314,8 @@ const ja = {
       [
         "2026",
         "出場",
-        "Startup World Cup 2026",
-        "世界的なスタートアップの舞台に、人とロボットの混成チームで出場。",
+        "Startup World Cup Malaysia 2026",
+        "マレーシア最大のスタートアップの舞台に、人とロボットの混成チームで出場。",
       ],
       [
         "2026",
@@ -355,8 +355,8 @@ const ja = {
       ],
       [
         "2026年5月",
-        "RofiがStartup World Cupに登場",
-        "Robot COOが人のチームに加わり、ステージで活動。",
+        "Startup World Cup Malaysia 2026 セミファイナリストに選出",
+        "グローバルな舞台で、RoboFoundersのPhysical AIおよびロボティクスへの取り組みを発信。日本・ASEAN・米国をつなぎ現場実装を推進。",
       ],
       [
         "2026年4月",
