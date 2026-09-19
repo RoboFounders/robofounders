@@ -20,6 +20,11 @@ const newsImages = [
   media.events[2], // team-banner / ASEAN network
 ];
 
+const newsSlugMap = {
+  0: "/news/x-hub-tokyo-boston",
+  2: "/news/startup-world-cup-malaysia",
+};
+
 export default function Updates() {
   const { t } = useLanguage();
   const [events, setEvents] = useState(true);
@@ -82,10 +87,11 @@ export default function Updates() {
                 </article>
               ))
             : t.updates.news.map(([date, title, body], index) => {
-                const isLinked = index === 0;
+                const linkTarget = newsSlugMap[index];
+                const isLinked = Boolean(linkTarget);
                 const CardTag = isLinked ? Link : "article";
                 const cardProps = isLinked
-                  ? { to: "/news/x-hub-tokyo-boston", className: "news-tile-card is-link" }
+                  ? { to: linkTarget, className: "news-tile-card is-link" }
                   : { className: "news-tile-card" };
 
                 return (
