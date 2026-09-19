@@ -1,4 +1,4 @@
-import { useParams, Link, Navigate } from "react-router-dom";
+import { useParams, Link, Navigate, useNavigate } from "react-router-dom";
 import { ArrowLeft, ArrowUpRight, CheckCircle2, Building2, Quote, Sparkles } from "lucide-react";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
@@ -10,11 +10,19 @@ import { newsArticles } from "@/content/newsData";
 export default function NewsArticle() {
   const { slug = "x-hub-tokyo-boston" } = useParams();
   const { lang } = useLanguage();
+  const navigate = useNavigate();
   const article = newsArticles[slug];
 
   if (!article) {
     return <Navigate to="/" replace />;
   }
+
+  const handleBack = (e) => {
+    if (window.history.length > 1) {
+      e.preventDefault();
+      navigate(-1);
+    }
+  };
 
   const content = article[lang] || article.en;
   const categoryLabel = article.category[lang] || article.category.en;
@@ -35,6 +43,7 @@ export default function NewsArticle() {
             <Link
               to={{ pathname: "/", hash: "#news" }}
               state={{ tab: "press" }}
+              onClick={handleBack}
               className="back-link"
             >
               <ArrowLeft size={16} />
@@ -116,17 +125,19 @@ export default function NewsArticle() {
             </div>
 
             {/* On-the-Ground Event Video */}
-            <figure className="news-video-card">
-              <div className="news-video-player">
-                <AccessibleLoopVideo
-                  src={article.video?.src || "/videos/events/event-clip1.mp4"}
-                  poster={article.video?.poster || "/images/events/team-ivs.jpeg"}
-                  label="RoboFounders event clip 3"
-                  preload="metadata"
-                  startWhenVisible
-                />
-              </div>
-            </figure>
+            {article.video?.src && (
+              <figure className="news-video-card">
+                <div className="news-video-player">
+                  <AccessibleLoopVideo
+                    src={article.video.src}
+                    poster={article.video.poster || article.images.hero}
+                    label="RoboFounders event clip"
+                    preload="metadata"
+                    startWhenVisible
+                  />
+                </div>
+              </figure>
+            )}
 
             {/* CEO Quote */}
             {content.quote && (
