@@ -99,8 +99,8 @@ const en = {
   },
   services: {
     label: "What we do",
-    title: "We design. We build. We deploy. We trade. We invest.",
-    body: "From technology and components to deployment, manufacturing, distribution, and investment.",
+    title: "We design. We build. We deploy. We trade. We scale.",
+    body: "From technology and components to deployment, manufacturing, distribution, and global scaling.",
     items: [
       [
         "Design",
@@ -123,9 +123,9 @@ const en = {
         "Connecting technologies, components, manufacturers, and customers across Japan, ASEAN, and the USA.",
       ],
       [
-        "Invest",
-        "Back the next generation of robotics.",
-        "Identifying and supporting the technologies, founders, and companies shaping Physical AI.",
+        "Scale",
+        "Accelerate global manufacturing deployment.",
+        "Forging cross-border partnerships, scaling production, and driving real-world Physical AI adoption.",
       ],
     ],
   },
@@ -238,8 +238,8 @@ const en = {
   brand: {
     label: "Brand concept",
     title: "The Sogo Shosha of Robotics.",
-    body: "We don’t just build robots. We build the ecosystem around them. We source technology, develop components, connect manufacturers, deploy robots, create data, and invest in the next generation.",
-    line: "Trade. Build. Deploy. Invest.",
+    body: "We don’t just build robots. We build the ecosystem around them. We source technology, develop components, connect manufacturers, deploy robots, create data, and scale next-generation physical intelligence.",
+    line: "Trade. Build. Deploy. Scale.",
   },
   why: {
     label: "Why RoboFounders",
@@ -272,9 +272,9 @@ const en = {
   gallery: {
     label: "On the Ground",
     title: "Moments from the field.",
-    body: "Booths, demos, partnerships and real human connection, here’s the Robot COO and the RoboFounders team out in the world, from Sarawak to Japan.",
+    body: "Booths, demos, partnerships, and real human connection—here’s the RoboFounders team out in the world, from Sarawak to Japan and Boston.",
     captions: [
-      "A founder shares a moment with Rofi, our Robot COO",
+      "RoboFounders founder at international industry conference",
       "The team on the ground at IVS2026, Japan",
       "Partnership conversations at the booth",
       "Live demos and lead capture in session",
@@ -297,9 +297,9 @@ const en = {
         "Set up local sales, partnerships and event presence for a US deeptech startup entering Tokyo.",
       ],
       [
-        "Live Demos",
-        "Robot COO at Conferences",
-        "Rofi the Robot COO running live booth demos and lead capture at major exhibitions.",
+        "Field Demos",
+        "Physical AI at Industry Exhibitions",
+        "Demonstrating Physical AI solutions and manufacturing robotics components at premier industry exhibitions.",
       ],
       [
         "Partnerships",
@@ -318,7 +318,7 @@ const en = {
       "AI companies",
       "Factories",
       "Researchers",
-      "Investors",
+      "Strategic partners",
       "Global partners",
     ],
     line: "The future of Physical AI will not be built by one company.",
@@ -341,13 +341,13 @@ const en = {
         "2026",
         "Competing",
         "Startup World Cup Malaysia 2026",
-        "Competing with a human-robot mixed team on Malaysia’s biggest startup stage.",
+        "Competing on Malaysia’s biggest startup stage to showcase our Physical AI platform and selected as a Semi-Finalist.",
       ],
       [
         "2026",
         "Exhibiting",
         "Diffusion 2026, Sarawak",
-        "Exhibiting embodied AI and the Robot COO experience to the ASEAN ecosystem.",
+        "Exhibiting Physical AI and manufacturing robotics solutions to the ASEAN ecosystem at Diffusion Borneo 2026 shortly after launch.",
       ],
       [
         "2026",
@@ -376,8 +376,8 @@ const en = {
       ],
       [
         "Jun 2026",
-        "RoboFounders opens San Francisco hub",
-        "Doubling down on Silicon Valley to support founders going global.",
+        "First Exhibition at Diffusion Borneo 2026 Shortly After Launch",
+        "Exhibiting at Diffusion Borneo 2026 and CEO Mariel Fukase speaking on 'Beyond POC' to drive manufacturing automation.",
       ],
       [
         "May 2026",
@@ -460,7 +460,7 @@ const en = {
     label: "Contact",
     title: "The future of robotics is physical.",
     accent: "Let’s build it.",
-    body: "Whether you’re looking for technology, manufacturing, deployment, partnerships, or investment, let’s build what comes next.",
+    body: "Whether you’re looking for technology, manufacturing, deployment, partnerships, or co-development, let’s build what comes next.",
     formTitle: "Start a conversation",
     emailImageAlt: "RoboFounders contact email address",
     name: "Full name",
@@ -471,7 +471,7 @@ const en = {
       "Technology",
       "Partnership",
       "PoC",
-      "Investment",
+      "Co-development",
       "Startup",
       "Media",
       "Careers",
@@ -492,7 +492,7 @@ const en = {
     dialogTitle: "Talk to our engineering team",
     dialogIntro:
       "Tell us what you are building and what your application needs.",
-    imageAlt: "RoboFounders team and Robot COO presenting at an industry event",
+    imageAlt: "RoboFounders team and partners presenting at an industry event",
   },
   footer: {
     tagline: "The Physical AI Platform for Dangerous Manufacturing.",
@@ -634,7 +634,7 @@ const en = {
       Humanoids: "Humanoids",
       AI: "AI",
       Research: "Research",
-      Funding: "Funding",
+      Partnerships: "Partnerships",
       Industry: "Industry",
       Components: "Components",
     },
