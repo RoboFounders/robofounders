@@ -85,6 +85,17 @@ export default function Navbar() {
         onClick={() => {
           setActiveSection(navSectionIds[i]);
           setOpen(false);
+          if (pathname === "/" && navTargets[i].startsWith("/#")) {
+            const targetId = navTargets[i].replace("/#", "");
+            if (targetId === "hero") {
+              window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+            } else {
+              const el = document.getElementById(targetId);
+              if (el) {
+                el.scrollIntoView({ behavior: "smooth", block: "start" });
+              }
+            }
+          }
         }}
       >
         {label}
@@ -103,6 +114,13 @@ export default function Navbar() {
             className="brand"
             aria-label="RoboFounders"
             data-testid="nav-logo"
+            onClick={() => {
+              setOpen(false);
+              setActiveSection("hero");
+              if (pathname === "/") {
+                window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+              }
+            }}
           >
             <img
               src={media.logoOnDark}
