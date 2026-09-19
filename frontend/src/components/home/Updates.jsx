@@ -26,27 +26,37 @@ export default function Updates() {
   return (
     <section className="section soft-section" id="news">
       <div className="wrap">
-        <div className="section-heading">
-          <div>
+        <div className="updates-hero-banner">
+          <div className="updates-hero-copy">
             <p className="eyebrow">{t.updates.label}</p>
             <h2>{t.updates.title}</h2>
+            <div className="segmented" role="group" aria-label={t.updates.label}>
+              <button
+                type="button"
+                aria-pressed={events}
+                onClick={() => setEvents(true)}
+              >
+                {t.updates.events}
+              </button>
+              <button
+                type="button"
+                aria-pressed={!events}
+                onClick={() => setEvents(false)}
+              >
+                {t.updates.press}
+              </button>
+            </div>
           </div>
-        </div>
-        <div className="segmented" role="group" aria-label={t.updates.label}>
-          <button
-            type="button"
-            aria-pressed={events}
-            onClick={() => setEvents(true)}
-          >
-            {t.updates.events}
-          </button>
-          <button
-            type="button"
-            aria-pressed={!events}
-            onClick={() => setEvents(false)}
-          >
-            {t.updates.press}
-          </button>
+          <figure className="updates-hero-media">
+            <img
+              src={media.newsEvent}
+              alt={t.updates.title}
+              className="updates-hero-image"
+              loading="lazy"
+              width="800"
+              height="450"
+            />
+          </figure>
         </div>
         <div className={events ? "events-list" : "news-tiles"}>
           {events
