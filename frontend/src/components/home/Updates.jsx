@@ -1,5 +1,5 @@
-import { useState } from "react";
-import { Link } from "react-router-dom";
+import { useState, useEffect } from "react";
+import { Link, useLocation } from "react-router-dom";
 import { ArrowUpRight } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { media } from "@/content/media";
@@ -27,7 +27,63 @@ const newsSlugMap = {
 
 export default function Updates() {
   const { t } = useLanguage();
-  const [events, setEvents] = useState(true);
+  const location = useLocation();
+
+  const [events, setEvents] = useState(() => {
+    if (
+      location.state?.tab === "press" ||
+      location.hash === "#press" ||
+      location.hash === "#news-press"
+    ) {
+      return false;
+    }
+    if (location.state?.tab === "events") {
+      return true;
+    }
+    try {
+      const saved = sessionStorage.getItem("updates_active_tab");
+      if (saved === "press") return false;
+      if (saved === "events") return true;
+    } catch {
+      // ignore
+    }
+    return true;
+  });
+
+  useEffect(() => {
+    if (
+      location.state?.tab === "press" ||
+      location.hash === "#press" ||
+      location.hash === "#news-press"
+    ) {
+      setEvents(false);
+      try {
+        sessionStorage.setItem("updates_active_tab", "press");
+      } catch {
+        // ignore
+      }
+    } else if (location.state?.tab === "events") {
+      setEvents(true);
+      try {
+        sessionStorage.setItem("updates_active_tab", "events");
+      } catch {
+        // ignore
+      }
+    }
+  }, [location.state, location.hash]);
+
+  const handleTabChange = (showEvents) => {
+    setEvents(showEvents);
+    try {
+      sessionStorage.setItem(
+        "updates_active_tab",
+        showEvents ? "events" : "press",
+      );
+    } catch {
+      // ignore
+    }
+  };
+
   return (
     <section className="section soft-section" id="news">
       <div className="wrap">
@@ -39,14 +95,14 @@ export default function Updates() {
               <button
                 type="button"
                 aria-pressed={events}
-                onClick={() => setEvents(true)}
+                onClick={() => handleTabChange(true)}
               >
                 {t.updates.events}
               </button>
               <button
                 type="button"
                 aria-pressed={!events}
-                onClick={() => setEvents(false)}
+                onClick={() => handleTabChange(false)}
               >
                 {t.updates.press}
               </button>
