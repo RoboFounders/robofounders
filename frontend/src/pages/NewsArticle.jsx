@@ -32,7 +32,11 @@ export default function NewsArticle() {
         {/* Article Hero */}
         <section className="news-hero-section">
           <div className="wrap news-hero-wrap">
-            <Link to="/#news" className="back-link">
+            <Link
+              to={{ pathname: "/", hash: "#news" }}
+              state={{ tab: "press" }}
+              className="back-link"
+            >
               <ArrowLeft size={16} />
               {content.backLink}
             </Link>
