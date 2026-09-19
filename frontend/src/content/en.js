@@ -340,8 +340,8 @@ const en = {
       [
         "2026",
         "Competing",
-        "Startup World Cup 2026",
-        "Competing with a human-robot mixed team on the world’s biggest startup stage.",
+        "Startup World Cup Malaysia 2026",
+        "Competing with a human-robot mixed team on Malaysia’s biggest startup stage.",
       ],
       [
         "2026",
@@ -381,8 +381,8 @@ const en = {
       ],
       [
         "May 2026",
-        "Rofi debuts at Startup World Cup",
-        "Our Robot COO joins the human team on stage for live execution.",
+        "RoboFounders Selected as Semi-Finalist at Startup World Cup Malaysia 2026",
+        "Showcasing our Physical AI and robotics solutions on Malaysia’s biggest startup stage with a human-robot collaborative team.",
       ],
       [
         "Apr 2026",
