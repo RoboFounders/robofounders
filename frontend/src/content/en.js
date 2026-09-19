@@ -382,7 +382,7 @@ const en = {
       [
         "May 2026",
         "RoboFounders Selected as Semi-Finalist at Startup World Cup Malaysia 2026",
-        "Showcasing our Physical AI and robotics solutions on Malaysia’s biggest startup stage with a human-robot collaborative team.",
+        "Showcasing our Physical AI and robotics solutions on Malaysia’s biggest startup stage.",
       ],
       [
         "Apr 2026",
