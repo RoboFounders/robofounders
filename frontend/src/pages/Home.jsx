@@ -113,7 +113,7 @@ export default function Home() {
           <div className="hero-bottom wrap">
             <span>{t.hero.nodes.join(" / ")}</span>
             <a href="#physical-ai-film" aria-label={t.showcase.label}>
-              01 —<ArrowRight size={18} />
+              <ArrowRight size={18} />
             </a>
           </div>
         </section>
