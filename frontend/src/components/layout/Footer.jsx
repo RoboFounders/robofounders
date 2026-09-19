@@ -15,6 +15,11 @@ export default function Footer() {
               to="/"
               className="brand footer-brand"
               aria-label="RoboFounders"
+              onClick={() => {
+                if (window.location.pathname === "/") {
+                  window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+                }
+              }}
             >
               <img
                 src={media.logoOnDark}
