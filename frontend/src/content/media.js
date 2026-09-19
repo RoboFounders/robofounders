@@ -32,6 +32,7 @@ export const media = {
   },
   newsBanner: "/images/events/news-banner.jpg",
   newsEvent: "/images/events/news-event-new.jpg",
+  diffusionBorneo: "/images/events/diffusion-borneo.jpeg",
   robotHandNew: "/images/products/robot-hand-new.jpg",
   bostonAiWeek: "/images/events/boston-ai-week.jpeg",
   events: [
