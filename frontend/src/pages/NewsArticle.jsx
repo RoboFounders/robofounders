@@ -3,6 +3,7 @@ import { ArrowLeft, ArrowUpRight, CheckCircle2, Building2, Quote, Sparkles } fro
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import PageMeta from "@/components/shared/PageMeta";
+import AccessibleLoopVideo from "@/components/shared/AccessibleLoopVideo";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { newsArticles } from "@/content/newsData";
 
@@ -110,37 +111,18 @@ export default function NewsArticle() {
               ))}
             </div>
 
-            {/* Photo Gallery from Event */}
-            <div className="news-photos-grid">
-              <figure className="news-photo-card">
-                <img
-                  src={article.images.event}
-                  alt="Boston AI Week"
-                  loading="lazy"
-                  width="1024"
-                  height="768"
+            {/* On-the-Ground Event Video */}
+            <figure className="news-video-card">
+              <div className="news-video-player">
+                <AccessibleLoopVideo
+                  src={article.video?.src || "/videos/events/event-clip1.mp4"}
+                  poster={article.video?.poster || "/images/events/team-ivs.jpeg"}
+                  label="RoboFounders event clip 3"
+                  preload="metadata"
+                  startWhenVisible
                 />
-                <figcaption>
-                  {lang === "ja"
-                    ? "Boston AI Week / エコシステム連携"
-                    : "Boston AI Week / Ecosystem Collaboration"}
-                </figcaption>
-              </figure>
-              <figure className="news-photo-card">
-                <img
-                  src={article.images.program}
-                  alt="X-HUB TOKYO Global Startup Accelerator"
-                  loading="lazy"
-                  width="1600"
-                  height="900"
-                />
-                <figcaption>
-                  {lang === "ja"
-                    ? "東京都・JETRO X-HUB TOKYO アウトバウンドプログラム"
-                    : "Tokyo & JETRO X-HUB TOKYO Outbound Program"}
-                </figcaption>
-              </figure>
-            </div>
+              </div>
+            </figure>
 
             {/* CEO Quote */}
             {content.quote && (
