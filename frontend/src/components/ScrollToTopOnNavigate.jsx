@@ -18,7 +18,11 @@ export default function ScrollToTopOnNavigate() {
         } catch {
           /* Malformed anchors do not break navigation. */
         }
-        const target = document.getElementById(id);
+        const target =
+          document.getElementById(id) ||
+          (id === "press" || id === "news-press"
+            ? document.getElementById("news")
+            : null);
         target?.scrollIntoView({ behavior: "smooth", block: "start" });
       });
       return () => cancelAnimationFrame(frame);
