@@ -989,6 +989,9 @@ button:disabled {
   margin-top: 68px;
   padding-top: 58px;
 }
+.encounter-grid.company-mission-only {
+  grid-template-columns: 1fr;
+}
 .encounter-grid h3 {
   font-size: 34px;
   margin-bottom: 28px;
