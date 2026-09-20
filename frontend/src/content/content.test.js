@@ -3,6 +3,7 @@ import path from "path";
 import en from "./en";
 import ja from "./ja";
 import { media, productIds } from "./media";
+import { newsArticles } from "./newsData";
 
 function leaves(value, prefix = "") {
   return Object.entries(value).flatMap(([key, item]) =>
@@ -87,4 +88,23 @@ test("homepage content follows the current client worksheet direction", () => {
   expect(Object.keys(media.team).sort()).toEqual(
     en.team.members.map(({ id }) => id).sort(),
   );
+});
+
+test("public content excludes investment and fundraising language", () => {
+  const publicContent = JSON.stringify({ en, ja, newsArticles });
+  expect(publicContent).not.toMatch(
+    /fundrais|investor|investment|venture capital|capital partnership|capital alliance|\bcapital\b|資金調達|投資家|資本提携|戦略的投資|資本|戦略的アライアンス/i,
+  );
+});
+
+test("latest worksheet news and marquee content is available in both languages", () => {
+  expect(newsArticles["diffusion-borneo-beyond-poc"]).toBeDefined();
+  expect(en.marquee.items).toEqual(
+    expect.arrayContaining([
+      "Physical AI for Manufacturing",
+      "From Factory to World.",
+      "Robots Taking on Dangerous Work.",
+    ]),
+  );
+  expect(ja.marquee.items).toHaveLength(en.marquee.items.length);
 });
