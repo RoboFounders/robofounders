@@ -281,14 +281,7 @@ export default function Home() {
                 </div>
               ))}
             </div>
-            <img
-              className="section-wide-image regions-reference-image"
-              src={media.home.regions}
-              alt={t.regions.imageAlt}
-              loading="lazy"
-              width="1800"
-              height="1200"
-            />
+            {/* Global ecosystem image is temporarily hidden pending client approval. */}
             <div className="regions-grid">
               {t.regions.items.map(([name, title, body, role], i) => (
                 <article key={name}>
