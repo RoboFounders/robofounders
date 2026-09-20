@@ -376,14 +376,19 @@ const en = {
         "Selected within one month of founding to accelerate Physical AI and humanoid robotics deployment across Boston and global manufacturing markets.",
       ],
       [
+        "Jul 2026",
+        "RoboFounders Exhibits at IVS2026 Startup Market",
+        "Showcasing a manufacturing-focused Physical AI platform with “Protect People. Automate Danger.” in Kyoto, Japan.",
+      ],
+      [
         "Jun 2026",
         "RoboFounders CEO Mariel Asami Fukase Speaks at Diffusion Borneo 2026 on “Beyond POC”",
         "Sharing practical perspectives on moving innovation beyond proof of concept and into real-world manufacturing deployment.",
       ],
       [
-        "Jun 2026",
-        "First Exhibition at Diffusion Borneo 2026 Shortly After Launch",
-        "Exhibiting at Diffusion Borneo 2026 and CEO Mariel Fukase speaking on 'Beyond POC' to drive manufacturing automation.",
+        "June 23–24, 2026",
+        "RoboFounders Makes Its First Exhibition at Diffusion Borneo 2026 Shortly After Launch",
+        "RoboFounders’ first conference exhibition shortly after launch, showcasing Physical AI and manufacturing robotics solutions to the ASEAN ecosystem.",
       ],
       [
         "May 2026",

@@ -350,14 +350,19 @@ const ja = {
         "東京都・JETRO「X-HUB TOKYO GLOBAL STARTUP ACCELERATOR OUTBOUND PROGRAM」Bostonコースに採択。米国Bostonでヒューマノイドロボット・製造業向け事業の展開を加速。",
       ],
       [
+        "2026年7月",
+        "RoboFounders、IVS2026 Startup Marketに出展",
+        "製造業向けPhysical AIプラットフォームで「Protect People. Automate Danger.」を発信。",
+      ],
+      [
         "2026年6月",
         "RoboFounders CEO 深瀬マリエル麻美、Diffusion Borneo 2026で「Beyond POC」をテーマに登壇",
         "技術をPoCで終わらせず、製造現場での実装と事業化へつなげるための実践的な視点を共有しました。",
       ],
       [
-        "2026年6月",
+        "2026年6月23日・24日",
         "Diffusion Borneo 2026に創業直後の初出展",
-        "創業直後、マレーシアで開催されたDiffusion Borneo 2026に出展。CEO深瀬が『Beyond POC』をテーマに登壇し現場導入を推進。",
+        "創業直後、マレーシアで開催されたDiffusion Borneo 2026に初出展。Physical AIおよび製造業向けロボティクス技術を紹介しました。",
       ],
       [
         "2026年5月",

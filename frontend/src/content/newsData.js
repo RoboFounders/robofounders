@@ -235,6 +235,153 @@ export const newsArticles = {
       backLink: "← ニュース一覧へ戻る",
     },
   },
+  "ivs2026-startup-market": {
+    id: "ivs2026-startup-market",
+    date: "2026.07.03",
+    category: {
+      en: "Exhibitions & Events",
+      ja: "展示会・イベント",
+    },
+    images: {
+      hero: "/images/news/ivs-2026/hero.webp",
+    },
+    heroDisplay: "contain",
+    video: null,
+    en: {
+      title: "RoboFounders Exhibits at IVS2026 Startup Market",
+      subtitles: [
+        "— Showcasing a Manufacturing-Focused Physical AI Platform with “Protect People. Automate Danger.” —",
+      ],
+      lead: "RoboFounders, Inc. exhibited at the Startup Market of IVS2026, one of Japan’s largest startup conferences, held in Kyoto, Japan, from July 1–3, 2026.",
+      sections: [
+        {
+          heading: "RoboFounders at IVS2026 Startup Market",
+          paragraphs: [
+            "IVS2026 brought together startups, corporations, government organizations, media, and other ecosystem participants from Japan and around the world.",
+            "Startup Market is one of IVS’s key programs. Launched in 2025, it features promising startups recommended by industry organizations and prominent entrepreneurs or selected through a competitive screening process. In 2026, 340 startups exhibited over three days, with approximately 100 companies rotating each day.",
+          ],
+        },
+        {
+          heading: "Showcasing the Future of Manufacturing through Physical AI × Robotics",
+          paragraphs: [
+            "Through its participation in Startup Market, RoboFounders presented its vision of using Physical AI and robotics to enable automation, reduce dependence on manual labor, and improve safety in manufacturing environments.",
+            "Manufacturers today face growing challenges, including labor shortages, a shortage of skilled workers, and the need to automate physically demanding and hazardous processes such as welding, painting, assembly, and inspection.",
+            "RoboFounders is developing a Physical AI platform for manufacturing that combines AI, robotics, robotic hands, computer vision, and other technologies to address real-world challenges on the factory floor and support practical deployment.",
+            "At IVS2026, RoboFounders introduced the concept “One AI Platform, One Autonomous Factory”—a more flexible and autonomous factory in which multiple robots and AI technologies work together through an integrated Physical AI platform.",
+          ],
+        },
+        {
+          heading: "Engaging with Companies, Partners, and the Global Startup Ecosystem",
+          paragraphs: [
+            "Throughout the event, RoboFounders welcomed visitors from a wide range of industries, including manufacturing, logistics, services, and IT.",
+            "Discussions focused on practical challenges and future applications of Physical AI and robotics, including factory automation, workplace safety, AI-powered inspection and quality control, and the introduction of robotics into manufacturing operations.",
+            "The event also created opportunities to connect with international companies, technology partners, and startup ecosystem participants while exchanging ideas about linking Japanese manufacturing expertise, ASEAN manufacturing markets, and the U.S. AI and robotics ecosystem.",
+            "RoboFounders is currently working with manufacturing companies in Japan and Malaysia on initiatives involving AI vision inspection, robotics, and factory automation.",
+          ],
+        },
+        {
+          heading: "Japan × ASEAN × USA: Bringing Physical AI to the Real World",
+          paragraphs: [
+            "RoboFounders is pursuing the social and industrial implementation of Physical AI across Japan, ASEAN, and the United States.",
+            "By connecting Japan’s manufacturing expertise and technologies, ASEAN’s rapidly growing manufacturing markets, and innovation in AI and robotics—particularly from the United States—RoboFounders aims to create new solutions for critical manufacturing challenges such as labor shortages and hazardous work.",
+            "Going forward, RoboFounders will pursue PoCs with manufacturing companies, joint development with robotics and AI companies, technology and business collaboration, sales and distribution partnerships, and international market expansion.",
+          ],
+        },
+        {
+          heading: "Event Information",
+          paragraphs: [
+            "IVS 2026 — Startup Market",
+            "Kyoto, Japan · July 1–3, 2026",
+          ],
+        },
+      ],
+      visionHeading: "The Future of Manufacturing Starts Now.",
+      visionText: [
+        "RoboFounders will continue to build on the connections made at IVS2026 and accelerate the real-world implementation of Physical AI through collaboration with manufacturers, technology companies, and ecosystem partners around the world.",
+      ],
+      collaborationHeading: "Seeking PoC and Partnership Opportunities",
+      collaborationIntro:
+        "RoboFounders welcomes discussions with companies and partners interested in:",
+      collaborationItems: [
+        "Introducing Physical AI and robotics into manufacturing operations",
+        "Addressing hazardous work, physically demanding tasks, and labor shortages",
+        "Testing and deploying AI and robotics in real manufacturing environments",
+        "Expanding robotics businesses into Japan, ASEAN, and the United States",
+        "Exploring joint development, technology partnerships, and commercial collaboration",
+      ],
+      ctaTitle: "Protect People. Automate Danger.",
+      ctaSubtitle: "Let’s bring Physical AI into the real world.",
+      ctaButton: "Get in touch",
+      backLink: "← Back to News & Events",
+    },
+    ja: {
+      title: "RoboFounders、IVS2026 Startup Marketに出展",
+      subtitles: [
+        "― 製造業向けPhysical AIプラットフォームで「Protect People. Automate Danger.」を発信 ―",
+      ],
+      lead: "株式会社RoboFoundersは、2026年7月1日から7月3日まで京都で開催された国内最大級のスタートアップカンファレンス「IVS2026」のStartup Marketに出展いたしました。",
+      sections: [
+        {
+          heading: "IVS2026 Startup Marketに出展",
+          paragraphs: [
+            "IVS2026は、国内外のスタートアップ、企業、自治体、メディアなど、多様なプレイヤーが集結する、日本を代表するスタートアップイベントの一つです。",
+            "Startup Marketは、2025年から開始されたIVSの注目コンテンツの一つで、業界団体や著名起業家からの推薦、または審査を通過したスタートアップが出展する展示エリアです。2026年は3日間で延べ340社が出展し、1日あたり約100社が入れ替わる形式で、多様なスタートアップが最新の事業・技術を発信しました。",
+          ],
+        },
+        {
+          heading: "Physical AI × Roboticsで、製造業の未来を発信",
+          paragraphs: [
+            "RoboFoundersは今回のStartup Marketへの出展を通じて、Physical AIとロボティクスを活用し、製造現場における自動化・省人化・安全性向上を実現するという事業ビジョンを発信しました。",
+            "現在、製造業では人手不足や熟練人材の不足に加え、溶接・塗装・組立・検査など、身体的負担や危険を伴う作業の自動化が重要な課題となっています。",
+            "RoboFoundersは、こうした製造現場の課題に対して、AI、ロボット、ロボットハンド、画像認識などの技術を組み合わせ、現場への導入までを見据えたPhysical AIソリューションの構築に取り組んでいます。",
+            "今回の展示では「One AI Platform, One Autonomous Factory」というコンセプトを掲げ、複数のロボットやAI技術を製造現場で連携させ、より柔軟で自律的な工場を実現する構想を紹介しました。",
+          ],
+        },
+        {
+          heading: "製造業を中心に、幅広い企業・パートナーと意見交換",
+          paragraphs: [
+            "会期中は、製造業をはじめ、物流、サービス、ITなど幅広い分野の企業・関係者にブースへお立ち寄りいただきました。",
+            "RoboFoundersのPhysical AIへの取り組みに対して、製造現場における自動化、安全性向上、AIによる検査・品質管理、ロボット導入などについて、具体的な課題や導入構想に関する意見交換が行われました。",
+            "また、日本国内の企業だけでなく、海外企業、技術パートナー、スタートアップ関係者との交流も生まれ、日本の製造技術、ASEANの製造現場、米国のAI・ロボティクスエコシステムをつなぐ方向性について意見を交わす機会となりました。",
+            "RoboFoundersは現在、日本・マレーシアを中心に、製造業向けのAI画像検査、ロボティクス、工場自動化などの取り組みを進めています。",
+          ],
+        },
+        {
+          heading: "Japan × ASEAN × USAで、Physical AIの社会実装へ",
+          paragraphs: [
+            "RoboFoundersは、Japan × ASEAN × USAを軸に、Physical AIの製造現場への社会実装を目指しています。",
+            "日本が持つ製造業の知見や技術、ASEANの成長する製造市場、そして米国を中心とするAI・ロボティクスのイノベーションをつなぐことで、人手不足や危険作業などの課題に対する新たなソリューションの創出を目指します。",
+            "今後は、製造企業とのPoC、ロボット・AI企業との共同開発、販売・事業連携、海外展開に向けたパートナーシップなどを積極的に進めてまいります。",
+          ],
+        },
+        {
+          heading: "イベント情報",
+          paragraphs: [
+            "IVS 2026 — Startup Market",
+            "京都 · 2026年7月1日〜3日",
+          ],
+        },
+      ],
+      visionHeading: "The Future of Manufacturing Starts Now.",
+      visionText: [
+        "IVS2026でいただいたご縁を今後の事業につなげるとともに、多様な企業・パートナーとの共創を通じて、Physical AIの製造現場への社会実装を加速してまいります。",
+      ],
+      collaborationHeading: "製造業・ロボティクス企業とのPoC・パートナーシップ",
+      collaborationIntro:
+        "RoboFoundersでは、以下のような企業・パートナーとの協業を歓迎しています。",
+      collaborationItems: [
+        "製造現場でPhysical AI・ロボティクスを導入したい企業",
+        "危険作業・重労働・人手不足の解決に取り組む製造企業",
+        "AI・ロボティクス技術を製造現場で実証したい企業",
+        "日本・ASEAN・米国市場での事業展開を目指すロボティクス企業",
+        "共同開発・販売連携・技術連携を検討する企業・パートナー",
+      ],
+      ctaTitle: "Protect People. Automate Danger.",
+      ctaSubtitle: "Physical AIを現実の現場へ。",
+      ctaButton: "お問い合わせ",
+      backLink: "← ニュース一覧へ戻る",
+    },
+  },
   "diffusion-borneo-beyond-poc": {
     id: "diffusion-borneo-beyond-poc",
     date: "2026.06.24",
@@ -243,11 +390,11 @@ export const newsArticles = {
       ja: "登壇・イベント",
     },
     images: {
-      hero: "/images/events/team-banner.jpeg",
+      hero: "/images/news/diffusion-borneo-beyond-poc/hero.webp",
       event: "/images/events/diffusion-borneo.jpeg",
-      program: "/images/events/team-banner.jpeg",
+      program: "/images/news/diffusion-borneo-beyond-poc/hero.webp",
     },
-    heroDisplay: "tall",
+    heroDisplay: "contain",
     video: null,
     en: {
       title:
@@ -378,14 +525,6 @@ export const newsArticles = {
           ],
         },
         {
-          heading: "Beyond POC: Keynote by Founder & CEO Mariel Fukase",
-          paragraphs: [
-            "At the summit, RoboFounders Founder & CEO Mariel Fukase was invited as a featured speaker to address the theme of “Beyond POC.”",
-            "During the session, Mariel shared insights on how to move beyond Proof of Concept (POC) to achieve real-world factory floor implementation, commercialization, and sustainable business value.",
-            "Drawing on practical experience connecting Japanese precision engineering with ASEAN and global markets, she emphasized how cross-border open innovation bridges technology, hardware, and shop-floor manufacturing to solve real industry challenges.",
-          ],
-        },
-        {
           heading: "Connecting Japan × ASEAN × USA",
           paragraphs: [
             "RoboFounders is building a global robotics ecosystem connecting precision Japanese component engineering, agile ASEAN manufacturing hubs, and US deep-tech innovation.",
@@ -400,11 +539,6 @@ export const newsArticles = {
             "We will continue connecting critical components, AI intelligence, and real manufacturing floors to build a safer future for industrial workers.",
         },
       ],
-      quote: {
-        speaker: "Mariel Fukase (深瀬マリエル麻美)",
-        role: "Founder & CEO, RoboFounders",
-        text: "“Diffusion Borneo was our very first exhibition right after founding RoboFounders. Our mission is to ensure technology doesn't just stop at POC, but moves into real factories to solve labor shortages and protect workers from hazardous environments. Connecting Japanese manufacturing excellence with ASEAN's dynamic ecosystem is central to our vision for Physical AI.”",
-      },
       visionHeading: "Japan × ASEAN × USA",
       visionText: [
         "RoboFounders is building the global ecosystem connecting robots, AI, components, data, and manufacturing.",
@@ -442,14 +576,6 @@ export const newsArticles = {
           ],
         },
         {
-          heading: "「Beyond POC」をテーマにCEOが登壇",
-          paragraphs: [
-            "本サミットにおいて、RoboFounders Founder & CEOの深瀬マリエル麻美が「Beyond POC」をテーマにスピーカーとして登壇いたしました。",
-            "セッションでは、「POCを実施して終わり」にするのではなく、実際の現場導入・事業化へとつなげ、さらに国境を越えたオープンイノベーションをどのように生み出していくかについて、RoboFoundersの視点からお話ししました。",
-            "日本企業とのオープンイノベーション事例も交え、異なる国・企業・技術をつなぎながら、新たな事業や社会実装につなげていくための実践的なポイントを共有しました。",
-          ],
-        },
-        {
           heading: "Japan × ASEAN × USAの連携",
           paragraphs: [
             "RoboFoundersは、Japan × ASEAN × USAを軸に、ロボティクス、AI、重要部品、ソフトウェア、そして製造現場の知見をつなぎ、製造業のためのPhysical AIプラットフォームの構築を目指しています。",
@@ -461,14 +587,9 @@ export const newsArticles = {
             "日本・ASEAN・米国をつなぐクロスボーダー・オープンイノベーション",
           ],
           closing:
-            "技術を「POC」で終わらせず、現場導入・量産化・世界展開へつなげる取り組みを加速してまいります。",
+            "技術の現場導入・量産化・世界展開へつなげる取り組みを加速してまいります。",
         },
       ],
-      quote: {
-        speaker: "深瀬マリエル麻美（Mariel Fukase）",
-        role: "Founder & CEO, RoboFounders",
-        text: "「Diffusion Borneoは、創業直後におけるRoboFoundersの最初のカンファレンス出展となりました。私たちが目指すのは、技術を単なるPOCで終わらせず、実際の工場現場へ導入し、人手不足の解消や危険作業からの解放を実現することです。日本の製造業の強みとASEANのダイナミックなエコシステムをつなぎ、Physical AIの実装を加速してまいります。」",
-      },
       visionHeading: "日本からASEAN、そして世界へ",
       visionText: [
         "RoboFoundersは、部品、ロボット、AI、データ、製造をつなぐグローバルエコシステムの構築を進めています。",
