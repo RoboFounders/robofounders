@@ -139,13 +139,6 @@ const en = {
       ["June 2026", "RoboFounders, Inc. established in Delaware, USA."],
       ["August 19, 2026", "RoboFounders Co., Ltd. established in Japan."],
     ],
-    encounterLabel: "A chance encounter",
-    encounterTitle: "It all started with a simple hello.",
-    encounter: [
-      "At a Japanese cemetery in Kuala Lumpur, we happened to meet Yasumitsu Morita, who would later become a strategic advisor to RoboFounders.",
-      "Morita began his career in manufacturing at Toyota. He later served as a Senior Vice President in South Africa, leading approximately 8,000 employees and driving manufacturing transformation.",
-      "Meeting him where generations of people who connected Japan and Malaysia now rest felt like a call to connect Japan’s manufacturing expertise with AI and robotics—and help build the future of Japan and ASEAN.",
-    ],
     missionTitle: "Manufacturing challenges we are addressing",
     challenges: [
       "Dangerous work",
@@ -283,7 +276,7 @@ const en = {
       "June 23–24, 2026 — RoboFounders Makes Its First Exhibition at Diffusion Borneo 2026",
       "Limited-edition IVS2026 boarding pass stickers",
       "Booth SC-16 — see you at IVS2026",
-      "Operating the Jungle Forge AWARD, a startup pitch competition and business Japanese program for entrepreneurs at Startup Jungle",
+      "Operating the Jungle Forge AWARD, including a startup pitch competition and business Japanese lessons for entrepreneurs.",
       "Engaging with the global deep tech and AI ecosystem in Boston",
     ],
     video: "RoboFounders event clip",
@@ -348,7 +341,7 @@ const en = {
       [
         "2026",
         "Exhibiting",
-        "Diffusion 2026, Sarawak",
+        "RoboFounders Makes Its First Exhibition at Diffusion Borneo 2026 Shortly After Launch",
         "Exhibiting Physical AI and manufacturing robotics solutions to the ASEAN ecosystem at Diffusion Borneo 2026 shortly after launch.",
       ],
       [
@@ -368,6 +361,12 @@ const en = {
         "Community",
         "BuildClub Tokyo",
         "Active organizer involvement, building a founder + robotics community in Tokyo.",
+      ],
+      [
+        "Now",
+        "Physical AI",
+        "Building a Future Where Humans and Robots Work Together.",
+        "RoboFounders builds Physical AI solutions that automate dangerous and high-risk work in manufacturing.",
       ],
     ],
     news: [
