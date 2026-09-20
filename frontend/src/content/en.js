@@ -76,14 +76,16 @@ const en = {
       "Data",
       "Manufacturing",
       "Connectivity",
-      "Capital",
+      "Deployment",
     ],
   },
   marquee: {
     label: "RoboFounders mission and capabilities",
     items: [
       "Protect People. Automate Danger.",
-      "The Physical AI Platform for Dangerous Manufacturing",
+      "Physical AI for Manufacturing",
+      "From Factory to World.",
+      "Robots Taking on Dangerous Work.",
       "Robotics & Critical Components",
       "AI & Robotics Integration",
       "Manufacturing Automation",
@@ -189,9 +191,9 @@ const en = {
       ],
       [
         "USA",
-        "Technology, global markets & capital",
-        "Technology networks, global customers, and capital.",
-        "Markets & capital",
+        "AI, robotics & global markets",
+        "AI and robotics networks, global customers, and technology partners.",
+        "Innovation & markets",
       ],
     ],
     imageAlt:
@@ -250,7 +252,7 @@ const en = {
       ["Built in ASEAN", "Manufacturing, deployment, and regional scale."],
       [
         "Connected to the USA",
-        "AI, robotics innovation, customers, and capital.",
+        "AI, robotics innovation, customers, and technology partners.",
       ],
     ],
     imageAlt: "A manufacturing specialist performing precision inspection",
@@ -271,8 +273,8 @@ const en = {
   },
   gallery: {
     label: "On the Ground",
-    title: "Moments from the field.",
-    body: "Booths, demos, partnerships, and real human connection—here’s the RoboFounders team out in the world, from Sarawak to Japan and Boston.",
+    title: "From Factory to World.",
+    body: "Stories from RoboFounders—our mission, the latest developments in Physical AI and robotics, and the work we are doing across borders.",
     captions: [
       "RoboFounders founder at international industry conference",
       "The team on the ground at IVS2026, Japan",
@@ -281,14 +283,14 @@ const en = {
       "“Stop flying. We will be there.” — our event stand",
       "Limited-edition IVS2026 boarding pass stickers",
       "Booth SC-16 — see you at IVS2026",
-      "Community connections and founder ecosystem at Startup Jungle",
+      "Operating the Jungle Forge AWARD, a startup pitch competition and business Japanese program for entrepreneurs at Startup Jungle",
       "Engaging with the global deep tech and AI ecosystem in Boston",
     ],
     video: "RoboFounders event clip",
   },
   works: {
     label: "Our Works / Case Studies",
-    title: "Execution you can point to.",
+    title: "Bringing Physical AI to the real world, across borders.",
     cta: "Start your case study",
     items: [
       [
@@ -373,6 +375,11 @@ const en = {
         "Sep 2026",
         "Selected for Tokyo & JETRO X-HUB TOKYO Global Startup Accelerator Boston Course",
         "Selected within one month of founding to accelerate Physical AI and humanoid robotics deployment across Boston and global manufacturing markets.",
+      ],
+      [
+        "Jun 2026",
+        "RoboFounders CEO Mariel Asami Fukase Speaks at Diffusion Borneo 2026 on “Beyond POC”",
+        "Sharing practical perspectives on moving innovation beyond proof of concept and into real-world manufacturing deployment.",
       ],
       [
         "Jun 2026",
