@@ -88,6 +88,11 @@ export const contacts = {
   endpoint: "https://formsubmit.co/ajax/r@robofounders.ai",
   cc: "tak@robofounders.net,mai.robofounders@gmail.com,marieasami7@gmail.com",
   linkedin: "https://www.linkedin.com/company/robofounders/",
+  linkedinJapan: "https://www.linkedin.com/company/robofoundersjp/",
+  linkedinMalaysia: "https://www.linkedin.com/company/robofoundersmy/",
   founderLinkedin: "https://www.linkedin.com/in/marie-asami/",
-  x: "https://x.com/maripto7",
+  facebook: "https://www.facebook.com/robofounders",
+  x: "https://x.com/robofounders",
+  instagram: "https://www.instagram.com/robofounders",
+  youtube: "https://www.youtube.com/@RoboFounders",
 };
