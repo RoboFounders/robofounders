@@ -280,7 +280,7 @@ const en = {
       "The team on the ground at IVS2026, Japan",
       "Partnership conversations at the booth",
       "Live demos and lead capture in session",
-      "“Stop flying. We will be there.” — our event stand",
+      "June 23–24, 2026 — RoboFounders Makes Its First Exhibition at Diffusion Borneo 2026",
       "Limited-edition IVS2026 boarding pass stickers",
       "Booth SC-16 — see you at IVS2026",
       "Operating the Jungle Forge AWARD, a startup pitch competition and business Japanese program for entrepreneurs at Startup Jungle",
