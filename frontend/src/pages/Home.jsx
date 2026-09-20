@@ -24,7 +24,6 @@ import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import PageMeta from "@/components/shared/PageMeta";
 import InquiryForm from "@/components/shared/InquiryForm";
-import ContactAddressImage from "@/components/shared/ContactAddressImage";
 import FieldGallery from "@/components/home/FieldGallery";
 import Team from "@/components/home/Team";
 import Updates from "@/components/home/Updates";
@@ -512,9 +511,6 @@ export default function Home() {
               </h2>
               <p className="section-lead">{t.contact.body}</p>
               <span className="eyebrow">{t.hero.label}</span>
-              <div className="contact-email">
-                <ContactAddressImage />
-              </div>
               <img
                 className="contact-image"
                 src={media.home.contact}
