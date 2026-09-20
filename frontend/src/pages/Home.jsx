@@ -243,16 +243,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="wrap encounter-grid">
-            <div>
-              <p className="eyebrow">{t.company.encounterLabel}</p>
-              <h3>{t.company.encounterTitle}</h3>
-              <div className="encounter-copy">
-                {t.company.encounter.map((paragraph) => (
-                  <p key={paragraph}>{paragraph}</p>
-                ))}
-              </div>
-            </div>
+          <div className="wrap encounter-grid company-mission-only">
             <aside className="company-mission">
               <h4>{t.company.missionTitle}</h4>
               <div className="challenge-list">
