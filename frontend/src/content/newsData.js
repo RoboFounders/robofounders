@@ -11,10 +11,8 @@ export const newsArticles = {
       event: "/images/news/x-hub-boston/image-2.jpg",
       program: "/images/news/x-hub-boston/image-3.jpg",
     },
-    video: {
-      src: "/videos/events/event-clip1.mp4",
-      poster: "/images/events/team-ivs.jpeg",
-    },
+    supportingImages: ["event", "program"],
+    video: null,
     en: {
       title:
         "RoboFounders Selected for Tokyo & JETRO “X-HUB TOKYO GLOBAL STARTUP ACCELERATOR OUTBOUND PROGRAM” Boston Course",
@@ -23,6 +21,10 @@ export const newsArticles = {
         "― Accelerating humanoid robotics and manufacturing business expansion in Boston, USA ―",
       ],
       lead: "RoboFounders Inc. (Headquarters: Tokyo; Founder & CEO: Mariel Fukase) is pleased to announce its selection for the Boston Course of the “X-HUB TOKYO GLOBAL STARTUP ACCELERATOR OUTBOUND PROGRAM”, an outbound acceleration program promoted by the Tokyo Metropolitan Government and the Japan External Trade Organization (JETRO).",
+      supportingImageAlts: [
+        "Participants at the X-HUB TOKYO-BOSTON AI Bootcamp",
+        "X-HUB TOKYO-BOSTON AI Bootcamp group photograph",
+      ],
       sections: [
         {
           heading: "Expanding to the Global Market from Day One",
@@ -129,6 +131,10 @@ export const newsArticles = {
         "― 米国Bostonでヒューマノイドロボット・製造業向け事業の展開を加速 ―",
       ],
       lead: "株式会社RoboFounders（本社：東京都、Founder & CEO：Mariel Fukase）は、東京都および日本貿易振興機構（JETRO）が推進する海外展開支援プログラム「X-HUB TOKYO GLOBAL STARTUP ACCELERATOR OUTBOUND PROGRAM」のBostonコースに採択されたことをお知らせいたします。",
+      supportingImageAlts: [
+        "X-HUB TOKYO-BOSTON AI Bootcampの参加者",
+        "X-HUB TOKYO-BOSTON AI Bootcampでの集合写真",
+      ],
       sections: [
         {
           heading: "創業直後から、世界市場へ",
@@ -221,10 +227,121 @@ export const newsArticles = {
         "製造業におけるPhysical AIのPoC・導入",
         "AI・ロボティクス技術の共同研究",
         "米国・ASEANにおける事業・販売パートナーシップ",
-        "事業連携および戦略的アライアンス",
+        "事業連携および技術協業",
       ],
       ctaTitle: "Tell us your requirements.",
       ctaSubtitle: "Let’s build the future of Physical AI together.",
+      ctaButton: "お問い合わせ",
+      backLink: "← ニュース一覧へ戻る",
+    },
+  },
+  "diffusion-borneo-beyond-poc": {
+    id: "diffusion-borneo-beyond-poc",
+    date: "2026.06.24",
+    category: {
+      en: "Speaking & Events",
+      ja: "登壇・イベント",
+    },
+    images: {
+      hero: "/images/events/team-banner.jpeg",
+      event: "/images/events/diffusion-borneo.jpeg",
+      program: "/images/events/team-banner.jpeg",
+    },
+    heroDisplay: "tall",
+    video: null,
+    en: {
+      title:
+        "RoboFounders CEO Mariel Asami Fukase Speaks at Diffusion Borneo 2026 on “Beyond POC”",
+      subtitles: [
+        "― Moving innovation from proof of concept to real-world implementation ―",
+        "― Connecting manufacturing expertise across Japan × ASEAN × USA ―",
+      ],
+      lead: "RoboFounders CEO Mariel Asami Fukase spoke at Diffusion Borneo 2026 | Ignited by Slush'D in Kuching, Sarawak, Malaysia, sharing practical perspectives on the theme of “Beyond POC.”",
+      sections: [
+        {
+          heading: "Turning Innovation into Real-World Deployment",
+          paragraphs: [
+            "The session explored how companies can move beyond isolated proof-of-concept projects and turn promising technology into practical implementation, commercialization, and sustainable value.",
+            "Mariel shared lessons from cross-border open innovation and explained how companies, technologies, and industrial ecosystems can work together to solve real manufacturing challenges.",
+          ],
+        },
+        {
+          heading: "Connecting Technology with Manufacturing",
+          paragraphs: [
+            "Drawing on initiatives involving Japanese companies, the talk highlighted the importance of connecting precision engineering, robotics, AI, software, and factory-floor expertise.",
+            "RoboFounders is building the Physical AI platform for manufacturing across Japan, ASEAN, and the United States—helping technology move from experimentation into real production environments.",
+          ],
+        },
+      ],
+      quote: {
+        speaker: "Mariel Fukase (深瀬マリエル麻美)",
+        role: "Founder & CEO, RoboFounders",
+        text: "“Our focus is to move technology beyond POC and into real manufacturing environments where it can protect people, improve safety, and create lasting value.”",
+      },
+      visionHeading: "From POC to the Factory Floor",
+      visionText: [
+        "RoboFounders connects robotics, AI, critical components, software, and manufacturing expertise to accelerate the real-world deployment of Physical AI.",
+        "From Factory to World.",
+      ],
+      collaborationHeading: "Technology & Manufacturing Collaboration",
+      collaborationIntro:
+        "We welcome collaboration with manufacturers, research institutions, robotics companies, and technology partners.",
+      collaborationItems: [
+        "Physical AI and industrial automation PoCs",
+        "Robotics component co-development",
+        "AI and robotics joint research",
+        "Manufacturing deployment across Japan, ASEAN, and the USA",
+      ],
+      ctaTitle: "Tell us your requirements.",
+      ctaSubtitle: "Let’s bring Physical AI into the real world.",
+      ctaButton: "Get in touch",
+      backLink: "← Back to News & Events",
+    },
+    ja: {
+      title:
+        "Diffusion Borneo 2026にてRoboFounders CEO 深瀬マリエル麻美が「Beyond POC」をテーマに登壇",
+      subtitles: [
+        "― PoCから現場導入・事業化へ ―",
+        "― Japan × ASEAN × USAの製造エコシステムをつなぐ ―",
+      ],
+      lead: "RoboFounders CEO 深瀬マリエル麻美が、マレーシア・サラワク州クチンで開催されたDiffusion Borneo 2026 | Ignited by Slush'Dにて、「Beyond POC」をテーマに登壇しました。",
+      sections: [
+        {
+          heading: "技術をPoCで終わらせず、現場へ",
+          paragraphs: [
+            "セッションでは、PoCを実施して終わりにするのではなく、実際の現場導入・事業化へつなげ、持続的な価値を生み出すための考え方を共有しました。",
+            "国や企業、技術、産業エコシステムを横断して連携し、製造現場が抱える課題を解決するクロスボーダー・オープンイノベーションについてお話ししました。",
+          ],
+        },
+        {
+          heading: "テクノロジーと製造現場をつなぐ",
+          paragraphs: [
+            "日本企業との取り組みを例に、精密技術、ロボティクス、AI、ソフトウェア、製造現場の知見をつなぐ重要性を紹介しました。",
+            "RoboFoundersは、Japan × ASEAN × USAを軸に、技術を実験段階から実際の生産環境へ届ける製造業のためのPhysical AIプラットフォームを構築しています。",
+          ],
+        },
+      ],
+      quote: {
+        speaker: "深瀬マリエル麻美（Mariel Fukase）",
+        role: "Founder & CEO, RoboFounders",
+        text: "「技術をPoCで終わらせず、実際の製造現場へ届け、人を守り、安全性を高め、持続的な価値を生み出すことを目指しています。」",
+      },
+      visionHeading: "PoCから、製造現場へ",
+      visionText: [
+        "RoboFoundersは、ロボティクス、AI、重要コンポーネント、ソフトウェア、製造の知見をつなぎ、Physical AIの社会実装を加速します。",
+        "工場の現場から、世界へ。",
+      ],
+      collaborationHeading: "技術・製造における協業",
+      collaborationIntro:
+        "製造企業、研究機関、ロボティクス企業、技術パートナーの皆さまとの連携を歓迎しています。",
+      collaborationItems: [
+        "製造現場におけるPhysical AI・自動化のPoC",
+        "ロボティクス重要部品の共同開発",
+        "AI・ロボティクス技術の共同研究",
+        "日本・ASEAN・米国における製造現場への導入",
+      ],
+      ctaTitle: "Tell us your requirements.",
+      ctaSubtitle: "Physical AIを現実の現場へ。",
       ctaButton: "お問い合わせ",
       backLink: "← ニュース一覧へ戻る",
     },
@@ -241,6 +358,7 @@ export const newsArticles = {
       event: "/images/events/diffusion-borneo.jpeg",
       program: "/images/events/team-banner.jpeg",
     },
+    heroDisplay: "tall",
     video: null,
     en: {
       title:
@@ -364,7 +482,7 @@ export const newsArticles = {
         "製造現場におけるPhysical AIのPoC・現場導入",
         "ヒューマノイドロボット・重要部品の共同開発",
         "ASEAN・グローバル市場における販売・製造パートナーシップ",
-        "事業連携および戦略的アライアンス",
+        "事業連携および技術協業",
       ],
       ctaTitle: "Tell us your requirements.",
       ctaSubtitle: "Let’s build the future of Physical AI together.",
@@ -384,6 +502,7 @@ export const newsArticles = {
       event: "/images/events/team-banner.jpeg",
       program: "/images/events/team-ivs.jpeg",
     },
+    heroDisplay: "tall",
     video: {
       src: "/videos/events/event-clip1.mp4",
       poster: "/images/events/robot-hug.jpeg",
@@ -400,7 +519,7 @@ export const newsArticles = {
         {
           heading: "Showcasing Physical AI on a Global Startup Stage",
           paragraphs: [
-            "Startup World Cup is one of the world’s premier startup pitch competitions organized by Pegasus Tech Ventures, connecting top innovators, investors, and corporate leaders worldwide.",
+            "Startup World Cup is one of the world’s premier startup pitch competitions organized by Pegasus Tech Ventures, connecting top innovators and corporate leaders worldwide.",
             "At the Malaysia regional competition, RoboFounders stood out as a Semi-Finalist, taking the stage to present our vision for Physical AI and industrial robotics automation.",
             "This selection highlights the growing international interest in Physical AI solutions engineered to automate dangerous and repetitive manufacturing labor while protecting worker safety.",
           ],
@@ -416,7 +535,7 @@ export const newsArticles = {
         {
           heading: "Connecting Japan, ASEAN, and the USA",
           paragraphs: [
-            "RoboFounders operates across three pivotal regions: precision engineering from Japan, agile production and deployment in ASEAN (Malaysia & Vietnam), and AI innovation and capital in the United States.",
+            "RoboFounders operates across three pivotal regions: precision engineering from Japan, agile production and deployment in ASEAN (Malaysia & Vietnam), and AI and robotics innovation in the United States.",
             "Our participation in Startup World Cup Malaysia reinforces our deep commitment to the Southeast Asian deep-tech ecosystem as a regional launchpad for global manufacturing automation.",
           ],
           bullets: [
@@ -464,7 +583,7 @@ export const newsArticles = {
         {
           heading: "世界的な舞台でPhysical AIの取り組みを発信",
           paragraphs: [
-            "Startup World Cup（スタートアップワールドカップ）は、米Pegasus Tech Venturesが主催する世界最大級のグローバルピッチコンテストです。世界各国のトップイノベーター、投資家、企業リーダーが集う本大会のマレーシア予選において、RoboFoundersがセミファイナリストとして選出されました。",
+            "Startup World Cup（スタートアップワールドカップ）は、米Pegasus Tech Venturesが主催する世界最大級のグローバルピッチコンテストです。世界各国のトップイノベーターや企業リーダーが集う本大会のマレーシア予選において、RoboFoundersがセミファイナリストとして選出されました。",
             "今回のピッチでは、製造現場のためのPhysical AI構想とRoboFoundersの取り組みについてプレゼンテーションを実施し、国内外から大きな注目を集めました。",
             "製造現場における危険・過酷・反復作業をロボットで自動化し、人を守るPhysical AIプラットフォームの重要性と独自性を広くアピールしました。",
           ],
@@ -484,7 +603,7 @@ export const newsArticles = {
             "マレーシア大会でのセミファイナリスト選出を弾みに、東南アジア地域における製造業パートナーとの連携および現場PoCの展開をさらに加速してまいります。",
           ],
           bullets: [
-            "ASEAN製造業およびテクノロジー企業とのアライアンス強化",
+            "ASEAN製造業およびテクノロジー企業との協業強化",
             "危険作業・高精度作業現場におけるPhysical AI PoCの推進",
             "ローラースクリューおよびロボットハンドの社会実装と量産化",
           ],
@@ -510,7 +629,7 @@ export const newsArticles = {
         "製造現場におけるPhysical AIのPoC・現場導入",
         "ヒューマノイドロボット・重要部品の共同開発",
         "ASEAN・グローバル市場における販売・製造パートナーシップ",
-        "事業連携および戦略的アライアンス",
+        "事業連携および技術協業",
       ],
       ctaTitle: "Tell us your requirements.",
       ctaSubtitle: "Let’s build the future of Physical AI together.",
