@@ -357,7 +357,7 @@ export default function ROICalculator() {
             <div className="pointer-events-none absolute inset-0 scale-125 rf-radial-glow blur-xl" />
             <img
               src="/images/home/rofi-3d.png"
-              alt="Rofi — your Robot COO"
+              alt="Rofi — RoboFounders Physical AI assessment assistant"
               className="rf-float relative mx-auto h-36 w-36 object-contain drop-shadow-xl sm:h-44 sm:w-44"
               loading="eager"
             />
