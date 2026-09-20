@@ -16,7 +16,8 @@ const eventImages = [
 
 const newsImages = [
   media.newsEvent, // Tokyo to Boston / JETRO X-HUB TOKYO full image
-  media.events[2], // Beyond POC speaker story
+  media.ivs2026News, // IVS2026 Startup Market
+  media.beyondPocPortrait, // Beyond POC speaker story
   media.diffusionBorneo, // Diffusion Borneo 2026 image from doc
   media.events[0], // robot-hug / Startup World Cup
   media.events[3], // booth-laptop / ASEAN network
@@ -24,9 +25,10 @@ const newsImages = [
 
 const newsSlugMap = {
   0: "/news/x-hub-tokyo-boston",
-  1: "/news/diffusion-borneo-beyond-poc",
-  2: "/news/diffusion-borneo-2026",
-  3: "/news/startup-world-cup-malaysia",
+  1: "/news/ivs2026-startup-market",
+  2: "/news/diffusion-borneo-beyond-poc",
+  3: "/news/diffusion-borneo-2026",
+  4: "/news/startup-world-cup-malaysia",
 };
 
 export default function Updates() {
@@ -156,7 +158,11 @@ export default function Updates() {
 
                 return (
                   <CardTag key={title} {...cardProps}>
-                    <div className="news-media">
+                    <div
+                      className={`news-media${
+                        index === 1 || index === 2 ? " is-contain" : ""
+                      }`}
+                    >
                       <img
                         src={newsImages[index % newsImages.length]}
                         alt={title}

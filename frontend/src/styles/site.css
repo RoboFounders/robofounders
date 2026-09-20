@@ -1626,6 +1626,19 @@ button:disabled {
   object-position: center 20%;
   border-radius: 4px;
 }
+.news-media.is-contain {
+  display: grid;
+  place-items: center;
+  height: 160px;
+  background: #0b0e2b;
+  border-radius: 4px;
+  overflow: hidden;
+}
+.news-media.is-contain img {
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+}
 .news-card-body p.eyebrow {
   font-size: 13px;
   margin-bottom: 8px;
@@ -3314,6 +3327,13 @@ button:disabled {
   height: clamp(460px, 56vw, 560px);
   max-height: 560px;
   object-position: center 20%;
+}
+.news-featured-media.is-contain img {
+  width: 100%;
+  height: auto;
+  max-height: 620px;
+  object-fit: contain;
+  object-position: center;
 }
 .news-body-section {
   background: white;

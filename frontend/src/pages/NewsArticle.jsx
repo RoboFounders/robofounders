@@ -30,7 +30,7 @@ export default function NewsArticle() {
   return (
     <>
       <PageMeta
-        title={`${content.title} | RoboFounders`}
+        title={content.title}
         description={content.lead}
         path={`/news/${slug}`}
         image={article.images.hero}
@@ -67,7 +67,7 @@ export default function NewsArticle() {
 
             <div
               className={`news-featured-media${
-                article.heroDisplay === "tall" ? " is-tall" : ""
+                article.heroDisplay ? ` is-${article.heroDisplay}` : ""
               }`}
             >
               <img
