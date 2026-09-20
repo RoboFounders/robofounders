@@ -300,9 +300,9 @@ button:disabled {
   text-decoration: none;
 }
 .brand img {
-  height: 48px;
+  height: 60px;
   width: auto;
-  max-width: 260px;
+  max-width: 320px;
   object-fit: contain;
   transition: opacity 0.2s ease, transform 0.2s ease;
 }
@@ -2601,9 +2601,9 @@ button:disabled {
     max-width: 100%;
   }
   .brand img {
-    height: 38px;
+    height: 44px;
     width: auto;
-    max-width: 190px;
+    max-width: 220px;
     object-fit: contain;
   }
   .footer-brand img {
