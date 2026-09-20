@@ -12,7 +12,7 @@ export const media = {
   home: {
     hero: "/images/home/physical-ai-hero.webp",
     heroDangerousWork: "/images/home/dangerous-manufacturing.webp",
-    about: "/images/home/about-origin.webp",
+    about: "/images/home/about-factory-team.webp",
     regions: "/images/home/global-ecosystem.webp",
     why: "/images/home/why-robofounders.webp",
     factory: "/images/home/factory-deployment.webp",
