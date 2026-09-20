@@ -4,7 +4,7 @@ import { ArrowUpRight, Menu, X } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { media } from "@/content/media";
 export const navTargets = [
-  "/#hero",
+  "/",
   "/#how",
   "/products",
   "/#works",
