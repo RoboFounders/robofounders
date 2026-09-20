@@ -65,7 +65,11 @@ export default function NewsArticle() {
               ))}
             </div>
 
-            <div className="news-featured-media">
+            <div
+              className={`news-featured-media${
+                article.heroDisplay === "tall" ? " is-tall" : ""
+              }`}
+            >
               <img
                 src={article.images.hero}
                 alt={content.title}
@@ -123,6 +127,22 @@ export default function NewsArticle() {
                 </section>
               ))}
             </div>
+
+            {article.supportingImages?.length > 0 && (
+              <div className="news-supporting-images">
+                {article.supportingImages.map((imageKey, index) => (
+                  <figure key={imageKey}>
+                    <img
+                      src={article.images[imageKey]}
+                      alt={
+                        content.supportingImageAlts?.[index] || content.title
+                      }
+                      loading="lazy"
+                    />
+                  </figure>
+                ))}
+              </div>
+            )}
 
             {/* On-the-Ground Event Video */}
             {article.video?.src && (
