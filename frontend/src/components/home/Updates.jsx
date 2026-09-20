@@ -11,6 +11,7 @@ const eventImages = [
   media.events[1], // team-ivs / IVS Japan
   media.events[4], // banner-booth / Silicon Valley launch
   media.events[7], // startups-jungle / BuildClub Tokyo
+  media.home.factory, // humans and robots working together
 ];
 
 const newsImages = [
