@@ -131,13 +131,6 @@ const ja = {
       ["2026年6月", "米国デラウェア州にRoboFounders, Inc.を設立。"],
       ["2026年8月19日", "日本法人RoboFounders株式会社を設立。"],
     ],
-    encounterLabel: "A chance encounter",
-    encounterTitle: "すべては、一つの「こんにちは」から始まりました。",
-    encounter: [
-      "クアラルンプールの日本人墓地で偶然出会ったのが、後にRoboFoundersの戦略アドバイザーとなる森田益光でした。",
-      "森田はトヨタ自動車で製造現場を経験し、その後、南アフリカでは上級副社長として約8,000名のスタッフを率い、工場改革を推進してきました。",
-      "日本とマレーシアをつないできた先人たちが眠る場所での出会いは、日本の製造業の知恵とAI・ロボットの力をつなぎ、日本とASEANの未来をつくるための呼びかけのように感じられました。",
-    ],
     missionTitle: "製造現場の課題に向き合う",
     challenges: ["危険な作業", "重労働", "繰り返し作業", "人手不足"],
     mission:
@@ -257,7 +250,7 @@ const ja = {
       "2026年6月23日・24日 — RoboFounders、Diffusion Borneo 2026に創業直後の初出展",
       "IVS2026限定搭乗券ステッカー",
       "ブースSC-16 — IVS2026にて",
-      "Startup JungleでJungle Forge AWARDを運営。スタートアップピッチコンテストと起業家向けビジネス日本語レッスンを開催",
+      "Jungle Forge AWARDを運営。ジャングルでスタートアップピッチコンテストと起業家向けのビジネス日本語レッスンも開催いたしました。",
       "ボストンのディープテック・AIエコシステムとの連携",
     ],
     video: "RoboFoundersのイベント動画",
@@ -322,7 +315,7 @@ const ja = {
       [
         "2026",
         "出展",
-        "Diffusion 2026, Sarawak",
+        "RoboFounders、Diffusion Borneo 2026に創業直後の初出展",
         "創業直後にDiffusion Borneo 2026へ初出展。ASEANのエコシステムに向けて、Physical AIおよび製造業向けロボティクス技術を紹介。",
       ],
       [
@@ -342,6 +335,12 @@ const ja = {
         "コミュニティ",
         "BuildClub Tokyo",
         "東京で創業者とロボティクスのコミュニティづくりに運営者として参加。",
+      ],
+      [
+        "現在",
+        "Physical AI",
+        "人とロボットが働く未来へ。",
+        "RoboFoundersは、製造現場の危険・高リスク作業をロボットで自動化するPhysical AIプラットフォームです。",
       ],
     ],
     news: [
