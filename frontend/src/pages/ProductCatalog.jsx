@@ -17,8 +17,8 @@ export default function ProductCatalog() {
           <div className="wrap catalog-hero-card">
             <div className="catalog-hero-copy">
               <p className="eyebrow">{t.productsPage.label}</p>
-              <h1>{t.productsPage.title}</h1>
-              <p className="section-lead">{t.productsPage.body}</p>
+              <h1 className="client-line-breaks">{t.productsPage.title}</h1>
+              <p className="section-lead client-line-breaks">{t.productsPage.body}</p>
             </div>
             <figure className="catalog-hero-media">
               <img
@@ -76,8 +76,10 @@ export default function ProductCatalog() {
           <div className="wrap section-heading">
             <div>
               <p className="eyebrow">{t.productsPage.ecosystem}</p>
-              <h2>{t.productsPage.ask}</h2>
-              <p className="section-lead">{t.productsPage.askBody}</p>
+              <h2 className="client-line-breaks">{t.productsPage.ask}</h2>
+              <p className="section-lead client-line-breaks">
+                {t.productsPage.askBody}
+              </p>
             </div>
             <Link className="button primary" to="/#contact">
               {t.ui.contact}

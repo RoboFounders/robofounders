@@ -165,8 +165,8 @@ export default function Home() {
             </figure>
             <div className="concept-film-copy">
               <p className="eyebrow">{t.showcase.label}</p>
-              <h2>{t.showcase.title}</h2>
-              <p className="section-lead">{t.showcase.body}</p>
+              <h2 className="client-line-breaks">{t.showcase.title}</h2>
+              <p className="section-lead client-line-breaks">{t.showcase.body}</p>
               <div className="concept-film-points">
                 {t.showcase.points.map(([title, body], index) => (
                   <div key={title}>
@@ -190,7 +190,7 @@ export default function Home() {
             <div className="split-heading">
               <div>
                 <p className="eyebrow">{t.about.label}</p>
-                <h2>{t.about.title}</h2>
+                <h2 className="client-line-breaks">{t.about.title}</h2>
               </div>
               <p className="section-lead">{t.about.body}</p>
             </div>
@@ -353,7 +353,7 @@ export default function Home() {
                 <ArrowUpRight size={18} />
               </Link>
             </div>
-            <p className="section-lead">{t.technology.body}</p>
+            <p className="section-lead client-line-breaks">{t.technology.body}</p>
             <div className="technology-grid">
               {productIds.map((id, i) => {
                 const Icon = i === 0 ? Cog : Hand;
@@ -373,7 +373,7 @@ export default function Home() {
                         : t.productsPage.second}
                     </span>
                     <h3>{product.name}</h3>
-                    <p>{product.preview}</p>
+                    <p className="client-line-breaks">{product.preview}</p>
                     <span className="text-link">
                       {t.ui.details}
                       <ArrowUpRight size={20} />
@@ -387,7 +387,7 @@ export default function Home() {
         <section className="section platform-section">
           <div className="wrap">
             <p className="eyebrow">{t.platform.label}</p>
-            <h2>{t.platform.title}</h2>
+            <h2 className="client-line-breaks">{t.platform.title}</h2>
             <p className="section-lead">{t.platform.body}</p>
             <div className="platform-grid">
               {t.platform.items.map(([name, body], i) => (
@@ -409,7 +409,7 @@ export default function Home() {
             <div className="split-heading">
               <div>
                 <p className="eyebrow">{t.factory.label}</p>
-                <h2>{t.factory.title}</h2>
+                <h2 className="client-line-breaks">{t.factory.title}</h2>
               </div>
               <p className="section-lead">{t.factory.body}</p>
             </div>
@@ -451,11 +451,11 @@ export default function Home() {
               {t.works.items.map(([tag, title, body], i) => (
                 <article key={title}>
                   <img
-                    src={media.events[[1, 0, 4][i]]}
+                    src={media.events[[1, 0, 2][i]]}
                     alt={title}
                     loading="lazy"
-                    width={media.eventSizes[[1, 0, 4][i]][0]}
-                    height={media.eventSizes[[1, 0, 4][i]][1]}
+                    width={media.eventSizes[[1, 0, 2][i]][0]}
+                    height={media.eventSizes[[1, 0, 2][i]][1]}
                   />
                   <p className="eyebrow">{tag}</p>
                   <h3>{title}</h3>
@@ -470,7 +470,7 @@ export default function Home() {
             <div className="startup-copy">
               <p className="eyebrow">{t.startups.label}</p>
               <h2>{t.startups.title}</h2>
-              <p className="section-lead">{t.startups.body}</p>
+              <p className="section-lead client-line-breaks">{t.startups.body}</p>
               <Link className="button primary" to="/#contact">
                 {t.startups.cta}
                 <ArrowUpRight size={18} />

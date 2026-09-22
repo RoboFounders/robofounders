@@ -1566,8 +1566,9 @@ button:disabled {
 .event-media img {
   width: 100%;
   height: 110px;
-  object-fit: cover;
-  object-position: center 20%;
+  object-fit: contain;
+  object-position: center;
+  background: #f4f5f8;
   border-radius: var(--radius-sm);
   border: 1px solid var(--line);
 }
@@ -3673,4 +3674,7 @@ html[lang="ja"] .desktop-nav {
   .team-grid article:hover {
     transform: none;
   }
+}
+.client-line-breaks {
+  white-space: pre-line;
 }
