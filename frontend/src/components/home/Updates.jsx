@@ -6,9 +6,9 @@ import { media } from "@/content/media";
 
 const eventImages = [
   media.bostonAiWeek, // boston-ai-week
-  media.events[0], // robot-hug / Startup World Cup
+  media.startupWorldCup, // client-approved Startup World Cup image
   media.events[2], // team-banner / Diffusion Sarawak
-  media.events[1], // team-ivs / IVS Japan
+  media.ivsExhibit, // client-approved IVS Japan image
   media.events[4], // banner-booth / Silicon Valley launch
   media.events[7], // startups-jungle / BuildClub Tokyo
   media.home.factory, // humans and robots working together
@@ -19,7 +19,7 @@ const newsImages = [
   media.ivs2026News, // IVS2026 Startup Market
   media.beyondPocPortrait, // Beyond POC speaker story
   media.diffusionBorneo, // Diffusion Borneo 2026 image from doc
-  media.events[0], // robot-hug / Startup World Cup
+  media.startupWorldCup, // client-approved Startup World Cup image
   media.events[3], // booth-laptop / ASEAN network
 ];
 
