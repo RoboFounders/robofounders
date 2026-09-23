@@ -9,7 +9,7 @@ export const navTargets = [
   "/products",
   "/#works",
   "/#founders",
-  "/#news",
+  "/#news-press",
   "/#founder",
   "/#contact",
 ];
