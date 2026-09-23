@@ -301,43 +301,49 @@ const ja = {
     press: "プレス・ニュース",
     items: [
       [
-        "2026",
+        "2026年9月",
         "参加",
         "Boston AI Week 2026",
         "X-HUB TOKYO Bostonコースを通じて、BostonのAI・ロボティクス・ディープテックエコシステムとの連携を構築。",
       ],
       [
-        "2026",
+        "2026年7月",
         "出場",
         "Startup World Cup Malaysia 2026",
         "マレーシア最大のスタートアップの舞台に出場。Physical AIの可能性を発信しセミファイナリストに選出。",
       ],
       [
-        "2026",
+        "2026年6月",
         "出展",
         "RoboFounders、Diffusion Borneo 2026に創業直後の初出展",
         "創業直後にDiffusion Borneo 2026へ初出展。ASEANのエコシステムに向けて、Physical AIおよび製造業向けロボティクス技術を紹介。",
       ],
       [
-        "2026",
+        "2026年7月",
         "出展",
         "IVS2026, Japan",
         "日本のスタートアップシーンで、現地デモとパートナーシップづくりに取り組みます。",
       ],
       [
-        "現在",
+        "2026年6月",
         "立ち上げ",
         "シリコンバレーへの進出",
         "サンフランシスコとシリコンバレーへの展開を推進する新会社の立ち上げ。",
       ],
       [
-        "継続中",
+        "2026年6月",
         "コミュニティ",
         "BuildClub Tokyo",
         "東京で創業者とロボティクスのコミュニティづくりに運営者として参加。",
       ],
       [
-        "現在",
+        "2026年6月",
+        "イベント",
+        "JUNGLE FORGE AWARD Social Impact Edition 2026",
+        "大自然の中で、社会課題に挑むスタートアップによるピッチイベントを開催。",
+      ],
+      [
+        "2026年6月",
         "Physical AI",
         "人とロボットが働く未来へ。",
         "RoboFoundersは、製造現場の危険・高リスク作業をロボットで自動化するPhysical AIプラットフォームです。",
@@ -346,8 +352,28 @@ const ja = {
     news: [
       [
         "2026年9月",
+        "RoboFounders、X-HUB TOKYO海外展開支援プログラム シンガポールコースに採択",
+        "日本発のPhysical AIをシンガポールからASEANへ展開し、製造業での事業機会を広げます。",
+      ],
+      [
+        "2026年9月",
         "創業1か月未満で採択。Made in JapanのPhysical AI・ロボティクス技術を世界へ",
         "東京都・JETRO「X-HUB TOKYO GLOBAL STARTUP ACCELERATOR OUTBOUND PROGRAM」Bostonコースに採択。米国Bostonでヒューマノイドロボット・製造業向け事業の展開を加速。",
+      ],
+      [
+        "2026年8月19日",
+        "RoboFounders、日本法人 株式会社RoboFoundersを設立",
+        "San Franciscoを起点に、日本の製造技術とPhysical AIを世界へ展開します。",
+      ],
+      [
+        "2026年8月11日",
+        "RoboFounders CEO 深瀬マリエル麻美、AI Malaysia Takeover 2026に登壇",
+        "「SMEs Don’t Need AI Magic. They Need AI That Works.」をテーマに、AIの実装とPhysical AIの可能性を発信しました。",
+      ],
+      [
+        "2026年7月17日",
+        "RoboFounders、「Startup World Cup 東京」に出展",
+        "製造業向けPhysical AIプラットフォームを紹介し、着物姿のロボットCOO「ROFI」が来場者を迎えました。",
       ],
       [
         "2026年7月",
@@ -363,6 +389,11 @@ const ja = {
         "2026年6月23日・24日",
         "Diffusion Borneo 2026に創業直後の初出展",
         "創業直後、マレーシアで開催されたDiffusion Borneo 2026に初出展。Physical AIおよび製造業向けロボティクス技術を紹介しました。",
+      ],
+      [
+        "2026年6月9日",
+        "JUNGLE FORGE AWARD Social Impact Edition 2026",
+        "RoboFounders主催。桝井 綾乃（FIRST CVC）による各社への個別コメントを掲載。",
       ],
       [
         "2026年5月",
