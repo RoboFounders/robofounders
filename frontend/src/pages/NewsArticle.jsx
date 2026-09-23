@@ -96,26 +96,38 @@ export default function NewsArticle() {
                     <p key={pIdx}>{p}</p>
                   ))}
 
-                  {section.judgeComment && (
-                    <aside className="judge-comment-card" aria-label={section.judgeComment.label}>
-                      <img
-                        className="judge-comment-avatar"
-                        src={article.images[section.judgeComment.imageKey]}
-                        alt={section.judgeComment.name}
-                        loading="lazy"
-                      />
-                      <div className="judge-comment-content">
-                        <div className="judge-comment-heading">
-                          <span className="judge-comment-label">
-                            <Quote size={16} aria-hidden="true" />
-                            {section.judgeComment.label}
-                          </span>
-                          <strong>{section.judgeComment.name}</strong>
-                          <span>{section.judgeComment.affiliation}</span>
-                        </div>
-                        <blockquote>{section.judgeComment.text}</blockquote>
-                      </div>
-                    </aside>
+                  {(section.judgeComments || section.judgeComment) && (
+                    <div className="judge-comments-list">
+                      {(section.judgeComments || [section.judgeComment]).map(
+                        (comment, commentIdx) => (
+                          <aside
+                            className={`judge-comment-card${comment.imageKey ? "" : " judge-comment-card--text-only"}`}
+                            aria-label={`${comment.label}: ${comment.name}`}
+                            key={`${comment.name}-${commentIdx}`}
+                          >
+                            {comment.imageKey && (
+                              <img
+                                className="judge-comment-avatar"
+                                src={article.images[comment.imageKey]}
+                                alt={comment.name}
+                                loading="lazy"
+                              />
+                            )}
+                            <div className="judge-comment-content">
+                              <div className="judge-comment-heading">
+                                <span className="judge-comment-label">
+                                  <Quote size={16} aria-hidden="true" />
+                                  {comment.label}
+                                </span>
+                                <strong>{comment.name}</strong>
+                                <span>{comment.affiliation}</span>
+                              </div>
+                              <blockquote>{comment.text}</blockquote>
+                            </div>
+                          </aside>
+                        ),
+                      )}
+                    </div>
                   )}
 
                   {section.bullets && (
