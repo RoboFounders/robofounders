@@ -41,7 +41,7 @@ export default function NewsArticle() {
         <section className="news-hero-section">
           <div className="wrap news-hero-wrap">
             <Link
-              to={{ pathname: "/", hash: "#news" }}
+              to={{ pathname: "/", hash: "#news-press" }}
               state={{ tab: "press" }}
               onClick={handleBack}
               className="back-link"
@@ -95,6 +95,28 @@ export default function NewsArticle() {
                   {section.paragraphs?.map((p, pIdx) => (
                     <p key={pIdx}>{p}</p>
                   ))}
+
+                  {section.judgeComment && (
+                    <aside className="judge-comment-card" aria-label={section.judgeComment.label}>
+                      <img
+                        className="judge-comment-avatar"
+                        src={article.images[section.judgeComment.imageKey]}
+                        alt={section.judgeComment.name}
+                        loading="lazy"
+                      />
+                      <div className="judge-comment-content">
+                        <div className="judge-comment-heading">
+                          <span className="judge-comment-label">
+                            <Quote size={16} aria-hidden="true" />
+                            {section.judgeComment.label}
+                          </span>
+                          <strong>{section.judgeComment.name}</strong>
+                          <span>{section.judgeComment.affiliation}</span>
+                        </div>
+                        <blockquote>{section.judgeComment.text}</blockquote>
+                      </div>
+                    </aside>
+                  )}
 
                   {section.bullets && (
                     <div className="news-spec-box">
@@ -204,7 +226,7 @@ export default function NewsArticle() {
             )}
 
             {/* Bottom CTA Card */}
-            <div className="news-cta-banner">
+            {content.ctaTitle && <div className="news-cta-banner">
               <div className="cta-copy">
                 <h3>{content.ctaTitle}</h3>
                 <p>{content.ctaSubtitle}</p>
@@ -213,7 +235,7 @@ export default function NewsArticle() {
                 {content.ctaButton}
                 <ArrowUpRight size={18} />
               </Link>
-            </div>
+            </div>}
           </div>
         </article>
       </main>
