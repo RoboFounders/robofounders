@@ -327,43 +327,49 @@ const en = {
     press: "Press & news",
     items: [
       [
-        "2026",
+        "Sep 2026",
         "Participating",
         "Boston AI Week 2026",
         "Connecting with the Boston AI, robotics, and deeptech ecosystem through the X-HUB TOKYO Boston program.",
       ],
       [
-        "2026",
+        "July 2026",
         "Competing",
         "Startup World Cup Malaysia 2026",
         "Competing on Malaysia’s biggest startup stage to showcase our Physical AI platform and selected as a Semi-Finalist.",
       ],
       [
-        "2026",
+        "June 2026",
         "Exhibiting",
         "RoboFounders Makes Its First Exhibition at Diffusion Borneo 2026 Shortly After Launch",
         "Exhibiting Physical AI and manufacturing robotics solutions to the ASEAN ecosystem at Diffusion Borneo 2026 shortly after launch.",
       ],
       [
-        "2026",
+        "July 2026",
         "Exhibiting",
         "IVS2026, Japan",
         "On-ground demos and partnership building across the Japanese startup landscape.",
       ],
       [
-        "Now",
+        "June 2026",
         "Launching",
         "Silicon Valley Launch",
         "New company launch with an aggressive San Francisco / Silicon Valley expansion push.",
       ],
       [
-        "Ongoing",
+        "June 2026",
         "Community",
         "BuildClub Tokyo",
         "Active organizer involvement, building a founder + robotics community in Tokyo.",
       ],
       [
-        "Now",
+        "June 2026",
+        "Event",
+        "JUNGLE FORGE AWARD Social Impact Edition 2026",
+        "A pitch event for startups tackling social challenges, held in nature.",
+      ],
+      [
+        "June 2026",
         "Physical AI",
         "Building a Future Where Humans and Robots Work Together.",
         "RoboFounders builds Physical AI solutions that automate dangerous and high-risk work in manufacturing.",
@@ -372,8 +378,28 @@ const en = {
     news: [
       [
         "Sep 2026",
+        "RoboFounders Selected for the X-HUB TOKYO Global Startup Accelerator Singapore Course",
+        "Expanding Physical AI for manufacturing from Japan to Singapore and across ASEAN.",
+      ],
+      [
+        "Sep 2026",
         "Selected for Tokyo & JETRO X-HUB TOKYO Global Startup Accelerator Boston Course",
         "Selected within one month of founding to accelerate Physical AI and humanoid robotics deployment across Boston and global manufacturing markets.",
+      ],
+      [
+        "Aug 19, 2026",
+        "RoboFounders Establishes Japanese Corporation",
+        "Connecting Japanese manufacturing technology with Physical AI and expanding globally from San Francisco through Japan and ASEAN.",
+      ],
+      [
+        "Aug 11, 2026",
+        "RoboFounders Founder Mariel Asami Fukase Speaks at AI Malaysia Takeover 2026",
+        "Sharing real-world AI implementation and the potential of Physical AI under the theme “SMEs Don’t Need AI Magic. They Need AI That Works.”",
+      ],
+      [
+        "Jul 17, 2026",
+        "RoboFounders Exhibits at Startup World Cup Tokyo",
+        "Presenting a Physical AI platform for manufacturing while robot COO ROFI welcomed visitors in a traditional kimono.",
       ],
       [
         "Jul 2026",
@@ -389,6 +415,11 @@ const en = {
         "June 23–24, 2026",
         "RoboFounders Makes Its First Exhibition at Diffusion Borneo 2026 Shortly After Launch",
         "RoboFounders’ first conference exhibition shortly after launch, showcasing Physical AI and manufacturing robotics solutions to the ASEAN ecosystem.",
+      ],
+      [
+        "June 9, 2026",
+        "JUNGLE FORGE AWARD Social Impact Edition 2026",
+        "Organized by RoboFounders, with individual comments from Ayano Masui (FIRST CVC) for each company.",
       ],
       [
         "May 2026",
