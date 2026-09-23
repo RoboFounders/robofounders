@@ -5,7 +5,6 @@ import {
   ArrowUpRight,
   Plus,
   Cog,
-  Hand,
   ScanEye,
   Factory,
   Bot,
@@ -28,6 +27,11 @@ import FieldGallery from "@/components/home/FieldGallery";
 import Team from "@/components/home/Team";
 import Updates from "@/components/home/Updates";
 import AccessibleLoopVideo from "@/components/shared/AccessibleLoopVideo";
+
+const productCardImages = {
+  "roller-screw": "/images/products/roller-screw/close-up-640.webp",
+  "robotic-hand": "/images/products/robot-hand-new.jpg",
+};
 import { useLanguage } from "@/contexts/LanguageContext";
 import { media, productIds } from "@/content/media";
 
@@ -356,7 +360,6 @@ export default function Home() {
             <p className="section-lead client-line-breaks">{t.technology.body}</p>
             <div className="technology-grid">
               {productIds.map((id, i) => {
-                const Icon = i === 0 ? Cog : Hand;
                 const product = t.products[id];
                 return (
                   <Link
@@ -364,9 +367,14 @@ export default function Home() {
                     to={`/products/${id}`}
                     key={id}
                   >
-                    <div className="tech-icon">
-                      <Icon size={52} strokeWidth={1} />
-                    </div>
+                    <img
+                      className={`tech-image tech-image--${id}`}
+                      src={productCardImages[id]}
+                      alt={product.cardImageAlt || product.imageAlt}
+                      loading="lazy"
+                      width="100"
+                      height="100"
+                    />
                     <span className="eyebrow">
                       {i === 0
                         ? t.productsPage.featured
