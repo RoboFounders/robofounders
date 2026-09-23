@@ -635,6 +635,7 @@ const en = {
         "We work with robotics companies and manufacturers on joint development, PoCs, custom design, and mass production.",
       imageAlt:
         "Client-supplied robotic hand visual showing delicate sushi handling",
+      cardImageAlt: "Client-supplied Robot Hand product photograph",
       galleryAlts: [
         "Robotic hand applications in food handling and manufacturing",
         "Robotic hand visual showing precision parts handling",
