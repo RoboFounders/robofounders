@@ -796,65 +796,159 @@ export const newsArticles = {
           paragraphs: [
             "Founded in 2015 and based in Malaysia, Robopreneur develops AI-powered service robots and Physical AI solutions for professional and domestic use. Its work spans robotics, AI software, and additive manufacturing for fields including healthcare, hospitality, education, security, cleaning, tourism, and smart cities.",
           ],
-          judgeComment: {
-            label: "Judge’s comment",
-            name: "Ayano Masui",
-            affiliation: "FIRST CVC",
-            imageKey: "judge",
-            text: "Addresses key challenges in Japan, including labor shortages, elderly care, and manufacturing. Its solution also has strong potential to address similar challenges globally.",
-          },
+          judgeComments: [
+            {
+              label: "Judge’s comment",
+              name: "Ayano Masui",
+              affiliation: "FIRST CVC",
+              imageKey: "judge",
+              text: "Addresses key challenges in Japan, including labor shortages, elderly care, and manufacturing. Its solution also has strong potential to address similar challenges globally.",
+            },
+            {
+              label: "Judge’s comment",
+              name: "Akiyuki Minami",
+              affiliation: "COCONALA Inc. / Crest Skill Partners",
+              text: "Its service robots and Physical AI offer a practical response to structural labor shortages across Japan and Asia, with strong relevance to hospitals, security, cleaning, and tourism.",
+            },
+            {
+              label: "Judge’s comment",
+              name: "Takeshi Kanamori",
+              affiliation: "TKOcean, Inc.",
+              text: "The technology addresses several of Japan’s social challenges, backed by a clear commitment to building partnerships with Japanese companies and organizations.",
+            },
+          ],
         },
         {
           heading: "Silver Award & Green Award — Qarbotech",
           paragraphs: [
             "Qarbotech is an agritech startup that uses nanotechnology to improve photosynthesis, plant productivity, and crop yields. Its approach is designed to support food security and agricultural sustainability while reducing reliance on additional labor.",
           ],
-          judgeComment: {
-            label: "Judge’s comment",
-            name: "Ayano Masui",
-            affiliation: "FIRST CVC",
-            imageKey: "judge",
-            text: "Its patented technology delivers three clear social benefits: reducing CO₂ emissions, increasing food production, and reducing chemical fertilizer use. It also aligns well with Japan’s agricultural needs.",
-          },
+          judgeComments: [
+            {
+              label: "Judge’s comment",
+              name: "Ayano Masui",
+              affiliation: "FIRST CVC",
+              imageKey: "judge",
+              text: "Its patented technology delivers three clear social benefits: reducing CO₂ emissions, increasing food production, and reducing chemical fertilizer use. It also aligns well with Japan’s agricultural needs.",
+            },
+            {
+              label: "Judge’s comment",
+              name: "Yuji Hara",
+              affiliation: "Director & Partner, Apollo",
+              text: "This scalable, proven solution tackles food security, climate change, and smallholder income, with meaningful potential for implementation through Japanese corporate partnerships.",
+            },
+            {
+              label: "Judge’s comment",
+              name: "Junichi Eto",
+              affiliation: "Managing Director, JRE VENTURES",
+              text: "Real-farm validation and clear economic benefits for farmers make the solution highly applicable to Japan’s agricultural sector.",
+            },
+            {
+              label: "Judge’s comment",
+              name: "Akiyuki Minami",
+              affiliation: "COCONALA Inc. / Crest Skill Partners",
+              text: "Increasing crop yields without depending on additional labor makes this approach well suited to Japan’s shrinking agricultural workforce.",
+            },
+            {
+              label: "Judge’s comment",
+              name: "Takeshi Kanamori",
+              affiliation: "TKOcean, Inc.",
+              text: "The solution is highly relevant to agricultural labor shortages and food self-sufficiency in Japan, with a mature and feasible approach.",
+            },
+          ],
         },
         {
           heading: "AI Award — Pixelence",
           paragraphs: [
             "Pixelence develops medical AI for brain MRI imaging without contrast injections. Trained on more than 350,000 patient datasets, its technology is designed to improve image quality, support earlier detection, reduce repeated scanning, and lower imaging costs.",
           ],
-          judgeComment: {
-            label: "Judge’s comment",
-            name: "Ayano Masui",
-            affiliation: "FIRST CVC",
-            imageKey: "judge",
-            text: "Its AI-powered brain MRI diagnosis without contrast agents offers a clear and focused solution. It combines strong commercial potential with meaningful social impact in an aging society.",
-          },
+          judgeComments: [
+            {
+              label: "Judge’s comment",
+              name: "Ayano Masui",
+              affiliation: "FIRST CVC",
+              imageKey: "judge",
+              text: "Its AI-powered brain MRI diagnosis without contrast agents offers a clear and focused solution. It combines strong commercial potential with meaningful social impact in an aging society.",
+            },
+            {
+              label: "Judge’s comment",
+              name: "Akiyuki Minami",
+              affiliation: "COCONALA Inc. / Crest Skill Partners",
+              text: "The AI could reduce medical costs, patient burden, and diagnostic-imaging workflow challenges at the same time, creating considerable value for an aging Japan.",
+            },
+            {
+              label: "Judge’s comment",
+              name: "Daisuke Mitani",
+              affiliation: "General Manager, SBI",
+              text: "Grounded in scientific evidence, this breakthrough could make MRI access more widely available in underserved regions across Asia and beyond.",
+            },
+            {
+              label: "Judge’s comment",
+              name: "Takeshi Kanamori",
+              affiliation: "TKOcean, Inc.",
+              text: "The technology fits Japan’s growing medical-imaging needs and shows strong long-term growth and development potential.",
+            },
+          ],
         },
         {
           heading: "Next Generation Award — Midwest Composites",
           paragraphs: [
             "Midwest Composites is a Malaysia-based advanced materials startup that converts agricultural waste, including discarded tea leaves, into sustainable bio-composites for industrial applications. Its materials have potential across mobility, manufacturing, automotive, EV, aerospace, and other sectors.",
           ],
-          judgeComment: {
-            label: "Judge’s comment",
-            name: "Ayano Masui",
-            affiliation: "FIRST CVC",
-            imageKey: "judge",
-            text: "Its bio-composite materials made from agricultural waste have already been applied to UAVs, buses, and railways. Its proven technology and external recognition demonstrate strong potential.",
-          },
+          judgeComments: [
+            {
+              label: "Judge’s comment",
+              name: "Ayano Masui",
+              affiliation: "FIRST CVC",
+              imageKey: "judge",
+              text: "Its bio-composite materials made from agricultural waste have already been applied to UAVs, buses, and railways. Its proven technology and external recognition demonstrate strong potential.",
+            },
+            {
+              label: "Kids Judge comment",
+              name: "Kids Judge",
+              affiliation: "JUNGLE FORGE AWARD",
+              text: "Turning tea leaves that would otherwise be discarded into a new material was especially impressive.",
+            },
+            {
+              label: "Judge’s comment",
+              name: "Yuji Hara",
+              affiliation: "Apollo",
+              text: "The biocomposite technology combines decarbonization with high-performance materials for major markets such as automotive, EV, and aerospace, creating strong opportunities with Japanese mobility and manufacturing companies.",
+            },
+            {
+              label: "Judge’s comment",
+              name: "Daisuke Mitani",
+              affiliation: "SBI",
+              text: "Although still at an early stage, the team’s ambition and active pursuit of mass production deserve recognition.",
+            },
+          ],
         },
         {
           heading: "Open Innovation Award — Global Cerah",
           paragraphs: [
             "Global Cerah is a Malaysia-based sustainability startup that transforms agricultural waste into alternative animal feed through an IoT-enabled circular system. Its solution combines waste management, automation, and optical sensing to create higher-value protein feed while supporting more sustainable agriculture.",
           ],
-          judgeComment: {
-            label: "Judge’s comment",
-            name: "Ayano Masui",
-            affiliation: "FIRST CVC",
-            imageKey: "judge",
-            text: "Its automated, IoT-integrated process can reduce waste-treatment costs by 50%. Its licensing model also offers potential for expansion through Japanese partners.",
-          },
+          judgeComments: [
+            {
+              label: "Judge’s comment",
+              name: "Ayano Masui",
+              affiliation: "FIRST CVC",
+              imageKey: "judge",
+              text: "Its automated, IoT-integrated process can reduce waste-treatment costs by 50%. Its licensing model also offers potential for expansion through Japanese partners.",
+            },
+            {
+              label: "Judge’s comment",
+              name: "Daisuke Mitani",
+              affiliation: "SBI",
+              text: "The road ahead will require hard work, but the team has the capability to overcome it. Applying proven technology to a real problem puts the company close to meaningful success.",
+            },
+            {
+              label: "Judge’s comment",
+              name: "Junichi Eto",
+              affiliation: "Managing Director, JRE VENTURES",
+              text: "Its circular model turns organic waste into useful protein and fertilizer. Demonstrated operating impact and scalability give it strong potential to support a more sustainable and resilient food system in Japan.",
+            },
+          ],
         },
       ],
       backLink: "Back to News & Events",
@@ -884,65 +978,159 @@ export const newsArticles = {
           paragraphs: [
             "2015年創業のマレーシア企業Robopreneurは、業務用・家庭用のAI搭載サービスロボットおよびPhysical AIソリューションを開発しています。ロボティクス、AIソフトウェア、積層造形を軸に、医療、ホスピタリティ、教育、警備、清掃、観光、スマートシティなど幅広い分野に取り組んでいます。",
           ],
-          judgeComment: {
-            label: "審査員コメント",
-            name: "桝井 綾乃",
-            affiliation: "FIRST CVC",
-            imageKey: "judge",
-            text: "労働力不足・高齢者見守り・製造業という日本の最重要課題に最も具体的にアプローチしている点が評価できます。今後世界的にも共通する課題であり、先行して解決策を持つ意義は大きいと思います。",
-          },
+          judgeComments: [
+            {
+              label: "審査員コメント",
+              name: "桝井 綾乃",
+              affiliation: "FIRST CVC",
+              imageKey: "judge",
+              text: "労働力不足・高齢者見守り・製造業という日本の最重要課題に最も具体的にアプローチしている点が評価できます。今後世界的にも共通する課題であり、先行して解決策を持つ意義は大きいと思います。",
+            },
+            {
+              label: "審査員コメント",
+              name: "Akiyuki Minami",
+              affiliation: "COCONALA Inc. / Crest Skill Partners",
+              text: "サービスロボットとPhysical AIを活用し、日本とアジアに共通する構造的な労働力不足へ実行可能な解決策を提示しています。病院、警備、清掃、観光など、日本で需要の高い分野との親和性も高いと評価できます。",
+            },
+            {
+              label: "審査員コメント",
+              name: "Takeshi Kanamori",
+              affiliation: "TKOcean, Inc.",
+              text: "日本が抱える複数の社会課題に直接応える技術であり、日本企業・団体とのパートナーシップを積極的に進める明確な意思も評価できます。",
+            },
+          ],
         },
         {
           heading: "シルバー賞・グリーン賞 — Qarbotech",
           paragraphs: [
             "Qarbotechは、ナノテクノロジーを活用して光合成効率、植物の生産性、収穫量の向上を目指すアグリテック企業です。追加の労働力への依存を抑えながら、食料安全保障と持続可能な農業を支えるソリューションを開発しています。",
           ],
-          judgeComment: {
-            label: "審査員コメント",
-            name: "桝井 綾乃",
-            affiliation: "FIRST CVC",
-            imageKey: "judge",
-            text: "特許取得済みの技術で、CO₂削減・食料増産・化学肥料削減という三つの社会価値を一製品で出せるのがシンプルでわかりやすい。日本の食料自給率向上・農業の脱炭素化というニーズとも素直に重なる点が評価できます。",
-          },
+          judgeComments: [
+            {
+              label: "審査員コメント",
+              name: "桝井 綾乃",
+              affiliation: "FIRST CVC",
+              imageKey: "judge",
+              text: "特許取得済みの技術で、CO₂削減・食料増産・化学肥料削減という三つの社会価値を一製品で出せるのがシンプルでわかりやすい。日本の食料自給率向上・農業の脱炭素化というニーズとも素直に重なる点が評価できます。",
+            },
+            {
+              label: "審査員コメント",
+              name: "Yuji Hara",
+              affiliation: "Director & Partner, Apollo",
+              text: "食料安全保障、気候変動、小規模農家の所得という共通課題に、実証済みで拡張性のある解決策を提示しています。日本企業との連携による社会実装にも大きな可能性があります。",
+            },
+            {
+              label: "審査員コメント",
+              name: "Junichi Eto",
+              affiliation: "Managing Director, JRE VENTURES",
+              text: "実際の農地で検証され、農家にとって明確な経済的メリットが示されているため、日本の農業分野にも高い適用可能性があります。",
+            },
+            {
+              label: "審査員コメント",
+              name: "Akiyuki Minami",
+              affiliation: "COCONALA Inc. / Crest Skill Partners",
+              text: "追加の労働力に頼らず収穫量を増やすアプローチは、農業従事者が減少する日本の課題に適しています。",
+            },
+            {
+              label: "審査員コメント",
+              name: "Takeshi Kanamori",
+              affiliation: "TKOcean, Inc.",
+              text: "農業の人手不足や食料自給率向上という日本の課題との関連性が高く、成熟度と実現可能性のあるアプローチです。",
+            },
+          ],
         },
         {
           heading: "AI賞 — Pixelence",
           paragraphs: [
             "Pixelenceは、造影剤の注入を必要としない脳MRI画像のための医療AIを開発しています。35万人を超える患者データで学習した技術により、画質向上、早期発見の支援、再撮影の削減、画像診断コストの低減を目指しています。",
           ],
-          judgeComment: {
-            label: "審査員コメント",
-            name: "桝井 綾乃",
-            affiliation: "FIRST CVC",
-            imageKey: "judge",
-            text: "造影剤不使用の脳MRI AI診断というニッチ深堀りが明確です。薬機法認証さえ通れば強固な参入障壁になり、高齢化に伴う脳疾患増加と直結するため、商業性と社会性が両立している部分がとても評価できます。",
-          },
+          judgeComments: [
+            {
+              label: "審査員コメント",
+              name: "桝井 綾乃",
+              affiliation: "FIRST CVC",
+              imageKey: "judge",
+              text: "造影剤不使用の脳MRI AI診断というニッチ深堀りが明確です。薬機法認証さえ通れば強固な参入障壁になり、高齢化に伴う脳疾患増加と直結するため、商業性と社会性が両立している部分がとても評価できます。",
+            },
+            {
+              label: "審査員コメント",
+              name: "Akiyuki Minami",
+              affiliation: "COCONALA Inc. / Crest Skill Partners",
+              text: "医療費、患者負担、画像診断現場の運用課題を同時に軽減できる可能性があり、画像診断需要が高まる高齢社会の日本に大きな価値をもたらします。",
+            },
+            {
+              label: "審査員コメント",
+              name: "Daisuke Mitani",
+              affiliation: "General Manager, SBI",
+              text: "科学的根拠に基づく画期的な技術であり、アジアをはじめ医療サービスが十分に届いていない地域へMRI検査を広げる可能性があります。",
+            },
+            {
+              label: "審査員コメント",
+              name: "Takeshi Kanamori",
+              affiliation: "TKOcean, Inc.",
+              text: "日本で拡大する医療画像診断のニーズと相性が良く、長期的な成長性と開発可能性を備えています。",
+            },
+          ],
         },
         {
           heading: "次世代賞 — Midwest Composites",
           paragraphs: [
             "Midwest Compositesは、茶葉などの農業廃棄物を産業向けの持続可能な高機能バイオコンポジットへ転換する、マレーシアの先端素材スタートアップです。モビリティ、製造、自動車、EV、航空宇宙など、幅広い分野での活用が期待されています。",
           ],
-          judgeComment: {
-            label: "審査員コメント",
-            name: "桝井 綾乃",
-            affiliation: "FIRST CVC",
-            imageKey: "judge",
-            text: "ケナフ・パームオイル廃棄物を使ったバイオコンポジット材料をUAV・バス・鉄道など複数実案件に適用済みで技術力は本物。Startup World Cup 2024地域優勝など外部評価も確かです。もう一歩のところでいくと、日本の製造業はサプライヤー認証のハードルが高く、参入戦略の具体性が見えるとなお良いと感じます。",
-          },
+          judgeComments: [
+            {
+              label: "審査員コメント",
+              name: "桝井 綾乃",
+              affiliation: "FIRST CVC",
+              imageKey: "judge",
+              text: "ケナフ・パームオイル廃棄物を使ったバイオコンポジット材料をUAV・バス・鉄道など複数実案件に適用済みで技術力は本物。Startup World Cup 2024地域優勝など外部評価も確かです。もう一歩のところでいくと、日本の製造業はサプライヤー認証のハードルが高く、参入戦略の具体性が見えるとなお良いと感じます。",
+            },
+            {
+              label: "キッズ審査員コメント",
+              name: "Kids Judge",
+              affiliation: "JUNGLE FORGE AWARD",
+              text: "捨てられてしまう茶葉が新しい素材に生まれ変わる点が、とても印象的でした。",
+            },
+            {
+              label: "審査員コメント",
+              name: "Yuji Hara",
+              affiliation: "Apollo",
+              text: "脱炭素と高性能素材を両立するバイオコンポジット技術で、自動車、EV、航空宇宙などの大規模市場を対象としています。日本のモビリティ・製造企業との連携にも大きな可能性があります。",
+            },
+            {
+              label: "審査員コメント",
+              name: "Daisuke Mitani",
+              affiliation: "SBI",
+              text: "まだ初期段階ではありますが、量産化への道筋を積極的に模索する姿勢と意欲は高く評価できます。",
+            },
+          ],
         },
         {
           heading: "オープンイノベーション賞 — Global Cerah",
           paragraphs: [
             "Global Cerahは、IoTを活用した循環型システムにより、農業廃棄物を代替動物飼料へ転換するマレーシアのサステナビリティ企業です。廃棄物管理、自動化、光学センサー技術を組み合わせ、高価値のタンパク質飼料を生み出しながら、持続可能な農業を支援しています。",
           ],
-          judgeComment: {
-            label: "審査員コメント",
-            name: "桝井 綾乃",
-            affiliation: "FIRST CVC",
-            imageKey: "judge",
-            text: "プロセスが自動化・IoT統合済みで、廃棄物処理コストを50%削減できるという具体的な数字が出ている点が強みです。ライセンス供与モデルも持っており、日本のパートナー企業経由での展開もしやすい構造になっている点が面白いと思います。",
-          },
+          judgeComments: [
+            {
+              label: "審査員コメント",
+              name: "桝井 綾乃",
+              affiliation: "FIRST CVC",
+              imageKey: "judge",
+              text: "プロセスが自動化・IoT統合済みで、廃棄物処理コストを50%削減できるという具体的な数字が出ている点が強みです。ライセンス供与モデルも持っており、日本のパートナー企業経由での展開もしやすい構造になっている点が面白いと思います。",
+            },
+            {
+              label: "審査員コメント",
+              name: "Daisuke Mitani",
+              affiliation: "SBI",
+              text: "今後は困難も予想されますが、それを乗り越える力を備えたチームです。実証された技術を現実の課題へ適用する姿勢から、大きな成果に近づいていると感じます。",
+            },
+            {
+              label: "審査員コメント",
+              name: "Junichi Eto",
+              affiliation: "Managing Director, JRE VENTURES",
+              text: "有機廃棄物を価値あるタンパク質や肥料へ変換する循環型の仕組みです。実運用での効果と拡張性が示されており、日本の持続可能で強靭な食料システムにも貢献する可能性があります。",
+            },
+          ],
         },
       ],
       backLink: "ニュース一覧へ戻る",
