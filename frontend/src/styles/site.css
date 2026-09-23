@@ -300,9 +300,9 @@ button:disabled {
   text-decoration: none;
 }
 .brand img {
-  height: 60px;
+  height: 90px;
   width: auto;
-  max-width: 320px;
+  max-width: 480px;
   object-fit: contain;
   transition: opacity 0.2s ease, transform 0.2s ease;
 }
@@ -1248,16 +1248,18 @@ button:disabled {
   transform: translateY(-4px);
   box-shadow: 0 30px 64px -44px rgba(10, 15, 26, 0.58);
 }
-.tech-icon {
+.tech-image {
   border: 1px solid #d6ddff;
   border-radius: 14px;
   width: 100px;
   height: 100px;
-  display: grid;
-  place-items: center;
-  color: var(--brand-blue);
+  display: block;
+  object-fit: cover;
   margin-bottom: 35px;
   background: white;
+}
+.tech-image--robotic-hand {
+  object-position: 62% center;
 }
 .technology-card h3 {
   font-size: 30px;
@@ -2740,9 +2742,9 @@ button:disabled {
     max-width: 100%;
   }
   .brand img {
-    height: 44px;
+    height: 66px;
     width: auto;
-    max-width: 220px;
+    max-width: 330px;
     object-fit: contain;
   }
   .footer-brand img {
@@ -3048,7 +3050,7 @@ button:disabled {
   .technology-card {
     padding: 26px 20px;
   }
-  .tech-icon {
+  .tech-image {
     width: 72px;
     height: 72px;
     margin-bottom: 20px;
@@ -3502,6 +3504,18 @@ button:disabled {
   border-radius: 14px;
   background: linear-gradient(145deg, #f8faff 0%, #eef2ff 100%);
   box-shadow: 0 12px 30px rgba(35, 55, 130, 0.08);
+}
+.judge-comments-list {
+  display: grid;
+  gap: 14px;
+  margin: 24px 0 8px;
+}
+.judge-comments-list .judge-comment-card {
+  margin: 0;
+}
+.judge-comment-card--text-only {
+  grid-template-columns: minmax(0, 1fr);
+  padding-left: 28px;
 }
 .judge-comment-avatar {
   width: 76px;
