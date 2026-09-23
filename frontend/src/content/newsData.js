@@ -758,4 +758,699 @@ export const newsArticles = {
       backLink: "← ニュース一覧へ戻る",
     },
   },
+  "jungle-forge-award-2026": {
+    id: "jungle-forge-award-2026",
+    date: "2026.06.09",
+    category: {
+      en: "Press Release",
+      ja: "プレスリリース",
+    },
+    images: {
+      hero: "/images/events/startups-jungle.jpeg",
+      judge: "/images/news/jungle-forge/ayano-masui.png",
+    },
+    supportingImages: [],
+    video: null,
+    en: {
+      title: "JUNGLE FORGE AWARD Social Impact Edition 2026",
+      subtitles: ["Organizer: RoboFounders"],
+      lead: "Eight finalists selected from more than 200 applicants presented solutions to social challenges facing Japan at an outdoor pitch event in Malaysia.",
+      supportingImageAlts: ["Ayano Masui (FIRST CVC)"],
+      sections: [
+        {
+          heading: "Connecting Southeast Asian innovation with Japan",
+          paragraphs: [
+            "The JUNGLE FORGE AWARD Social Impact Edition 2026 was held on June 6, 2026, at Taman Tugu, Malaysia. More than 200 startups applied, and eight finalists were selected to present their ideas.",
+            "The event focused on connecting Southeast Asian innovation with challenges facing Japan, including an aging population, labor shortages, food security, multicultural integration, and regional revitalization. The finalists were assessed on their technology and business models, as well as their commitment and potential to create meaningful impact in Japan.",
+          ],
+        },
+        {
+          heading: "An outdoor, electricity-free pitch event",
+          paragraphs: [
+            "The competition took place entirely outdoors in the natural surroundings of Taman Tugu and was conducted without electricity. With no projectors, microphones, spotlights, or digital displays, the founders relied on their ideas, voices, and direct connection with the audience.",
+            "This low-impact format reflected the event’s belief that meaningful innovation and sustainability should go hand in hand.",
+          ],
+        },
+        {
+          heading: "Grand Prize — Robopreneur",
+          paragraphs: [
+            "Founded in 2015 and based in Malaysia, Robopreneur develops AI-powered service robots and Physical AI solutions for professional and domestic use. Its work spans robotics, AI software, and additive manufacturing for fields including healthcare, hospitality, education, security, cleaning, tourism, and smart cities.",
+          ],
+          judgeComment: {
+            label: "Judge’s comment",
+            name: "Ayano Masui",
+            affiliation: "FIRST CVC",
+            imageKey: "judge",
+            text: "Addresses key challenges in Japan, including labor shortages, elderly care, and manufacturing. Its solution also has strong potential to address similar challenges globally.",
+          },
+        },
+        {
+          heading: "Silver Award & Green Award — Qarbotech",
+          paragraphs: [
+            "Qarbotech is an agritech startup that uses nanotechnology to improve photosynthesis, plant productivity, and crop yields. Its approach is designed to support food security and agricultural sustainability while reducing reliance on additional labor.",
+          ],
+          judgeComment: {
+            label: "Judge’s comment",
+            name: "Ayano Masui",
+            affiliation: "FIRST CVC",
+            imageKey: "judge",
+            text: "Its patented technology delivers three clear social benefits: reducing CO₂ emissions, increasing food production, and reducing chemical fertilizer use. It also aligns well with Japan’s agricultural needs.",
+          },
+        },
+        {
+          heading: "AI Award — Pixelence",
+          paragraphs: [
+            "Pixelence develops medical AI for brain MRI imaging without contrast injections. Trained on more than 350,000 patient datasets, its technology is designed to improve image quality, support earlier detection, reduce repeated scanning, and lower imaging costs.",
+          ],
+          judgeComment: {
+            label: "Judge’s comment",
+            name: "Ayano Masui",
+            affiliation: "FIRST CVC",
+            imageKey: "judge",
+            text: "Its AI-powered brain MRI diagnosis without contrast agents offers a clear and focused solution. It combines strong commercial potential with meaningful social impact in an aging society.",
+          },
+        },
+        {
+          heading: "Next Generation Award — Midwest Composites",
+          paragraphs: [
+            "Midwest Composites is a Malaysia-based advanced materials startup that converts agricultural waste, including discarded tea leaves, into sustainable bio-composites for industrial applications. Its materials have potential across mobility, manufacturing, automotive, EV, aerospace, and other sectors.",
+          ],
+          judgeComment: {
+            label: "Judge’s comment",
+            name: "Ayano Masui",
+            affiliation: "FIRST CVC",
+            imageKey: "judge",
+            text: "Its bio-composite materials made from agricultural waste have already been applied to UAVs, buses, and railways. Its proven technology and external recognition demonstrate strong potential.",
+          },
+        },
+        {
+          heading: "Open Innovation Award — Global Cerah",
+          paragraphs: [
+            "Global Cerah is a Malaysia-based sustainability startup that transforms agricultural waste into alternative animal feed through an IoT-enabled circular system. Its solution combines waste management, automation, and optical sensing to create higher-value protein feed while supporting more sustainable agriculture.",
+          ],
+          judgeComment: {
+            label: "Judge’s comment",
+            name: "Ayano Masui",
+            affiliation: "FIRST CVC",
+            imageKey: "judge",
+            text: "Its automated, IoT-integrated process can reduce waste-treatment costs by 50%. Its licensing model also offers potential for expansion through Japanese partners.",
+          },
+        },
+      ],
+      backLink: "Back to News & Events",
+    },
+    ja: {
+      title: "JUNGLE FORGE AWARD Social Impact Edition 2026",
+      subtitles: ["主催：RoboFounders"],
+      lead: "200社を超える応募から選ばれた8社のファイナリストが、マレーシアで開催された屋外ピッチイベントで、日本の社会課題に向けた解決策を発表しました。",
+      supportingImageAlts: ["桝井 綾乃（FIRST CVC）"],
+      sections: [
+        {
+          heading: "東南アジアのイノベーションと日本をつなぐ",
+          paragraphs: [
+            "JUNGLE FORGE AWARD Social Impact Edition 2026は、2026年6月6日にマレーシアのTaman Tuguで開催されました。200社を超えるスタートアップから応募があり、その中から8社がファイナリストとして選出されました。",
+            "本イベントは、東南アジアのイノベーションと、高齢化、労働力不足、食料安全保障、多文化共生、地方創生といった日本の課題を結びつけることを目的としています。審査では、技術やビジネスモデルだけでなく、日本社会の課題解決に対する姿勢と、実際にインパクトを生み出す可能性も重視されました。",
+          ],
+        },
+        {
+          heading: "自然の中で行われた電力を使わないピッチイベント",
+          paragraphs: [
+            "コンテストはTaman Tuguの自然に囲まれた屋外環境で、電力を使用せずに実施されました。プロジェクター、マイク、照明、デジタルディスプレイを使わず、起業家たちはアイデアと言葉、そして観客との直接的な対話によって事業を伝えました。",
+            "環境への負荷を抑えたこの形式には、社会的意義のあるイノベーションと持続可能性を両立させるというイベントの考え方が表れています。",
+          ],
+        },
+        {
+          heading: "グランプリ — Robopreneur",
+          paragraphs: [
+            "2015年創業のマレーシア企業Robopreneurは、業務用・家庭用のAI搭載サービスロボットおよびPhysical AIソリューションを開発しています。ロボティクス、AIソフトウェア、積層造形を軸に、医療、ホスピタリティ、教育、警備、清掃、観光、スマートシティなど幅広い分野に取り組んでいます。",
+          ],
+          judgeComment: {
+            label: "審査員コメント",
+            name: "桝井 綾乃",
+            affiliation: "FIRST CVC",
+            imageKey: "judge",
+            text: "労働力不足・高齢者見守り・製造業という日本の最重要課題に最も具体的にアプローチしている点が評価できます。今後世界的にも共通する課題であり、先行して解決策を持つ意義は大きいと思います。",
+          },
+        },
+        {
+          heading: "シルバー賞・グリーン賞 — Qarbotech",
+          paragraphs: [
+            "Qarbotechは、ナノテクノロジーを活用して光合成効率、植物の生産性、収穫量の向上を目指すアグリテック企業です。追加の労働力への依存を抑えながら、食料安全保障と持続可能な農業を支えるソリューションを開発しています。",
+          ],
+          judgeComment: {
+            label: "審査員コメント",
+            name: "桝井 綾乃",
+            affiliation: "FIRST CVC",
+            imageKey: "judge",
+            text: "特許取得済みの技術で、CO₂削減・食料増産・化学肥料削減という三つの社会価値を一製品で出せるのがシンプルでわかりやすい。日本の食料自給率向上・農業の脱炭素化というニーズとも素直に重なる点が評価できます。",
+          },
+        },
+        {
+          heading: "AI賞 — Pixelence",
+          paragraphs: [
+            "Pixelenceは、造影剤の注入を必要としない脳MRI画像のための医療AIを開発しています。35万人を超える患者データで学習した技術により、画質向上、早期発見の支援、再撮影の削減、画像診断コストの低減を目指しています。",
+          ],
+          judgeComment: {
+            label: "審査員コメント",
+            name: "桝井 綾乃",
+            affiliation: "FIRST CVC",
+            imageKey: "judge",
+            text: "造影剤不使用の脳MRI AI診断というニッチ深堀りが明確です。薬機法認証さえ通れば強固な参入障壁になり、高齢化に伴う脳疾患増加と直結するため、商業性と社会性が両立している部分がとても評価できます。",
+          },
+        },
+        {
+          heading: "次世代賞 — Midwest Composites",
+          paragraphs: [
+            "Midwest Compositesは、茶葉などの農業廃棄物を産業向けの持続可能な高機能バイオコンポジットへ転換する、マレーシアの先端素材スタートアップです。モビリティ、製造、自動車、EV、航空宇宙など、幅広い分野での活用が期待されています。",
+          ],
+          judgeComment: {
+            label: "審査員コメント",
+            name: "桝井 綾乃",
+            affiliation: "FIRST CVC",
+            imageKey: "judge",
+            text: "ケナフ・パームオイル廃棄物を使ったバイオコンポジット材料をUAV・バス・鉄道など複数実案件に適用済みで技術力は本物。Startup World Cup 2024地域優勝など外部評価も確かです。もう一歩のところでいくと、日本の製造業はサプライヤー認証のハードルが高く、参入戦略の具体性が見えるとなお良いと感じます。",
+          },
+        },
+        {
+          heading: "オープンイノベーション賞 — Global Cerah",
+          paragraphs: [
+            "Global Cerahは、IoTを活用した循環型システムにより、農業廃棄物を代替動物飼料へ転換するマレーシアのサステナビリティ企業です。廃棄物管理、自動化、光学センサー技術を組み合わせ、高価値のタンパク質飼料を生み出しながら、持続可能な農業を支援しています。",
+          ],
+          judgeComment: {
+            label: "審査員コメント",
+            name: "桝井 綾乃",
+            affiliation: "FIRST CVC",
+            imageKey: "judge",
+            text: "プロセスが自動化・IoT統合済みで、廃棄物処理コストを50%削減できるという具体的な数字が出ている点が強みです。ライセンス供与モデルも持っており、日本のパートナー企業経由での展開もしやすい構造になっている点が面白いと思います。",
+          },
+        },
+      ],
+      backLink: "ニュース一覧へ戻る",
+    },
+  },
+  "x-hub-tokyo-singapore": {
+    id: "x-hub-tokyo-singapore",
+    date: "2026.09",
+    category: { en: "Press Release", ja: "プレスリリース" },
+    images: {
+      hero: "/images/news/x-hub-singapore/hero.jpg",
+    },
+    supportingImages: [],
+    video: null,
+    en: {
+      title: "RoboFounders Selected for X-HUB TOKYO Global Startup Accelerator Outbound Program — Singapore Course",
+      subtitles: [
+        "Expanding Physical AI for manufacturing from Japan to ASEAN and the United States",
+      ],
+      lead: "RoboFounders has been selected for the Singapore Course of the X-HUB TOKYO GLOBAL STARTUP ACCELERATOR OUTBOUND PROGRAM, organized by the Tokyo Metropolitan Government and operated by JETRO.",
+      sections: [
+        {
+          heading: "Expanding Physical AI from Singapore across ASEAN",
+          paragraphs: [
+            "Through the program, RoboFounders will pursue business development, customer discovery, and strategic partnerships in Singapore and across Southeast Asia. The Singapore Course is operated in partnership with ATUM Ventures, with an in-person program scheduled for October 26–30, 2026.",
+            "RoboFounders will also participate in SWITCH — Singapore Week of Innovation and Technology — from October 27–29, 2026, connecting with companies, technology providers, startups, and research institutions across the Singapore innovation ecosystem.",
+          ],
+        },
+        {
+          heading: "Bringing Physical AI into real manufacturing environments",
+          paragraphs: [
+            "RoboFounders aims to move dangerous, physically demanding, and repetitive work from people to robots through AI and robotics, improving safety, productivity, and resilience in manufacturing.",
+            "Rather than offering a single robot product, RoboFounders is building a Physical AI platform that connects robotics, AI, manufacturing technologies, data, and real-world deployment and operations.",
+          ],
+          bullets: [
+            "Robotic hands",
+            "Planetary roller screws",
+            "AI Vision",
+            "Manufacturing systems",
+            "Data and deployment technologies",
+          ],
+        },
+        {
+          heading: "Powering the next generation of humanoids",
+          paragraphs: [
+            "Planetary roller screws distribute loads across multiple threaded rollers, providing the high load capacity, stiffness, and long service life required by high-cycle, next-generation robotic actuators.",
+            "RoboFounders is advancing this technology as one of the foundations supporting high-performance motion in humanoid robots and other advanced robotics systems.",
+          ],
+        },
+        {
+          heading: "Singapore as a strategic base for ASEAN expansion",
+          paragraphs: [
+            "For RoboFounders, Singapore is a strategic gateway connecting Japan, ASEAN, and the United States. Japan contributes precision manufacturing and robotics expertise, ASEAN contributes engineering talent and growing manufacturing capabilities, and the United States contributes advanced technology and global market connections.",
+            "Through the X-HUB TOKYO Singapore program, RoboFounders will expand its regional network, listen directly to market needs, and develop concrete opportunities for Physical AI in manufacturing.",
+          ],
+          bullets: [
+            "Manufacturing PoCs and deployments",
+            "Strategic partnerships with operating companies",
+            "Robotics and Physical AI collaboration",
+            "Technology and co-R&D partnerships",
+            "Commercial and distribution partnerships",
+          ],
+        },
+        {
+          heading: "Building a global Physical AI team",
+          paragraphs: [
+            "RoboFounders operates as a global team across six locations. Regular online meetings and informal virtual gatherings help maintain close communication and teamwork across borders.",
+            "From Japan to ASEAN. From ASEAN to the world. RoboFounders is building the technology and partnerships needed to bring Physical AI into real manufacturing environments.",
+          ],
+        },
+      ],
+      backLink: "Back to News & Events",
+    },
+    ja: {
+      title: "RoboFounders、JETRO「X-HUB TOKYO GLOBAL STARTUP ACCELERATOR OUTBOUND PROGRAM」シンガポールコースに採択",
+      subtitles: ["日本発のPhysical AIをASEANへ。シンガポールを起点にグローバル展開を加速"],
+      lead: "RoboFoundersは、東京都が主催し、JETRO（日本貿易振興機構）が運営する海外展開支援プログラム「X-HUB TOKYO GLOBAL STARTUP ACCELERATOR OUTBOUND PROGRAM シンガポールコース」に採択されました。",
+      sections: [
+        {
+          heading: "シンガポールを起点にASEANへ",
+          paragraphs: [
+            "本プログラムを通じて、RoboFoundersはシンガポールおよびASEAN市場における事業開発、顧客開拓、パートナーシップ構築を進め、Physical AI事業のグローバル展開を加速します。シンガポールコースはATUM Venturesとの連携で運営され、2026年10月26日から30日まで現地プログラムが予定されています。",
+            "また、2026年10月27日から29日までシンガポールで開催されるSWITCH（Singapore Week of Innovation and Technology）にも参加し、現地企業、テクノロジー企業、スタートアップ、研究機関などとのネットワーク構築を進めます。",
+          ],
+        },
+        {
+          heading: "製造業の現場にPhysical AIを届ける",
+          paragraphs: [
+            "RoboFoundersは、AIとロボティクスによって、危険・過酷・反復的な作業を人からロボットへ移し、製造現場の安全性、生産性、持続力を高めることを目指しています。",
+            "単一のロボット製品を提供するだけではなく、ロボティクス、AI、製造技術、データ、現場への導入・運用をつなぐPhysical AIプラットフォームの構築を進めています。",
+          ],
+          bullets: [
+            "ロボットハンド",
+            "Planetary Roller Screws（プラネタリーローラースクリュー）",
+            "AI Vision",
+            "製造システム",
+            "データ・現場導入技術",
+          ],
+        },
+        {
+          heading: "次世代ヒューマノイドの動きを支える",
+          paragraphs: [
+            "プラネタリーローラースクリューは、複数のねじローラーに荷重を分散することで、高荷重・高剛性・長寿命が求められる次世代ロボットアクチュエータに適した高性能な機構部品です。",
+            "RoboFoundersは、ヒューマノイドロボットをはじめとする次世代ロボティクスの高性能な動きを支える基盤技術の一つとして、ローラースクリューの展開を進めています。",
+          ],
+        },
+        {
+          heading: "シンガポールをASEAN展開の戦略拠点に",
+          paragraphs: [
+            "RoboFoundersにとって、シンガポールは日本、ASEAN、米国をつなぐ戦略拠点です。日本の精密加工・製造技術、ASEANのエンジニアリング人材と製造力、米国の先端技術とグローバル市場を結びつけます。",
+            "X-HUB TOKYOシンガポールコースを通じて地域のネットワークを広げ、市場のニーズを直接把握しながら、製造業におけるPhysical AIの具体的な事業機会を創出します。",
+          ],
+          bullets: [
+            "製造現場におけるPoC・実証実験",
+            "事業会社との戦略的パートナーシップ",
+            "Physical AI・ロボティクスの共同開発",
+            "技術・Co-R&Dパートナーシップ",
+            "販売・ディストリビューションパートナーシップ",
+          ],
+        },
+        {
+          heading: "世界6拠点をつなぐグローバルチーム",
+          paragraphs: [
+            "RoboFoundersは、6つの拠点に展開するグローバルチームとして、定期的なオンライン会議やバーチャルでの交流を通じ、国や地域を越えたつながりを大切にしています。",
+            "From Japan to ASEAN. From ASEAN to the World. RoboFoundersは、Physical AIを実際の製造現場へ届けるための技術とパートナーシップを構築していきます。",
+          ],
+        },
+      ],
+      backLink: "ニュース一覧へ戻る",
+    },
+  },
+  "ai-malaysia-takeover-2026": {
+    id: "ai-malaysia-takeover-2026",
+    date: "2026.08.11",
+    category: { en: "Press Release", ja: "プレスリリース" },
+    images: {
+      hero: "/images/news/ai-malaysia-takeover-2026/hero.png",
+      demo: "/images/news/ai-malaysia-takeover-2026/physical-ai-demo.png",
+      audience: "/images/news/ai-malaysia-takeover-2026/audience.png",
+      manufacturing: "/images/news/ai-malaysia-takeover-2026/manufacturing-case.png",
+      clientSite: "/images/news/ai-malaysia-takeover-2026/client-site.png",
+      community: "/images/news/ai-malaysia-takeover-2026/community.jpg",
+      onilema: "/images/news/ai-malaysia-takeover-2026/onilema.png",
+    },
+    supportingImages: ["demo", "audience", "manufacturing", "clientSite", "community", "onilema"],
+    video: null,
+    en: {
+      title: "RoboFounders Founder Mariel Asami Fukase Speaks at AI Malaysia Takeover 2026",
+      subtitles: [
+        "“SMEs Don’t Need AI Magic. They Need AI That Works.”",
+        "From AI implementation to Physical AI: connecting Japan, Malaysia, ASEAN, and Silicon Valley",
+      ],
+      lead: "RoboFounders Founder Mariel Asami Fukase participated as a panelist at AI Malaysia Takeover 2026 in Kuala Lumpur on August 11, sharing practical examples of AI implementation in manufacturing and RoboFounders’ vision for Physical AI.",
+      supportingImageAlts: [
+        "RoboFounders presenting a Physical AI inspection solution",
+        "AI Malaysia Takeover 2026 panel session",
+        "RoboFounders presenting a manufacturing implementation case",
+        "RoboFounders presenting a client manufacturing site",
+        "RoboFounders community gathering in Malaysia",
+        "Onilema characters connecting Japan and Malaysia",
+      ],
+      sections: [
+        {
+          heading: "AI Malaysia Takeover 2026",
+          paragraphs: [
+            "The conference was held at The Campus Ampang in Kuala Lumpur on August 11–12, 2026. Supported by Malaysia’s Ministry of Digital, it featured AI keynotes, policy discussions, live demonstrations, workshops, exhibitions, and networking, with more than 3,500 registered participants.",
+            "Mariel Asami Fukase joined speakers from Microsoft and The AI Collective Kuala Lumpur for the panel “SMEs Don’t Need AI Magic. They Need AI That Works.” The discussion focused on moving AI beyond emerging technology and using it to solve practical business and manufacturing challenges.",
+          ],
+        },
+        {
+          heading: "AI implementation in real manufacturing environments",
+          paragraphs: [
+            "RoboFounders presented AI solutions being implemented for a manufacturing client in Malaysia, including applications for welding processes and automated inspection.",
+            "By combining AI Vision, robotics, and automation, RoboFounders aims to improve the consistency and efficiency of quality inspection and process monitoring while reducing manual work in dangerous, physically demanding, and repetitive tasks.",
+            "These initiatives are an early implementation of RoboFounders’ AI Workforce vision, in which AI and robotics work alongside people and increasingly handle work that is difficult, dangerous, or highly repetitive.",
+          ],
+        },
+        {
+          heading: "From using AI to AI that works in the real world",
+          paragraphs: [
+            "RoboFounders’ approach begins by understanding the operational challenges inside real manufacturing environments, then deploying AI, robotics, hardware, and automation and continuously improving the solution with field data.",
+            "Technology → Implementation → Data → Improvement. This cycle is central to building practical Physical AI for industry.",
+            "Successful implementation also requires combining young technical teams with strong AI and software capabilities with people who have deep knowledge of manufacturing and on-site operations.",
+          ],
+        },
+        {
+          heading: "Building the next infrastructure for manufacturing with Physical AI",
+          paragraphs: [
+            "RoboFounders combines AI Vision, robotics, robotic hands, robot components, and automation to deploy Physical AI in manufacturing. Its focus includes dangerous, demanding, and repetitive work and manufacturing sites affected by chronic labor shortages.",
+            "If software AI works in digital environments, Physical AI perceives, decides, and acts in the real world. RoboFounders aims to connect AI, robotics, hardware, and manufacturing technology on a unified platform.",
+          ],
+        },
+        {
+          heading: "Onilema: connecting Japan and Malaysia",
+          paragraphs: [
+            "The session also introduced Onilema, a character representing RoboFounders’ commitment to creating innovation between Japan and Malaysia. The concept combines onigiri, a source of energy in Japan, with nasi lemak, a source of energy in Malaysia.",
+            "It symbolizes the combination of Japan’s manufacturing knowledge with Malaysia’s AI and technology talent and growing startup ecosystem. The presentation closed with the message: “Let’s combine the power of Japanese onigiri and Malaysian nasi lemak and create innovation together.”",
+          ],
+        },
+        {
+          heading: "Japan × Malaysia × Silicon Valley",
+          paragraphs: [
+            "RoboFounders is building a Physical AI platform that connects Japan, Malaysia and the wider ASEAN region, and the United States. Japan contributes manufacturing and robotics expertise; Malaysia and ASEAN contribute AI and engineering talent; and Silicon Valley contributes advanced technology and global networks.",
+            "RoboFounders will continue expanding these connections and accelerating the implementation of AI, robotics, and automation in manufacturing. AI should not end as technology—it should become a force that works in the real world.",
+          ],
+        },
+        {
+          heading: "Event information",
+          paragraphs: [
+            "AI Malaysia Takeover 2026 (AIMTO_26) — The Campus Ampang, Kuala Lumpur, Malaysia — August 11–12, 2026.",
+          ],
+        },
+      ],
+      backLink: "Back to News & Events",
+    },
+    ja: {
+      title: "RoboFounders CEO、AI Malaysia Takeover 2026に登壇",
+      subtitles: [
+        "「SMEs Don’t Need AI Magic. They Need AI That Works.」をテーマに、AIの実装とPhysical AIの可能性を発信",
+      ],
+      lead: "RoboFounders Founder CEOの深瀬マリエル麻美が、2026年8月11日にマレーシア・クアラルンプールで開催されたAI Malaysia Takeover 2026に登壇し、製造業におけるAI実装事例とPhysical AIの可能性を紹介しました。",
+      supportingImageAlts: [
+        "RoboFoundersのPhysical AI検査ソリューションの紹介",
+        "AI Malaysia Takeover 2026のパネルセッション",
+        "製造現場への導入事例を紹介するRoboFounders",
+        "クライアントの製造現場を紹介するRoboFounders",
+        "マレーシアでのRoboFoundersコミュニティ交流",
+        "日本とマレーシアをつなぐオニレマ",
+      ],
+      sections: [
+        {
+          heading: "AI Malaysia Takeover 2026",
+          paragraphs: [
+            "AI Malaysia Takeover 2026は、2026年8月11日から12日にかけてThe Campus Ampangで開催されました。マレーシアデジタル省が支援するAIカンファレンスとして、キーノート、政策対話、ライブデモ、ワークショップ、展示、ネットワーキングなどが行われ、3,500人以上が参加登録しました。",
+            "深瀬マリエル麻美は、MicrosoftおよびThe AI Collective Kuala Lumpurの登壇者とともに「SMEs Don’t Need AI Magic. They Need AI That Works.」をテーマとしたパネルに参加しました。AIを先端技術として紹介するだけでなく、実際の企業・製造現場に導入し、具体的な業務課題の解決につなげることについて議論しました。",
+          ],
+        },
+        {
+          heading: "実際の製造現場で進むAI実装",
+          paragraphs: [
+            "RoboFoundersからは、マレーシアのクライアントの製造現場に提供しているAIソリューションとして、溶接工程やAIを活用した自動検品の事例を紹介しました。",
+            "AI Vision、ロボティクス、オートメーションを組み合わせることで、品質検査や工程監視の一貫性と効率を高め、危険・過酷・反復的な作業に必要な人手を減らすことを目指しています。",
+            "これらは、AIとロボティクスが人とともに働き、困難・危険・反復的な作業を担う「AI Workforce」の実装例です。",
+          ],
+        },
+        {
+          heading: "「AIを導入する」から「AIが現場で働く」へ",
+          paragraphs: [
+            "RoboFoundersは実際の製造現場に入り、企業が抱える課題を理解し、AI、ロボティクス、ハードウェア、オートメーションを業務プロセスへ導入します。そして、現場から得られるデータを活用しながら継続的に改善します。",
+            "Technology → Implementation → Data → Improvement。この循環が、産業向けPhysical AIを実装する事業基盤となります。",
+            "AIの導入には、AI・ソフトウェアに強い若い技術チームと、製造業や現場を深く理解する人材を組み合わせることも重要です。",
+          ],
+        },
+        {
+          heading: "Physical AIで製造業の次のインフラをつくる",
+          paragraphs: [
+            "RoboFoundersは、AI Vision、ロボティクス、ロボットハンド、ロボットコンポーネント、オートメーションを組み合わせ、製造現場におけるPhysical AIの社会実装を進めています。特に危険・過酷・反復的な作業や、慢性的な人手不足が発生している現場を対象としています。",
+            "ソフトウェアAIがデジタル空間で働くAIだとすれば、Physical AIは現実の世界を認識し、判断し、実際に動くAIです。AI、ロボティクス、ハードウェア、製造技術を一つのプラットフォーム上でつなぎます。",
+          ],
+        },
+        {
+          heading: "日本とマレーシアをつなぐ「オニレマ」",
+          paragraphs: [
+            "セッションでは、日本とマレーシアの間でイノベーションを生み出す想いを象徴するキャラクター「オニレマ」も紹介しました。日本の元気の源である「おにぎり」と、マレーシアの元気の源である「ナシレマ」を掛け合わせたキャラクターです。",
+            "日本の製造技術とものづくりの知見、マレーシアのAI・テクノロジー人材と成長するスタートアップエコシステムを組み合わせるというメッセージを込めています。「日本のおにぎりの力と、マレーシアのナシレマの力を合わせて、一緒にイノベーションを起こしましょう」と会場へ呼びかけました。",
+          ],
+        },
+        {
+          heading: "Japan × Malaysia × Silicon Valley",
+          paragraphs: [
+            "RoboFoundersは、日本、マレーシアをはじめとするASEAN、そして米国をつなぐPhysical AIプラットフォームの構築を進めています。日本の製造・ロボティクス、マレーシアとASEANのAI・エンジニアリング人材、Silicon Valleyの先端技術とグローバルネットワークを結びつけます。",
+            "今後もネットワークを拡大し、製造業におけるAI・ロボティクス・オートメーションの実装を加速します。AIを技術で終わらせず、実際の現場で働く力へ変えていきます。",
+          ],
+        },
+        {
+          heading: "イベント情報",
+          paragraphs: [
+            "AI Malaysia Takeover 2026（AIMTO_26）— マレーシア・クアラルンプール The Campus Ampang — 2026年8月11日・12日。",
+          ],
+        },
+      ],
+      backLink: "ニュース一覧へ戻る",
+    },
+  },
+  "startup-world-cup-tokyo-2026": {
+    id: "startup-world-cup-tokyo-2026",
+    date: "2026.07.17",
+    category: { en: "Press Release", ja: "プレスリリース" },
+    images: {
+      hero: "/images/news/startup-world-cup-tokyo/hero.jpg",
+      rofi: "/images/news/startup-world-cup-tokyo/rofi-event.jpg",
+      booth: "/images/news/startup-world-cup-tokyo/booth.png",
+      dialogue: "/images/news/startup-world-cup-tokyo/industry-dialogue.jpg",
+    },
+    supportingImages: ["rofi", "booth", "dialogue"],
+    video: null,
+    en: {
+      title: "RoboFounders Exhibits at Startup World Cup Tokyo",
+      subtitles: [
+        "Sharing “Protect People. Automate Danger.” through a Physical AI platform for manufacturing",
+        "Robot COO ROFI welcomed visitors in a traditional kimono",
+      ],
+      lead: "San Francisco-based robotics startup studio RoboFounders Inc. exhibited at Startup World Cup Tokyo on July 17, 2026, presenting its vision for Physical AI and AI robotics in manufacturing.",
+      supportingImageAlts: [
+        "Robot COO ROFI at Startup World Cup Tokyo",
+        "RoboFounders booth and team at Startup World Cup Tokyo",
+        "RoboFounders Founder and CEO Mariel Asami Fukase with Professor Yoshiyuki Sankai",
+      ],
+      sections: [
+        {
+          heading: "A future where people and intelligent robots work as one team",
+          paragraphs: [
+            "RoboFounders is not pursuing a future in which robots simply replace people. Its vision is a manufacturing environment where people and AI-powered robots work together as one team.",
+            "At the event, robot COO ROFI welcomed visitors in a traditional Japanese kimono, creating an exhibition that connected Japanese culture with next-generation robotics. Entrepreneurs, manufacturing professionals, researchers, and corporate innovation teams visited the booth and discussed the growing potential of Physical AI.",
+          ],
+        },
+        {
+          heading: "Physical AI moves to the center of the next technology era",
+          paragraphs: [
+            "As generative AI advances, attention is increasingly turning toward Physical AI: intelligence that perceives and acts in the real world through robots.",
+            "RoboFounders expects the next generation of AI innovation to extend beyond software into factories, warehouses, hospitals, retail, and logistics, where intelligent robots can work safely alongside people.",
+            "Under the vision “THE PHYSICAL AI PLATFORM FOR MANUFACTURING,” RoboFounders connects robotics, AI, core components, software, and manufacturing expertise to move Physical AI into real operations.",
+          ],
+        },
+        {
+          heading: "Protect people. Automate danger.",
+          paragraphs: [
+            "RoboFounders is developing a platform that spans core components, robots, AI, and real manufacturing environments. The goal is to automate dangerous, demanding, and repetitive tasks such as welding, inspection, and material handling so that people can work more safely.",
+            "Over the long term, RoboFounders envisions robots from different manufacturers becoming intelligent through AI and serving as AI workers across manufacturing and enterprise environments worldwide.",
+          ],
+        },
+        {
+          heading: "Discussing the future of Physical AI with an industry pioneer",
+          paragraphs: [
+            "Professor Yoshiyuki Sankai of the University of Tsukuba, a global pioneer in robotic suit technology, visited the RoboFounders booth. The discussion covered the future of Physical AI, human-robot collaboration, labor shortages, and the role of robotics in improving manufacturing productivity.",
+          ],
+        },
+        {
+          heading: "Celebrating Japan’s startup ecosystem",
+          paragraphs: [
+            "RoboFounders congratulates KAUCHE on winning the Startup World Cup Tokyo Regional. The event demonstrated the strength of Japan’s startup ecosystem and the importance of connecting Japanese innovation with global markets.",
+            "RoboFounders will continue strengthening collaboration with manufacturers, universities, robotics companies, startups, and global partners to accelerate real-world AI robotics deployment in Asia and beyond.",
+          ],
+        },
+        {
+          heading: "Event information",
+          paragraphs: [
+            "Startup World Cup Tokyo — Tokyo, Japan — July 17, 2026.",
+          ],
+        },
+      ],
+      quote: {
+        text: "We are not aiming to become simply another robot manufacturer. We are building a platform that connects AI, robots, core components, software, and manufacturing environments so that Physical AI can be implemented in the real world.",
+        speaker: "Mariel Asami Fukase",
+        role: "Founder & CEO, RoboFounders",
+      },
+      backLink: "Back to News & Events",
+    },
+    ja: {
+      title: "米国発のRoboFounders、「Startup World Cup 東京」に出展",
+      subtitles: [
+        "製造業向けPhysical AIプラットフォームで「Protect People. Automate Danger.」を発信",
+        "着物姿のロボットCOO「ROFI」が来場者をお出迎え",
+      ],
+      lead: "サンフランシスコを拠点とするロボティクス・スタートアップスタジオRoboFounders Inc.は、2026年7月17日に開催された「Startup World Cup 東京」に出展し、製造業向けAIロボティクスが切り拓くPhysical AIの未来像を紹介しました。",
+      supportingImageAlts: [
+        "Startup World Cup 東京の着物姿のロボットCOO ROFI",
+        "Startup World Cup 東京のRoboFoundersブースとチーム",
+        "RoboFounders Founder CEO 深瀬マリエル麻美と筑波大学 山海嘉之教授",
+      ],
+      sections: [
+        {
+          heading: "人と知能ロボットが一つのチームとして協働する未来",
+          paragraphs: [
+            "RoboFoundersが描くのは、ロボットが人間の仕事を奪う未来ではありません。人とAI搭載ロボットが一つのチームとして協働する製造環境です。",
+            "会場では、ロボットCOO「ROFI」が日本の伝統的な着物姿で来場者を迎え、日本文化と次世代ロボティクスを融合した展示を披露しました。起業家、製造業関係者、研究者、企業の新規事業担当者などがブースを訪れ、Physical AIの可能性について意見を交わしました。",
+          ],
+        },
+        {
+          heading: "Physical AIが新たな時代の中心へ",
+          paragraphs: [
+            "生成AIの進化により、世界の注目はロボットを通じて現実世界を認識し、行動するPhysical AIへと移りつつあります。",
+            "次世代のAIイノベーションはソフトウェアの枠を超え、工場、物流倉庫、病院、小売、物流などの現場で、人と安全に協働する知能ロボットへ広がっていくとRoboFoundersは考えています。",
+            "「THE PHYSICAL AI PLATFORM FOR MANUFACTURING」を掲げ、ロボティクス、AI、コアコンポーネント、ソフトウェア、製造現場の知見をつなぎ、Physical AIを実際の現場へ届けます。",
+          ],
+        },
+        {
+          heading: "Protect People. Automate Danger.",
+          paragraphs: [
+            "RoboFoundersは、コアコンポーネントからロボット、AI、実際の製造現場までをつなぐプラットフォームを構築しています。溶接、検査、搬送などの危険・過酷・反復的な作業をロボットが担い、人がより安全に働ける環境の実現を目指します。",
+            "長期的には、メーカーの垣根を越えたさまざまなロボットがAIによって知能化され、世界中の製造業や企業で活躍するAIワーカーとなる未来を目指しています。",
+          ],
+        },
+        {
+          heading: "業界リーダーとPhysical AIの未来を議論",
+          paragraphs: [
+            "ロボットスーツ技術の世界的パイオニアである筑波大学の山海嘉之教授にもブースへお立ち寄りいただきました。Physical AIの将来、人とロボットの協働、製造業が直面する人手不足や生産性向上の課題に対し、ロボティクスが果たす役割について意見交換を行いました。",
+          ],
+        },
+        {
+          heading: "日本のスタートアップエコシステムを祝福",
+          paragraphs: [
+            "RoboFoundersは、「Startup World Cup 東京予選」でグランプリを受賞したKAUCHEの皆様に心よりお祝い申し上げます。本イベントは、日本のスタートアップエコシステムの力強さと、日本発イノベーションを世界市場へつなぐ重要性を示す機会となりました。",
+            "今後も製造業、大学、ロボティクス企業、スタートアップ、グローバルパートナーとの連携を強化し、アジアをはじめ世界各地でAIロボティクスの社会実装を加速します。",
+          ],
+        },
+        {
+          heading: "イベント情報",
+          paragraphs: [
+            "Startup World Cup 東京 — 東京 — 2026年7月17日。",
+          ],
+        },
+      ],
+      quote: {
+        text: "私たちが目指しているのは、単なるロボットメーカーではありません。AI、ロボット、コアコンポーネント、ソフトウェア、そして製造現場をつなぎ、Physical AIを実際の現場に実装していくためのプラットフォームを構築することです。",
+        speaker: "深瀬マリエル麻美",
+        role: "RoboFounders Founder & CEO",
+      },
+      backLink: "ニュース一覧へ戻る",
+    },
+  },
+  "japan-corporation-established": {
+    id: "japan-corporation-established",
+    date: "2026.08.19",
+    category: { en: "Press Release", ja: "プレスリリース" },
+    images: {
+      hero: "/images/events/ivs-exhibit-client.jpeg",
+      team: "/images/news/japan-corporation/team.webp",
+    },
+    supportingImages: ["team"],
+    video: null,
+    en: {
+      title: "RoboFounders Establishes Japanese Corporation",
+      subtitles: [
+        "Bringing Japanese manufacturing technology and Physical AI to the world from San Francisco",
+      ],
+      lead: "RoboFounders established its Japanese corporation, RoboFounders Co., Ltd., on August 19, 2026, strengthening its foundation for collaboration with Japan’s manufacturing industry and global business expansion.",
+      supportingImageAlts: ["RoboFounders team and robot COO ROFI"],
+      sections: [
+        {
+          heading: "Connecting San Francisco, Japan, and ASEAN",
+          paragraphs: [
+            "Starting from San Francisco, RoboFounders combines AI and robotics with Japanese manufacturing technology to build Physical AI for the next generation of industry. Establishing the Japanese corporation is an important step toward deeper collaboration with manufacturers and technology partners in Japan and faster global expansion.",
+            "Manufacturing sites include dangerous, demanding, and repetitive work as well as tasks that require deep experience and technical skill. RoboFounders aims to use AI and robotics to create environments where people and machines each contribute their strengths.",
+          ],
+        },
+        {
+          heading: "A technology foundation for Physical AI",
+          paragraphs: [
+            "RoboFounders combines AI Vision for perception and inspection with hardware such as robotic hands and precision mechanical components, plus manufacturing data and systems. The objective is a foundation where AI understands, robots act, and real manufacturing operations gain measurable value.",
+            "Current product development includes lightweight, flexible, energy-efficient robotic hands and roller screws that support precise motion in robots and industrial machinery.",
+            "These technologies are not intended to remain standalone products. RoboFounders connects AI, robotics, data, and manufacturing systems to build solutions that can be deployed in real operations and continue creating value over time.",
+          ],
+        },
+        {
+          heading: "Strengthening collaboration in Japan and ASEAN",
+          paragraphs: [
+            "The Japanese corporation will expand joint development and proof-of-concept projects with Japanese manufacturers and technology companies while strengthening connections with Malaysia and the wider ASEAN region.",
+            "San Francisco × Japan × ASEAN: RoboFounders connects the San Francisco technology ecosystem, Japan’s manufacturing expertise and operational knowledge, and ASEAN’s growing manufacturing markets to advance cross-border technology development and business deployment.",
+          ],
+        },
+        {
+          heading: "Taking Japanese manufacturing knowledge to the world",
+          paragraphs: [
+            "The Japanese corporation will serve as a point of connection with manufacturers, technology partners, startups, and research institutions in Japan, and as a base for bringing technologies and knowledge developed in Japan to global markets.",
+            "RoboFounders will use this new stage to connect Japanese manufacturing with Physical AI and create new value for manufacturing worldwide. From San Francisco to Japan, and from Japan to ASEAN, the future of manufacturing starts now.",
+          ],
+        },
+      ],
+      backLink: "Back to News & Events",
+    },
+    ja: {
+      title: "RoboFounders、日本法人 株式会社RoboFoundersを設立",
+      subtitles: ["San Franciscoを起点に、日本の製造技術とPhysical AIを世界へ"],
+      lead: "RoboFoundersは、2026年8月19日付で日本法人 株式会社RoboFoundersを設立いたしました。日本の製造業との連携とグローバルな事業展開をさらに強化します。",
+      supportingImageAlts: ["RoboFoundersチームとロボットCOO ROFI"],
+      sections: [
+        {
+          heading: "San Francisco、日本、ASEANをつなぐ",
+          paragraphs: [
+            "RoboFoundersは、米国・サンフランシスコを起点に、AI・ロボティクスと日本の製造技術を組み合わせ、次世代の製造業を支えるPhysical AIの実現に取り組んでいます。日本法人設立は、国内の製造企業・技術パートナーとの連携を深め、グローバルな事業展開を加速するための重要な一歩です。",
+            "製造現場には、危険・過酷・反復的な作業や、熟練した技術・経験を必要とする業務があります。RoboFoundersはAIとロボティクスを活用し、人と機械がそれぞれの強みを発揮できる新しい製造環境を目指します。",
+          ],
+        },
+        {
+          heading: "Physical AIを支える技術基盤",
+          paragraphs: [
+            "AI Visionによる認識・検査技術、ロボットハンドや精密機械部品などのハードウェア、製造現場のデータとシステムを組み合わせ、「AIが理解し、ロボットが動き、現場で価値を生み出す」ための技術基盤を構築します。",
+            "現在、軽量・柔軟・省電力を特徴とするロボットハンドや、ロボット・産業機械の高精度な動きを支えるRoller Screwなど、日本の製造技術を活かしたプロダクト開発にも取り組んでいます。",
+            "これらを単体の製品として提供するだけではなく、AI・ロボティクス・データ・製造システムをつなぎ、実際の現場に導入され、継続的に価値を生み出すソリューションを構築します。",
+          ],
+        },
+        {
+          heading: "日本とASEANでの連携を強化",
+          paragraphs: [
+            "日本法人の設立を契機に、日本国内の製造企業や技術企業との共同開発・実証実験を推進するとともに、マレーシアをはじめとするASEAN地域との連携も強化します。",
+            "San Francisco × Japan × ASEAN。サンフランシスコのテクノロジーエコシステム、日本の製造技術と現場知見、ASEANの成長する製造市場をつなぎ、国境を越えた技術開発と事業展開を進めます。",
+          ],
+        },
+        {
+          heading: "日本の製造技術を世界へ",
+          paragraphs: [
+            "日本法人は、日本の製造業、技術パートナー、スタートアップ、研究機関との接点となるだけでなく、日本で生まれた技術や知見を世界へ展開するための重要な拠点です。",
+            "日本法人の設立を新たなステージへの出発点として、日本の製造業とPhysical AIをつなぎ、世界の製造業に新たな価値を届けます。サンフランシスコから日本、そしてASEANへ。The Future of Manufacturing Starts Now.",
+          ],
+        },
+      ],
+      backLink: "ニュース一覧へ戻る",
+    },
+  },
 };
