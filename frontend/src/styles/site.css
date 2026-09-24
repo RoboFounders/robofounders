@@ -3450,6 +3450,14 @@ button:disabled {
   height: clamp(230px, 29vw, 310px);
   object-fit: contain;
 }
+.news-supporting-images figcaption {
+  padding: 12px 16px;
+  border-top: 1px solid var(--line);
+  background: var(--paper);
+  color: var(--muted);
+  font-size: 13.5px;
+  line-height: 1.55;
+}
 @media (max-width: 680px) {
   .news-supporting-images {
     grid-template-columns: 1fr;
