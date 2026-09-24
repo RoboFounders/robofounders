@@ -173,6 +173,11 @@ export default function NewsArticle() {
                       }
                       loading="lazy"
                     />
+                    {content.supportingImageCaptions?.[index] && (
+                      <figcaption>
+                        {content.supportingImageCaptions[index]}
+                      </figcaption>
+                    )}
                   </figure>
                 ))}
               </div>
