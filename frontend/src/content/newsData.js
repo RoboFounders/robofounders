@@ -1142,8 +1142,12 @@ export const newsArticles = {
     category: { en: "Press Release", ja: "プレスリリース" },
     images: {
       hero: "/images/news/x-hub-singapore/hero.jpg",
+      globalTeam: "/images/news/x-hub-singapore/global-team.webp",
+      teamEvent: "/images/news/x-hub-singapore/team-event.webp",
+      tokyoBootcamp:
+        "/images/news/x-hub-singapore/tokyo-bootcamp-presentation.png",
     },
-    supportingImages: [],
+    supportingImages: ["globalTeam", "teamEvent", "tokyoBootcamp"],
     video: null,
     en: {
       title: "RoboFounders Selected for X-HUB TOKYO Global Startup Accelerator Outbound Program — Singapore Course",
@@ -1197,10 +1201,21 @@ export const newsArticles = {
         {
           heading: "Building a global Physical AI team",
           paragraphs: [
-            "RoboFounders operates as a global team across six locations. Regular online meetings and informal virtual gatherings help maintain close communication and teamwork across borders.",
+            "RoboFounders operates as a global team across six locations. From regular online meetings to remote birthday celebrations and virtual gatherings, we place strong importance on communication and connection across borders.",
+            "By connecting people across Japan, ASEAN, the United States, and other locations, RoboFounders is building a team capable of operating globally while staying closely connected.",
             "From Japan to ASEAN. From ASEAN to the world. RoboFounders is building the technology and partnerships needed to bring Physical AI into real manufacturing environments.",
           ],
         },
+      ],
+      supportingImageAlts: [
+        "RoboFounders team members connecting online across six locations",
+        "RoboFounders team members at an event",
+        "RoboFounders team presenting during the Tokyo bootcamp",
+      ],
+      supportingImageCaptions: [
+        "Connecting the RoboFounders global team across six locations",
+        "RoboFounders team members at an event",
+        "RoboFounders team presentation during the Tokyo bootcamp",
       ],
       backLink: "Back to News & Events",
     },
@@ -1254,10 +1269,21 @@ export const newsArticles = {
         {
           heading: "世界6拠点をつなぐグローバルチーム",
           paragraphs: [
-            "RoboFoundersは、6つの拠点に展開するグローバルチームとして、定期的なオンライン会議やバーチャルでの交流を通じ、国や地域を越えたつながりを大切にしています。",
+            "RoboFoundersは、6つの拠点に展開するグローバルチームとして、定期的なオンライン会議やリモートでのバースデーパーティー、バーチャルでの交流を通じ、国や地域を越えたコミュニケーションとつながりを大切にしています。",
+            "日本、ASEAN、米国、その他の拠点にいるメンバーをつなぎ、密接な連携を保ちながらグローバルに活動できるチームを構築しています。",
             "From Japan to ASEAN. From ASEAN to the World. RoboFoundersは、Physical AIを実際の製造現場へ届けるための技術とパートナーシップを構築していきます。",
           ],
         },
+      ],
+      supportingImageAlts: [
+        "世界6拠点をオンラインでつなぐRoboFoundersチーム",
+        "イベントに参加するRoboFoundersチーム",
+        "東京ブートキャンプでプレゼンテーションを行うRoboFoundersチーム",
+      ],
+      supportingImageCaptions: [
+        "6拠点をつなぐ、RoboFoundersのグローバルチーム",
+        "イベントに参加するRoboFoundersチーム",
+        "東京ブートキャンプ参加時のRoboFoundersチームによるプレゼンテーションの様子",
       ],
       backLink: "ニュース一覧へ戻る",
     },
