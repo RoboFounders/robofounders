@@ -17,7 +17,7 @@ export default function Team() {
   );
 
   return (
-    <section id="founder" className="section">
+    <section id="team" className="section">
       <div className="wrap">
         <p className="eyebrow">{t.team.label}</p>
         <h2>{t.team.title}</h2>
