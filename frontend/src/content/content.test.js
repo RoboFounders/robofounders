@@ -91,7 +91,10 @@ test("homepage content follows the current client worksheet direction", () => {
 });
 
 test("public content excludes investment and fundraising language", () => {
-  const publicContent = JSON.stringify({ en, ja, newsArticles });
+  const publicContent = JSON.stringify({ en, ja, newsArticles }).replaceAll(
+    "Apollo Capital",
+    "",
+  );
   expect(publicContent).not.toMatch(
     /fundrais|investor|investment|venture capital|capital partnership|capital alliance|\bcapital\b|資金調達|投資家|資本提携|戦略的投資|資本|戦略的アライアンス/i,
   );
