@@ -29,7 +29,7 @@ import Updates from "@/components/home/Updates";
 import AccessibleLoopVideo from "@/components/shared/AccessibleLoopVideo";
 
 const productCardImages = {
-  "roller-screw": "/images/products/roller-screw/close-up-640.webp",
+  "roller-screw": "/images/products/roller-screw/assembly-640.webp",
   "robotic-hand": "/images/products/robot-hand-new.jpg",
 };
 import { useLanguage } from "@/contexts/LanguageContext";
