@@ -56,7 +56,7 @@ const ja = {
       "製造現場を、Physical AIへ。",
     ],
     buildLabel: "私たちがつくるもの",
-    primaryCta: "テクノロジーを見る",
+    primaryCta: "TECHNOLOGYを見る",
     secondaryCta: "お問い合わせ",
     capabilities: [
       "ロボティクス・重要コンポーネント",
@@ -146,7 +146,7 @@ const ja = {
       ["危険を自動化する", "実際の生産現場へインテリジェントロボティクスを導入します。"],
       ["世界へ展開する", "日本の製造技術と世界のロボティクス技術をつなぎます。"],
     ],
-    cta: "テクノロジーを見る",
+    cta: "TECHNOLOGYを見る",
     caption: "Physical AI コンセプトプレビュー",
     videoLabel:
       "ロボットシステムとつながる製造現場を紹介するPhysical AIコンセプト動画",
@@ -332,12 +332,6 @@ const ja = {
       ],
       [
         "2026年6月",
-        "コミュニティ",
-        "BuildClub Tokyo",
-        "東京で創業者とロボティクスのコミュニティづくりに運営者として参加。",
-      ],
-      [
-        "2026年6月",
         "イベント",
         "JUNGLE FORGE AWARD Social Impact Edition 2026",
         "大自然の中で、社会課題に挑むスタートアップによるピッチイベントを開催。",
@@ -393,7 +387,7 @@ const ja = {
       [
         "2026年6月9日",
         "JUNGLE FORGE AWARD Social Impact Edition 2026",
-        "RoboFounders主催。桝井 綾乃（FIRST CVC）による各社への個別コメントを掲載。",
+        "RoboFounders主催。Ayano Masui（FIRST CVC）による各社への個別コメントを掲載。",
       ],
       [
         "2026年5月",
