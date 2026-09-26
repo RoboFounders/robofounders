@@ -10,7 +10,7 @@ export const navTargets = [
   "/#works",
   "/#founders",
   "/#news-press",
-  "/#founder",
+  "/#team",
   "/#contact",
 ];
 
@@ -21,7 +21,7 @@ const navSectionIds = [
   "works",
   "founders",
   "news",
-  "founder",
+  "team",
   "contact",
 ];
 
