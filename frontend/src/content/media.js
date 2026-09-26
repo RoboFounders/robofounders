@@ -37,7 +37,7 @@ export const media = {
   diffusionBorneo: "/images/events/diffusion-borneo.jpeg",
   xHubSingapore: "/images/news/x-hub-singapore/hero.jpg",
   aiMalaysiaTakeover: "/images/news/ai-malaysia-takeover-2026/hero.png",
-  japanCorporation: "/images/news/japan-corporation/team.webp",
+  japanCorporation: "/images/news/japan-corporation/client-photo.jpg",
   startupWorldCupTokyo: "/images/news/startup-world-cup-tokyo/hero.jpg",
   robotHandNew: "/images/products/robot-hand-new.jpg",
   bostonAiWeek: "/images/events/boston-ai-week.jpeg",
@@ -88,7 +88,7 @@ export const media = {
 export const productIds = ["roller-screw", "robotic-hand"];
 // Actual exported dimensions; portrait variants are constrained by height.
 export const productImageSizes = {
-  assembly: { small: 480, width: 1200, height: 1600 },
+  assembly: { small: 640, width: 962, height: 954 },
   "close-up": { small: 640, width: 1600, height: 1200 },
   "food-handling": { small: 640, width: 1600, height: 901 },
   applications: { small: 640, width: 1600, height: 900 },
