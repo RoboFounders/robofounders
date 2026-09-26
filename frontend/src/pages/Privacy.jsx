@@ -32,7 +32,6 @@ const copy = {
         "You may ask about, correct, or request deletion of inquiry information held by RoboFounders. Contact us using the address below. The website stores your English or Japanese preference locally in your browser so it can remember your selection.",
       ],
     ],
-    provider: "Read FormSubmit’s privacy policy",
     contact: "Privacy inquiries",
     back: "Return to the homepage",
   },
@@ -62,7 +61,6 @@ const copy = {
         "RoboFoundersが保有するお問い合わせ情報について、確認、訂正、削除をご希望の場合は、以下のメールアドレスまでご連絡ください。本サイトでは、英語・日本語の選択を記憶するため、言語設定をお客様のブラウザ内に保存します。",
       ],
     ],
-    provider: "FormSubmitのプライバシーポリシー",
     contact: "個人情報に関するお問い合わせ",
     back: "トップページへ戻る",
   },
@@ -101,13 +99,6 @@ export default function Privacy() {
                 tone="dark"
                 className="legal-contact-email"
               />
-              <a
-                href="https://formsubmit.co/privacy.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                {content.provider}
-              </a>
             </div>
             <Link className="button outline" to="/">
               {content.back}
