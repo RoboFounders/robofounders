@@ -801,19 +801,18 @@ export const newsArticles = {
               label: "Judge’s comment",
               name: "Ayano Masui",
               affiliation: "FIRST CVC",
-              imageKey: "judge",
               text: "Addresses key challenges in Japan, including labor shortages, elderly care, and manufacturing. Its solution also has strong potential to address similar challenges globally.",
             },
             {
               label: "Judge’s comment",
               name: "Akiyuki Minami",
-              affiliation: "COCONALA Inc. / Crest Skill Partners",
+              affiliation: "Crest Skill Partners",
               text: "Its service robots and Physical AI offer a practical response to structural labor shortages across Japan and Asia, with strong relevance to hospitals, security, cleaning, and tourism.",
             },
             {
               label: "Judge’s comment",
               name: "Takeshi Kanamori",
-              affiliation: "TKOcean, Inc.",
+              affiliation: "COO, RoboFounders",
               text: "The technology addresses several of Japan’s social challenges, backed by a clear commitment to building partnerships with Japanese companies and organizations.",
             },
           ],
@@ -828,13 +827,12 @@ export const newsArticles = {
               label: "Judge’s comment",
               name: "Ayano Masui",
               affiliation: "FIRST CVC",
-              imageKey: "judge",
               text: "Its patented technology delivers three clear social benefits: reducing CO₂ emissions, increasing food production, and reducing chemical fertilizer use. It also aligns well with Japan’s agricultural needs.",
             },
             {
               label: "Judge’s comment",
               name: "Yuji Hara",
-              affiliation: "Director & Partner, Apollo",
+              affiliation: "Director & Partner, Apollo Capital",
               text: "This scalable, proven solution tackles food security, climate change, and smallholder income, with meaningful potential for implementation through Japanese corporate partnerships.",
             },
             {
@@ -846,13 +844,13 @@ export const newsArticles = {
             {
               label: "Judge’s comment",
               name: "Akiyuki Minami",
-              affiliation: "COCONALA Inc. / Crest Skill Partners",
+              affiliation: "Crest Skill Partners",
               text: "Increasing crop yields without depending on additional labor makes this approach well suited to Japan’s shrinking agricultural workforce.",
             },
             {
               label: "Judge’s comment",
               name: "Takeshi Kanamori",
-              affiliation: "TKOcean, Inc.",
+              affiliation: "COO, RoboFounders",
               text: "The solution is highly relevant to agricultural labor shortages and food self-sufficiency in Japan, with a mature and feasible approach.",
             },
           ],
@@ -867,13 +865,12 @@ export const newsArticles = {
               label: "Judge’s comment",
               name: "Ayano Masui",
               affiliation: "FIRST CVC",
-              imageKey: "judge",
               text: "Its AI-powered brain MRI diagnosis without contrast agents offers a clear and focused solution. It combines strong commercial potential with meaningful social impact in an aging society.",
             },
             {
               label: "Judge’s comment",
               name: "Akiyuki Minami",
-              affiliation: "COCONALA Inc. / Crest Skill Partners",
+              affiliation: "Crest Skill Partners",
               text: "The AI could reduce medical costs, patient burden, and diagnostic-imaging workflow challenges at the same time, creating considerable value for an aging Japan.",
             },
             {
@@ -885,7 +882,7 @@ export const newsArticles = {
             {
               label: "Judge’s comment",
               name: "Takeshi Kanamori",
-              affiliation: "TKOcean, Inc.",
+              affiliation: "COO, RoboFounders",
               text: "The technology fits Japan’s growing medical-imaging needs and shows strong long-term growth and development potential.",
             },
           ],
@@ -900,7 +897,6 @@ export const newsArticles = {
               label: "Judge’s comment",
               name: "Ayano Masui",
               affiliation: "FIRST CVC",
-              imageKey: "judge",
               text: "Its bio-composite materials made from agricultural waste have already been applied to UAVs, buses, and railways. Its proven technology and external recognition demonstrate strong potential.",
             },
             {
@@ -912,7 +908,7 @@ export const newsArticles = {
             {
               label: "Judge’s comment",
               name: "Yuji Hara",
-              affiliation: "Apollo",
+              affiliation: "Director & Partner, Apollo Capital",
               text: "The biocomposite technology combines decarbonization with high-performance materials for major markets such as automotive, EV, and aerospace, creating strong opportunities with Japanese mobility and manufacturing companies.",
             },
             {
@@ -933,7 +929,6 @@ export const newsArticles = {
               label: "Judge’s comment",
               name: "Ayano Masui",
               affiliation: "FIRST CVC",
-              imageKey: "judge",
               text: "Its automated, IoT-integrated process can reduce waste-treatment costs by 50%. Its licensing model also offers potential for expansion through Japanese partners.",
             },
             {
@@ -957,7 +952,7 @@ export const newsArticles = {
       title: "JUNGLE FORGE AWARD Social Impact Edition 2026",
       subtitles: ["主催：RoboFounders"],
       lead: "200社を超える応募から選ばれた8社のファイナリストが、マレーシアで開催された屋外ピッチイベントで、日本の社会課題に向けた解決策を発表しました。",
-      supportingImageAlts: ["桝井 綾乃（FIRST CVC）"],
+      supportingImageAlts: ["Ayano Masui（FIRST CVC）"],
       sections: [
         {
           heading: "東南アジアのイノベーションと日本をつなぐ",
@@ -981,21 +976,20 @@ export const newsArticles = {
           judgeComments: [
             {
               label: "審査員コメント",
-              name: "桝井 綾乃",
+              name: "Ayano Masui",
               affiliation: "FIRST CVC",
-              imageKey: "judge",
               text: "労働力不足・高齢者見守り・製造業という日本の最重要課題に最も具体的にアプローチしている点が評価できます。今後世界的にも共通する課題であり、先行して解決策を持つ意義は大きいと思います。",
             },
             {
               label: "審査員コメント",
               name: "Akiyuki Minami",
-              affiliation: "COCONALA Inc. / Crest Skill Partners",
+              affiliation: "Crest Skill Partners",
               text: "サービスロボットとPhysical AIを活用し、日本とアジアに共通する構造的な労働力不足へ実行可能な解決策を提示しています。病院、警備、清掃、観光など、日本で需要の高い分野との親和性も高いと評価できます。",
             },
             {
               label: "審査員コメント",
               name: "Takeshi Kanamori",
-              affiliation: "TKOcean, Inc.",
+              affiliation: "COO, RoboFounders",
               text: "日本が抱える複数の社会課題に直接応える技術であり、日本企業・団体とのパートナーシップを積極的に進める明確な意思も評価できます。",
             },
           ],
@@ -1008,15 +1002,14 @@ export const newsArticles = {
           judgeComments: [
             {
               label: "審査員コメント",
-              name: "桝井 綾乃",
+              name: "Ayano Masui",
               affiliation: "FIRST CVC",
-              imageKey: "judge",
               text: "特許取得済みの技術で、CO₂削減・食料増産・化学肥料削減という三つの社会価値を一製品で出せるのがシンプルでわかりやすい。日本の食料自給率向上・農業の脱炭素化というニーズとも素直に重なる点が評価できます。",
             },
             {
               label: "審査員コメント",
               name: "Yuji Hara",
-              affiliation: "Director & Partner, Apollo",
+              affiliation: "Director & Partner, Apollo Capital",
               text: "食料安全保障、気候変動、小規模農家の所得という共通課題に、実証済みで拡張性のある解決策を提示しています。日本企業との連携による社会実装にも大きな可能性があります。",
             },
             {
@@ -1028,13 +1021,13 @@ export const newsArticles = {
             {
               label: "審査員コメント",
               name: "Akiyuki Minami",
-              affiliation: "COCONALA Inc. / Crest Skill Partners",
+              affiliation: "Crest Skill Partners",
               text: "追加の労働力に頼らず収穫量を増やすアプローチは、農業従事者が減少する日本の課題に適しています。",
             },
             {
               label: "審査員コメント",
               name: "Takeshi Kanamori",
-              affiliation: "TKOcean, Inc.",
+              affiliation: "COO, RoboFounders",
               text: "農業の人手不足や食料自給率向上という日本の課題との関連性が高く、成熟度と実現可能性のあるアプローチです。",
             },
           ],
@@ -1047,15 +1040,14 @@ export const newsArticles = {
           judgeComments: [
             {
               label: "審査員コメント",
-              name: "桝井 綾乃",
+              name: "Ayano Masui",
               affiliation: "FIRST CVC",
-              imageKey: "judge",
               text: "造影剤不使用の脳MRI AI診断というニッチ深堀りが明確です。薬機法認証さえ通れば強固な参入障壁になり、高齢化に伴う脳疾患増加と直結するため、商業性と社会性が両立している部分がとても評価できます。",
             },
             {
               label: "審査員コメント",
               name: "Akiyuki Minami",
-              affiliation: "COCONALA Inc. / Crest Skill Partners",
+              affiliation: "Crest Skill Partners",
               text: "医療費、患者負担、画像診断現場の運用課題を同時に軽減できる可能性があり、画像診断需要が高まる高齢社会の日本に大きな価値をもたらします。",
             },
             {
@@ -1067,7 +1059,7 @@ export const newsArticles = {
             {
               label: "審査員コメント",
               name: "Takeshi Kanamori",
-              affiliation: "TKOcean, Inc.",
+              affiliation: "COO, RoboFounders",
               text: "日本で拡大する医療画像診断のニーズと相性が良く、長期的な成長性と開発可能性を備えています。",
             },
           ],
@@ -1080,9 +1072,8 @@ export const newsArticles = {
           judgeComments: [
             {
               label: "審査員コメント",
-              name: "桝井 綾乃",
+              name: "Ayano Masui",
               affiliation: "FIRST CVC",
-              imageKey: "judge",
               text: "ケナフ・パームオイル廃棄物を使ったバイオコンポジット材料をUAV・バス・鉄道など複数実案件に適用済みで技術力は本物。Startup World Cup 2024地域優勝など外部評価も確かです。もう一歩のところでいくと、日本の製造業はサプライヤー認証のハードルが高く、参入戦略の具体性が見えるとなお良いと感じます。",
             },
             {
@@ -1094,7 +1085,7 @@ export const newsArticles = {
             {
               label: "審査員コメント",
               name: "Yuji Hara",
-              affiliation: "Apollo",
+              affiliation: "Director & Partner, Apollo Capital",
               text: "脱炭素と高性能素材を両立するバイオコンポジット技術で、自動車、EV、航空宇宙などの大規模市場を対象としています。日本のモビリティ・製造企業との連携にも大きな可能性があります。",
             },
             {
@@ -1113,9 +1104,8 @@ export const newsArticles = {
           judgeComments: [
             {
               label: "審査員コメント",
-              name: "桝井 綾乃",
+              name: "Ayano Masui",
               affiliation: "FIRST CVC",
-              imageKey: "judge",
               text: "プロセスが自動化・IoT統合済みで、廃棄物処理コストを50%削減できるという具体的な数字が出ている点が強みです。ライセンス供与モデルも持っており、日本のパートナー企業経由での展開もしやすい構造になっている点が面白いと思います。",
             },
             {
@@ -1583,10 +1573,9 @@ export const newsArticles = {
     date: "2026.08.19",
     category: { en: "Press Release", ja: "プレスリリース" },
     images: {
-      hero: "/images/events/ivs-exhibit-client.jpeg",
-      team: "/images/news/japan-corporation/team.webp",
+      hero: "/images/news/japan-corporation/client-photo.jpg",
     },
-    supportingImages: ["team"],
+    supportingImages: [],
     video: null,
     en: {
       title: "RoboFounders Establishes Japanese Corporation",
