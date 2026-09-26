@@ -358,12 +358,6 @@ const en = {
       ],
       [
         "June 2026",
-        "Community",
-        "BuildClub Tokyo",
-        "Active organizer involvement, building a founder + robotics community in Tokyo.",
-      ],
-      [
-        "June 2026",
         "Event",
         "JUNGLE FORGE AWARD Social Impact Edition 2026",
         "A pitch event for startups tackling social challenges, held in nature.",
