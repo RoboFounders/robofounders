@@ -10,7 +10,6 @@ const eventImages = [
   media.events[2], // team-banner / Diffusion Sarawak
   media.ivsExhibit, // client-approved IVS Japan image
   media.events[4], // banner-booth / Silicon Valley launch
-  media.events[7], // startups-jungle / BuildClub Tokyo
   media.events[7], // client-provided Jungle Forge image
   media.home.factory, // humans and robots working together
 ];
