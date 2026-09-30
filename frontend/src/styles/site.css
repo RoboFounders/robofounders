@@ -114,7 +114,7 @@ button:disabled {
   align-items: center;
   gap: 10px;
   color: var(--brand-blue);
-  font-size: 13px;
+  font-size: 16px;
   line-height: 1.65;
   font-weight: 600;
   letter-spacing: 0.14em;
@@ -122,7 +122,7 @@ button:disabled {
   margin-bottom: 22px;
 }
 .small-label {
-  font-size: 13px;
+  font-size: 16px;
   letter-spacing: 0.09em;
   font-weight: 600;
   text-transform: uppercase;
@@ -204,7 +204,7 @@ button:disabled {
   justify-content: center;
   border: 1px solid transparent;
   border-radius: 5px;
-  font-size: 13px;
+  font-size: 16px;
   font-weight: 600;
   line-height: 1.5;
   transition:
@@ -331,13 +331,13 @@ button:disabled {
   grid-template-columns: repeat(8, max-content);
   justify-content: center;
   align-items: stretch;
-  gap: clamp(18px, 3vw, 46px);
+  gap: clamp(14px, 2.2vw, 34px);
 }
 .desktop-nav a {
   display: inline-flex;
   align-items: center;
   position: relative;
-  font-size: 14px;
+  font-size: 18px;
   font-weight: 650;
   letter-spacing: 0.075em;
   text-transform: uppercase;
@@ -364,7 +364,7 @@ button:disabled {
   align-items: center;
   gap: 2px;
   white-space: nowrap;
-  font-size: 14px;
+  font-size: 18px;
 }
 .language-control button {
   padding: 12px 4px;
@@ -384,7 +384,7 @@ button:disabled {
   display: inline-flex;
   gap: 10px;
   align-items: center;
-  font-size: 14px;
+  font-size: 18px;
   padding: 11px 15px;
   white-space: nowrap;
   border-radius: 4px;
@@ -461,17 +461,16 @@ button:disabled {
 .hero-video-brandmark {
   position: absolute;
   z-index: 2;
-  right: 6%;
-  bottom: 10%;
-  width: 64px;
-  height: 45px;
-  max-width: 64px;
-  max-height: 45px;
-  box-sizing: border-box;
-  padding: 4px 6px;
-  background: #ffffff;
-  border-radius: 6px;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5);
+  right: 3%;
+  bottom: 6%;
+  width: 84px;
+  height: auto;
+  max-width: 84px;
+  padding: 0;
+  background: transparent;
+  border-radius: 0;
+  box-shadow: none;
+  filter: drop-shadow(0 3px 8px rgba(0, 0, 0, 0.42));
   pointer-events: none;
   user-select: none;
   object-fit: contain;
@@ -497,9 +496,9 @@ button:disabled {
 .hero-copy .hero-body {
   color: rgba(255, 255, 255, 0.78);
   max-width: 580px;
-  margin-top: 10px;
-  font-size: 13px;
-  line-height: 1.55;
+  margin-top: 8px;
+  font-size: 18px;
+  line-height: 1.5;
 }
 .hero-copy .hero-body-secondary {
   color: rgba(255, 255, 255, 0.64);
@@ -508,20 +507,20 @@ button:disabled {
 .hero-statements {
   display: grid;
   gap: 2px;
-  margin-top: 10px;
+  margin-top: 8px;
   padding-left: 11px;
   border-left: 2px solid #7d93ff;
 }
 .hero-statements strong {
   color: rgba(255, 255, 255, 0.92);
-  font-size: 13px;
+  font-size: 18px;
   font-weight: 550;
   line-height: 1.45;
 }
 .hero-build-label {
-  margin-top: 10px;
+  margin-top: 8px;
   color: #aeb9ff;
-  font-size: 13px;
+  font-size: 16px;
   font-weight: 700;
   letter-spacing: 0.15em;
   text-transform: uppercase;
@@ -541,10 +540,10 @@ button:disabled {
   border-radius: 999px;
   background: rgba(255, 255, 255, 0.035);
   color: rgba(255, 255, 255, 0.9);
-  font-size: 13px;
+  font-size: 18px;
   letter-spacing: 0.04em;
   line-height: 1.35;
-  padding: 7px 12px;
+  padding: 6px 12px;
 }
 .hero-capabilities svg {
   flex: 0 0 auto;
@@ -555,21 +554,21 @@ button:disabled {
   margin-bottom: 0;
 }
 .hero-copy .hero-foot {
-  margin-top: 14px;
+  margin-top: 10px;
   color: rgba(255, 255, 255, 0.7);
-  font-size: 13px;
+  font-size: 16px;
   font-weight: 650;
   letter-spacing: 0.08em;
   text-transform: uppercase;
 }
 .hero-copy .actions {
-  margin-top: 16px;
+  margin-top: 12px;
   gap: 14px;
 }
 .hero-copy .button {
   min-height: 46px;
   padding: 12px 20px;
-  font-size: 14px;
+  font-size: 17px;
 }
 .hero-bottom {
   padding-block: 16px;
@@ -577,7 +576,7 @@ button:disabled {
   display: flex;
   justify-content: space-between;
   gap: 24px;
-  font-size: 13px;
+  font-size: 16px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: rgba(255, 255, 255, 0.7);
@@ -765,14 +764,14 @@ button:disabled {
 }
 .concept-film-points p {
   color: var(--muted);
-  font-size: 13px;
+  font-size: 18px;
   line-height: 1.6;
 }
 .concept-film-points strong {
   display: block;
   margin-bottom: 2px;
   color: var(--ink);
-  font-size: 14px;
+  font-size: 18px;
 }
 .ecosystem {
   border: 1px solid rgba(125, 147, 255, 0.2);
@@ -977,11 +976,11 @@ button:disabled {
 }
 .company-facts strong {
   color: var(--brand-blue-light);
-  font-size: 13px;
+  font-size: 16px;
 }
 .company-facts span {
   color: #d8deeb;
-  font-size: 13px;
+  font-size: 18px;
 }
 .encounter-grid {
   align-items: start;
@@ -1003,7 +1002,7 @@ button:disabled {
 .encounter-copy p,
 .company-mission p {
   color: #b8c1d3;
-  font-size: 14px;
+  font-size: 18px;
 }
 .company-mission {
   background: linear-gradient(145deg, #11144a, #070a22);
@@ -1082,13 +1081,13 @@ button:disabled {
 }
 .services-grid strong {
   display: block;
-  font-size: 13px;
+  font-size: 17px;
   line-height: 1.6;
   font-weight: 500;
   min-height: 44px;
 }
 .services-grid p {
-  font-size: 13px;
+  font-size: 18px;
   margin-top: 12px;
 }
 .regions-grid,
@@ -1221,7 +1220,7 @@ button:disabled {
   margin-bottom: 10px;
 }
 .regions-grid p {
-  font-size: 14px;
+  font-size: 18px;
 }
 .technology-grid {
   display: grid;
@@ -1289,7 +1288,7 @@ button:disabled {
   margin-bottom: 14px;
 }
 .factory-grid p {
-  font-size: 14px;
+  font-size: 18px;
 }
 .platform-grid {
   display: grid;
@@ -1308,7 +1307,7 @@ button:disabled {
   margin: 18px 0 10px;
 }
 .platform-grid p {
-  font-size: 14px;
+  font-size: 18px;
 }
 .platform-closing {
   display: flex;
@@ -1351,7 +1350,7 @@ button:disabled {
   margin: 22px 0 12px;
 }
 .why-grid p {
-  font-size: 14px;
+  font-size: 18px;
 }
 .story-grid,
 .startup-grid,
@@ -1469,7 +1468,7 @@ button:disabled {
   margin-bottom: 14px;
 }
 .works-grid p {
-  font-size: 14px;
+  font-size: 18px;
 }
 .startup-section {
   background: var(--brand-blue-soft);
@@ -2670,6 +2669,12 @@ button:disabled {
 }
 
 @media (min-width: 801px) and (max-width: 1100px) {
+  .desktop-nav-inner {
+    gap: clamp(8px, 1.4vw, 15px);
+  }
+  .desktop-nav a {
+    font-size: 18px;
+  }
   .hero-grid {
     grid-template-columns: minmax(0, 1.08fr) minmax(0, 1fr);
     gap: 24px;
@@ -2683,15 +2688,15 @@ button:disabled {
     font-size: 15px;
   }
   .hero-copy .hero-body {
-    font-size: 13px;
-    line-height: 1.45;
+    font-size: 18px;
+    line-height: 1.5;
     margin-top: 5px;
   }
   .hero-statements {
     margin-top: 7px;
   }
   .hero-statements strong {
-    font-size: 13px;
+    font-size: 18px;
   }
   .hero-build-label {
     margin-top: 7px;
@@ -2701,7 +2706,7 @@ button:disabled {
     margin-top: 5px;
   }
   .hero-capabilities span {
-    font-size: 13px;
+    font-size: 16px;
     min-height: 30px;
     padding: 5px 7px;
   }
@@ -2716,11 +2721,11 @@ button:disabled {
     min-height: 42px;
     padding: 9px 11px;
     gap: 8px;
-    font-size: 13px;
+    font-size: 16px;
   }
   .hero-copy .hero-foot {
     margin-top: 10px;
-    font-size: 13px;
+    font-size: 15px;
   }
   .hero-bottom {
     padding-block: 10px;
@@ -2759,7 +2764,7 @@ button:disabled {
     gap: 8px;
   }
   .language-control {
-    font-size: 13px;
+    font-size: 17px;
     gap: 2px;
   }
   .language-control button {
@@ -2794,7 +2799,7 @@ button:disabled {
   }
   .mobile-nav a {
     display: block;
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 600;
     letter-spacing: 0.04em;
     padding: 14px 0;
@@ -2832,7 +2837,7 @@ button:disabled {
   }
   .page-main p.eyebrow,
   .eyebrow {
-    font-size: 12.5px;
+    font-size: 15px;
     letter-spacing: 0.12em;
     margin-bottom: 14px;
   }
@@ -2869,7 +2874,7 @@ button:disabled {
     margin-bottom: 8px;
   }
   .hero-copy .hero-body {
-    font-size: 14.5px;
+    font-size: 18px;
     line-height: 1.65;
     color: rgba(255, 255, 255, 0.82);
   }
@@ -2880,13 +2885,13 @@ button:disabled {
     border-left: 3px solid #7d93ff;
   }
   .hero-statements strong {
-    font-size: 13.5px;
+    font-size: 18px;
     line-height: 1.5;
     color: rgba(255, 255, 255, 0.95);
   }
   .hero-build-label {
     margin-top: 14px;
-    font-size: 12.5px;
+    font-size: 15px;
     letter-spacing: 0.12em;
   }
   .hero-capabilities {
@@ -2897,7 +2902,7 @@ button:disabled {
   }
   .hero-capabilities span {
     min-height: 42px;
-    font-size: 13.5px;
+    font-size: 17px;
     padding: 8px 14px;
     border-radius: 8px;
     background: rgba(255, 255, 255, 0.06);
@@ -2912,12 +2917,12 @@ button:disabled {
   .hero-copy .button {
     width: 100%;
     min-height: 50px;
-    font-size: 15px;
+    font-size: 17px;
     justify-content: center;
   }
   .hero-copy .hero-foot {
     margin-top: 18px;
-    font-size: 12.5px;
+    font-size: 15px;
     letter-spacing: 0.08em;
   }
   .hero-bottom {
@@ -2958,7 +2963,7 @@ button:disabled {
     padding: 14px 0;
   }
   .concept-film-points p {
-    font-size: 14px;
+    font-size: 18px;
     line-height: 1.65;
   }
   .concept-film-points strong {
@@ -2982,7 +2987,7 @@ button:disabled {
     min-height: auto;
   }
   .services-grid p {
-    font-size: 14px;
+    font-size: 18px;
     line-height: 1.65;
   }
   .company-grid,

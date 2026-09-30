@@ -136,7 +136,7 @@ const en = {
     title: "From Japan to the world.",
     body: "RoboFounders is building the infrastructure for the next generation of manufacturing through Physical AI. We are building a global robotics platform connecting AI, robots, critical components, software, data, and manufacturers.",
     facts: [
-      ["June 2026", "RoboFounders, Inc. established in Delaware, USA."],
+      ["June 12, 2026", "RoboFounders, Inc. established in Delaware, USA."],
       ["August 19, 2026", "RoboFounders Co., Ltd. established in Japan."],
     ],
     missionTitle: "Manufacturing challenges we are addressing",
@@ -152,16 +152,15 @@ const en = {
       "RoboFounders team and manufacturing partners together on a factory floor",
   },
   showcase: {
-    label: "Physical AI concept film",
+    label: "Physical AI concept",
     title: "Transform dangerous work. Protect people.",
-    body: "See how robotics, AI, critical components, and manufacturing systems come together to move dangerous work away from people and into intelligent machines.",
+    body: "Robotics, AI, critical components, and manufacturing systems come together to move dangerous work away from people and into intelligent machines.",
     points: [
       ["Protect people", "Reduce human exposure to dangerous and high-risk work."],
       ["Automate danger", "Bring intelligent robotics into real production environments."],
       ["Deploy globally", "Connect Japanese manufacturing expertise with global robotics technology."],
     ],
     cta: "Explore our technology",
-    caption: "Physical AI concept preview",
     videoLabel:
       "Physical AI concept film showing robotic systems and connected manufacturing",
   },

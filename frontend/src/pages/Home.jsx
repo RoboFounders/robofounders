@@ -163,9 +163,6 @@ export default function Home() {
                 height="957"
                 loading="lazy"
               />
-              <figcaption>
-                <span>{t.showcase.caption}</span>
-              </figcaption>
             </figure>
             <div className="concept-film-copy">
               <p className="eyebrow">{t.showcase.label}</p>

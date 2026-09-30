@@ -128,7 +128,7 @@ const ja = {
     title: "日本から、世界へ。",
     body: "RoboFoundersは、Physical AIによって次世代の製造業を支える産業基盤を構築しています。AI、ロボット、コアコンポーネント、ソフトウェア、データ、そして製造企業をつなぐグローバルなRobotics Platformを目指します。",
     facts: [
-      ["2026年6月", "米国デラウェア州にRoboFounders, Inc.を設立。"],
+      ["2026年6月12日", "米国デラウェア州にRoboFounders, Inc.を設立。"],
       ["2026年8月19日", "日本法人RoboFounders株式会社を設立。"],
     ],
     missionTitle: "製造現場の課題に向き合う",
@@ -138,7 +138,7 @@ const ja = {
     imageAlt: "工場で並ぶRoboFoundersチームと製造パートナー",
   },
   showcase: {
-    label: "Physical AI コンセプトフィルム",
+    label: "Physical AI コンセプト",
     title: "危険な仕事を変える。\n人を守る。",
     body: "ロボティクス、AI、重要コンポーネント、製造システムを融合し、危険な作業を人からインテリジェントな機械へ。",
     points: [
@@ -147,7 +147,6 @@ const ja = {
       ["世界へ展開する", "日本の製造技術と世界のロボティクス技術をつなぎます。"],
     ],
     cta: "TECHNOLOGYを見る",
-    caption: "Physical AI コンセプトプレビュー",
     videoLabel:
       "ロボットシステムとつながる製造現場を紹介するPhysical AIコンセプト動画",
   },
