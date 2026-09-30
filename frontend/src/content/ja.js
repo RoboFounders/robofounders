@@ -129,7 +129,7 @@ const ja = {
     body: "RoboFoundersは、Physical AIによって次世代の製造業を支える産業基盤を構築しています。AI、ロボット、コアコンポーネント、ソフトウェア、データ、そして製造企業をつなぐグローバルなRobotics Platformを目指します。",
     facts: [
       ["2026年6月12日", "米国デラウェア州にRoboFounders, Inc.を設立。"],
-      ["2026年8月19日", "日本法人RoboFounders株式会社を設立。"],
+      ["2026年8月19日", "日本法人である株式会社RoboFoundersを設立。"],
     ],
     missionTitle: "製造現場の課題に向き合う",
     challenges: ["危険な作業", "重労働", "繰り返し作業", "人手不足"],
