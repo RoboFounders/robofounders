@@ -10,7 +10,7 @@ export const media = {
   rofi: "/images/home/rofi-3d.png",
   homeVideo: "/videos/home/physical-ai-concept.mp4",
   home: {
-    hero: "/images/home/physical-ai-hero.webp",
+    hero: "/images/home/physical-ai-video-poster.webp",
     heroDangerousWork: "/images/home/dangerous-manufacturing.webp",
     about: "/images/home/about-factory-team.webp",
     regions: "/images/home/global-ecosystem.webp",
