@@ -1,4 +1,5 @@
-import { ArrowUpRight } from "lucide-react";
+import { ArrowUpRight, Linkedin, X } from "lucide-react";
+import * as Dialog from "@radix-ui/react-dialog";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { contacts, media } from "@/content/media";
 
@@ -10,7 +11,8 @@ const initials = (name) =>
     .slice(0, 2);
 
 export default function Team() {
-  const { t } = useLanguage();
+  const { t, lang } = useLanguage();
+  const readProfile = lang === "ja" ? "プロフィールを読む" : "Read profile";
   // Yasumitsu Morita is temporarily hidden pending client approval.
   const visibleMembers = t.team.members.filter(
     (member) => member.id !== "yasumitsu",
@@ -71,9 +73,37 @@ export default function Team() {
                 )}
               </div>
               <div className="team-card-copy">
-                <h4>{member.name}</h4>
+                <div className="team-card-name">
+                  <h4>{member.name}</h4>
+                  {member.linkedin && (
+                    <a className="team-linkedin" href={member.linkedin} target="_blank" rel="noopener noreferrer" aria-label={`LinkedIn: ${member.name}`}>
+                      <Linkedin size={18} aria-hidden="true" />
+                    </a>
+                  )}
+                </div>
                 <p>{member.role}</p>
-                <small>{member.bio}</small>
+                <small className="team-bio-preview">{member.bio}</small>
+                <div className="team-card-actions">
+                  <Dialog.Root>
+                    <Dialog.Trigger asChild>
+                      <button className="team-profile-trigger" aria-label={`${readProfile}: ${member.name}`}>
+                        <span className="sr-only">{readProfile}</span>
+                        <ArrowUpRight size={16} aria-hidden="true" />
+                      </button>
+                    </Dialog.Trigger>
+                    <Dialog.Portal>
+                      <Dialog.Overlay className="team-profile-overlay" />
+                      <Dialog.Content className="team-profile-dialog">
+                        <Dialog.Close className="team-profile-close" aria-label={t.ui.close}>
+                          <X size={20} aria-hidden="true" />
+                        </Dialog.Close>
+                        <Dialog.Title>{member.name}</Dialog.Title>
+                        <p className="team-profile-role">{member.role}</p>
+                        <Dialog.Description className="team-profile-bio">{member.bio}</Dialog.Description>
+                      </Dialog.Content>
+                    </Dialog.Portal>
+                  </Dialog.Root>
+                </div>
               </div>
             </article>
           ))}
