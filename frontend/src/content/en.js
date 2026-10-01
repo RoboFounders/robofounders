@@ -106,12 +106,12 @@ const en = {
     items: [
       [
         "Design",
-        "Design the future of robotics.",
+        "Shape the Future of Manufacturing",
         "Physical AI solutions, robotic systems, AI applications, and technologies for real-world environments.",
       ],
       [
         "Build",
-        "Build the technologies that make robots move.",
+        "Automate Dangerous Work",
         "Critical components, robotic hardware, and AI technologies that enable the next generation of robots.",
       ],
       [
@@ -126,7 +126,7 @@ const en = {
       ],
       [
         "Scale",
-        "Accelerate global manufacturing deployment.",
+        "Scale Globally",
         "Forging cross-border partnerships, scaling production, and driving real-world Physical AI adoption.",
       ],
     ],
@@ -439,7 +439,8 @@ const en = {
         id: "takeshi",
         name: "Takeshi Kanamori",
         role: "COO",
-        bio: "Leads company operations and cross-functional execution.",
+        bio: "A startup executive, ecosystem builder, and former venture capitalist with extensive experience connecting Japan and Southeast Asia. He holds an MBA from the University of California, San Diego, and a BA from the University of Tokyo. At RoboFounders, he leads operations, strategic partnerships, and global business development across Japan, ASEAN, and the U.S.",
+        linkedin: "https://www.linkedin.com/in/takeshikanamori/",
       },
       {
         id: "hiromichi",
@@ -547,8 +548,8 @@ const en = {
     title: "Technologies for the physical world.",
     body: "Motion and manipulation technologies for the next generation of intelligent machines.",
     intro: "Explore our products",
-    featured: "01 / Motion technology",
-    second: "02 / Manipulation technology",
+    featured: "Motion technology",
+    second: "Manipulation technology",
     ask: "Building your next robot?",
     askBody: "Tell us your application. Let’s explore the technology it needs.",
     made: "Made in Japan",
