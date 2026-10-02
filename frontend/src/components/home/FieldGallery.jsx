@@ -23,7 +23,6 @@ export default function FieldGallery() {
                 />
               </div>
               <figcaption>
-                <span aria-hidden="true">{String(i + 1).padStart(2, "0")}</span>
                 <span>{t.gallery.captions[i]}</span>
               </figcaption>
             </figure>
@@ -40,12 +39,7 @@ export default function FieldGallery() {
                 />
               </div>
               <figcaption>
-                <span aria-hidden="true">
-                  {String(media.events.length + i + 1).padStart(2, "0")}
-                </span>
-                <span>
-                  {t.gallery.video} {i + 1}
-                </span>
+                <span>{t.gallery.video}</span>
               </figcaption>
             </figure>
           ))}
