@@ -431,7 +431,7 @@ const en = {
     title: "People building the future of Physical AI.",
     founderRole: "CEO",
     bio: "Founder and CEO leading RoboFounders’ vision, cross-border partnerships, and Physical AI ecosystem across Japan, ASEAN, and the USA.",
-    heading: "One team across regions and disciplines.",
+    heading: "6 global locations. One vision.",
     body: "Our team brings together company building, robotics engineering, manufacturing strategy, AI, finance, marketing, and regional execution.",
     photoPending: "Profile photo coming soon",
     members: [
