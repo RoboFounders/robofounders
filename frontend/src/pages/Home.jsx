@@ -169,9 +169,8 @@ export default function Home() {
               <h2 className="client-line-breaks">{t.showcase.title}</h2>
               <p className="section-lead client-line-breaks">{t.showcase.body}</p>
               <div className="concept-film-points">
-                {t.showcase.points.map(([title, body], index) => (
+                {t.showcase.points.map(([title, body]) => (
                   <div key={title}>
-                    <span>{String(index + 1).padStart(2, "0")}</span>
                     <p>
                       <strong>{title}</strong>
                       {body}
@@ -205,8 +204,7 @@ export default function Home() {
                 return (
                   <article key={name}>
                     <div className="card-top">
-                      <span>0{i + 1}</span>
-                      <Icon size={24} strokeWidth={1.4} />
+                      <Icon size={24} strokeWidth={1.4} aria-hidden="true" />
                     </div>
                     <h4>{name}</h4>
                     <strong>{title}</strong>
@@ -261,9 +259,8 @@ export default function Home() {
             <h2>{t.regions.title}</h2>
             <p className="section-lead">{t.regions.body}</p>
             <div className="regions-route" aria-hidden="true">
-              {t.regions.items.map(([name, , , role], i) => (
+              {t.regions.items.map(([name, , , role]) => (
                 <div className="regions-route-node" key={name}>
-                  <span className="regions-route-index">0{i + 1}</span>
                   <span className="regions-route-icon">
                     <Globe2 size={34} strokeWidth={1.15} />
                   </span>
@@ -274,11 +271,10 @@ export default function Home() {
             </div>
             {/* Global ecosystem image is temporarily hidden pending client approval. */}
             <div className="regions-grid">
-              {t.regions.items.map(([name, title, body, role], i) => (
+              {t.regions.items.map(([name, title, body, role]) => (
                 <article key={name}>
                   <div className="region-art" aria-hidden="true">
                     <Globe2 size={140} strokeWidth={0.45} />
-                    <span>0{i + 1}</span>
                   </div>
                   <span className="small-label">{role}</span>
                   <h3>{name}</h3>
@@ -299,9 +295,8 @@ export default function Home() {
               <p className="section-lead">{t.why.body}</p>
             </div>
             <div className="why-grid">
-              {t.why.items.map(([title, body], i) => (
+              {t.why.items.map(([title, body]) => (
                 <article key={title}>
-                  <span>0{i + 1}</span>
                   <h3>{title}</h3>
                   <p>{body}</p>
                 </article>
@@ -395,9 +390,8 @@ export default function Home() {
             <h2 className="client-line-breaks">{t.platform.title}</h2>
             <p className="section-lead">{t.platform.body}</p>
             <div className="platform-grid">
-              {t.platform.items.map(([name, body], i) => (
+              {t.platform.items.map(([name, body]) => (
                 <div key={name}>
-                  <span className="small-label">0{i + 1}</span>
                   <h3>{name}</h3>
                   <p>{body}</p>
                 </div>
