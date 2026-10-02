@@ -809,18 +809,8 @@ button:disabled {
   border-top: 1px solid var(--line);
 }
 .concept-film-points > div {
-  display: grid;
-  grid-template-columns: 34px minmax(0, 1fr);
-  gap: 14px;
   padding: 15px 0;
   border-bottom: 1px solid var(--line);
-}
-.concept-film-points > div > span {
-  color: var(--brand-blue);
-  font-size: 13px;
-  font-weight: 700;
-  letter-spacing: 0.12em;
-  padding-top: 3px;
 }
 .concept-film-points p {
   color: var(--muted);
@@ -1130,7 +1120,7 @@ button:disabled {
 .card-top {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-end;
   color: var(--brand-blue);
   font-size: 13px;
   margin-bottom: 36px;
@@ -1205,13 +1195,6 @@ html[lang="ja"] .services-grid article:nth-child(2) strong {
   font-size: 22px;
   line-height: 1;
 }
-.regions-route-index {
-  margin-bottom: 9px;
-  color: rgba(255, 255, 255, 0.52);
-  font-size: 13px;
-  font-weight: 600;
-  letter-spacing: 0.16em;
-}
 .regions-route-icon {
   display: grid;
   width: 62px;
@@ -1267,13 +1250,6 @@ html[lang="ja"] .services-grid article:nth-child(2) strong {
 }
 .region-art svg {
   transform: rotate(-17deg);
-}
-.region-art span {
-  position: absolute;
-  right: 0;
-  top: 0;
-  color: #b9c2ff;
-  font-size: 13px;
 }
 .regions-grid h3 {
   font-size: 36px;
@@ -1368,7 +1344,7 @@ html[lang="ja"] .services-grid article:nth-child(2) strong {
 }
 .platform-grid h3 {
   font-size: 25px;
-  margin: 18px 0 10px;
+  margin: 0 0 10px;
 }
 .platform-grid p {
   font-size: 18px;
@@ -1405,13 +1381,9 @@ html[lang="ja"] .services-grid article:nth-child(2) strong {
   border-top: 1px solid var(--line);
   padding-top: 22px;
 }
-.why-grid article > span {
-  color: var(--brand-blue);
-  font-size: 13px;
-}
 .why-grid h3 {
   font-size: 24px;
-  margin: 22px 0 12px;
+  margin: 0 0 12px;
 }
 .why-grid p {
   font-size: 18px;
@@ -1497,21 +1469,11 @@ html[lang="ja"] .services-grid article:nth-child(2) strong {
   object-fit: contain;
 }
 .field-gallery figcaption {
-  display: grid;
-  grid-template-columns: auto 1fr;
-  align-items: start;
-  gap: 14px;
   min-height: 72px;
   padding: 16px 18px;
   color: rgba(255, 255, 255, 0.85);
   font-size: 13px;
   line-height: 1.6;
-}
-.field-gallery figcaption > span:first-child {
-  color: #8a9bff;
-  font-size: 13px;
-  letter-spacing: 0.12em;
-  padding-top: 2px;
 }
 .works-grid img {
   width: 100%;
@@ -2506,7 +2468,7 @@ html[lang="ja"] .services-grid article:nth-child(2) strong {
 }
 .benefits-grid h3 {
   font-size: 24px;
-  margin: 24px 0 14px;
+  margin: 0 0 14px;
 }
 .benefits-grid p,
 .process-grid p {
@@ -2578,7 +2540,7 @@ html[lang="ja"] .services-grid article:nth-child(2) strong {
 }
 .process-grid article > div {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   border-top: 1px solid var(--line);
   padding-top: 22px;
   color: var(--brand-blue);
@@ -3140,8 +3102,6 @@ html[lang="ja"] .services-grid article:nth-child(2) strong {
     margin: 24px 0;
   }
   .concept-film-points > div {
-    grid-template-columns: 28px minmax(0, 1fr);
-    gap: 12px;
     padding: 14px 0;
   }
   .concept-film-points p {
@@ -4002,6 +3962,17 @@ html[lang="ja"] .brand-section h2 {
 }
 html[lang="ja"] .desktop-nav {
   gap: 18px;
+}
+@media (max-width: 768px) {
+  html[lang="ja"] .hero-copy h1 {
+    font-size: clamp(30px, 8.5vw, 42px);
+  }
+  html[lang="ja"] .section h2 {
+    font-size: clamp(26px, 6.8vw, 36px);
+  }
+  html[lang="ja"] .product-hero h1 {
+    font-size: clamp(32px, 8vw, 44px);
+  }
 }
 @media (prefers-reduced-motion: reduce) {
   html {
