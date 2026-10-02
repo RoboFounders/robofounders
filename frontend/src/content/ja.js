@@ -405,7 +405,7 @@ const ja = {
     title: "Physical AIの未来をつくる人々。",
     founderRole: "CEO",
     bio: "RoboFoundersのビジョンと国際的なパートナーシップを主導し、日本、ASEAN、米国をつなぐPhysical AIエコシステムの構築に取り組んでいます。",
-    heading: "地域と専門分野を横断する、ひとつのチーム。",
+    heading: "世界6拠点、ひとつのビジョン。",
     body: "事業構築、ロボティクス工学、製造戦略、AI、財務、マーケティング、そして各地域での実行を担うメンバーが集まっています。",
     photoPending: "プロフィール写真は近日掲載予定",
     members: [
