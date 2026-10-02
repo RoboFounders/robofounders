@@ -117,9 +117,8 @@ export default function ProductDetail() {
             <p className="eyebrow">{t.ui.overview}</p>
             <h2>{t.productsPage.overview}</h2>
             <div className="benefits-grid">
-              {product.benefits.map(([title, body], i) => (
+              {product.benefits.map(([title, body]) => (
                 <article key={title}>
-                  <span className="small-label">0{i + 1}</span>
                   <h3>{title}</h3>
                   <p>{body}</p>
                 </article>
@@ -198,7 +197,6 @@ export default function ProductDetail() {
                 {t.productsPage.process.map(([title, body], i) => (
                   <article key={title}>
                     <div>
-                      <span>0{i + 1}</span>
                       {i < 2 && <ArrowRight size={20} />}
                     </div>
                     <h3>{title}</h3>
