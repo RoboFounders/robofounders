@@ -1715,6 +1715,9 @@ html[lang="ja"] .services-grid article:nth-child(2) strong {
   object-position: center 20%;
   border-radius: 4px;
 }
+.news-media.is-malaysia img {
+  object-position: center 40%;
+}
 .news-media.is-contain {
   display: grid;
   place-items: center;

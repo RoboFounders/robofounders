@@ -128,6 +128,8 @@ export default function Updates() {
                     <div
                       className={`news-media${
                         index === 5 || index === 6 ? " is-contain" : ""
+                      }${
+                        index === 9 ? " is-malaysia" : ""
                       }`}
                     >
                       <img
