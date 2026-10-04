@@ -619,7 +619,7 @@ export const newsArticles = {
       ja: "アワード・イベント",
     },
     images: {
-      hero: "/images/events/robot-hug.jpeg",
+      hero: "/images/news/startup-world-cup-tokyo/founder-rofi-client.webp",
       event: "/images/events/team-banner.jpeg",
       program: "/images/events/team-ivs.jpeg",
     },
