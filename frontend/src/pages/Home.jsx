@@ -515,8 +515,8 @@ export default function Home() {
                 src={media.home.contact}
                 alt={t.contact.imageAlt}
                 loading="lazy"
-                width="934"
-                height="1400"
+                width="1024"
+                height="1536"
               />
             </div>
             <div className="contact-form-panel">

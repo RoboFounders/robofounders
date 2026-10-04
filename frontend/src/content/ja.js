@@ -242,8 +242,8 @@ const ja = {
     title: "工場の現場から、世界へ。",
     body: "RoboFoundersの事業への想い、Physical AI・ロボティクスの最新動向、そして私たちの活動や取り組みの様子をお届けします。",
     captions: [
-      "国際カンファレンスでのRoboFoundersチーム",
-      "日本のIVS2026で活動するチーム",
+      "日本のIVS2026に出展するRoboFounders創業者",
+      "日本のIVS2026に出展するRoboFounders",
       "ブースでのパートナーシップに関する対話",
       "ライブデモと商談の様子",
       "2026年6月23日・24日 — RoboFounders、Diffusion Borneo 2026に創業直後の初出展",
@@ -502,7 +502,7 @@ const ja = {
       "用途、目標荷重や取り扱う対象物、寸法、スケジュールなどをご記入ください。",
     dialogTitle: "エンジニアリングチームに相談",
     dialogIntro: "開発中の製品や、用途に応じたご要望をお聞かせください。",
-    imageAlt: "業界イベントに出展するRoboFoundersチーム",
+    imageAlt: "Startup World Cup東京のブースに立つRoboFounders創業者とチーム",
   },
   footer: {
     tagline: "危険な製造現場のためのPhysical AIプラットフォーム。",

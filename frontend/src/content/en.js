@@ -268,8 +268,8 @@ const en = {
     title: "From Factory to World.",
     body: "Stories from RoboFounders—our mission, the latest developments in Physical AI and robotics, and the work we are doing across borders.",
     captions: [
-      "RoboFounders founder at international industry conference",
-      "The team on the ground at IVS2026, Japan",
+      "RoboFounders founder at IVS2026, Japan",
+      "RoboFounders at IVS2026, Japan",
       "Partnership conversations at the booth",
       "Live demos and lead capture in session",
       "June 23–24, 2026 — RoboFounders Makes Its First Exhibition at Diffusion Borneo 2026",
@@ -528,7 +528,7 @@ const en = {
     dialogTitle: "Talk to our engineering team",
     dialogIntro:
       "Tell us what you are building and what your application needs.",
-    imageAlt: "RoboFounders team and partners presenting at an industry event",
+    imageAlt: "RoboFounders founder and team at the Startup World Cup Tokyo booth",
   },
   footer: {
     tagline: "The Physical AI Platform for Dangerous Manufacturing.",

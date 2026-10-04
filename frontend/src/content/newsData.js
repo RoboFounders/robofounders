@@ -243,7 +243,7 @@ export const newsArticles = {
       ja: "展示会・イベント",
     },
     images: {
-      hero: "/images/news/ivs-2026/hero.webp",
+      hero: "/images/news/ivs-2026/founder-at-ivs.webp",
     },
     heroDisplay: "contain",
     video: null,
@@ -1436,12 +1436,12 @@ export const newsArticles = {
     date: "2026.07.17",
     category: { en: "Press Release", ja: "プレスリリース" },
     images: {
-      hero: "/images/news/startup-world-cup-tokyo/hero.jpg",
+      hero: "/images/news/startup-world-cup-tokyo/team-booth-client.webp",
       rofi: "/images/news/startup-world-cup-tokyo/rofi-event.jpg",
-      booth: "/images/news/startup-world-cup-tokyo/booth.png",
       dialogue: "/images/news/startup-world-cup-tokyo/industry-dialogue.jpg",
     },
-    supportingImages: ["rofi", "booth", "dialogue"],
+    heroDisplay: "tall",
+    supportingImages: ["rofi", "dialogue"],
     video: null,
     en: {
       title: "RoboFounders Exhibits at Startup World Cup Tokyo",
@@ -1452,7 +1452,6 @@ export const newsArticles = {
       lead: "San Francisco-based robotics startup studio RoboFounders Inc. exhibited at Startup World Cup Tokyo on July 17, 2026, presenting its vision for Physical AI and AI robotics in manufacturing.",
       supportingImageAlts: [
         "Robot COO ROFI at Startup World Cup Tokyo",
-        "RoboFounders booth and team at Startup World Cup Tokyo",
         "RoboFounders Founder and CEO Mariel Asami Fukase with Professor Yoshiyuki Sankai",
       ],
       sections: [
@@ -1514,7 +1513,6 @@ export const newsArticles = {
       lead: "サンフランシスコを拠点とするロボティクス・スタートアップスタジオRoboFounders Inc.は、2026年7月17日に開催された「Startup World Cup 東京」に出展し、製造業向けAIロボティクスが切り拓くPhysical AIの未来像を紹介しました。",
       supportingImageAlts: [
         "Startup World Cup 東京の着物姿のロボットCOO ROFI",
-        "Startup World Cup 東京のRoboFoundersブースとチーム",
         "RoboFounders Founder CEO 深瀬マリエル麻美と筑波大学 山海嘉之教授",
       ],
       sections: [

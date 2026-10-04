@@ -17,7 +17,7 @@ export const media = {
     why: "/images/home/why-robofounders.webp",
     factory: "/images/home/factory-deployment.webp",
     startups: "/images/home/startups-jungle.jpg",
-    contact: "/images/home/contact-new.jpg",
+    contact: "/images/news/startup-world-cup-tokyo/team-booth-client.webp",
   },
   team: {
     takeshi: "/images/team/takeshi.webp",
@@ -32,20 +32,20 @@ export const media = {
   },
   newsBanner: "/images/events/news-banner.jpg",
   newsEvent: "/images/events/news-event-new.jpg",
-  ivs2026News: "/images/news/ivs-2026/hero.webp",
+  ivs2026News: "/images/news/ivs-2026/founder-at-ivs.webp",
   beyondPocPortrait: "/images/news/diffusion-borneo-beyond-poc/hero.webp",
   diffusionBorneo: "/images/events/diffusion-borneo.jpeg",
   xHubSingapore: "/images/news/x-hub-singapore/hero.jpg",
   aiMalaysiaTakeover: "/images/news/ai-malaysia-takeover-2026/hero.png",
   japanCorporation: "/images/news/japan-corporation/client-photo.jpg",
-  startupWorldCupTokyo: "/images/news/startup-world-cup-tokyo/hero.jpg",
+  startupWorldCupTokyo: "/images/news/startup-world-cup-tokyo/team-booth-client.webp",
   robotHandNew: "/images/products/robot-hand-new.jpg",
   bostonAiWeek: "/images/events/boston-ai-week.jpeg",
-  startupWorldCup: "/images/events/startup-world-cup-client.png",
-  ivsExhibit: "/images/events/ivs-exhibit-client.jpeg",
+  startupWorldCup: "/images/news/startup-world-cup-tokyo/founder-rofi-client.webp",
+  ivsExhibit: "/images/news/ivs-2026/founder-at-ivs.webp",
   events: [
-    "ivs-1-client.jpeg",
-    "ivs-exhibit-client.jpeg",
+    "/images/news/ivs-2026/founder-at-ivs.webp",
+    "ivs-poster.jpeg",
     "team-banner",
     "booth-laptop",
     "banner-booth",
@@ -53,12 +53,15 @@ export const media = {
     "ivs-poster",
     "startups-jungle",
     "boston-ecosystem",
-  ].map((name) =>
-    name.includes(".") ? `/images/events/${name}` : `/images/events/${name}.jpeg`,
-  ),
+  ].map((name) => {
+    if (name.startsWith("/")) return name;
+    return name.includes(".")
+      ? `/images/events/${name}`
+      : `/images/events/${name}.jpeg`;
+  }),
   eventSizes: [
-    [1600, 1200],
-    [1600, 1200],
+    [1600, 1316],
+    [1169, 1568],
     [960, 1280],
     [960, 1280],
     [720, 1280],

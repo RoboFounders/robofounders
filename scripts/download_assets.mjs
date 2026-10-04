@@ -5,8 +5,7 @@ const files = {
   'frontend/public/images/brand/robofounders-logo-new.png': '1CDfFclrqpK9tUQ_hAAGN1bXwL0R6oarx',
   'frontend/public/images/products/robot-hand-new.jpg': '1mCCyt5GD0wwAkaNZnKyxfez6dQSw2zFY',
   'frontend/public/images/home/startups-jungle.jpg': '1CyY-DK7AZOeDWHtv5QvJvh8Fid-iB0Je',
-  'frontend/public/images/events/news-event-new.jpg': '1fHaSRaftHMBuXmJiz4Z44cw8xBXF0Ss4',
-  'frontend/public/images/home/contact-new.jpg': '1zDYbfRePNSpJIPOR7aKe4792mjPxyqMk'
+  'frontend/public/images/events/news-event-new.jpg': '1fHaSRaftHMBuXmJiz4Z44cw8xBXF0Ss4'
 };
 
 async function downloadFile(destPath, fileId) {
