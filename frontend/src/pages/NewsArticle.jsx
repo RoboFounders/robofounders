@@ -73,6 +73,7 @@ export default function NewsArticle() {
               <img
                 src={article.images.hero}
                 alt={content.title}
+                style={article.heroObjectPosition ? { objectPosition: article.heroObjectPosition } : undefined}
                 width="1920"
                 height="1080"
                 loading="eager"

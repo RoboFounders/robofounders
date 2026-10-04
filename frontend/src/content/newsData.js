@@ -624,6 +624,7 @@ export const newsArticles = {
       program: "/images/events/team-ivs.jpeg",
     },
     heroDisplay: "tall",
+    heroObjectPosition: "center 40%",
     video: {
       src: "/videos/events/event-clip1.mp4",
       poster: "/images/events/robot-hug.jpeg",
