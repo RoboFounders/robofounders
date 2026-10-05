@@ -401,6 +401,11 @@ const en = {
         "Sharing real-world AI implementation and the potential of Physical AI under the theme “SMEs Don’t Need AI Magic. They Need AI That Works.”",
       ],
       [
+        "Aug 2026",
+        "RoboFounders Aims to Transform Manufacturing With Physical AI",
+        "Featured by BEAMSTART, an ASEAN startup media platform, for our mission to transform manufacturing.",
+      ],
+      [
         "Jul 17, 2026",
         "RoboFounders Exhibits at Startup World Cup Tokyo",
         "Presenting a Physical AI platform for manufacturing while robot COO ROFI welcomed visitors in a traditional kimono.",
@@ -429,11 +434,6 @@ const en = {
         "May 2026",
         "RoboFounders Selected as Semi-Finalist at Startup World Cup Malaysia 2026",
         "Showcasing our Physical AI and robotics solutions on Malaysia’s biggest startup stage.",
-      ],
-      [
-        "Apr 2026",
-        "ASEAN partnership network expands",
-        "New on-ground partners added across Malaysia and the region.",
       ],
     ],
   },

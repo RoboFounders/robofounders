@@ -690,7 +690,15 @@ button:disabled {
   bottom: 12px;
 }
 .video-audio-toggle {
-  left: 66px;
+  top: 12px;
+  right: 12px;
+  bottom: auto;
+  left: auto;
+  width: 32px;
+  height: 32px;
+  border-color: rgba(255, 255, 255, 0.3);
+  background: rgba(7, 10, 34, 0.65);
+  box-shadow: 0 3px 12px rgba(5, 8, 36, 0.2);
 }
 .brand-marquee-track {
   display: flex;
@@ -748,6 +756,7 @@ button:disabled {
   align-items: center;
 }
 .concept-film-media {
+  position: relative;
   margin: 0;
   overflow: hidden;
   border: 1px solid var(--line);

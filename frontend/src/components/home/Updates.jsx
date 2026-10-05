@@ -20,13 +20,13 @@ const newsImages = [
   media.home.factory, // Nikkei GenAI/SUM coverage; no article image supplied
   media.japanCorporation, // client-provided Japan corporation image
   media.aiMalaysiaTakeover, // client-provided AI Malaysia Takeover image
+  media.startupWorldCup, // ROFI at Startup World Cup, featured in BEAMSTART
   media.startupWorldCupTokyo, // client-provided Startup World Cup Tokyo image
   media.ivs2026News, // IVS2026 Startup Market
   media.beyondPocPortrait, // Beyond POC speaker story
   media.diffusionBorneo, // Diffusion Borneo 2026 image from doc
   media.events[7], // client-provided Jungle Forge image
   media.startupWorldCup, // client-approved Startup World Cup image
-  media.events[3], // booth-laptop / ASEAN network
 ];
 
 const newsSlugMap = {
@@ -34,12 +34,16 @@ const newsSlugMap = {
   1: "/news/x-hub-tokyo-boston",
   3: "/news/japan-corporation-established",
   4: "/news/ai-malaysia-takeover-2026",
-  5: "/news/startup-world-cup-tokyo-2026",
-  6: "/news/ivs2026-startup-market",
-  7: "/news/diffusion-borneo-beyond-poc",
-  8: "/news/diffusion-borneo-2026",
-  9: "/news/jungle-forge-award-2026",
-  10: "/news/startup-world-cup-malaysia",
+  6: "/news/startup-world-cup-tokyo-2026",
+  7: "/news/ivs2026-startup-market",
+  8: "/news/diffusion-borneo-beyond-poc",
+  9: "/news/diffusion-borneo-2026",
+  10: "/news/jungle-forge-award-2026",
+  11: "/news/startup-world-cup-malaysia",
+};
+
+const externalNewsLinks = {
+  5: "https://beamstart.com/news/robofounders-aims-to-transform-manufacturing",
 };
 
 export default function Updates() {
@@ -118,19 +122,22 @@ export default function Updates() {
             >
               {t.updates.news.map(([date, title, body], index) => {
                 const linkTarget = newsSlugMap[index];
-                const isLinked = Boolean(linkTarget);
-                const CardTag = isLinked ? Link : "article";
-                const cardProps = isLinked
-                  ? { to: linkTarget, className: "news-tile-card is-link" }
-                  : { className: "news-tile-card" };
+                const externalLink = externalNewsLinks[index];
+                const isLinked = Boolean(linkTarget || externalLink);
+                const CardTag = externalLink ? "a" : linkTarget ? Link : "article";
+                const cardProps = externalLink
+                  ? { href: externalLink, target: "_blank", rel: "noopener noreferrer", className: "news-tile-card is-link" }
+                  : linkTarget
+                    ? { to: linkTarget, className: "news-tile-card is-link" }
+                    : { className: "news-tile-card" };
 
                 return (
                   <CardTag key={title} {...cardProps}>
                     <div
                       className={`news-media${
-                        index === 6 || index === 7 ? " is-contain" : ""
+                        index === 7 || index === 8 ? " is-contain" : ""
                       }${
-                        index === 10 ? " is-malaysia" : ""
+                        index === 11 ? " is-malaysia" : ""
                       }`}
                     >
                       <img

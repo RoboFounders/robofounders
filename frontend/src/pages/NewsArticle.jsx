@@ -194,6 +194,7 @@ export default function NewsArticle() {
                     label="RoboFounders event clip"
                     preload="metadata"
                     startWhenVisible
+                    showAudioToggle
                   />
                 </div>
               </figure>

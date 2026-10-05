@@ -101,6 +101,7 @@ export default function Home() {
                   poster={media.home.hero}
                   label={t.showcase.videoLabel}
                   showToggle={false}
+                  showAudioToggle
                 />
                 <img
                   className="hero-video-brandmark"
@@ -162,6 +163,7 @@ export default function Home() {
                 label={t.showcase.videoAlt}
                 preload="none"
                 startWhenVisible
+                showToggle={false}
                 showAudioToggle
               />
             </figure>

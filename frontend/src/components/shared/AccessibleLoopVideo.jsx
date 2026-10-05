@@ -2,6 +2,8 @@ import { useEffect, useRef, useState } from "react";
 import { Pause, Play, Volume2, VolumeX } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 
+const AUDIO_ACTIVE_EVENT = "robofounders:video-audio-active";
+
 export default function AccessibleLoopVideo({
   src,
   poster,
@@ -34,11 +36,21 @@ export default function AccessibleLoopVideo({
       if (playRequest) playRequest.catch(() => setPlaying(false));
     };
     const handlePlay = () => setPlaying(true);
-    const handlePause = () => setPlaying(false);
+    const handlePause = () => {
+      setPlaying(false);
+      video.muted = true;
+      setMuted(true);
+    };
+    const muteWhenAnotherVideoStarts = (event) => {
+      if (event.detail === video) return;
+      video.muted = true;
+      setMuted(true);
+    };
 
     video.addEventListener("play", handlePlay);
     video.addEventListener("pause", handlePause);
     video.addEventListener("canplay", startPlayback);
+    window.addEventListener(AUDIO_ACTIVE_EVENT, muteWhenAnotherVideoStarts);
 
     let observer;
     if (startWhenVisible) {
@@ -60,6 +72,7 @@ export default function AccessibleLoopVideo({
       video.removeEventListener("play", handlePlay);
       video.removeEventListener("pause", handlePause);
       video.removeEventListener("canplay", startPlayback);
+      window.removeEventListener(AUDIO_ACTIVE_EVENT, muteWhenAnotherVideoStarts);
     };
   }, [src, startWhenVisible]);
 
@@ -77,8 +90,21 @@ export default function AccessibleLoopVideo({
   const toggleAudio = () => {
     const video = videoRef.current;
     if (!video) return;
-    video.muted = !video.muted;
-    setMuted(video.muted);
+    if (video.muted) {
+      window.dispatchEvent(new CustomEvent(AUDIO_ACTIVE_EVENT, { detail: video }));
+      video.muted = false;
+      setMuted(false);
+      if (video.paused) {
+        const playRequest = video.play();
+        if (playRequest) playRequest.catch(() => {
+          video.muted = true;
+          setMuted(true);
+        });
+      }
+    } else {
+      video.muted = true;
+      setMuted(true);
+    }
   };
 
   return (
@@ -121,7 +147,7 @@ export default function AccessibleLoopVideo({
           aria-label={muted ? t.ui.unmuteVideo : t.ui.muteVideo}
           aria-pressed={!muted}
         >
-          {muted ? <VolumeX size={17} aria-hidden="true" /> : <Volume2 size={17} aria-hidden="true" />}
+          {muted ? <VolumeX size={15} aria-hidden="true" /> : <Volume2 size={15} aria-hidden="true" />}
         </button>
       )}
     </>

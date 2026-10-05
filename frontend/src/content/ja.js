@@ -375,6 +375,11 @@ const ja = {
         "「SMEs Don’t Need AI Magic. They Need AI That Works.」をテーマに、AIの実装とPhysical AIの可能性を発信しました。",
       ],
       [
+        "2026年8月",
+        "BEAMSTARTがRoboFoundersのPhysical AIを紹介",
+        "ASEANのスタートアップメディア「BEAMSTART」に、製造業の変革を目指すRoboFoundersとして掲載されました。",
+      ],
+      [
         "2026年7月17日",
         "RoboFounders、「Startup World Cup 東京」に出展",
         "製造業向けPhysical AIプラットフォームを紹介し、着物姿のロボットCOO「ROFI」が来場者を迎えました。",
@@ -403,11 +408,6 @@ const ja = {
         "2026年5月",
         "Startup World Cup Malaysia 2026 セミファイナリストに選出",
         "グローバルな舞台で、RoboFoundersのPhysical AIおよびロボティクスへの取り組みを発信。日本・ASEAN・米国をつなぎ現場実装を推進。",
-      ],
-      [
-        "2026年4月",
-        "ASEANのパートナーネットワークを拡大",
-        "マレーシアをはじめとする地域で、新たな現地パートナーが参加。",
       ],
     ],
   },
