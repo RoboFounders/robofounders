@@ -34,16 +34,13 @@ const newsSlugMap = {
   1: "/news/x-hub-tokyo-boston",
   3: "/news/japan-corporation-established",
   4: "/news/ai-malaysia-takeover-2026",
+  5: "/news/robofounders-beamstart-physical-ai",
   6: "/news/startup-world-cup-tokyo-2026",
   7: "/news/ivs2026-startup-market",
   8: "/news/diffusion-borneo-beyond-poc",
   9: "/news/diffusion-borneo-2026",
   10: "/news/jungle-forge-award-2026",
   11: "/news/startup-world-cup-malaysia",
-};
-
-const externalNewsLinks = {
-  5: "https://beamstart.com/news/robofounders-aims-to-transform-manufacturing",
 };
 
 export default function Updates() {
@@ -122,14 +119,11 @@ export default function Updates() {
             >
               {t.updates.news.map(([date, title, body], index) => {
                 const linkTarget = newsSlugMap[index];
-                const externalLink = externalNewsLinks[index];
-                const isLinked = Boolean(linkTarget || externalLink);
-                const CardTag = externalLink ? "a" : linkTarget ? Link : "article";
-                const cardProps = externalLink
-                  ? { href: externalLink, target: "_blank", rel: "noopener noreferrer", className: "news-tile-card is-link" }
-                  : linkTarget
-                    ? { to: linkTarget, className: "news-tile-card is-link" }
-                    : { className: "news-tile-card" };
+                const isLinked = Boolean(linkTarget);
+                const CardTag = isLinked ? Link : "article";
+                const cardProps = isLinked
+                  ? { to: linkTarget, className: "news-tile-card is-link" }
+                  : { className: "news-tile-card" };
 
                 return (
                   <CardTag key={title} {...cardProps}>

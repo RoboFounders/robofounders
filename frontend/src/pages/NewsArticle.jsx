@@ -192,8 +192,9 @@ export default function NewsArticle() {
                     src={article.video.src}
                     poster={article.video.poster || article.images.hero}
                     label="RoboFounders event clip"
-                    preload="metadata"
+                    preload="none"
                     startWhenVisible
+                    autoStart={false}
                     showAudioToggle
                   />
                 </div>

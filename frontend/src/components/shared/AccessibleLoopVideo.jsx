@@ -10,6 +10,7 @@ export default function AccessibleLoopVideo({
   label,
   preload = "metadata",
   startWhenVisible = false,
+  autoStart = true,
   showToggle = true,
   showAudioToggle = false,
 }) {
@@ -31,7 +32,7 @@ export default function AccessibleLoopVideo({
     let isNearViewport = !startWhenVisible;
 
     const startPlayback = () => {
-      if (!isNearViewport || prefersReducedMotion) return;
+      if (!autoStart || !isNearViewport || prefersReducedMotion) return;
       const playRequest = video.play();
       if (playRequest) playRequest.catch(() => setPlaying(false));
     };
@@ -74,7 +75,7 @@ export default function AccessibleLoopVideo({
       video.removeEventListener("canplay", startPlayback);
       window.removeEventListener(AUDIO_ACTIVE_EVENT, muteWhenAnotherVideoStarts);
     };
-  }, [src, startWhenVisible]);
+  }, [src, startWhenVisible, autoStart]);
 
   const togglePlayback = () => {
     const video = videoRef.current;
@@ -111,7 +112,6 @@ export default function AccessibleLoopVideo({
     <>
       <video
         ref={videoRef}
-        autoPlay
         loop
         playsInline
         muted

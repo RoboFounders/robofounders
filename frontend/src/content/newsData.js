@@ -1657,4 +1657,93 @@ export const newsArticles = {
       backLink: "ニュース一覧へ戻る",
     },
   },
+  "robofounders-beamstart-physical-ai": {
+    id: "robofounders-beamstart-physical-ai",
+    date: "2026.08",
+    category: { en: "In the Media", ja: "メディア掲載" },
+    images: {
+      hero: "/images/news/startup-world-cup-tokyo/founder-rofi-client.webp",
+    },
+    heroDisplay: "contain",
+    supportingImages: [],
+    video: null,
+    en: {
+      title: "RoboFounders Aims to Transform Manufacturing With Physical AI",
+      subtitles: [
+        "RoboFounders featured by BEAMSTART in August 2026",
+        "Connecting robotics, AI, and manufacturing expertise across borders",
+      ],
+      lead: "BEAMSTART featured RoboFounders' work to bring Physical AI into manufacturing, following its appearance at Startup World Cup Tokyo. The coverage highlighted how intelligent robots can support people in industrial settings where labor shortages and demanding work remain persistent challenges.",
+      sections: [
+        {
+          heading: "Bringing AI into the physical world",
+          paragraphs: [
+            "Physical AI combines software intelligence with machines that can sense, decide, and act in real environments. For manufacturers, that can mean safer ways to handle repetitive or hazardous tasks while skilled workers focus on work that benefits from their judgment.",
+          ],
+        },
+        {
+          heading: "Showing human-robot collaboration in Tokyo",
+          paragraphs: [
+            "At Startup World Cup Tokyo, RoboFounders presented its manufacturing vision alongside ROFI, its robot COO, who greeted visitors in a Japanese kimono. The demonstration made the company's goal tangible: people and robots working together, with technology supporting rather than displacing human expertise.",
+          ],
+        },
+        {
+          heading: "Connecting manufacturing ecosystems",
+          paragraphs: [
+            "RoboFounders connects robotics and AI development in Silicon Valley with Japanese manufacturing knowledge and partners across Malaysia and Southeast Asia. The company is building paths from demonstrations to practical deployment on factory floors.",
+            "The BEAMSTART feature also noted strong interest from robotics engineers in the company's work, reflecting growing momentum around real-world AI systems.",
+          ],
+        },
+        {
+          heading: "A mission shaped by manufacturing",
+          paragraphs: [
+            "The founder's family manufacturing business in Saitama closed amid a shortage of workers. That experience continues to shape RoboFounders' aim to preserve industrial knowledge and make manufacturing safer and more resilient through robotics.",
+          ],
+        },
+      ],
+      ctaTitle: "Build the next generation of manufacturing with us.",
+      ctaSubtitle: "Explore how Physical AI can support real industrial work.",
+      ctaButton: "Get in touch",
+      backLink: "Back to News & Events",
+    },
+    ja: {
+      title: "RoboFounders、Physical AIによる製造業の変革についてBEAMSTARTに掲載",
+      subtitles: [
+        "2026年8月、ASEANのスタートアップメディアBEAMSTARTが紹介",
+        "AI・ロボティクスと製造技術を国境を越えてつなぐ",
+      ],
+      lead: "BEAMSTARTは、Startup World Cup東京での展示をきっかけに、RoboFoundersが進める製造業向けPhysical AIの取り組みを紹介しました。人手不足や負荷の高い作業に直面する現場で、知能ロボットが人を支える可能性に注目しています。",
+      sections: [
+        {
+          heading: "AIを現実の作業へ",
+          paragraphs: [
+            "Physical AIは、周囲を認識し、判断して動く機械とAIを組み合わせます。製造現場では、危険な作業や反復作業をロボットが担い、熟練者が判断や技術を要する仕事に集中できる環境を目指します。",
+          ],
+        },
+        {
+          heading: "東京で示した人とロボットの協働",
+          paragraphs: [
+            "Startup World Cup東京では、着物姿のロボットCOO「ROFI」が来場者を迎えました。RoboFoundersが描くのは、人の知見を生かしながらロボットと協働する製造現場です。",
+          ],
+        },
+        {
+          heading: "国境を越えて製造業をつなぐ",
+          paragraphs: [
+            "RoboFoundersは、シリコンバレーのAI・ロボティクス技術、日本の製造技術、マレーシアをはじめとする東南アジアのパートナーをつなぎ、実証から工場での導入へ進めています。",
+            "BEAMSTARTの記事では、ロボティクス分野のエンジニアからRoboFoundersの活動に関心が集まっていることも取り上げられました。",
+          ],
+        },
+        {
+          heading: "製造業への思い",
+          paragraphs: [
+            "創業者の家族が埼玉で営んでいた製造業の事業は、人手不足により閉鎖しました。この経験が、製造技術を次世代へ受け継ぎ、ロボティクスでより安全で持続可能な現場をつくるというRoboFoundersの使命につながっています。",
+          ],
+        },
+      ],
+      ctaTitle: "製造業の次の時代を、ともにつくる。",
+      ctaSubtitle: "Physical AIの現場導入についてご相談ください。",
+      ctaButton: "お問い合わせ",
+      backLink: "ニュース一覧へ戻る",
+    },
+  },
 };

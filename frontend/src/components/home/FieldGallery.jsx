@@ -21,6 +21,7 @@ export default function FieldGallery() {
                     label={t.gallery.captions[i]}
                     preload="none"
                     startWhenVisible
+                    autoStart={false}
                     showAudioToggle
                   />
                 ) : (

@@ -8,7 +8,7 @@ export const media = {
   contactAddressDark: "/images/brand/contact-address-dark.png",
   founder: "/images/team/mariel.webp",
   rofi: "/images/home/rofi-3d.png",
-  homeVideo: "/videos/home/physical-ai-concept.mp4?v=20261001",
+  homeVideo: "/videos/home/physical-ai-concept.mp4?v=20261005",
   conceptFilm: "/videos/home/robofounders-one-minute.mp4",
   conceptFilmPoster: "/images/home/robofounders-one-minute-poster.jpg",
   home: {

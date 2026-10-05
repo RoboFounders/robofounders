@@ -461,7 +461,8 @@ button:disabled {
 .hero-video-brandmark {
   position: absolute;
   z-index: 2;
-  right: 3%;
+  left: 3%;
+  right: auto;
   bottom: 6%;
   width: 72px;
   height: auto;
@@ -690,9 +691,9 @@ button:disabled {
   bottom: 12px;
 }
 .video-audio-toggle {
-  top: 12px;
+  top: auto;
   right: 12px;
-  bottom: auto;
+  bottom: 12px;
   left: auto;
   width: 32px;
   height: 32px;
@@ -3471,7 +3472,7 @@ html[lang="ja"] .services-grid article:nth-child(2) strong {
   gap: 8px;
   margin-bottom: 32px;
 }
-.news-subtitle-item {
+.news-hero-section .news-subtitle-item {
   font-size: clamp(15px, 1.4vw, 17px);
   color: rgba(255, 255, 255, 0.86);
   font-weight: 500;
@@ -3908,6 +3909,22 @@ html[lang="ja"] .desktop-nav {
   }
   html[lang="ja"] .product-hero h1 {
     font-size: clamp(32px, 8vw, 44px);
+  }
+}
+@media (max-width: 360px) {
+  .header-inner {
+    padding-inline: 10px;
+    gap: 6px;
+  }
+  .brand img {
+    height: 50px;
+    max-width: 150px;
+  }
+  .nav-actions {
+    gap: 4px;
+  }
+  .language-control button {
+    padding-inline: 3px;
   }
 }
 @media (prefers-reduced-motion: reduce) {
