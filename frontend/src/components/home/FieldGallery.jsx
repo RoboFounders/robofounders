@@ -11,36 +11,28 @@ export default function FieldGallery() {
         <h2>{t.gallery.title}</h2>
         <p className="section-lead">{t.gallery.body}</p>
         <div className="field-gallery">
-          {media.events.map((src, i) => (
-            <figure key={src}>
-              <div className="field-media">
-                <img
-                  src={src}
-                  alt={t.gallery.captions[i]}
-                  loading="lazy"
-                  width={media.eventSizes[i][0]}
-                  height={media.eventSizes[i][1]}
-                />
+          {media.galleryItems.map((item, i) => (
+            <figure key={item.src}>
+              <div className={`field-media${item.type === "video" ? " field-video" : ""}`}>
+                {item.type === "video" ? (
+                  <AccessibleLoopVideo
+                    src={item.src}
+                    poster={item.poster}
+                    label={t.gallery.captions[i]}
+                    preload="none"
+                    startWhenVisible
+                  />
+                ) : (
+                  <img
+                    src={item.src}
+                    alt={t.gallery.captions[i]}
+                    loading="lazy"
+                    width={item.size[0]}
+                    height={item.size[1]}
+                  />
+                )}
               </div>
-              <figcaption>
-                <span>{t.gallery.captions[i]}</span>
-              </figcaption>
-            </figure>
-          ))}
-          {media.eventVideos.map((src, i) => (
-            <figure key={src}>
-              <div className="field-media field-video">
-                <AccessibleLoopVideo
-                  src={src}
-                  poster={media.events[[0, 3, 1][i]]}
-                  label={`${t.gallery.video} ${i + 1}`}
-                  preload="none"
-                  startWhenVisible
-                />
-              </div>
-              <figcaption>
-                <span>{t.gallery.video}</span>
-              </figcaption>
+              <figcaption><span>{t.gallery.captions[i]}</span></figcaption>
             </figure>
           ))}
         </div>

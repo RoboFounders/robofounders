@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import { Pause, Play } from "lucide-react";
+import { Pause, Play, Volume2, VolumeX } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 
 export default function AccessibleLoopVideo({
@@ -9,10 +9,12 @@ export default function AccessibleLoopVideo({
   preload = "metadata",
   startWhenVisible = false,
   showToggle = true,
+  showAudioToggle = false,
 }) {
   const { t } = useLanguage();
   const videoRef = useRef(null);
   const [playing, setPlaying] = useState(false);
+  const [muted, setMuted] = useState(true);
 
   useEffect(() => {
     const video = videoRef.current;
@@ -65,12 +67,18 @@ export default function AccessibleLoopVideo({
     const video = videoRef.current;
     if (!video) return;
     if (video.paused) {
-      video.muted = true;
       const playRequest = video.play();
       if (playRequest) playRequest.catch(() => setPlaying(false));
     } else {
       video.pause();
     }
+  };
+
+  const toggleAudio = () => {
+    const video = videoRef.current;
+    if (!video) return;
+    video.muted = !video.muted;
+    setMuted(video.muted);
   };
 
   return (
@@ -103,6 +111,17 @@ export default function AccessibleLoopVideo({
           ) : (
             <Play size={16} aria-hidden="true" />
           )}
+        </button>
+      )}
+      {showAudioToggle && (
+        <button
+          type="button"
+          className="video-motion-toggle video-audio-toggle"
+          onClick={toggleAudio}
+          aria-label={muted ? t.ui.unmuteVideo : t.ui.muteVideo}
+          aria-pressed={!muted}
+        >
+          {muted ? <VolumeX size={17} aria-hidden="true" /> : <Volume2 size={17} aria-hidden="true" />}
         </button>
       )}
     </>

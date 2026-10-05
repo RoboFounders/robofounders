@@ -393,7 +393,9 @@ export const newsArticles = {
       hero: "/images/news/diffusion-borneo-beyond-poc/hero.webp",
       event: "/images/events/diffusion-borneo.jpeg",
       program: "/images/news/diffusion-borneo-beyond-poc/hero.webp",
+      clientStage: "/images/news/diffusion-borneo-beyond-poc/client-stage.jpeg",
     },
+    supportingImages: ["clientStage"],
     heroDisplay: "contain",
     video: null,
     en: {

@@ -26,6 +26,8 @@ const ja = {
     play: "製品デモ動画",
     playVideo: "動画を再生",
     pauseVideo: "動画を一時停止",
+    unmuteVideo: "音声をオンにする",
+    muteVideo: "音声をオフにする",
     pauseMarquee: "スクロールメッセージを一時停止",
     resumeMarquee: "スクロールメッセージを再開",
     next: "こちらの製品もご覧ください",
@@ -139,6 +141,7 @@ const ja = {
   },
   showcase: {
     label: "Physical AI コンセプト",
+    videoAlt: "RoboFoundersの1分間のPhysical AIコンセプト動画",
     title: "危険な仕事を変える。\n人を守る。",
     body: "ロボティクス、AI、重要コンポーネント、製造システムを融合し、危険な作業を人からインテリジェントな機械へ。",
     points: [
@@ -243,14 +246,17 @@ const ja = {
     body: "RoboFoundersの事業への想い、Physical AI・ロボティクスの最新動向、そして私たちの活動や取り組みの様子をお届けします。",
     captions: [
       "日本のIVS2026に出展するRoboFounders創業者",
-      "日本のIVS2026に出展するRoboFounders",
+      "RoboFounders CEOが、日本人起業家として唯一、ASEAN Business and Investment Summit (ABIS) 2025にスピーカーとして登壇。",
       "ブースでのパートナーシップに関する対話",
-      "ライブデモと商談の様子",
-      "2026年6月23日・24日 — RoboFounders、Diffusion Borneo 2026に創業直後の初出展",
+      "RoboFounders CEO 深瀬マリエル麻美、AI Malaysia Takeover 2026に登壇。",
+      "大自然の中でJungle Forge AWARDを運営。各賞の発表および授賞セレモニーを開催しました。",
       "IVS2026限定搭乗券ステッカー",
-      "ブースSC-16 — IVS2026にて",
-      "Jungle Forge AWARDを運営。ジャングルでスタートアップピッチコンテストと起業家向けのビジネス日本語レッスンも開催いたしました。",
+      "JETRO X-HUB 2026 Boston Demo Dayにてピッチ登壇。",
+      "Jungle Forge AWARDを運営。起業家向けのピッチに向けた日本語レッスンも実施。",
       "ボストンのディープテック・AIエコシステムとの連携",
+      "2026年6月 Diffusion Borneo 2026に創業直後の初出展",
+      "COOとロボットROFIによるサッカーでチームビルディング。",
+      "危険な作業をロボットへ。人とロボットが共に働く未来へ。",
     ],
     video: "RoboFoundersのイベント動画",
   },
@@ -261,8 +267,8 @@ const ja = {
     items: [
       [
         "市場参入",
-        "日本市場への第一歩",
-        "東京に進出する米国ディープテック企業の営業、パートナーシップ、イベント出展を支援。",
+        "日本・ASEAN・USAをつなぐ市場参入支援",
+        "AI・ロボティクス・ディープテック企業の、日本・ASEAN・USA間の市場進出、営業開拓、パートナーシップ構築を支援します。",
       ],
       [
         "現場デモ",
@@ -352,6 +358,11 @@ const ja = {
         "2026年9月",
         "創業1か月未満で採択。Made in JapanのPhysical AI・ロボティクス技術を世界へ",
         "東京都・JETRO「X-HUB TOKYO GLOBAL STARTUP ACCELERATOR OUTBOUND PROGRAM」Bostonコースに採択。米国Bostonでヒューマノイドロボット・製造業向け事業の展開を加速。",
+      ],
+      [
+        "2026年8月28日",
+        "日経新聞本紙「GenAI/SUM2026」に掲載",
+        "これから活躍が期待されるAIスタートアップとして掲載されました。",
       ],
       [
         "2026年8月19日",

@@ -17,6 +17,7 @@ const eventImages = [
 const newsImages = [
   media.xHubSingapore, // client-provided X-HUB Singapore image
   media.newsEvent, // Tokyo to Boston / JETRO X-HUB TOKYO full image
+  media.home.factory, // Nikkei GenAI/SUM coverage; no article image supplied
   media.japanCorporation, // client-provided Japan corporation image
   media.aiMalaysiaTakeover, // client-provided AI Malaysia Takeover image
   media.startupWorldCupTokyo, // client-provided Startup World Cup Tokyo image
@@ -31,14 +32,14 @@ const newsImages = [
 const newsSlugMap = {
   0: "/news/x-hub-tokyo-singapore",
   1: "/news/x-hub-tokyo-boston",
-  2: "/news/japan-corporation-established",
-  3: "/news/ai-malaysia-takeover-2026",
-  4: "/news/startup-world-cup-tokyo-2026",
-  5: "/news/ivs2026-startup-market",
-  6: "/news/diffusion-borneo-beyond-poc",
-  7: "/news/diffusion-borneo-2026",
-  8: "/news/jungle-forge-award-2026",
-  9: "/news/startup-world-cup-malaysia",
+  3: "/news/japan-corporation-established",
+  4: "/news/ai-malaysia-takeover-2026",
+  5: "/news/startup-world-cup-tokyo-2026",
+  6: "/news/ivs2026-startup-market",
+  7: "/news/diffusion-borneo-beyond-poc",
+  8: "/news/diffusion-borneo-2026",
+  9: "/news/jungle-forge-award-2026",
+  10: "/news/startup-world-cup-malaysia",
 };
 
 export default function Updates() {
@@ -127,9 +128,9 @@ export default function Updates() {
                   <CardTag key={title} {...cardProps}>
                     <div
                       className={`news-media${
-                        index === 5 || index === 6 ? " is-contain" : ""
+                        index === 6 || index === 7 ? " is-contain" : ""
                       }${
-                        index === 9 ? " is-malaysia" : ""
+                        index === 10 ? " is-malaysia" : ""
                       }`}
                     >
                       <img

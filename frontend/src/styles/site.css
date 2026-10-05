@@ -689,6 +689,9 @@ button:disabled {
   left: 12px;
   bottom: 12px;
 }
+.video-audio-toggle {
+  left: 66px;
+}
 .brand-marquee-track {
   display: flex;
   width: max-content;

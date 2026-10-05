@@ -26,6 +26,8 @@ const en = {
     play: "Product demonstration",
     playVideo: "Play video",
     pauseVideo: "Pause video",
+    unmuteVideo: "Turn sound on",
+    muteVideo: "Turn sound off",
     pauseMarquee: "Pause scrolling message",
     resumeMarquee: "Resume scrolling message",
     next: "Discover our other product",
@@ -153,6 +155,7 @@ const en = {
   },
   showcase: {
     label: "Physical AI concept",
+    videoAlt: "RoboFounders one-minute Physical AI concept film",
     title: "Transform dangerous work. Protect people.",
     body: "Robotics, AI, critical components, and manufacturing systems come together to move dangerous work away from people and into intelligent machines.",
     points: [
@@ -269,14 +272,17 @@ const en = {
     body: "Stories from RoboFounders—our mission, the latest developments in Physical AI and robotics, and the work we are doing across borders.",
     captions: [
       "RoboFounders founder at IVS2026, Japan",
-      "RoboFounders at IVS2026, Japan",
+      "RoboFounders CEO was the only Japanese entrepreneur to speak at the ASEAN Business and Investment Summit (ABIS) 2025.",
       "Partnership conversations at the booth",
-      "Live demos and lead capture in session",
-      "June 23–24, 2026 — RoboFounders Makes Its First Exhibition at Diffusion Borneo 2026",
+      "RoboFounders Founder Mariel Asami Fukase Speaks at AI Malaysia Takeover 2026",
+      "Organized the Jungle Forge AWARD in the heart of nature, including the announcement of award winners and an award ceremony.",
       "Limited-edition IVS2026 boarding pass stickers",
-      "Booth SC-16 — see you at IVS2026",
-      "Operating the Jungle Forge AWARD, including a startup pitch competition and business Japanese lessons for entrepreneurs.",
+      "Pitched at the JETRO X-HUB 2026 Boston Demo Day.",
+      "Organized the Jungle Forge AWARD and conducted Japanese language lessons to help entrepreneurs prepare for their pitches.",
       "Engaging with the global deep tech and AI ecosystem in Boston",
+      "June 2026 — Our First Exhibition at Diffusion Borneo 2026",
+      "Team Building with Our COO and ROFI Through Soccer",
+      "Let robots handle dangerous work. Build a future where humans and robots work together.",
     ],
     video: "RoboFounders event clip",
   },
@@ -287,8 +293,8 @@ const en = {
     items: [
       [
         "Market Entry",
-        "Japan Beachhead",
-        "Set up local sales, partnerships and event presence for a US deeptech startup entering Tokyo.",
+        "Connecting Japan, ASEAN & the USA",
+        "We help AI, robotics, and deep tech companies expand across Japan, ASEAN, and the USA through market entry, business development, and strategic partnerships.",
       ],
       [
         "Field Demos",
@@ -378,6 +384,11 @@ const en = {
         "Sep 2026",
         "Selected for Tokyo & JETRO X-HUB TOKYO Global Startup Accelerator Boston Course",
         "Selected within one month of founding to accelerate Physical AI and humanoid robotics deployment across Boston and global manufacturing markets.",
+      ],
+      [
+        "Aug 28, 2026",
+        "RoboFounders Featured in Nikkei's GenAI/SUM 2026 Coverage",
+        "Featured in the print edition of Nikkei among emerging AI startups expected to make an impact.",
       ],
       [
         "Aug 19, 2026",

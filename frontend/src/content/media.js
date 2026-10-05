@@ -9,6 +9,8 @@ export const media = {
   founder: "/images/team/mariel.webp",
   rofi: "/images/home/rofi-3d.png",
   homeVideo: "/videos/home/physical-ai-concept.mp4?v=20261001",
+  conceptFilm: "/videos/home/robofounders-one-minute.mp4",
+  conceptFilmPoster: "/images/home/robofounders-one-minute-poster.jpg",
   home: {
     hero: "/images/home/physical-ai-video-poster.webp",
     heroDangerousWork: "/images/home/dangerous-manufacturing.webp",
@@ -34,6 +36,8 @@ export const media = {
   newsEvent: "/images/events/news-event-new.jpg",
   ivs2026News: "/images/news/ivs-2026/founder-at-ivs.webp",
   beyondPocPortrait: "/images/news/diffusion-borneo-beyond-poc/hero.webp",
+  beyondPocStage: "/images/news/diffusion-borneo-beyond-poc/client-stage.jpeg",
+  aseanSummit: "/images/works/asean-summit.jpeg",
   diffusionBorneo: "/images/events/diffusion-borneo.jpeg",
   xHubSingapore: "/images/news/x-hub-singapore/hero.jpg",
   aiMalaysiaTakeover: "/images/news/ai-malaysia-takeover-2026/hero.png",
@@ -59,20 +63,22 @@ export const media = {
       ? `/images/events/${name}`
       : `/images/events/${name}.jpeg`;
   }),
-  eventSizes: [
-    [1600, 1316],
-    [1169, 1568],
-    [960, 1280],
-    [960, 1280],
-    [720, 1280],
-    [1280, 1707],
-    [1169, 1568],
-    [2558, 1920],
-    [1024, 768],
+  galleryItems: [
+    { type: "image", src: "/images/news/ivs-2026/founder-at-ivs.webp", size: [1600, 1316] },
+    { type: "video", src: "/videos/events/abis-summit.mp4", poster: "/images/works/asean-summit.jpeg" },
+    { type: "image", src: "/images/events/team-banner.jpeg", size: [960, 1280] },
+    { type: "video", src: "/videos/events/ai-malaysia-takeover.mp4", poster: "/images/news/ai-malaysia-takeover-2026/hero.png" },
+    { type: "video", src: "/videos/events/jungle-forge-awards.mp4", poster: "/images/events/startups-jungle.jpeg" },
+    { type: "image", src: "/images/events/stickers.jpeg", size: [1280, 1707] },
+    { type: "video", src: "/videos/events/jetro-boston-demo-day.mp4", poster: "/images/events/boston-ecosystem.jpeg" },
+    { type: "video", src: "/videos/events/japanese-lessons.mp4", poster: "/images/events/japanese-lessons-poster.jpg" },
+    { type: "image", src: "/images/events/boston-ecosystem.jpeg", size: [1024, 768] },
+    ...["event-demo", "event-clip2", "event-clip1"].map((name, index) => ({
+      type: "video",
+      src: `/videos/events/${name}.mp4`,
+      poster: ["/images/news/ivs-2026/founder-at-ivs.webp", "/images/events/booth-laptop.jpeg", "/images/events/ivs-poster.jpeg"][index],
+    })),
   ],
-  eventVideos: ["event-demo", "event-clip2", "event-clip1"].map(
-    (name) => `/videos/events/${name}.mp4`,
-  ),
   products: {
     "roller-screw": {
       hero: "/images/products/roller-screw/assembly",

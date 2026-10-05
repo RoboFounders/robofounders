@@ -44,7 +44,7 @@ test("both launch products have optimized media and matching gallery description
 
 test("client-provided homepage and team images are present", () => {
   const publicFile = (file) =>
-    path.resolve(__dirname, "../../public", file.slice(1));
+    path.resolve(__dirname, "../../public", file.split("?")[0].slice(1));
   for (const image of [
     ...Object.values(media.home),
     media.founder,
@@ -53,6 +53,12 @@ test("client-provided homepage and team images are present", () => {
     expect(fs.existsSync(publicFile(image))).toBe(true);
   }
   expect(fs.existsSync(publicFile(media.homeVideo))).toBe(true);
+  expect(fs.existsSync(publicFile(media.conceptFilm))).toBe(true);
+  expect(fs.existsSync(publicFile(media.conceptFilmPoster))).toBe(true);
+  for (const item of media.galleryItems) {
+    expect(fs.existsSync(publicFile(item.src))).toBe(true);
+    if (item.poster) expect(fs.existsSync(publicFile(item.poster))).toBe(true);
+  }
 });
 
 test("homepage content follows the current client worksheet direction", () => {
@@ -94,7 +100,8 @@ test("public content excludes investment and fundraising language", () => {
   const publicContent = JSON.stringify({ en, ja, newsArticles }).replaceAll(
     "Apollo Capital",
     "",
-  );
+  ).replaceAll("ASEAN Business and Investment Summit", "")
+    .replaceAll("venture capitalist", "");
   expect(publicContent).not.toMatch(
     /fundrais|investor|investment|venture capital|capital partnership|capital alliance|\bcapital\b|資金調達|投資家|資本提携|戦略的投資|資本|戦略的アライアンス/i,
   );

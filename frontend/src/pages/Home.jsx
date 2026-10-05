@@ -156,12 +156,13 @@ export default function Home() {
         <section id="physical-ai-film" className="section concept-film-section">
           <div className="wrap concept-film-grid">
             <figure className="concept-film-media">
-              <img
-                src={media.home.heroDangerousWork}
-                alt={t.hero.visualAlt}
-                width="1532"
-                height="957"
-                loading="lazy"
+              <AccessibleLoopVideo
+                src={media.conceptFilm}
+                poster={media.conceptFilmPoster}
+                label={t.showcase.videoAlt}
+                preload="none"
+                startWhenVisible
+                showAudioToggle
               />
             </figure>
             <div className="concept-film-copy">
@@ -450,11 +451,11 @@ export default function Home() {
               {t.works.items.map(([tag, title, body], i) => (
                 <article key={title}>
                   <img
-                    src={media.events[[1, 0, 2][i]]}
+                    src={[media.aseanSummit, media.events[0], media.events[7]][i]}
                     alt={title}
                     loading="lazy"
-                    width={media.eventSizes[[1, 0, 2][i]][0]}
-                    height={media.eventSizes[[1, 0, 2][i]][1]}
+                    width={[1816, 1600, 2558][i]}
+                    height={[1211, 1316, 1920][i]}
                   />
                   <p className="eyebrow">{tag}</p>
                   <h3>{title}</h3>
