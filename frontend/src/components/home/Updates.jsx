@@ -20,7 +20,7 @@ const newsImages = [
   media.home.factory, // Nikkei GenAI/SUM coverage; no article image supplied
   media.japanCorporation, // client-provided Japan corporation image
   media.aiMalaysiaTakeover, // client-provided AI Malaysia Takeover image
-  media.startupWorldCup, // ROFI at Startup World Cup, featured in BEAMSTART
+  media.beamstartHero, // Same image as the BEAMSTART article hero
   media.startupWorldCupTokyo, // client-provided Startup World Cup Tokyo image
   media.ivs2026News, // IVS2026 Startup Market
   media.beyondPocPortrait, // Beyond POC speaker story
@@ -118,6 +118,8 @@ export default function Updates() {
               onPointerCancel={stopRailScroll}
             >
               {t.updates.news.map(([date, title, body], index) => {
+                // Keep the Nikkei item unpublished until its full article is ready.
+                if (index === 2) return null;
                 const linkTarget = newsSlugMap[index];
                 const isLinked = Boolean(linkTarget);
                 const CardTag = isLinked ? Link : "article";
@@ -129,7 +131,7 @@ export default function Updates() {
                   <CardTag key={title} {...cardProps}>
                     <div
                       className={`news-media${
-                        index === 7 || index === 8 ? " is-contain" : ""
+                        index === 5 || index === 7 || index === 8 ? " is-contain" : ""
                       }${
                         index === 11 ? " is-malaysia" : ""
                       }`}

@@ -46,6 +46,7 @@ export const media = {
   robotHandNew: "/images/products/robot-hand-new.jpg",
   bostonAiWeek: "/images/events/boston-ai-week.jpeg",
   startupWorldCup: "/images/news/startup-world-cup-tokyo/founder-rofi-client.webp",
+  beamstartHero: "/images/news/startup-world-cup-tokyo/founder-rofi-client.webp",
   ivsExhibit: "/images/news/ivs-2026/founder-at-ivs.webp",
   events: [
     "/images/news/ivs-2026/founder-at-ivs.webp",
@@ -65,18 +66,18 @@ export const media = {
   }),
   galleryItems: [
     { type: "image", src: "/images/news/ivs-2026/founder-at-ivs.webp", size: [1600, 1316] },
-    { type: "video", src: "/videos/events/abis-summit.mp4", poster: "/images/works/asean-summit.jpeg" },
+    { type: "video", src: "/videos/events/abis-summit.mp4", poster: "/images/events/video-posters/abis-summit.webp" },
     { type: "image", src: "/images/events/team-banner.jpeg", size: [960, 1280] },
-    { type: "video", src: "/videos/events/ai-malaysia-takeover.mp4", poster: "/images/news/ai-malaysia-takeover-2026/hero.png" },
-    { type: "video", src: "/videos/events/jungle-forge-awards.mp4", poster: "/images/events/startups-jungle.jpeg" },
+    { type: "video", src: "/videos/events/ai-malaysia-takeover.mp4", poster: "/images/events/video-posters/ai-malaysia-takeover.webp" },
+    { type: "video", src: "/videos/events/jungle-forge-awards.mp4", poster: "/images/events/video-posters/jungle-forge-awards.webp" },
     { type: "image", src: "/images/events/stickers.jpeg", size: [1280, 1707] },
-    { type: "video", src: "/videos/events/jetro-boston-demo-day.mp4", poster: "/images/events/boston-ecosystem.jpeg" },
-    { type: "video", src: "/videos/events/japanese-lessons.mp4", poster: "/images/events/japanese-lessons-poster.jpg" },
+    { type: "video", src: "/videos/events/jetro-boston-demo-day.mp4", poster: "/images/events/video-posters/jetro-boston-demo-day.webp" },
+    { type: "video", src: "/videos/events/japanese-lessons.mp4", poster: "/images/events/video-posters/japanese-lessons.webp" },
     { type: "image", src: "/images/events/boston-ecosystem.jpeg", size: [1024, 768] },
     ...["event-demo", "event-clip2", "event-clip1"].map((name, index) => ({
       type: "video",
       src: `/videos/events/${name}.mp4`,
-      poster: ["/images/news/ivs-2026/founder-at-ivs.webp", "/images/events/booth-laptop.jpeg", "/images/events/ivs-poster.jpeg"][index],
+      poster: `/images/events/video-posters/${name}.webp`,
     })),
   ],
   products: {
