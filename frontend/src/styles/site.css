@@ -3520,6 +3520,11 @@ html[lang="ja"] .services-grid article:nth-child(2) strong {
   gap: 18px;
   margin: 8px 0 52px;
 }
+.news-supporting-images.is-single {
+  grid-template-columns: minmax(0, 1fr);
+  max-width: 720px;
+  margin-inline: auto;
+}
 .news-supporting-images figure {
   margin: 0;
   min-width: 0;

@@ -164,7 +164,7 @@ export default function NewsArticle() {
             </div>
 
             {article.supportingImages?.length > 0 && (
-              <div className="news-supporting-images">
+              <div className={`news-supporting-images${article.supportingImages.length === 1 ? " is-single" : ""}`}>
                 {article.supportingImages.map((imageKey, index) => (
                   <figure key={imageKey}>
                     <img

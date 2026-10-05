@@ -46,7 +46,7 @@ export const media = {
   robotHandNew: "/images/products/robot-hand-new.jpg",
   bostonAiWeek: "/images/events/boston-ai-week.jpeg",
   startupWorldCup: "/images/news/startup-world-cup-tokyo/founder-rofi-client.webp",
-  beamstartHero: "/images/news/startup-world-cup-tokyo/founder-rofi-client.webp",
+  beamstartHero: "/images/news/beamstart/founder-professor-sankai.webp",
   ivsExhibit: "/images/news/ivs-2026/founder-at-ivs.webp",
   events: [
     "/images/news/ivs-2026/founder-at-ivs.webp",

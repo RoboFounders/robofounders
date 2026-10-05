@@ -131,7 +131,7 @@ export default function Updates() {
                   <CardTag key={title} {...cardProps}>
                     <div
                       className={`news-media${
-                        index === 5 || index === 7 || index === 8 ? " is-contain" : ""
+                        index === 7 || index === 8 ? " is-contain" : ""
                       }${
                         index === 11 ? " is-malaysia" : ""
                       }`}

@@ -1662,12 +1662,11 @@ export const newsArticles = {
     date: "2026.08",
     category: { en: "In the Media", ja: "メディア掲載" },
     images: {
-      hero: "/images/news/startup-world-cup-tokyo/founder-rofi-client.webp",
-      founderProfessor: "/images/news/beamstart/founder-professor-sankai.webp",
+      hero: "/images/news/beamstart/founder-professor-sankai.webp",
       founderRofi: "/images/news/beamstart/founder-rofi.webp",
     },
     heroDisplay: "contain",
-    supportingImages: ["founderProfessor", "founderRofi"],
+    supportingImages: ["founderRofi"],
     video: null,
     en: {
       title: "RoboFounders Aims to Transform Manufacturing With Physical AI",
@@ -1714,14 +1713,7 @@ export const newsArticles = {
           ],
         },
       ],
-      supportingImageAlts: [
-        "Mariel Asami Fukase with Professor Yoshiyuki Sankai at the RoboFounders booth",
-        "Mariel Asami Fukase embracing ROFI at Startup World Cup Tokyo",
-      ],
-      supportingImageCaptions: [
-        "Professor Yoshiyuki Sankai visits the RoboFounders booth.",
-        "Mariel and ROFI at Startup World Cup Tokyo.",
-      ],
+      supportingImageAlts: ["Mariel Asami Fukase embracing ROFI at Startup World Cup Tokyo"],
       ctaTitle: "Build the next generation of manufacturing with us.",
       ctaSubtitle: "Explore how Physical AI can support real industrial work.",
       ctaButton: "Get in touch",
@@ -1772,14 +1764,7 @@ export const newsArticles = {
           ],
         },
       ],
-      supportingImageAlts: [
-        "RoboFoundersの展示ブースで並ぶ深瀬麻里絵と山海嘉之教授",
-        "Startup World Cup東京でROFIを抱きしめる深瀬麻里絵",
-      ],
-      supportingImageCaptions: [
-        "RoboFoundersのブースを訪れた山海嘉之教授。",
-        "Startup World Cup東京での深瀬麻里絵とROFI。",
-      ],
+      supportingImageAlts: ["Startup World Cup東京でROFIを抱きしめる深瀬麻里絵"],
       ctaTitle: "製造業の次の時代を、ともにつくる。",
       ctaSubtitle: "Physical AIの現場導入についてご相談ください。",
       ctaButton: "お問い合わせ",
