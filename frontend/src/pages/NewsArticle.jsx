@@ -7,6 +7,14 @@ import AccessibleLoopVideo from "@/components/shared/AccessibleLoopVideo";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { newsArticles } from "@/content/newsData";
 
+function renderEmphasis(text) {
+  return text.split(/(\*\*[^*]+\*\*)/g).map((part, index) =>
+    part.startsWith("**") && part.endsWith("**")
+      ? <strong key={index}>{part.slice(2, -2)}</strong>
+      : part,
+  );
+}
+
 export default function NewsArticle() {
   const { slug = "x-hub-tokyo-boston" } = useParams();
   const { lang } = useLanguage();
@@ -86,7 +94,10 @@ export default function NewsArticle() {
         <article className="section news-body-section">
           <div className="wrap news-content-wrap">
             {/* Lead Paragraph */}
-            <p className="news-lead-text">{content.lead}</p>
+            <p className={`news-lead-text${content.introParagraphs?.length ? " has-intro" : ""}`}>{content.lead}</p>
+            {content.introParagraphs?.map((paragraph, index) => (
+              <p className="news-intro-text" key={index}>{renderEmphasis(paragraph)}</p>
+            ))}
 
             {/* Content Sections */}
             <div className="news-sections-flow">
@@ -94,7 +105,7 @@ export default function NewsArticle() {
                 <section key={idx} className="news-section-block">
                   <h2>{section.heading}</h2>
                   {section.paragraphs?.map((p, pIdx) => (
-                    <p key={pIdx}>{p}</p>
+                    <p key={pIdx}>{renderEmphasis(p)}</p>
                   ))}
 
                   {(section.judgeComments || section.judgeComment) && (
@@ -182,6 +193,18 @@ export default function NewsArticle() {
                   </figure>
                 ))}
               </div>
+            )}
+
+            {article.sourceUrl && (
+              <a
+                className="news-source-link"
+                href={article.sourceUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {content.sourceLinkLabel || "Read original article"}
+                <ArrowUpRight size={16} aria-hidden="true" />
+              </a>
             )}
 
             {/* On-the-Ground Event Video */}

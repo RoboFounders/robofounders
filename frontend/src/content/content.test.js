@@ -97,7 +97,9 @@ test("homepage content follows the current client worksheet direction", () => {
 });
 
 test("public content excludes investment and fundraising language", () => {
-  const publicContent = JSON.stringify({ en, ja, newsArticles }).replaceAll(
+  const { "robofounders-beamstart-physical-ai": beamstartArticle, ...otherArticles } = newsArticles;
+  // The client-supplied BEAMSTART article explicitly discusses investment in Physical AI.
+  const publicContent = JSON.stringify({ en, ja, newsArticles: otherArticles, beamstartJapanese: beamstartArticle.ja }).replaceAll(
     "Apollo Capital",
     "",
   ).replaceAll("ASEAN Business and Investment Summit", "")
