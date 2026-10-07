@@ -18,6 +18,8 @@ export const media = {
     regions: "/images/home/global-ecosystem.webp",
     why: "/images/home/why-robofounders.webp",
     factory: "/images/home/factory-deployment.webp",
+    factoryVideo: "/videos/home/factory-deployment.mp4",
+    factoryVideoPoster: "/images/home/factory-deployment-video-poster.webp",
     startups: "/images/home/startups-jungle.jpg",
     contact: "/images/news/startup-world-cup-tokyo/team-booth-client.webp",
   },

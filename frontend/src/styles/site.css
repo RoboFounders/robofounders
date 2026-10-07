@@ -1106,8 +1106,25 @@ button:disabled {
   border: 1px solid #ffffff1f;
   opacity: 0.88;
 }
-.factory-deployment-image {
+.factory-deployment-video {
+  position: relative;
   width: min(100%, 620px);
+  margin: 48px auto 0;
+  overflow: hidden;
+  border: 1px solid #ffffff1f;
+  border-radius: var(--radius-md);
+  background: #05070e;
+  box-shadow: var(--shadow-soft);
+}
+.factory-deployment-video video {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: contain;
+}
+:lang(ja) .technology-card:first-child p {
+  max-width: none;
+  font-size: clamp(13px, 1.15vw, 15px);
 }
 .regions-reference-image,
 .why-reference-image {
@@ -2728,9 +2745,6 @@ html[lang="ja"] .services-grid article:nth-child(2) strong {
   }
   .team-grid article {
     max-width: 280px;
-  }
-  .factory-deployment-image {
-    width: min(100%, 620px);
   }
   .footer-grid {
     gap: 40px;

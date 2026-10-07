@@ -194,7 +194,7 @@ const ja = {
       ["Factory AI", "製造現場のAI監視・分析。"],
       ["ロボット協働", "人、ロボット、AIを製造現場でつなぐ。"],
     ],
-    imageAlt: "業界イベントで実機ロボットを紹介するRoboFounders創業者",
+    videoLabel: "RoboFoundersのPhysical AIと工場導入を紹介する動画",
   },
   platform: {
     label: "プラットフォーム",

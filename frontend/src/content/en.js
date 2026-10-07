@@ -215,8 +215,7 @@ const en = {
         "Connecting people, robots, and AI on the factory floor.",
       ],
     ],
-    imageAlt:
-      "RoboFounders founder presenting a physical robot at an industry event",
+    videoLabel: "RoboFounders Physical AI and factory deployment film",
   },
   platform: {
     label: "The platform",

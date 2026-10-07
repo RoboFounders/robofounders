@@ -427,14 +427,17 @@ export default function Home() {
                 );
               })}
             </div>
-            <img
-              className="section-wide-image dark-image factory-deployment-image"
-              src={media.home.factory}
-              alt={t.factory.imageAlt}
-              loading="lazy"
-              width="1567"
-              height="1045"
-            />
+            <div className="factory-deployment-video">
+              <AccessibleLoopVideo
+                src={media.home.factoryVideo}
+                poster={media.home.factoryVideoPoster}
+                label={t.factory.videoLabel}
+                preload="none"
+                startWhenVisible
+                autoStart={false}
+                showAudioToggle
+              />
+            </div>
           </div>
         </section>
         <section className="section" id="works">
