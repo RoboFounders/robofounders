@@ -434,7 +434,7 @@ export default function Home() {
                 label={t.factory.videoLabel}
                 preload="none"
                 startWhenVisible
-                autoStart={false}
+                showToggle={false}
                 showAudioToggle
               />
             </div>
