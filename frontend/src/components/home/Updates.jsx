@@ -15,9 +15,10 @@ const eventImages = [
 ];
 
 const newsImages = [
+  media.kabilanPortrait,
   media.xHubSingapore, // client-provided X-HUB Singapore image
   media.newsEvent, // Tokyo to Boston / JETRO X-HUB TOKYO full image
-  media.home.factory, // Nikkei GenAI/SUM coverage; no article image supplied
+  media.nikkeiCoverage, // client-provided Nikkei print image
   media.japanCorporation, // client-provided Japan corporation image
   media.aiMalaysiaTakeover, // client-provided AI Malaysia Takeover image
   media.beamstartHero, // Same image as the BEAMSTART article hero
@@ -30,17 +31,19 @@ const newsImages = [
 ];
 
 const newsSlugMap = {
-  0: "/news/x-hub-tokyo-singapore",
-  1: "/news/x-hub-tokyo-boston",
-  3: "/news/japan-corporation-established",
-  4: "/news/ai-malaysia-takeover-2026",
-  5: "/news/robofounders-beamstart-physical-ai",
-  6: "/news/startup-world-cup-tokyo-2026",
-  7: "/news/ivs2026-startup-market",
-  8: "/news/diffusion-borneo-beyond-poc",
-  9: "/news/diffusion-borneo-2026",
-  10: "/news/jungle-forge-award-2026",
-  11: "/news/startup-world-cup-malaysia",
+  0: "/news/kabilan-kb-advisor",
+  1: "/news/x-hub-tokyo-singapore",
+  2: "/news/x-hub-tokyo-boston",
+  3: "/news/nikkei-genai-sum-2026",
+  4: "/news/japan-corporation-established",
+  5: "/news/ai-malaysia-takeover-2026",
+  6: "/news/robofounders-beamstart-physical-ai",
+  7: "/news/startup-world-cup-tokyo-2026",
+  8: "/news/ivs2026-startup-market",
+  9: "/news/diffusion-borneo-beyond-poc",
+  10: "/news/diffusion-borneo-2026",
+  11: "/news/jungle-forge-award-2026",
+  12: "/news/startup-world-cup-malaysia",
 };
 
 export default function Updates() {
@@ -118,8 +121,6 @@ export default function Updates() {
               onPointerCancel={stopRailScroll}
             >
               {t.updates.news.map(([date, title, body], index) => {
-                // Keep the Nikkei item unpublished until its full article is ready.
-                if (index === 2) return null;
                 const linkTarget = newsSlugMap[index];
                 const isLinked = Boolean(linkTarget);
                 const CardTag = isLinked ? Link : "article";
@@ -130,10 +131,15 @@ export default function Updates() {
                 return (
                   <CardTag key={title} {...cardProps}>
                     <div
+                      style={index === 0 ? { "--kabilan-image": `url(${media.kabilanPortrait})` } : undefined}
                       className={`news-media${
-                        index === 7 || index === 8 ? " is-contain" : ""
+                        index === 8 || index === 9 ? " is-contain" : ""
                       }${
-                        index === 11 ? " is-malaysia" : ""
+                        index === 0 ? " is-kabilan" : ""
+                      }${
+                        index === 3 ? " is-nikkei" : ""
+                      }${
+                        index === 12 ? " is-malaysia" : ""
                       }`}
                     >
                       <img
@@ -142,6 +148,12 @@ export default function Updates() {
                         loading="lazy"
                         width="400"
                         height="240"
+                        style={index === 0 ? {
+                          width: "100%",
+                          height: "200px",
+                          objectFit: "contain",
+                          objectPosition: "center",
+                        } : undefined}
                       />
                     </div>
                     <div className="news-card-body">

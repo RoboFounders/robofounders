@@ -350,6 +350,11 @@ const ja = {
     ],
     news: [
       [
+        "2026年10月",
+        "Kabilan KB氏がRoboFoundersのAdvisorに就任",
+        "ロボティクスシミュレーション、ディープラーニング、Physical AIの知見を活かし、プロジェクトを推進します。",
+      ],
+      [
         "2026年9月",
         "RoboFounders、X-HUB TOKYO海外展開支援プログラム シンガポールコースに採択",
         "日本発のPhysical AIをシンガポールからASEANへ展開し、製造業での事業機会を広げます。",

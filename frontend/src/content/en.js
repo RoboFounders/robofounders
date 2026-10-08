@@ -375,6 +375,11 @@ const en = {
     ],
     news: [
       [
+        "Oct 2026",
+        "Kabilan KB Joins RoboFounders as Advisor",
+        "Bringing robotics simulation, deep learning, and Physical AI expertise to our projects.",
+      ],
+      [
         "Sep 2026",
         "RoboFounders Selected for the X-HUB TOKYO Global Startup Accelerator Singapore Course",
         "Expanding Physical AI for manufacturing from Japan to Singapore and across ASEAN.",

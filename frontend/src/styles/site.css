@@ -1761,6 +1761,36 @@ html[lang="ja"] .services-grid article:nth-child(2) strong {
   object-fit: contain;
   object-position: center;
 }
+.news-media.is-kabilan {
+  position: relative;
+  display: grid;
+  place-items: center;
+  height: 200px;
+  background: #0b0e2b;
+  border-radius: 4px;
+  overflow: hidden;
+}
+.news-media.is-kabilan::before {
+  content: "";
+  position: absolute;
+  inset: -20px;
+  background: var(--kabilan-image) center / cover no-repeat;
+  filter: blur(18px) brightness(0.55);
+}
+.news-media.is-kabilan img {
+  position: relative;
+  z-index: 1;
+  display: block;
+  width: auto;
+  max-width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+.news-media.is-nikkei img {
+  object-fit: cover;
+  object-position: center 80%;
+}
 .news-card-body p.eyebrow {
   font-size: 13px;
   margin-bottom: 8px;
@@ -4016,4 +4046,40 @@ html[lang="ja"] .desktop-nav {
 }
 .client-line-breaks {
   white-space: pre-line;
+}
+
+.news-social-section {
+  margin: 2.5rem 0;
+}
+
+.news-social-section h2 {
+  font-size: clamp(1.25rem, 2vw, 1.75rem);
+  margin-bottom: 1rem;
+}
+
+.news-social-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.news-social-links a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 3rem;
+  height: 3rem;
+  border: 1px solid currentColor;
+  border-radius: 50%;
+  color: inherit;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.news-social-links a:hover,
+.news-social-links a:focus-visible {
+  background: var(--brand-blue);
+  border-color: var(--brand-blue);
+  color: white;
 }

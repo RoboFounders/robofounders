@@ -1,5 +1,5 @@
 import { useParams, Link, Navigate, useNavigate } from "react-router-dom";
-import { ArrowLeft, ArrowUpRight, CheckCircle2, Building2, Quote, Sparkles } from "lucide-react";
+import { ArrowLeft, ArrowUpRight, CheckCircle2, Quote, Sparkles, Linkedin, Youtube } from "lucide-react";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import PageMeta from "@/components/shared/PageMeta";
@@ -205,6 +205,29 @@ export default function NewsArticle() {
                 {content.sourceLinkLabel || "Read original article"}
                 <ArrowUpRight size={16} aria-hidden="true" />
               </a>
+            )}
+
+            {article.socialLinks?.length > 0 && (
+              <section className="news-social-section" aria-labelledby="news-social-heading">
+                <h2 id="news-social-heading">{content.socialHeading}</h2>
+                <div className="news-social-links">
+                  {article.socialLinks.map(({ platform, url }) => (
+                    <a
+                      key={platform}
+                      href={url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label={`${content.socialHeading}: ${platform}`}
+                      title={platform}
+                    >
+                      {platform === "LinkedIn" && <Linkedin size={24} aria-hidden="true" />}
+                      {platform === "YouTube" && <Youtube size={24} aria-hidden="true" />}
+                      {platform === "X" && <span aria-hidden="true">𝕏</span>}
+                      {platform === "Medium" && <span aria-hidden="true">M</span>}
+                    </a>
+                  ))}
+                </div>
+              </section>
             )}
 
             {/* On-the-Ground Event Video */}

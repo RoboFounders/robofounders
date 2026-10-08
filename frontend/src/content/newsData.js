@@ -1,4 +1,72 @@
 export const newsArticles = {
+  "kabilan-kb-advisor": {
+    id: "kabilan-kb-advisor",
+    date: "2026.10",
+    category: { en: "Team News", ja: "チームニュース" },
+    images: { hero: "/images/news/kabilan-kb/portrait.jpg" },
+    heroDisplay: "contain",
+    socialLinks: [
+      { platform: "LinkedIn", url: "https://www.linkedin.com/in/kabilan-kb/" },
+      { platform: "X", url: "https://x.com/kabilankb2003?s=11" },
+      { platform: "Medium", url: "https://medium.com/@kabilankb2003" },
+      { platform: "YouTube", url: "https://www.youtube.com/channel/UCsVQ8geR_TpBlaiPNH25XQg" },
+    ],
+    en: {
+      title: "Kabilan KB Joins RoboFounders as Advisor",
+      subtitles: [],
+      lead: "We are pleased to announce that Kabilan KB has joined RoboFounders as an Advisor.",
+      sections: [
+        {
+          heading: "Advancing Physical AI and robotics",
+          paragraphs: [
+            "As an NVIDIA Omniverse Ambassador and Dell Ambassador, Kabilan is active in the fields of robotics simulation, deep learning, and Physical AI.",
+            "In his role as an Advisor to RoboFounders, Kabilan will support and help lead our Physical AI projects, contributing his expertise to the development and deployment of next-generation robotics technologies.",
+            "We are excited to welcome Kabilan to the RoboFounders team and look forward to working together to advance the future of Physical AI and robotics.",
+          ],
+        },
+      ],
+      socialHeading: "Learn more about Kabilan KB",
+      backLink: "Back to News & Events",
+    },
+    ja: {
+      title: "Kabilan KBがRoboFoundersのAdvisorに就任",
+      subtitles: [],
+      lead: "このたび、Kabilan KB氏がRoboFoundersのAdvisor（アドバイザー）に就任しましたことをお知らせいたします。",
+      sections: [
+        {
+          heading: "Physical AIとロボティクスの未来に向けて",
+          paragraphs: [
+            "Kabilan氏は、NVIDIA Omniverse Ambassador、Dell Ambassadorとして、ロボティクスシミュレーション、ディープラーニング、Physical AIの分野で幅広く活動しています。",
+            "RoboFoundersではAdvisorとして、これまで培ってきた専門知識を活かし、Physical AIプロジェクトの推進・リードに携わっていただきます。",
+            "Kabilan氏をRoboFoundersのチームに迎えられることを大変嬉しく思います。今後、Physical AIとロボティクスの未来を切り拓くために、ともに取り組んでいくことを楽しみにしています。",
+          ],
+        },
+      ],
+      socialHeading: "Kabilan KB氏の活動はこちら",
+      backLink: "ニュース一覧へ戻る",
+    },
+  },
+  "nikkei-genai-sum-2026": {
+    id: "nikkei-genai-sum-2026",
+    date: "2026.08.28",
+    category: { en: "In the Media", ja: "メディア掲載" },
+    images: { hero: "/images/news/nikkei-genai-sum/print-coverage.jpg" },
+    heroDisplay: "contain",
+    en: {
+      title: "RoboFounders Featured in Nikkei's GenAI/SUM 2026 Coverage",
+      subtitles: [],
+      lead: "August 28, 2026: RoboFounders was featured in the Nikkei Shimbun print edition as one of the AI startups expected to make an impact in the future, in connection with GenAI/SUM 2026.",
+      sections: [],
+      backLink: "Back to News & Events",
+    },
+    ja: {
+      title: "日経新聞本紙「GenAI/SUM2026」に掲載",
+      subtitles: [],
+      lead: "2026年8月28日：日経新聞本紙にこれから活躍が期待されるAIスタートアップ　GenAI/SUM2026に掲載されました。",
+      sections: [],
+      backLink: "ニュース一覧へ戻る",
+    },
+  },
   "x-hub-tokyo-boston": {
     id: "x-hub-tokyo-boston",
     date: "2026.09.28",
@@ -1672,7 +1740,7 @@ export const newsArticles = {
     en: {
       title: "RoboFounders Aims to Transform Manufacturing With Physical AI",
       subtitles: [],
-      lead: "San Francisco-based robotics startup RoboFounders is advancing the future of manufacturing with Physical AI, a new generation of artificial intelligence technology that combines AI software with intelligent robotics to enable humans and machines to work together.",
+      lead: "RoboFounders was featured by BEAMSTART for its exhibition at Startup World Cup Tokyo and its work on Physical AI for the manufacturing industry. By combining AI software and robotics, RoboFounders aims to develop practical Physical AI solutions that support manufacturing sites facing serious labor shortages and challenges in skills transfer.",
       introParagraphs: [
         "The company recently showcased its Physical AI solutions at the Startup World Cup Tokyo Regional, demonstrating how AI-powered robots could help manufacturers improve efficiency, address labor shortages, and transform industrial automation.",
       ],
@@ -1732,7 +1800,7 @@ export const newsArticles = {
         "2026年8月、ASEANのスタートアップメディアBEAMSTARTが紹介",
         "AI・ロボティクスと製造技術を国境を越えてつなぐ",
       ],
-      lead: "BEAMSTARTは、Startup World Cup東京での展示を受け、RoboFoundersが進める製造業向けPhysical AIの取り組みを紹介しました。AIソフトウェアとロボティクスを組み合わせ、深刻な人手不足や技能継承の課題に直面する現場で、人を支える機械の実用化を目指しています。",
+      lead: "RoboFoundersは、BEAMSTARTにて、Startup World Cup Tokyoでの展示や、製造業向けに取り組むPhysical AIについて紹介されました。AIソフトウェアとロボティクスを組み合わせ、深刻な人手不足や技能継承の課題に直面する製造現場を支える、実用的なPhysical AIの実現を目指しています。",
       sections: [
         {
           heading: "デジタルの外へ広がるPhysical AI",

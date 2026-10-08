@@ -456,11 +456,11 @@ export default function Home() {
               {t.works.items.map(([tag, title, body], i) => (
                 <article key={title}>
                   <img
-                    src={[media.aseanSummit, media.events[0], media.events[7]][i]}
+                    src={[media.aseanSummit, media.events[0], media.aseanMou][i]}
                     alt={title}
                     loading="lazy"
-                    width={[1816, 1600, 2558][i]}
-                    height={[1211, 1316, 1920][i]}
+                    width={[1816, 1600, 1600][i]}
+                    height={[1211, 1316, 1066][i]}
                   />
                   <p className="eyebrow">{tag}</p>
                   <h3>{title}</h3>
