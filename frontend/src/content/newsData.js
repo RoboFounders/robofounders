@@ -1741,9 +1741,6 @@ export const newsArticles = {
       title: "RoboFounders Aims to Transform Manufacturing With Physical AI",
       subtitles: [],
       lead: "RoboFounders was featured by BEAMSTART for its exhibition at Startup World Cup Tokyo and its work on Physical AI for the manufacturing industry. By combining AI software and robotics, RoboFounders aims to develop practical Physical AI solutions that support manufacturing sites facing serious labor shortages and challenges in skills transfer.",
-      introParagraphs: [
-        "The company recently showcased its Physical AI solutions at the Startup World Cup Tokyo Regional, demonstrating how AI-powered robots could help manufacturers improve efficiency, address labor shortages, and transform industrial automation.",
-      ],
       sections: [
         {
           heading: "What Is Physical AI and Why Does It Matter?",
