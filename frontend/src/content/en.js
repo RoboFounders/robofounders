@@ -596,8 +596,8 @@ const en = {
   },
   products: {
     "roller-screw": {
-      name: "Planetary Roller Screws",
-      short: "Roller Screw",
+      name: "Planetary Roller Screw",
+      short: "Planetary Roller Screw",
       eyebrow: "Powering the next generation of humanoids.",
       tagline: "Higher load. Higher stiffness. Longer life.",
       description:

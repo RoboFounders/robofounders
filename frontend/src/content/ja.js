@@ -565,8 +565,8 @@ const ja = {
   },
   products: {
     "roller-screw": {
-      name: "ローラースクリュー",
-      short: "ローラースクリュー",
+      name: "遊星ローラーねじ",
+      short: "遊星ローラーねじ",
       eyebrow: "次世代ヒューマノイドを動かす。",
       tagline: "より大きな力。より高い剛性。より高い耐久性。",
       description:
