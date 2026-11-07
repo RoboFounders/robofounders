@@ -1,4 +1,4 @@
-import { useParams, Link, Navigate, useNavigate } from "react-router-dom";
+import { useParams, Link, Navigate } from "react-router-dom";
 import { ArrowLeft, ArrowUpRight, CheckCircle2, Quote, Sparkles, Linkedin, Youtube } from "lucide-react";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
@@ -18,19 +18,11 @@ function renderEmphasis(text) {
 export default function NewsArticle() {
   const { slug = "x-hub-tokyo-boston" } = useParams();
   const { lang } = useLanguage();
-  const navigate = useNavigate();
   const article = newsArticles[slug];
 
   if (!article) {
     return <Navigate to="/" replace />;
   }
-
-  const handleBack = (e) => {
-    if (window.history.length > 1) {
-      e.preventDefault();
-      navigate(-1);
-    }
-  };
 
   const content = article[lang] || article.en;
   const categoryLabel = article.category[lang] || article.category.en;
@@ -50,8 +42,6 @@ export default function NewsArticle() {
           <div className="wrap news-hero-wrap">
             <Link
               to={{ pathname: "/", hash: "#news-press" }}
-              state={{ tab: "press" }}
-              onClick={handleBack}
               className="back-link"
             >
               <ArrowLeft size={16} />
