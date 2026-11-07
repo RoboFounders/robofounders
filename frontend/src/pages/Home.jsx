@@ -225,8 +225,8 @@ export default function Home() {
                 src={media.home.about}
                 alt={t.company.imageAlt}
                 loading="lazy"
-                width="1800"
-                height="1258"
+                width="952"
+                height="637"
               />
               <figcaption>{t.company.label}</figcaption>
             </figure>

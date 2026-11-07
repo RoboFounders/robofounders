@@ -14,7 +14,7 @@ export const media = {
   home: {
     hero: "/images/home/physical-ai-video-poster.webp",
     heroDangerousWork: "/images/home/dangerous-manufacturing.webp",
-    about: "/images/home/about-factory-team.webp",
+    about: "/images/home/about-factory-team-new.png",
     regions: "/images/home/global-ecosystem.webp",
     why: "/images/home/why-robofounders.webp",
     factory: "/images/home/factory-deployment.webp",
@@ -35,6 +35,7 @@ export const media = {
     thao: "/images/team/thao.webp",
   },
   newsBanner: "/images/events/news-banner.jpg",
+  ces2027: "/images/news/ces-2027-japan-pavilion.png",
   newsEvent: "/images/events/news-event-new.jpg",
   ivs2026News: "/images/news/ivs-2026/founder-at-ivs.webp",
   beyondPocPortrait: "/images/news/diffusion-borneo-beyond-poc/hero.webp",

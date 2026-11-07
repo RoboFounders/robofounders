@@ -15,6 +15,7 @@ const eventImages = [
 ];
 
 const newsImages = [
+  media.ces2027,
   media.kabilanPortrait,
   media.xHubSingapore, // client-provided X-HUB Singapore image
   media.newsEvent, // Tokyo to Boston / JETRO X-HUB TOKYO full image
@@ -31,19 +32,20 @@ const newsImages = [
 ];
 
 const newsSlugMap = {
-  0: "/news/kabilan-kb-advisor",
-  1: "/news/x-hub-tokyo-singapore",
-  2: "/news/x-hub-tokyo-boston",
-  3: "/news/nikkei-genai-sum-2026",
-  4: "/news/japan-corporation-established",
-  5: "/news/ai-malaysia-takeover-2026",
-  6: "/news/robofounders-beamstart-physical-ai",
-  7: "/news/startup-world-cup-tokyo-2026",
-  8: "/news/ivs2026-startup-market",
-  9: "/news/diffusion-borneo-beyond-poc",
-  10: "/news/diffusion-borneo-2026",
-  11: "/news/jungle-forge-award-2026",
-  12: "/news/startup-world-cup-malaysia",
+  0: "/news/ces-2027-japan-pavilion",
+  1: "/news/kabilan-kb-advisor",
+  2: "/news/x-hub-tokyo-singapore",
+  3: "/news/x-hub-tokyo-boston",
+  4: "/news/nikkei-genai-sum-2026",
+  5: "/news/japan-corporation-established",
+  6: "/news/ai-malaysia-takeover-2026",
+  7: "/news/robofounders-beamstart-physical-ai",
+  8: "/news/startup-world-cup-tokyo-2026",
+  9: "/news/ivs2026-startup-market",
+  10: "/news/diffusion-borneo-beyond-poc",
+  11: "/news/diffusion-borneo-2026",
+  12: "/news/jungle-forge-award-2026",
+  13: "/news/startup-world-cup-malaysia",
 };
 
 export default function Updates() {
@@ -131,15 +133,15 @@ export default function Updates() {
                 return (
                   <CardTag key={title} {...cardProps}>
                     <div
-                      style={index === 0 ? { "--kabilan-image": `url(${media.kabilanPortrait})` } : undefined}
+                      style={index === 1 ? { "--kabilan-image": `url(${media.kabilanPortrait})` } : undefined}
                       className={`news-media${
-                        index === 8 || index === 9 ? " is-contain" : ""
+                        index === 0 || index === 9 || index === 10 ? " is-contain" : ""
                       }${
-                        index === 0 ? " is-kabilan" : ""
+                        index === 1 ? " is-kabilan" : ""
                       }${
-                        index === 3 ? " is-nikkei" : ""
+                        index === 4 ? " is-nikkei" : ""
                       }${
-                        index === 12 ? " is-malaysia" : ""
+                        index === 13 ? " is-malaysia" : ""
                       }`}
                     >
                       <img
@@ -148,7 +150,7 @@ export default function Updates() {
                         loading="lazy"
                         width="400"
                         height="240"
-                        style={index === 0 ? {
+                        style={index === 1 ? {
                           width: "100%",
                           height: "200px",
                           objectFit: "contain",

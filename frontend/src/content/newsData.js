@@ -1,4 +1,112 @@
 export const newsArticles = {
+  "ces-2027-japan-pavilion": {
+    id: "ces-2027-japan-pavilion",
+    date: "2026.10",
+    category: { en: "Company News", ja: "企業ニュース" },
+    images: { hero: "/images/news/ces-2027-japan-pavilion.png" },
+    heroDisplay: "contain",
+    en: {
+      title: "RoboFounders to Exhibit at CES 2027 Japan Pavilion",
+      subtitles: [
+        "Bringing Japan’s planetary roller screw technology to the world to power the next generation of humanoid robots",
+        "Advancing Physical AI and the future of intelligent manufacturing",
+      ],
+      lead: "RoboFounders, a Japan-born Physical AI and robotics company, will exhibit at the Japan Pavilion at CES 2027 in Las Vegas in January 2027.",
+      introParagraphs: [
+        "The company is developing robotics technologies, including planetary roller screws, alongside Manufacturing AI solutions for real industrial challenges. It is also advancing proof-of-concept work in Malaysian automotive factories, including AI-powered quality inspection.",
+      ],
+      sections: [
+        {
+          heading: "Advancing Japanese precision manufacturing for next-generation robotics",
+          paragraphs: [
+            "As humanoid and industrial robots advance, demand is growing for motion mechanisms that provide high force, precision, and durability. Planetary roller screws are one of the key technologies supporting this next generation of robotics.",
+            "RoboFounders aims to enable scalable production of planetary roller screws with Japanese manufacturing partners. By bringing Japan’s precision engineering expertise to robotics, the company seeks to strengthen component supply and the foundation for Physical AI.",
+          ],
+        },
+        {
+          heading: "Manufacturing AI proof of concept in Malaysian automotive factories",
+          paragraphs: [
+            "RoboFounders is validating AI-powered solutions for real factory challenges in Malaysian automotive manufacturing environments, including quality inspection.",
+            "Manufacturers face labor shortages, hazardous operations such as welding, and growing demands for quality control. The company aims to combine AI and robotics to automate industrial tasks, improve quality and productivity, and enhance worker safety.",
+            "Working in actual manufacturing settings will help turn the technology into practical solutions that can be deployed and scaled.",
+          ],
+        },
+        {
+          heading: "Building the technology and manufacturing ecosystem for Physical AI",
+          paragraphs: [
+            "RoboFounders aims to connect precision motion components, robotic hardware, Manufacturing AI, and real industrial applications into the infrastructure needed to bring Physical AI into manufacturing.",
+            "Connecting Japanese manufacturing expertise, Southeast Asian industrial environments, and global robotics markets, particularly in the United States, can accelerate cross-border collaboration and deployment.",
+          ],
+        },
+        {
+          heading: "Accelerating global partnerships at CES 2027",
+          paragraphs: [
+            "At CES 2027, RoboFounders plans to meet manufacturers, automotive companies, robotics developers, and technology partners to expand collaborations, advance manufacturing proof-of-concept projects, and explore business opportunities.",
+            "The company welcomes partners interested in planetary roller screws, Manufacturing AI, robotic integration, and proof-of-concept initiatives in automotive and industrial manufacturing.",
+            "CES 2027 takes place January 6–9, 2027, in Las Vegas. The Japan Pavilion will be at Eureka Park.",
+          ],
+        },
+        {
+          heading: "About RoboFounders",
+          paragraphs: [
+            "RoboFounders is a Japan-born Physical AI and robotics company focused on planetary roller screws and Manufacturing AI solutions. Through a network connecting Japan, Malaysia, and the United States, it works with manufacturing and technology partners to bring robotics into industrial environments.",
+          ],
+        },
+      ],
+      backLink: "Back to News & Events",
+    },
+    ja: {
+      title: "RoboFounders、CES 2027「Japan Pavilion」に出展",
+      subtitles: [
+        "次世代ヒューマノイドを支える日本発の遊星ローラねじ技術を世界へ",
+        "遊星ローラねじとPhysical AIで、次世代ロボティクスと製造業の変革を推進",
+      ],
+      lead: "日本発のPhysical AI・ロボティクス企業RoboFoundersは、2027年1月に米国ラスベガスで開催されるCES 2027のJapan Pavilionに出展します。",
+      introParagraphs: [
+        "次世代ロボットの基盤となる遊星ローラねじなどのロボティクス技術と、製造現場の課題解決を目指す製造業向けAI技術の開発・実装に取り組んでいます。",
+      ],
+      sections: [
+        {
+          heading: "次世代ロボットを支える日本の精密製造技術",
+          paragraphs: [
+            "ヒューマノイドロボットや産業用ロボットの進化に伴い、高い推力、精度、耐久性を備えた駆動機構の重要性が高まっています。遊星ローラねじは、次世代ロボティクスを支える重要なモーション技術の一つです。",
+            "RoboFoundersは、日本の製造技術を活かした遊星ローラねじの量産体制の構築を進めています。転造・熱処理・ナット加工などの工程を担う製造パートナーや、量産化に関心のある企業との連携を歓迎します。",
+            "日本の精密加工・製造技術を次世代ロボティクスへつなぎ、安定した部品供給とPhysical AIの発展を支える基盤づくりに貢献します。",
+          ],
+        },
+        {
+          heading: "マレーシアの自動車製造現場で製造業AIの実証を推進",
+          paragraphs: [
+            "マレーシアの自動車製造現場では、品質検査をはじめとする課題に対し、AIを活用したソリューションの有効性検証（PoC）を進めています。",
+            "製造業では人手不足に加え、溶接などの危険作業や品質検査の高度化が課題です。RoboFoundersはAIとロボティクスを組み合わせ、作業の自動化、品質・生産性の改善、作業者の安全性向上を目指します。",
+            "実際の現場での検証を通じて、活用できるソリューションの構築と将来的な導入拡大を推進します。",
+          ],
+        },
+        {
+          heading: "Physical AIを支える技術と製造エコシステムの構築へ",
+          paragraphs: [
+            "遊星ローラねじなどの精密駆動部品、ロボットハードウェア、製造業AI、実際の製造現場をつなぎ、Physical AIが産業で活用されるための技術基盤とエコシステムを構築します。",
+            "日本のものづくり技術、マレーシアの製造現場、米国を中心とするグローバルなロボティクス市場をつなぎ、国境を越えた技術連携と実装を加速します。",
+          ],
+        },
+        {
+          heading: "CES 2027を通じてグローバルな連携と実証を加速",
+          paragraphs: [
+            "CES 2027では、世界の製造業、自動車関連企業、ロボティクス企業、技術パートナーとの連携を広げ、製造現場でのPoCや事業提携を推進します。",
+            "遊星ローラねじ、製造業向けAI、ロボット統合、自動車・製造現場での実証に関心をお持ちの企業・技術パートナーとの連携を歓迎します。",
+            "CES 2027は2027年1月6日から9日まで米国ラスベガスで開催され、Japan PavilionはEureka Parkに出展します。",
+          ],
+        },
+        {
+          heading: "RoboFoundersについて",
+          paragraphs: [
+            "RoboFoundersは日本発のPhysical AI・ロボティクス企業です。遊星ローラねじをはじめとする技術と製造業向けAIソリューションを通じ、危険作業の自動化、人手不足への対応、生産性向上に取り組んでいます。日本、マレーシア、米国をつなぐネットワークで、産業現場への導入を目指します。",
+          ],
+        },
+      ],
+      backLink: "ニュース一覧へ戻る",
+    },
+  },
   "kabilan-kb-advisor": {
     id: "kabilan-kb-advisor",
     date: "2026.10",

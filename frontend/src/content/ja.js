@@ -351,6 +351,11 @@ const ja = {
     news: [
       [
         "2026年10月",
+        "RoboFounders、CES 2027「Japan Pavilion」に出展",
+        "日本の遊星ローラねじ技術と製造業向けAIを世界のロボティクス市場へ発信します。",
+      ],
+      [
+        "2026年10月",
         "Kabilan KB氏がRoboFoundersのAdvisorに就任",
         "ロボティクスシミュレーション、ディープラーニング、Physical AIの知見を活かし、プロジェクトを推進します。",
       ],

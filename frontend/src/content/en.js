@@ -151,7 +151,7 @@ const en = {
     mission:
       "Today, we are developing critical robotics technologies, including roller screws for humanoid robots and advanced robotic hands for manufacturing. Our vision connects AI, robotics, components, software, data, and manufacturing to accelerate Physical AI in the real world.",
     imageAlt:
-      "RoboFounders team and manufacturing partners together on a factory floor",
+      "Manufacturing specialists reviewing precision production work together",
   },
   showcase: {
     label: "Physical AI concept",
@@ -192,7 +192,7 @@ const en = {
       ],
     ],
     imageAlt:
-      "Manufacturing specialists reviewing precision production work together",
+      "RoboFounders team and manufacturing partners together on a factory floor",
   },
   technology: {
     label: "Robotics technology",
@@ -374,6 +374,11 @@ const en = {
       ],
     ],
     news: [
+      [
+        "Oct 2026",
+        "RoboFounders to Exhibit at CES 2027 Japan Pavilion",
+        "Bringing Japanese planetary roller screw technology and Manufacturing AI to the global robotics stage.",
+      ],
       [
         "Oct 2026",
         "Kabilan KB Joins RoboFounders as Advisor",
