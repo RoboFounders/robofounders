@@ -7,6 +7,7 @@ export const navTargets = [
   "/",
   "/#how",
   "/products",
+  "/labo",
   "/#works",
   "/#founders",
   "/#news-press",
@@ -18,6 +19,7 @@ const navSectionIds = [
   "hero",
   "how",
   "technology",
+  "labo",
   "works",
   "founders",
   "news",
@@ -76,6 +78,9 @@ export default function Navbar() {
       i === 2
         ? pathname.startsWith("/products") ||
           (pathname === "/" && activeSection === navSectionIds[i])
+        : i === 3
+          ? pathname === "/labo" ||
+            (pathname === "/" && activeSection === navSectionIds[i])
         : pathname === "/" && activeSection === navSectionIds[i];
     return (
       <Link
