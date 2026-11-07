@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useLayoutEffect } from "react";
 import { useLocation } from "react-router-dom";
 
 // React Router preserves scroll position across route changes, so navigating
@@ -9,25 +9,33 @@ import { useLocation } from "react-router-dom";
 export default function ScrollToTopOnNavigate() {
   const { pathname, hash } = useLocation();
 
-  useEffect(() => {
+  useLayoutEffect(() => {
+    const root = document.documentElement;
+    const previousScrollBehavior = root.style.scrollBehavior;
+    root.style.scrollBehavior = "auto";
     if (hash) {
-      const frame = requestAnimationFrame(() => {
-        let id = hash.slice(1);
-        try {
-          id = decodeURIComponent(id);
-        } catch {
-          /* Malformed anchors do not break navigation. */
-        }
-        const target =
-          document.getElementById(id) ||
-          (id === "press" || id === "news-press"
-            ? document.getElementById("news")
-            : null);
-        target?.scrollIntoView({ behavior: "instant", block: "start" });
-      });
-      return () => cancelAnimationFrame(frame);
+      let id = hash.slice(1);
+      try {
+        id = decodeURIComponent(id);
+      } catch {
+        /* Malformed anchors do not break navigation. */
+      }
+      const target =
+        document.getElementById(id) ||
+        (id === "press" || id === "news-press"
+          ? document.getElementById("news")
+          : null);
+      target?.scrollIntoView({ behavior: "instant", block: "start" });
+    } else {
+      window.scrollTo({ top: 0, left: 0, behavior: "instant" });
     }
-    window.scrollTo({ top: 0, left: 0, behavior: "instant" });
+    const frame = requestAnimationFrame(() => {
+      root.style.scrollBehavior = previousScrollBehavior;
+    });
+    return () => {
+      cancelAnimationFrame(frame);
+      root.style.scrollBehavior = previousScrollBehavior;
+    };
   }, [pathname, hash]);
 
   return null;
