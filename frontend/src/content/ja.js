@@ -3,6 +3,7 @@ const ja = {
     "ホーム",
     "私たちについて",
     "製品",
+    "LABO",
     "実績",
     "スタートアップ支援",
     "ニュース・イベント",
@@ -42,6 +43,7 @@ const ja = {
   meta: {
     home: "危険な製造現場をPhysical AIで変える",
     products: "ロボティクス製品・コンポーネント",
+    labo: "RoboFounders LABO — ロボティクス研究開発",
     description:
       "RoboFoundersは、製造現場の危険・高リスク作業をロボットで自動化し、人を守るPhysical AIプラットフォームです。",
   },
@@ -129,10 +131,6 @@ const ja = {
     label: "私たちについて / グローバルエコシステム",
     title: "日本から、世界へ。",
     body: "RoboFoundersは、Physical AIによって次世代の製造業を支える産業基盤を構築しています。AI、ロボット、コアコンポーネント、ソフトウェア、データ、そして製造企業をつなぐグローバルなRobotics Platformを目指します。",
-    facts: [
-      ["2026年6月12日", "米国デラウェア州にRoboFounders, Inc.を設立。"],
-      ["2026年8月19日", "日本法人である株式会社RoboFoundersを設立。"],
-    ],
     missionTitle: "製造現場の課題に向き合う",
     challenges: ["危険な作業", "重労働", "繰り返し作業", "人手不足"],
     mission:
@@ -350,6 +348,11 @@ const ja = {
     ],
     news: [
       [
+        "2026年11月",
+        "RoboFounders、Physical AI・次世代ロボティクス分野の技術・事業パートナーを募集",
+        "遊星ローラーねじを核に、共同開発、実証実験、事業連携に取り組むパートナーを募集します。",
+      ],
+      [
         "2026年10月",
         "RoboFounders、CES 2027「Japan Pavilion」に出展",
         "日本の遊星ローラねじ技術と製造業向けAIを世界のロボティクス市場へ発信します。",
@@ -539,9 +542,10 @@ const ja = {
     rights: "All rights reserved.",
   },
   productsPage: {
+    laboName: "RoboFoundersラボ",
     label: "製品 / コアテクノロジー",
     title: "現実世界を動かす\nテクノロジー。",
-    body: "次世代のインテリジェントマシンを支える、モーション技術と\nマニピュレーション技術。",
+    body: "次世代のインテリジェントマシンを支える、遊星ローラーねじ技術。",
     intro: "製品のご紹介",
     featured: "モーション技術",
     second: "マニピュレーション技術",
@@ -567,6 +571,20 @@ const ja = {
     gallery: "製品を詳しく見る。",
     videoCaption: "RoboFounders提供のローラースクリューデモ動画。",
     specification: "具体的な用途をお考えですか？",
+  },
+  labo: {
+    label: "RoboFounders LABO / 研究開発",
+    title: "ロボットハンドの研究開発",
+    body: "製造現場におけるロボットのマニピュレーションを探る研究開発プロジェクトです。ロボットハンドは現在開発中であり、完成した製品ではありません。",
+    homeTitle: "次世代ロボットハンドの可能性を探る。",
+    homeBody: "ロボットハンドはRoboFounders LABOで進める研究開発プロジェクトです。",
+    status: "開発中",
+    explore: "LABOを見る",
+    focusTitle: "研究テーマ",
+    focus: ["柔軟な把持とハンドリング", "精密作業と組立", "製造現場での応用と人・ロボットの協働"],
+    collaboration: "ロボティクス企業、研究機関、製造企業との共同開発や実証に関するご相談を歓迎します。",
+    cta: "研究開発について相談する",
+    imageAlt: "製造業向けロボットハンドの研究開発イメージ",
   },
   products: {
     "roller-screw": {
