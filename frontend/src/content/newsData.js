@@ -1,4 +1,110 @@
 export const newsArticles = {
+  "physical-ai-robotics-partners-2026": {
+    id: "physical-ai-robotics-partners-2026",
+    date: "2026.11",
+    category: { en: "Company News", ja: "企業ニュース" },
+    images: { hero: "/images/news/physical-ai-partners-2026.png" },
+    heroDisplay: "contain",
+    en: {
+      title: "RoboFounders Seeks Technology and Business Partners in Physical AI and Next-Generation Robotics",
+      subtitles: ["Building the future of robotics and manufacturing through Japan’s planetary roller screw technology"],
+      lead: "RoboFounders is seeking technology and business partners in Japan and overseas for joint R&D, proof-of-concept projects, and commercial applications in Physical AI and next-generation robotics.",
+      introParagraphs: ["Its core focus is planetary roller screw technology, complemented by robot hands, electric actuators, and AI solutions for manufacturing."],
+      sections: [
+        {
+          heading: "Our vision",
+          paragraphs: [
+            "The adoption of humanoid and industrial robots requires high-performance motion mechanisms, precision power transmission, robotic manipulation, and practical integration into manufacturing environments.",
+            "RoboFounders is developing hardware and manufacturing technologies for Physical AI using Japan’s precision engineering strengths. Its aim is to automate hazardous work, address labor shortages, and improve manufacturing productivity.",
+          ],
+        },
+        {
+          heading: "Technology areas for collaboration",
+          paragraphs: ["RoboFounders welcomes technology integration, joint development, and proof-of-concept opportunities in these areas:"],
+          bullets: [
+            "Planetary roller screws and precision motion mechanisms for humanoids, industrial robots, and semiconductor equipment",
+            "Electric actuators and linear drive systems",
+            "Gearboxes and power transmission technologies",
+            "Robot hands and end effectors for gripping, assembly, and hazardous work",
+            "Tactile sensors and robotic control",
+            "Manufacturing AI and robot integration, including machine vision and quality inspection",
+          ],
+        },
+        {
+          heading: "Potential collaboration opportunities",
+          bullets: [
+            "Integration of motion components into humanoid and industrial robots",
+            "Joint development of actuators and robotic mechanisms",
+            "Proof-of-concept projects at manufacturing and automotive facilities",
+            "Solutions combining AI, robotics, and hardware",
+            "Business development across Japan, ASEAN, and the United States",
+            "Technology licensing, distribution, and strategic business partnerships",
+          ],
+        },
+        {
+          heading: "Expanding our global presence",
+          paragraphs: [
+            "RoboFounders has been selected to exhibit at the JETRO Japan Pavilion at CES 2027.",
+            "Through CES 2027 and other international events, the company aims to introduce Japan-developed planetary roller screw technology and Physical AI innovations to global markets while expanding international collaboration and demonstrations.",
+          ],
+        },
+        {
+          heading: "Partner inquiries",
+          paragraphs: ["RoboFounders welcomes inquiries from companies, research institutions, manufacturers, and technology partners interested in planetary roller screws, robotic motion systems, robot hands, and AI for manufacturing."],
+        },
+      ],
+      backLink: "Back to News & Events",
+    },
+    ja: {
+      title: "RoboFounders、Physical AI・次世代ロボティクス分野における技術・事業パートナーを募集",
+      subtitles: ["日本発の遊星ローラーねじ技術を核に、次世代ロボティクスと製造業の未来を共創"],
+      lead: "株式会社RoboFoundersは、日本のものづくり技術とPhysical AIを融合し、次世代ロボティクスと製造業の発展を目指す技術・事業パートナーを国内外で募集しています。",
+      introParagraphs: ["主力技術である遊星ローラーねじをはじめ、ロボットハンド、電動アクチュエーター、製造業向けAIなどで技術連携、共同開発、実証実験（PoC）を推進します。"],
+      sections: [
+        {
+          heading: "RoboFoundersが目指すこと",
+          paragraphs: [
+            "ヒューマノイドや産業用ロボットの普及には、高性能な駆動機構、精密な動力伝達技術、柔軟なロボット制御、製造現場への実装が不可欠です。",
+            "日本の精密加工・製造技術を基盤にPhysical AIを支える技術を開発し、危険作業の自動化、人手不足への対応、生産性向上を目指します。",
+          ],
+        },
+        {
+          heading: "協業・共同開発を募集する技術領域",
+          bullets: [
+            "遊星ローラーねじ・精密駆動機構",
+            "電動アクチュエーター・リニア駆動機構",
+            "減速機・動力伝達技術",
+            "ロボットハンド・エンドエフェクター",
+            "触覚センサー・ロボット制御",
+            "製造業向けAI・ロボット統合（画像認識・品質検査など）",
+          ],
+        },
+        {
+          heading: "想定する協業の形",
+          bullets: [
+            "ロボット・ヒューマノイドメーカーへの部品・駆動技術の採用",
+            "アクチュエーターやロボット機構の共同開発",
+            "製造現場・自動車関連工場でのPoCと実証実験",
+            "AI・ロボティクス技術を組み合わせたソリューション開発",
+            "日本・ASEAN・米国を中心としたグローバル事業展開",
+            "技術ライセンス、販売・代理店、戦略的パートナーシップ",
+          ],
+        },
+        {
+          heading: "グローバル展開に向けて",
+          paragraphs: [
+            "RoboFoundersはCES 2027のJETRO Japan Pavilionへの出展企業として採択されています。",
+            "国際的な展示・交流機会を活用し、日本発の遊星ローラーねじ技術とPhysical AI関連技術を世界市場へ発信するとともに、海外企業との協業や実証機会を広げます。",
+          ],
+        },
+        {
+          heading: "協業・お問い合わせ",
+          paragraphs: ["遊星ローラーねじ、ロボット駆動機構、ロボットハンド、製造業向けAIなどの技術連携・共同開発に関心をお持ちの企業、研究機関、技術パートナーからのお問い合わせを歓迎します。"],
+        },
+      ],
+      backLink: "ニュース一覧へ戻る",
+    },
+  },
   "ces-2027-japan-pavilion": {
     id: "ces-2027-japan-pavilion",
     date: "2026.10",
