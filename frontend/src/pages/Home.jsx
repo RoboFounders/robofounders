@@ -33,7 +33,7 @@ const productCardImages = {
   "robotic-hand": "/images/products/robot-hand-new.jpg",
 };
 import { useLanguage } from "@/contexts/LanguageContext";
-import { media, productIds } from "@/content/media";
+import { media } from "@/content/media";
 
 const serviceIcons = [PencilRuler, Boxes, Factory, Globe2, Orbit];
 const factoryIcons = [ScanEye, Factory, Bot];
@@ -188,6 +188,53 @@ export default function Home() {
             </div>
           </div>
         </section>
+        <section className="section" id="technology">
+          <div className="wrap">
+            <div className="section-heading">
+              <div>
+                <p className="eyebrow">{t.technology.label}</p>
+                <h2>{t.technology.title}</h2>
+              </div>
+              <Link className="text-link" to="/products">
+                {t.ui.explore}
+                <ArrowUpRight size={18} />
+              </Link>
+            </div>
+            <p className="section-lead client-line-breaks">{t.technology.body}</p>
+            <div className="technology-grid is-single">
+              {["roller-screw"].map((id, i) => {
+                const product = t.products[id];
+                return (
+                  <Link
+                    className="technology-card"
+                    to={`/products/${id}`}
+                    key={id}
+                  >
+                    <img
+                      className={`tech-image tech-image--${id}`}
+                      src={productCardImages[id]}
+                      alt={product.cardImageAlt || product.imageAlt}
+                      loading="lazy"
+                      width="100"
+                      height="100"
+                    />
+                    <span className="eyebrow">
+                      {i === 0
+                        ? t.productsPage.featured
+                        : t.productsPage.second}
+                    </span>
+                    <h3>{product.name}</h3>
+                    <p className="client-line-breaks">{product.preview}</p>
+                    <span className="text-link">
+                      {t.ui.details}
+                      <ArrowUpRight size={20} />
+                    </span>
+                  </Link>
+                );
+              })}
+            </div>
+          </div>
+        </section>
         <section id="how" className="section">
           <div className="wrap">
             <div className="split-heading">
@@ -234,14 +281,6 @@ export default function Home() {
               <p className="eyebrow">{t.company.label}</p>
               <h2>{t.company.title}</h2>
               <p className="section-lead">{t.company.body}</p>
-              <div className="company-facts">
-                {t.company.facts.map(([date, fact]) => (
-                  <div key={date}>
-                    <strong>{date}</strong>
-                    <span>{fact}</span>
-                  </div>
-                ))}
-              </div>
             </div>
           </div>
           <div className="wrap encounter-grid company-mission-only">
@@ -340,50 +379,26 @@ export default function Home() {
           </div>
         </section>
         <FieldGallery />
-        <section className="section" id="technology">
+        <section className="section soft-section" id="labo">
           <div className="wrap">
             <div className="section-heading">
               <div>
-                <p className="eyebrow">{t.technology.label}</p>
-                <h2>{t.technology.title}</h2>
+                <p className="eyebrow">{t.labo.label}</p>
+                <h2>{t.labo.homeTitle}</h2>
               </div>
-              <Link className="text-link" to="/products">
-                {t.ui.explore}
-                <ArrowUpRight size={18} />
+              <Link className="text-link" to="/labo">
+                {t.labo.status} <ArrowUpRight size={18} />
               </Link>
             </div>
-            <p className="section-lead client-line-breaks">{t.technology.body}</p>
+            <p className="section-lead">{t.labo.homeBody}</p>
             <div className="technology-grid">
-              {productIds.map((id, i) => {
-                const product = t.products[id];
-                return (
-                  <Link
-                    className="technology-card"
-                    to={`/products/${id}`}
-                    key={id}
-                  >
-                    <img
-                      className={`tech-image tech-image--${id}`}
-                      src={productCardImages[id]}
-                      alt={product.cardImageAlt || product.imageAlt}
-                      loading="lazy"
-                      width="100"
-                      height="100"
-                    />
-                    <span className="eyebrow">
-                      {i === 0
-                        ? t.productsPage.featured
-                        : t.productsPage.second}
-                    </span>
-                    <h3>{product.name}</h3>
-                    <p className="client-line-breaks">{product.preview}</p>
-                    <span className="text-link">
-                      {t.ui.details}
-                      <ArrowUpRight size={20} />
-                    </span>
-                  </Link>
-                );
-              })}
+              <Link className="technology-card" to="/labo">
+                <img className="tech-image tech-image--robotic-hand" src={productCardImages["robotic-hand"]} alt={t.labo.imageAlt} loading="lazy" width="100" height="100" />
+                <span className="eyebrow">{t.labo.status}</span>
+                <h3>{t.productsPage.laboName}</h3>
+                <p>{t.labo.homeBody}</p>
+                <span className="text-link">{t.labo.explore} <ArrowUpRight size={20} /></span>
+              </Link>
             </div>
           </div>
         </section>
