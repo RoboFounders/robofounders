@@ -36,6 +36,7 @@ export const media = {
   },
   newsBanner: "/images/events/news-banner.jpg",
   ces2027: "/images/news/ces-2027-japan-pavilion.png",
+  physicalAiPartners: "/images/news/physical-ai-partners-2026.png",
   newsEvent: "/images/events/news-event-new.jpg",
   ivs2026News: "/images/news/ivs-2026/founder-at-ivs.webp",
   beyondPocPortrait: "/images/news/diffusion-borneo-beyond-poc/hero.webp",
