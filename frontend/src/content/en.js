@@ -3,6 +3,7 @@ const en = {
     "Home",
     "About Us",
     "Products",
+    "LABO",
     "Our Works",
     "For Startups",
     "News & Events",
@@ -42,6 +43,7 @@ const en = {
   meta: {
     home: "The Physical AI Platform for Dangerous Manufacturing",
     products: "Robotics Products & Components",
+    labo: "RoboFounders LABO — Robotics R&D",
     description:
       "RoboFounders builds Physical AI solutions that automate dangerous and high-risk work in manufacturing while protecting people.",
   },
@@ -137,10 +139,6 @@ const en = {
     label: "About us / Global ecosystem",
     title: "From Japan to the world.",
     body: "RoboFounders is building the infrastructure for the next generation of manufacturing through Physical AI. We are building a global robotics platform connecting AI, robots, critical components, software, data, and manufacturers.",
-    facts: [
-      ["June 12, 2026", "RoboFounders, Inc. established in Delaware, USA."],
-      ["August 19, 2026", "RoboFounders Co., Ltd. established in Japan."],
-    ],
     missionTitle: "Manufacturing challenges we are addressing",
     challenges: [
       "Dangerous work",
@@ -375,6 +373,11 @@ const en = {
     ],
     news: [
       [
+        "Nov 2026",
+        "RoboFounders Seeks Technology and Business Partners in Physical AI and Next-Generation Robotics",
+        "Seeking joint R&D, proof-of-concept, and commercial partnerships centered on planetary roller screws and related technologies.",
+      ],
+      [
         "Oct 2026",
         "RoboFounders to Exhibit at CES 2027 Japan Pavilion",
         "Bringing Japanese planetary roller screw technology and Manufacturing AI to the global robotics stage.",
@@ -564,9 +567,10 @@ const en = {
     rights: "All rights reserved.",
   },
   productsPage: {
+    laboName: "RoboFounders Labo",
     label: "Products / Core technologies",
     title: "Technologies for the physical world.",
-    body: "Motion and manipulation technologies for the next generation of intelligent machines.",
+    body: "Planetary roller screw technology for the next generation of intelligent machines.",
     intro: "Explore our products",
     featured: "Motion technology",
     second: "Manipulation technology",
@@ -598,6 +602,20 @@ const en = {
     gallery: "A closer look.",
     videoCaption: "Roller screw demonstration supplied by RoboFounders.",
     specification: "Have a specific application in mind?",
+  },
+  labo: {
+    label: "RoboFounders LABO / Research & development",
+    title: "Robotic Hand R&D",
+    body: "An ongoing research and development project exploring robotic manipulation for manufacturing. The robotic hand is still in development and is not a finished product.",
+    homeTitle: "Exploring the next generation of robotic hands.",
+    homeBody: "Our robotic hand work is an ongoing R&D project in RoboFounders LABO.",
+    status: "In development",
+    explore: "Explore LABO",
+    focusTitle: "Research focus",
+    focus: ["Flexible handling and gripping", "Precision tasks and assembly", "Industrial applications and human–robot collaboration"],
+    collaboration: "We welcome conversations with robotics companies, researchers, and manufacturers about joint development and proof-of-concept work.",
+    cta: "Discuss R&D collaboration",
+    imageAlt: "Robotic hand research concept for manufacturing",
   },
   products: {
     "roller-screw": {
