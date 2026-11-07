@@ -6,6 +6,7 @@ import ROICalculator from "@/pages/ROICalculator";
 import Home from "@/pages/Home";
 import ProductCatalog from "@/pages/ProductCatalog";
 import ProductDetail from "@/pages/ProductDetail";
+import Labo from "@/pages/Labo";
 import NotFound from "@/pages/NotFound";
 import Privacy from "@/pages/Privacy";
 import NewsArticle from "@/pages/NewsArticle";
@@ -23,6 +24,7 @@ export default function App() {
             <Route path="/" element={<Home />} />
             <Route path="/products" element={<ProductCatalog />} />
             <Route path="/products/:productId" element={<ProductDetail />} />
+            <Route path="/labo" element={<Labo />} />
             <Route path="/news" element={<NewsArticle />} />
             <Route path="/news/:slug" element={<NewsArticle />} />
             <Route path="/roi-calculator" element={<ROICalculator />} />
