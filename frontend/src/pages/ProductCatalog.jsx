@@ -5,7 +5,7 @@ import Footer from "@/components/layout/Footer";
 import ProductImage from "@/components/shared/ProductImage";
 import PageMeta from "@/components/shared/PageMeta";
 import { useLanguage } from "@/contexts/LanguageContext";
-import { productIds, media } from "@/content/media";
+import { media } from "@/content/media";
 export default function ProductCatalog() {
   const { t } = useLanguage();
   return (
@@ -22,7 +22,7 @@ export default function ProductCatalog() {
             </div>
             <figure className="catalog-hero-media">
               <img
-                src={media.robotHandNew}
+              src="/images/products/roller-screw/assembly-1600.webp"
                 alt={t.productsPage.title}
                 className="catalog-hero-image"
                 loading="eager"
@@ -35,8 +35,8 @@ export default function ProductCatalog() {
         <section className="section">
           <div className="wrap">
             <h2 className="sr-only">{t.productsPage.intro}</h2>
-            <div className="catalog-grid">
-              {productIds.map((id, i) => {
+            <div className="catalog-grid is-single">
+              {["roller-screw"].map((id, i) => {
                 const p = t.products[id];
                 return (
                   <article className="catalog-card" key={id}>
