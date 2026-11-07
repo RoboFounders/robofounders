@@ -66,6 +66,7 @@ test("homepage content follows the current client worksheet direction", () => {
     "Home",
     "About Us",
     "Products",
+    "LABO",
     "Our Works",
     "For Startups",
     "News & Events",
