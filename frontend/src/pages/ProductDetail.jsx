@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link, Navigate, useParams } from "react-router-dom";
-import { ArrowUpRight, ArrowLeft, ArrowRight, Play, Plus } from "lucide-react";
+import { ArrowUpRight, ArrowLeft, ArrowRight, Play } from "lucide-react";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import ProductImage from "@/components/shared/ProductImage";
@@ -14,14 +14,13 @@ export default function ProductDetail() {
   const { productId } = useParams();
   const { t } = useLanguage();
   const [open, setOpen] = useState(false);
-  if (productId === "robot-hand")
-    return <Navigate replace to="/products/robotic-hand" />;
+  if (productId === "robot-hand" || productId === "robotic-hand")
+    return <Navigate replace to="/labo" />;
   if (!productIds.includes(productId)) return <NotFound />;
   const product = { ...t.products[productId], id: productId };
   const assets = media.products[productId];
   const roller = productId === "roller-screw";
   const hasGallery = assets.gallery.length > 0 || Boolean(assets.video);
-  const other = roller ? "robotic-hand" : "roller-screw";
   return (
     <>
       <PageMeta
@@ -38,7 +37,7 @@ export default function ProductDetail() {
               {t.ui.back}
             </Link>
             <nav aria-label={t.ui.products}>
-              {productIds.map((id) => (
+              {["roller-screw"].map((id) => (
                 <Link
                   to={`/products/${id}`}
                   key={id}
@@ -220,18 +219,6 @@ export default function ProductDetail() {
               {t.ui.engineering}
               <ArrowUpRight size={18} />
             </button>
-          </div>
-        </section>
-        <section className="other-product">
-          <div className="wrap">
-            <div>
-              <p className="eyebrow">{t.ui.next}</p>
-              <h2>{t.products[other].name}</h2>
-            </div>
-            <Link to={`/products/${other}`} className="button outline">
-              {t.ui.details}
-              <Plus size={19} />
-            </Link>
           </div>
         </section>
       </main>
