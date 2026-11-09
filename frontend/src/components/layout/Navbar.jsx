@@ -7,8 +7,8 @@ import { media } from "@/content/media";
 import { getPagePath } from "@/lib/locale";
 export const navTargets = [
   "/",
-  "/#how",
   "/products",
+  "/#how",
   "/labo",
   "/#solutions",
   "/partnerships",
@@ -19,8 +19,8 @@ export const navTargets = [
 
 const navSectionIds = [
   "hero",
-  "how",
   "technology",
+  "how",
   "labo",
   "solutions",
   "founders",
