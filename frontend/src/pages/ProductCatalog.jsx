@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import Link from "@/components/shared/SiteLink";
 import { ArrowUpRight, ArrowRight } from "lucide-react";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
@@ -8,9 +8,11 @@ import { useLanguage } from "@/contexts/LanguageContext";
 import { media } from "@/content/media";
 export default function ProductCatalog() {
   const { t } = useLanguage();
+  const product = t.products["roller-screw"];
+  const image = media.products["roller-screw"].hero;
   return (
     <>
-      <PageMeta title={t.meta.products} />
+      <PageMeta title={t.meta.products} description={product.description} image={`${image}-1600.webp`} />
       <Navbar />
       <main id="main-content" className="page-main">
         <section className="catalog-hero dark-section">
@@ -19,16 +21,14 @@ export default function ProductCatalog() {
               <p className="eyebrow">{t.productsPage.label}</p>
               <h1 className="client-line-breaks">{t.productsPage.title}</h1>
               <p className="section-lead client-line-breaks">{t.productsPage.body}</p>
+              <div className="actions">
+                <Link className="button primary" to="/products/roller-screw">
+                  {t.ui.details}<ArrowUpRight size={18} />
+                </Link>
+              </div>
             </div>
             <figure className="catalog-hero-media">
-              <img
-              src="/images/products/roller-screw/assembly-1600.webp"
-                alt={t.productsPage.title}
-                className="catalog-hero-image"
-                loading="eager"
-                width="1600"
-                height="900"
-              />
+              <ProductImage path={image} alt={product.imageAlt} className="catalog-hero-image" eager />
             </figure>
           </div>
         </section>
