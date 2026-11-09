@@ -2,19 +2,35 @@ import { useId, useState } from "react";
 import { ArrowUpRight, LoaderCircle } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { contacts } from "@/content/media";
+import { localizePath } from "@/lib/locale";
 import ContactAddressImage from "./ContactAddressImage";
-export default function InquiryForm({ product }) {
+
+const productIntents = ["technical", "custom"];
+const partnershipIntents = ["coDevelopment", "partnership", "poc"];
+
+export default function InquiryForm({ product, intent = product ? "technical" : "" }) {
   const { t, lang } = useLanguage();
   const id = useId();
-  const [form, setForm] = useState({
+  const initialForm = {
     name: "",
     email: "",
     company: "",
-    category: "0",
+    category: intent || "0",
+    timeline: "",
     message: "",
-  });
+  };
+  const [form, setForm] = useState(initialForm);
   const [status, setStatus] = useState("idle");
   const [result, setResult] = useState("");
+  const categories = intent
+    ? (product ? productIntents : partnershipIntents).map((key) => [key, t.contact.intents[key]])
+    : Object.entries(t.contact.categories);
+  const categoryLabel = intent
+    ? t.contact.intents[form.category]
+    : t.contact.categories[Number(form.category)];
+  const subject = intent
+    ? ["[RoboFounders]", categoryLabel, product?.name].filter(Boolean).join(" ")
+    : "New inquiry from RoboFounders";
   const change = (event) =>
     setForm({ ...form, [event.target.name]: event.target.value });
   const submit = async (event) => {
@@ -44,12 +60,11 @@ export default function InquiryForm({ product }) {
           email: form.email.trim(),
           company: form.company.trim(),
           message: form.message.trim(),
-          category: t.contact.categories[Number(form.category)],
+          category: categoryLabel,
+          ...(intent && { inquiry_type: form.category, timeline: form.timeline.trim() }),
           product: product?.name || "",
           language: lang,
-          _subject: product
-            ? `[RoboFounders Product Inquiry] ${product.name}`
-            : "New inquiry from RoboFounders",
+          _subject: subject,
           _cc: contacts.cc,
         }),
       });
@@ -58,7 +73,7 @@ export default function InquiryForm({ product }) {
       if (data.success === false || data.success === "false")
         throw new Error("Submission rejected");
       setResult("success");
-      setForm({ name: "", email: "", company: "", category: "0", message: "" });
+      setForm(initialForm);
     } catch {
       setResult("error");
     } finally {
@@ -113,21 +128,30 @@ export default function InquiryForm({ product }) {
             maxLength={160}
           />
         </label>
-        {!product && (
-          <label htmlFor={`${id}-category`}>
-            {t.contact.category}
-            <select
-              id={`${id}-category`}
-              name="category"
-              value={form.category}
+        <label htmlFor={`${id}-category`}>
+          {t.contact.category}
+          <select
+            id={`${id}-category`}
+            name="category"
+            value={form.category}
+            onChange={change}
+          >
+            {categories.map(([key, label]) => (
+              <option value={key} key={key}>{label}</option>
+            ))}
+          </select>
+        </label>
+        {intent && (
+          <label htmlFor={`${id}-timeline`}>
+            {t.contact.timeline} <small>({t.contact.optional})</small>
+            <input
+              id={`${id}-timeline`}
+              name="timeline"
+              value={form.timeline}
               onChange={change}
-            >
-              {t.contact.categories.map((label, i) => (
-                <option value={String(i)} key={i}>
-                  {label}
-                </option>
-              ))}
-            </select>
+              placeholder={t.contact.timelineHint}
+              maxLength={160}
+            />
           </label>
         )}
         <label htmlFor={`${id}-message`}>
@@ -138,7 +162,7 @@ export default function InquiryForm({ product }) {
             value={form.message}
             onChange={change}
             placeholder={
-              product ? t.contact.productPrompt : t.contact.placeholder
+              product ? t.contact.productPrompt : intent ? t.contact.partnerPrompt : t.contact.placeholder
             }
             required
             rows="4"
@@ -146,7 +170,7 @@ export default function InquiryForm({ product }) {
           />
         </label>
         <p className="form-note">
-          {t.contact.consent} <a href="/privacy">{t.footer.privacy}</a>
+          {t.contact.consent} <a href={localizePath("/privacy", lang)}>{t.footer.privacy}</a>
         </p>
         <button
           type="submit"
