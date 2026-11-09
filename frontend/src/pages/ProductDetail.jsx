@@ -1,5 +1,6 @@
 import { useState } from "react";
-import { Link, Navigate, useParams } from "react-router-dom";
+import { Navigate, useParams } from "react-router-dom";
+import Link from "@/components/shared/SiteLink";
 import { ArrowUpRight, ArrowLeft, ArrowRight, Play } from "lucide-react";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
@@ -7,20 +8,21 @@ import ProductImage from "@/components/shared/ProductImage";
 import PageMeta from "@/components/shared/PageMeta";
 import AccessibleLoopVideo from "@/components/shared/AccessibleLoopVideo";
 import InquiryDialog from "@/components/products/InquiryDialog";
+import RollerScrewDiagram from "@/components/products/RollerScrewDiagram";
 import NotFound from "./NotFound";
 import { useLanguage } from "@/contexts/LanguageContext";
-import { media, productIds } from "@/content/media";
+import { media } from "@/content/media";
+import { localizePath } from "@/lib/locale";
 export default function ProductDetail() {
   const { productId } = useParams();
-  const { t } = useLanguage();
-  const [open, setOpen] = useState(false);
+  const { t, lang } = useLanguage();
+  const [intent, setIntent] = useState("");
+  const { rollerEngineering: engineering, productsPage, contact } = t;
   if (productId === "robot-hand" || productId === "robotic-hand")
-    return <Navigate replace to="/labo" />;
-  if (!productIds.includes(productId)) return <NotFound />;
+    return <Navigate replace to={localizePath("/labo", lang)} />;
+  if (productId !== "roller-screw") return <NotFound />;
   const product = { ...t.products[productId], id: productId };
   const assets = media.products[productId];
-  const roller = productId === "roller-screw";
-  const hasGallery = assets.gallery.length > 0 || Boolean(assets.video);
   return (
     <>
       <PageMeta
@@ -50,7 +52,7 @@ export default function ProductDetail() {
           </div>
         </div>
         <section
-          className={`product-hero ${roller ? "roller" : "hand"}`}
+          className="product-hero roller"
           data-testid="product-hero"
         >
           <div className="wrap product-hero-grid">
@@ -59,28 +61,23 @@ export default function ProductDetail() {
               <h1 data-testid="product-hero-title">{product.name}</h1>
               <h2>{product.tagline}</h2>
               <p className="section-lead">{product.description}</p>
-              {(roller || product.proof) && (
-                <p className="origin">
-                  <span />
-                  {roller ? t.productsPage.made : product.proof}
-                </p>
-              )}
+              <p className="origin">
+                <span />
+                {productsPage.made}
+              </p>
               <div className="actions">
                 <button
                   type="button"
                   className="button primary"
-                  onClick={() => setOpen(true)}
+                  onClick={() => setIntent("technical")}
                   data-testid="product-cta-talk"
                 >
-                  {t.ui.engineering}
+                  {contact.intents.technical}
                   <ArrowUpRight size={18} />
                 </button>
-                {hasGallery && (
-                  <a className="text-link" href="#product-gallery">
-                    {t.ui.gallery}
-                    <ArrowRight size={18} />
-                  </a>
-                )}
+                <a className="text-link" href="#performance">
+                  {t.ui.performance}<ArrowRight size={18} />
+                </a>
               </div>
             </div>
             <figure className="product-main-image">
@@ -92,25 +89,43 @@ export default function ProductDetail() {
             </figure>
           </div>
         </section>
-        {roller && (
-          <section className="section targets-section" id="performance">
-            <div className="wrap">
-              <p className="eyebrow">{t.productsPage.target}</p>
-              <h2>{t.productsPage.targetIntro}</h2>
-              <div className="target-grid">
-                {t.productsPage.targetLabels.map((label) => (
-                  <div key={label}>
-                    <strong>
-                      ~4<span>×</span>
-                    </strong>
-                    <p>{label}</p>
-                  </div>
-                ))}
-              </div>
-              <p className="target-note">{t.productsPage.targetNote}</p>
+        <section className="section soft-section" id="mechanism">
+          <div className="wrap mechanism-grid">
+            <div>
+              <p className="eyebrow">{t.ui.overview}</p>
+              <h2>{engineering.mechanism}</h2>
+              <p className="section-lead">{engineering.explanation}</p>
             </div>
-          </section>
-        )}
+            <RollerScrewDiagram content={engineering} />
+          </div>
+        </section>
+        <section className="section targets-section" id="performance">
+          <div className="wrap">
+            <h2>{productsPage.target}</h2>
+            <table className="engineering-target-table" aria-describedby="development-target-note">
+              <caption>{productsPage.targetIntro}</caption>
+              <thead>
+                <tr>
+                  <th scope="col">{engineering.metric}</th>
+                  <th scope="col">{engineering.target}</th>
+                </tr>
+              </thead>
+              <tbody>
+                {productsPage.targetLabels.map((label) => (
+                  <tr key={label}>
+                    <th scope="row">{label}</th>
+                    <td>~4×</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+            <p className="target-note" id="development-target-note">{productsPage.targetNote}</p>
+            <div className="engineering-specs">
+              <h3>{engineering.specs}</h3>
+              <p>{engineering.specsBody}</p>
+            </div>
+          </div>
+        </section>
         <section className="section" id="product-overview">
           <div className="wrap">
             <p className="eyebrow">{t.ui.overview}</p>
@@ -123,89 +138,76 @@ export default function ProductDetail() {
                 </article>
               ))}
             </div>
-            {product.collaboration && (
-              <p className="product-collaboration">{product.collaboration}</p>
-            )}
-            <div className="application-row">
-              <h3>{t.ui.applications}</h3>
-              <div className="tags">
-                {product.applications.map((x) => (
-                  <span key={x}>{x}</span>
-                ))}
-              </div>
+          </div>
+        </section>
+        <section className="section soft-section" id="applications">
+          <div className="wrap">
+            <h2>{t.ui.applications}</h2>
+            <div className="benefits-grid">
+              {engineering.applications.map(([title, body]) => (
+                <article key={title}>
+                  <h3>{title}</h3>
+                  <p>{body}</p>
+                </article>
+              ))}
             </div>
           </div>
         </section>
-        {hasGallery && (
-          <section
-            className="section soft-section"
-            id="product-gallery"
-            data-testid="product-gallery-section"
-          >
-            <div className="wrap">
-              <div className="section-heading">
-                <div>
-                  <p className="eyebrow">{t.ui.gallery}</p>
-                  <h2>{t.productsPage.gallery}</h2>
-                </div>
-                {roller && (
-                  <span className="small-label">
-                    <Play size={14} />
-                    {t.ui.play}
-                  </span>
-                )}
-              </div>
-              <div
-                className={`product-gallery ${roller ? "roller-gallery" : "hand-gallery"}`}
-              >
-                {assets.gallery.map((path, i) => (
-                  <figure key={path}>
-                    <ProductImage path={path} alt={product.galleryAlts[i]} />
-                    <figcaption>{product.galleryAlts[i]}</figcaption>
-                    <a
-                      className="video-download"
-                      href={`${path}-1600.webp`}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      {t.ui.enlarge}
-                      <ArrowUpRight size={15} />
-                    </a>
-                  </figure>
-                ))}
-                {assets.video && (
-                  <figure className="video-figure">
-                    <AccessibleLoopVideo
-                      src={assets.video}
-                      poster={`${assets.hero}-1600.webp`}
-                      label={t.ui.play}
-                    />
-                    <figcaption>{t.productsPage.videoCaption}</figcaption>
-                  </figure>
-                )}
-              </div>
+        <section className="section" id="roadmap">
+          <div className="wrap">
+            <h2>{productsPage.processTitle}</h2>
+            <p className="section-lead">{productsPage.processBody}</p>
+            <ol className="process-grid engineering-roadmap">
+              {productsPage.process.map(([title, body]) => (
+                <li key={title}>
+                  <h3>{title}</h3>
+                  <p>{body}</p>
+                </li>
+              ))}
+            </ol>
+            <div className="actions">
+              <button type="button" className="button primary" onClick={() => setIntent("custom")}>
+                {contact.intents.custom}<ArrowUpRight size={18} />
+              </button>
+              <Link className="text-link" to="/partnerships">
+                {contact.intents.coDevelopment}<ArrowUpRight size={18} />
+              </Link>
             </div>
-          </section>
-        )}
-        {roller && (
-          <section className="section">
-            <div className="wrap">
-              <p className="eyebrow">{t.productsPage.processTitle}</p>
-              <h2>{t.productsPage.processBody}</h2>
-              <div className="process-grid">
-                {t.productsPage.process.map(([title, body], i) => (
-                  <article key={title}>
-                    <div>
-                      {i < 2 && <ArrowRight size={20} />}
-                    </div>
-                    <h3>{title}</h3>
-                    <p>{body}</p>
-                  </article>
-                ))}
+          </div>
+        </section>
+        <section
+          className="section soft-section"
+          id="product-gallery"
+          data-testid="product-gallery-section"
+        >
+          <div className="wrap">
+            <div className="section-heading">
+              <div>
+                <p className="eyebrow">{t.ui.gallery}</p>
+                <h2>{productsPage.gallery}</h2>
               </div>
+              <span className="small-label">
+                <Play size={14} />
+                {t.ui.play}
+              </span>
             </div>
-          </section>
-        )}
+            <div className="product-gallery roller-gallery">
+              {assets.gallery.map((path, i) => (
+                <figure key={path}>
+                  <ProductImage path={path} alt={product.galleryAlts[i]} />
+                  <figcaption>{product.galleryAlts[i]}</figcaption>
+                  <a className="video-download" href={`${path}-1600.webp`} target="_blank" rel="noopener noreferrer">
+                    {t.ui.enlarge}<ArrowUpRight size={15} />
+                  </a>
+                </figure>
+              ))}
+              <figure className="video-figure">
+                <AccessibleLoopVideo src={assets.video} poster={`${assets.hero}-1600.webp`} label={t.ui.play} />
+                <figcaption>{productsPage.videoCaption}</figcaption>
+              </figure>
+            </div>
+          </div>
+        </section>
         <section className="section product-cta dark-section">
           <div className="wrap">
             <p className="eyebrow">{t.productsPage.ecosystem}</p>
@@ -214,9 +216,9 @@ export default function ProductDetail() {
             <button
               type="button"
               className="button primary"
-              onClick={() => setOpen(true)}
+              onClick={() => setIntent("technical")}
             >
-              {t.ui.engineering}
+              {contact.intents.technical}
               <ArrowUpRight size={18} />
             </button>
           </div>
@@ -224,8 +226,9 @@ export default function ProductDetail() {
       </main>
       <Footer />
       <InquiryDialog
-        isOpen={open}
-        onClose={() => setOpen(false)}
+        isOpen={Boolean(intent)}
+        onClose={() => setIntent("")}
+        intent={intent || "technical"}
         product={product}
       />
     </>
