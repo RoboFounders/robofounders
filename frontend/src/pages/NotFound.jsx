@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import Link from "@/components/shared/SiteLink";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import PageMeta from "@/components/shared/PageMeta";
