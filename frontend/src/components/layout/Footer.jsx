@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import Link from "@/components/shared/SiteLink";
 import {
   ArrowUpRight,
   Facebook,
@@ -11,6 +11,7 @@ import { contacts, media } from "@/content/media";
 import { useLanguage } from "@/contexts/LanguageContext";
 import ContactAddressImage from "@/components/shared/ContactAddressImage";
 import { navTargets } from "./Navbar";
+import { getPagePath } from "@/lib/locale";
 
 const socialLinks = [
   ["Facebook", "facebook", Facebook],
@@ -31,7 +32,7 @@ export default function Footer() {
               className="brand footer-brand"
               aria-label="RoboFounders"
               onClick={() => {
-                if (window.location.pathname === "/") {
+                if (getPagePath(window.location.pathname) === "/") {
                   window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
                 }
               }}
@@ -55,6 +56,7 @@ export default function Footer() {
                   {label}
                 </Link>
               ))}
+              <Link to="/#company-profile">{t.companyProfile.title}</Link>
             </div>
           </div>
           <div>
