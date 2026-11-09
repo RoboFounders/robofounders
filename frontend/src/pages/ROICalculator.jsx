@@ -1,5 +1,6 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import Link from "@/components/shared/SiteLink";
+import { Link as RouterLink } from "react-router-dom";
 import { toast } from "sonner";
 import { useLanguage } from "@/contexts/LanguageContext";
 import PageMeta from "@/components/shared/PageMeta";
@@ -225,7 +226,8 @@ function ResultCard({ icon: Icon, label, value, highlight, delay = 0 }) {
 }
 
 export default function ROICalculator() {
-  const { lang, setLang } = useLanguage();
+  const { lang, languagePath } = useLanguage();
+  const otherLanguage = lang === "en" ? "ja" : "en";
   const t = STRINGS[lang];
 
   const [employees, setEmployees] = useState(null);
@@ -341,15 +343,16 @@ export default function ROICalculator() {
           >
             <ArrowLeft className="h-4 w-4" /> RoboFounders
           </Link>
-          <button
-            type="button"
+          <RouterLink
             data-testid="roi-lang-toggle"
-            onClick={() => setLang(lang === "en" ? "ja" : "en")}
+            to={languagePath(otherLanguage)}
+            lang={otherLanguage}
+            hrefLang={otherLanguage}
             className="inline-flex min-h-[44px] items-center gap-2 rounded-full border border-[#e4ecf2] bg-white px-4 text-sm font-semibold text-[#0a0f1a] transition-all hover:border-[#b9c2ff] hover:text-[#4d6bff]"
           >
             <Languages className="h-4 w-4 text-[#4d6bff]" />
             {lang === "en" ? "日本語" : "English"}
-          </button>
+          </RouterLink>
         </div>
 
         <Reveal className="mt-4 text-center">
