@@ -2,7 +2,7 @@ import { useEffect, useRef } from "react";
 import { X } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 import InquiryForm from "@/components/shared/InquiryForm";
-export default function InquiryDialog({ isOpen, onClose, product }) {
+export default function InquiryDialog({ isOpen, onClose, product, intent }) {
   const ref = useRef(null);
   const { t } = useLanguage();
   useEffect(() => {
@@ -40,8 +40,8 @@ export default function InquiryDialog({ isOpen, onClose, product }) {
     >
       <div className="dialog-heading">
         <div>
-          <p className="eyebrow">{product?.name}</p>
-          <h2 id="inquiry-title">{t.contact.dialogTitle}</h2>
+          {product && <p className="eyebrow">{product.name}</p>}
+          <h2 id="inquiry-title">{t.contact.intents[intent]}</h2>
         </div>
         <button
           type="button"
@@ -53,8 +53,8 @@ export default function InquiryDialog({ isOpen, onClose, product }) {
           <X size={22} />
         </button>
       </div>
-      <p>{t.contact.dialogIntro}</p>
-      {isOpen && <InquiryForm key={product?.id} product={product} />}
+      <p>{product ? t.contact.dialogIntro : t.partnerships.contactBody}</p>
+      {isOpen && <InquiryForm key={intent} product={product} intent={intent} />}
     </dialog>
   );
 }
