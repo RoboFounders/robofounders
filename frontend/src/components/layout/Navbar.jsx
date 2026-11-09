@@ -1,16 +1,18 @@
 import { useEffect, useRef, useState } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link as RouterLink, useLocation } from "react-router-dom";
+import Link from "@/components/shared/SiteLink";
 import { ArrowUpRight, Menu, X } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { media } from "@/content/media";
+import { getPagePath } from "@/lib/locale";
 export const navTargets = [
   "/",
   "/#how",
   "/products",
   "/labo",
-  "/#works",
-  "/#founders",
-  "/#news-press",
+  "/#solutions",
+  "/partnerships",
+  "/#news",
   "/#team",
   "/#contact",
 ];
@@ -20,7 +22,7 @@ const navSectionIds = [
   "how",
   "technology",
   "labo",
-  "works",
+  "solutions",
   "founders",
   "news",
   "team",
@@ -28,10 +30,12 @@ const navSectionIds = [
 ];
 
 export default function Navbar() {
-  const { lang, setLang, t } = useLanguage();
+  const { lang, languagePath, t } = useLanguage();
   const [open, setOpen] = useState(false);
   const [activeSection, setActiveSection] = useState("hero");
-  const { pathname, hash } = useLocation();
+  const location = useLocation();
+  const pathname = getPagePath(location.pathname);
+  const { hash } = location;
   const menuButton = useRef(null);
   useEffect(() => {
     setOpen(false);
@@ -74,24 +78,21 @@ export default function Navbar() {
   }, [pathname, hash]);
 
   const links = t.nav.map((label, i) => {
+    const target = navTargets[i];
     const active =
-      i === 2
-        ? pathname.startsWith("/products") ||
-          (pathname === "/" && activeSection === navSectionIds[i])
-        : i === 3
-          ? pathname === "/labo" ||
-            (pathname === "/" && activeSection === navSectionIds[i])
-        : pathname === "/" && activeSection === navSectionIds[i];
+      (pathname === "/" && activeSection === navSectionIds[i]) ||
+      (target !== "/" && pathname === target) ||
+      (target === "/products" && pathname.startsWith("/products/"));
     return (
       <Link
-        key={navTargets[i]}
-        to={navTargets[i]}
+        key={target}
+        to={target}
         aria-current={active ? "page" : undefined}
         onClick={() => {
           setActiveSection(navSectionIds[i]);
           setOpen(false);
-          if (pathname === "/" && navTargets[i].startsWith("/#")) {
-            const targetId = navTargets[i].replace("/#", "");
+          if (pathname === "/" && target.startsWith("/#")) {
+            const targetId = target.slice(2);
             if (targetId === "hero") {
               window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
             } else {
@@ -140,25 +141,25 @@ export default function Navbar() {
               role="group"
               aria-label="Language / 言語"
             >
-              <button
-                type="button"
+              <RouterLink
+                to={languagePath("en")}
                 lang="en"
+                hrefLang="en"
                 data-testid="language-en"
-                aria-pressed={lang === "en"}
-                onClick={() => setLang("en")}
+                aria-current={lang === "en" ? "true" : undefined}
               >
                 EN
-              </button>
+              </RouterLink>
               <span aria-hidden="true">/</span>
-              <button
-                type="button"
+              <RouterLink
+                to={languagePath("ja")}
                 lang="ja"
+                hrefLang="ja"
                 data-testid="language-ja"
-                aria-pressed={lang === "ja"}
-                onClick={() => setLang("ja")}
+                aria-current={lang === "ja" ? "true" : undefined}
               >
                 日本語
-              </button>
+              </RouterLink>
             </div>
             <Link to="/#contact" className="nav-contact">
               {t.ui.contact}
