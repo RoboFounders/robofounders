@@ -1,57 +1,271 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://www.robofounders.ai/</loc>
-    <lastmod>2026-09-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.robofounders.ai/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.robofounders.ai/ja/" />
+    <lastmod>2026-11-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://www.robofounders.ai/ja/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.robofounders.ai/" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.robofounders.ai/ja/" />
+    <lastmod>2026-11-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://www.robofounders.ai/products</loc>
-    <lastmod>2026-09-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.robofounders.ai/products" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.robofounders.ai/ja/products" />
+    <lastmod>2026-11-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.robofounders.ai/ja/products</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.robofounders.ai/products" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.robofounders.ai/ja/products" />
+    <lastmod>2026-11-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.robofounders.ai/products/roller-screw</loc>
-    <lastmod>2026-09-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.robofounders.ai/products/roller-screw" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.robofounders.ai/ja/products/roller-screw" />
+    <lastmod>2026-11-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://www.robofounders.ai/products/robotic-hand</loc>
-    <lastmod>2026-09-15</lastmod>
+    <loc>https://www.robofounders.ai/ja/products/roller-screw</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.robofounders.ai/products/roller-screw" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.robofounders.ai/ja/products/roller-screw" />
+    <lastmod>2026-11-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.robofounders.ai/labo</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.robofounders.ai/labo" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.robofounders.ai/ja/labo" />
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.robofounders.ai/ja/labo</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.robofounders.ai/labo" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.robofounders.ai/ja/labo" />
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.robofounders.ai/partnerships</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.robofounders.ai/partnerships" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.robofounders.ai/ja/partnerships" />
+    <lastmod>2026-11-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.robofounders.ai/ja/partnerships</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.robofounders.ai/partnerships" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.robofounders.ai/ja/partnerships" />
+    <lastmod>2026-11-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.robofounders.ai/news/ivs2026-startup-market</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.robofounders.ai/news/ivs2026-startup-market" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.robofounders.ai/ja/news/ivs2026-startup-market" />
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.robofounders.ai/ja/news/ivs2026-startup-market</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.robofounders.ai/news/ivs2026-startup-market" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.robofounders.ai/ja/news/ivs2026-startup-market" />
     <lastmod>2026-09-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.robofounders.ai/news/robofounders-beamstart-physical-ai</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.robofounders.ai/news/robofounders-beamstart-physical-ai" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.robofounders.ai/ja/news/robofounders-beamstart-physical-ai" />
+    <lastmod>2026-10-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.robofounders.ai/ja/news/robofounders-beamstart-physical-ai</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.robofounders.ai/news/robofounders-beamstart-physical-ai" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.robofounders.ai/ja/news/robofounders-beamstart-physical-ai" />
     <lastmod>2026-10-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.robofounders.ai/news/nikkei-genai-sum-2026</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.robofounders.ai/news/nikkei-genai-sum-2026" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.robofounders.ai/ja/news/nikkei-genai-sum-2026" />
+    <lastmod>2026-10-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.robofounders.ai/ja/news/nikkei-genai-sum-2026</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.robofounders.ai/news/nikkei-genai-sum-2026" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.robofounders.ai/ja/news/nikkei-genai-sum-2026" />
     <lastmod>2026-10-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.robofounders.ai/news/kabilan-kb-advisor</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.robofounders.ai/news/kabilan-kb-advisor" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.robofounders.ai/ja/news/kabilan-kb-advisor" />
+    <lastmod>2026-10-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.robofounders.ai/ja/news/kabilan-kb-advisor</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.robofounders.ai/news/kabilan-kb-advisor" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.robofounders.ai/ja/news/kabilan-kb-advisor" />
     <lastmod>2026-10-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.robofounders.ai/privacy</loc>
-    <lastmod>2026-09-15</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.robofounders.ai/privacy" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.robofounders.ai/ja/privacy" />
+    <lastmod>2026-11-08</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://www.robofounders.ai/ja/privacy</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.robofounders.ai/privacy" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.robofounders.ai/ja/privacy" />
+    <lastmod>2026-11-08</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://www.robofounders.ai/news/physical-ai-robotics-partners-2026</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.robofounders.ai/news/physical-ai-robotics-partners-2026" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.robofounders.ai/ja/news/physical-ai-robotics-partners-2026" />
+  </url>
+  <url>
+    <loc>https://www.robofounders.ai/ja/news/physical-ai-robotics-partners-2026</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.robofounders.ai/news/physical-ai-robotics-partners-2026" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.robofounders.ai/ja/news/physical-ai-robotics-partners-2026" />
+  </url>
+  <url>
+    <loc>https://www.robofounders.ai/news/ces-2027-japan-pavilion</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.robofounders.ai/news/ces-2027-japan-pavilion" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.robofounders.ai/ja/news/ces-2027-japan-pavilion" />
+  </url>
+  <url>
+    <loc>https://www.robofounders.ai/ja/news/ces-2027-japan-pavilion</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.robofounders.ai/news/ces-2027-japan-pavilion" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.robofounders.ai/ja/news/ces-2027-japan-pavilion" />
+  </url>
+  <url>
+    <loc>https://www.robofounders.ai/news/x-hub-tokyo-boston</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.robofounders.ai/news/x-hub-tokyo-boston" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.robofounders.ai/ja/news/x-hub-tokyo-boston" />
+  </url>
+  <url>
+    <loc>https://www.robofounders.ai/ja/news/x-hub-tokyo-boston</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.robofounders.ai/news/x-hub-tokyo-boston" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.robofounders.ai/ja/news/x-hub-tokyo-boston" />
+  </url>
+  <url>
+    <loc>https://www.robofounders.ai/news/diffusion-borneo-beyond-poc</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.robofounders.ai/news/diffusion-borneo-beyond-poc" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.robofounders.ai/ja/news/diffusion-borneo-beyond-poc" />
+  </url>
+  <url>
+    <loc>https://www.robofounders.ai/ja/news/diffusion-borneo-beyond-poc</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.robofounders.ai/news/diffusion-borneo-beyond-poc" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.robofounders.ai/ja/news/diffusion-borneo-beyond-poc" />
+  </url>
+  <url>
+    <loc>https://www.robofounders.ai/news/diffusion-borneo-2026</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.robofounders.ai/news/diffusion-borneo-2026" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.robofounders.ai/ja/news/diffusion-borneo-2026" />
+  </url>
+  <url>
+    <loc>https://www.robofounders.ai/ja/news/diffusion-borneo-2026</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.robofounders.ai/news/diffusion-borneo-2026" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.robofounders.ai/ja/news/diffusion-borneo-2026" />
+  </url>
+  <url>
+    <loc>https://www.robofounders.ai/news/startup-world-cup-malaysia</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.robofounders.ai/news/startup-world-cup-malaysia" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.robofounders.ai/ja/news/startup-world-cup-malaysia" />
+  </url>
+  <url>
+    <loc>https://www.robofounders.ai/ja/news/startup-world-cup-malaysia</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.robofounders.ai/news/startup-world-cup-malaysia" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.robofounders.ai/ja/news/startup-world-cup-malaysia" />
+  </url>
+  <url>
+    <loc>https://www.robofounders.ai/news/jungle-forge-award-2026</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.robofounders.ai/news/jungle-forge-award-2026" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.robofounders.ai/ja/news/jungle-forge-award-2026" />
+  </url>
+  <url>
+    <loc>https://www.robofounders.ai/ja/news/jungle-forge-award-2026</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.robofounders.ai/news/jungle-forge-award-2026" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.robofounders.ai/ja/news/jungle-forge-award-2026" />
+  </url>
+  <url>
+    <loc>https://www.robofounders.ai/news/x-hub-tokyo-singapore</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.robofounders.ai/news/x-hub-tokyo-singapore" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.robofounders.ai/ja/news/x-hub-tokyo-singapore" />
+  </url>
+  <url>
+    <loc>https://www.robofounders.ai/ja/news/x-hub-tokyo-singapore</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.robofounders.ai/news/x-hub-tokyo-singapore" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.robofounders.ai/ja/news/x-hub-tokyo-singapore" />
+  </url>
+  <url>
+    <loc>https://www.robofounders.ai/news/ai-malaysia-takeover-2026</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.robofounders.ai/news/ai-malaysia-takeover-2026" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.robofounders.ai/ja/news/ai-malaysia-takeover-2026" />
+  </url>
+  <url>
+    <loc>https://www.robofounders.ai/ja/news/ai-malaysia-takeover-2026</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.robofounders.ai/news/ai-malaysia-takeover-2026" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.robofounders.ai/ja/news/ai-malaysia-takeover-2026" />
+  </url>
+  <url>
+    <loc>https://www.robofounders.ai/news/startup-world-cup-tokyo-2026</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.robofounders.ai/news/startup-world-cup-tokyo-2026" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.robofounders.ai/ja/news/startup-world-cup-tokyo-2026" />
+  </url>
+  <url>
+    <loc>https://www.robofounders.ai/ja/news/startup-world-cup-tokyo-2026</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.robofounders.ai/news/startup-world-cup-tokyo-2026" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.robofounders.ai/ja/news/startup-world-cup-tokyo-2026" />
+  </url>
+  <url>
+    <loc>https://www.robofounders.ai/news/japan-corporation-established</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.robofounders.ai/news/japan-corporation-established" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.robofounders.ai/ja/news/japan-corporation-established" />
+  </url>
+  <url>
+    <loc>https://www.robofounders.ai/ja/news/japan-corporation-established</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.robofounders.ai/news/japan-corporation-established" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.robofounders.ai/ja/news/japan-corporation-established" />
   </url>
 </urlset>
