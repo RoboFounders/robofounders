@@ -1,29 +1,23 @@
-import { createContext, useContext, useEffect, useState } from "react";
+import { createContext, useContext, useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import en from "@/content/en";
 import ja from "@/content/ja";
+import { getLocale, localizePath } from "@/lib/locale";
 
 const LanguageContext = createContext(null);
 export function LanguageProvider({ children }) {
-  const [lang, setLang] = useState(() => {
-    try {
-      return localStorage.getItem("robofounders-language") === "ja"
-        ? "ja"
-        : "en";
-    } catch {
-      return "en";
-    }
+  const { pathname, search, hash } = useLocation();
+  const lang = getLocale(pathname);
+  const languagePath = (nextLang) => ({
+    pathname: localizePath(pathname, nextLang), search, hash,
   });
+
   useEffect(() => {
     document.documentElement.lang = lang;
-    try {
-      localStorage.setItem("robofounders-language", lang);
-    } catch {
-      /* Storage can be disabled. */
-    }
   }, [lang]);
   return (
     <LanguageContext.Provider
-      value={{ lang, setLang, t: lang === "ja" ? ja : en }}
+      value={{ lang, languagePath, t: lang === "ja" ? ja : en }}
     >
       {children}
     </LanguageContext.Provider>
