@@ -90,6 +90,7 @@ export const media = {
   products: {
     "roller-screw": {
       hero: "/images/products/roller-screw/assembly",
+      closeUp: "/images/products/roller-screw/close-up",
       gallery: ["/images/products/roller-screw/assembly"],
       video: "/videos/products/roller-screw/demonstration.mp4",
     },
