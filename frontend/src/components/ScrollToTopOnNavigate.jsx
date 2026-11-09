@@ -1,5 +1,6 @@
 import { useLayoutEffect } from "react";
 import { useLocation } from "react-router-dom";
+import { getPagePath } from "@/lib/locale";
 
 // React Router preserves scroll position across route changes, so navigating
 // (e.g. Home -> /products) can open the new page scrolled part-way down. This resets
@@ -8,6 +9,7 @@ import { useLocation } from "react-router-dom";
 // Route-based hash links wait for the new page to mount before scrolling.
 export default function ScrollToTopOnNavigate() {
   const { pathname, hash } = useLocation();
+  const pagePath = getPagePath(pathname);
 
   useLayoutEffect(() => {
     const root = document.documentElement;
@@ -36,7 +38,7 @@ export default function ScrollToTopOnNavigate() {
       cancelAnimationFrame(frame);
       root.style.scrollBehavior = previousScrollBehavior;
     };
-  }, [pathname, hash]);
+  }, [pagePath, hash]);
 
   return null;
 }
