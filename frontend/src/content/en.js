@@ -1,8 +1,8 @@
 const en = {
   nav: [
     "Home",
-    "About Us",
     "Products",
+    "About Us",
     "LABO",
     "Solutions",
     "Partnerships",
