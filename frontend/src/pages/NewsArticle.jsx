@@ -1,4 +1,5 @@
-import { useParams, Link, Navigate } from "react-router-dom";
+import { useParams, Navigate } from "react-router-dom";
+import Link from "@/components/shared/SiteLink";
 import { ArrowLeft, ArrowUpRight, CheckCircle2, Quote, Sparkles, Linkedin, Youtube } from "lucide-react";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
@@ -6,6 +7,7 @@ import PageMeta from "@/components/shared/PageMeta";
 import AccessibleLoopVideo from "@/components/shared/AccessibleLoopVideo";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { newsArticles } from "@/content/newsData";
+import { localizePath } from "@/lib/locale";
 
 function renderEmphasis(text) {
   return text.split(/(\*\*[^*]+\*\*)/g).map((part, index) =>
@@ -17,11 +19,11 @@ function renderEmphasis(text) {
 
 export default function NewsArticle() {
   const { slug = "x-hub-tokyo-boston" } = useParams();
-  const { lang } = useLanguage();
+  const { lang, t } = useLanguage();
   const article = newsArticles[slug];
 
   if (!article) {
-    return <Navigate to="/" replace />;
+    return <Navigate to={localizePath("/", lang)} replace />;
   }
 
   const content = article[lang] || article.en;
@@ -41,7 +43,7 @@ export default function NewsArticle() {
         <section className="news-hero-section">
           <div className="wrap news-hero-wrap">
             <Link
-              to={{ pathname: "/", hash: "#news-press" }}
+              to="/#news"
               className="back-link"
             >
               <ArrowLeft size={16} />
@@ -192,7 +194,7 @@ export default function NewsArticle() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                {content.sourceLinkLabel || "Read original article"}
+                {content.sourceLinkLabel || t.ui.readOriginal}
                 <ArrowUpRight size={16} aria-hidden="true" />
               </a>
             )}
@@ -227,7 +229,7 @@ export default function NewsArticle() {
                   <AccessibleLoopVideo
                     src={article.video.src}
                     poster={article.video.poster || article.images.hero}
-                    label="RoboFounders event clip"
+                    label={t.gallery.video}
                     preload="none"
                     startWhenVisible
                     autoStart={false}
