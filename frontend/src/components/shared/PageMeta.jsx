@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import { useLanguage } from "@/contexts/LanguageContext";
+import { localizePath } from "@/lib/locale";
 
 const siteUrl = "https://www.robofounders.ai";
 const defaultImage = `${siteUrl}/images/home/physical-ai-hero.webp`;
@@ -15,6 +16,18 @@ function setMeta(attribute, value, content) {
   element.setAttribute("content", content);
 }
 
+function setPageLink(rel, href, hrefLang) {
+  const language = hrefLang ? `[hreflang="${hrefLang}"]` : "";
+  let element = document.head.querySelector(`link[rel="${rel}"]${language}`);
+  if (!element) {
+    element = document.createElement("link");
+    element.rel = rel;
+    if (hrefLang) element.hreflang = hrefLang;
+    document.head.appendChild(element);
+  }
+  element.href = href;
+}
+
 export default function PageMeta({
   title,
   description,
@@ -27,7 +40,10 @@ export default function PageMeta({
   useEffect(() => {
     const pageTitle = `${title} | RoboFounders`;
     const pageDescription = description || t.meta.description;
-    const canonicalUrl = `${siteUrl}${path || location.pathname}`;
+    const pagePath = path || location.pathname;
+    const englishUrl = `${siteUrl}${localizePath(pagePath, "en")}`;
+    const japaneseUrl = `${siteUrl}${localizePath(pagePath, "ja")}`;
+    const canonicalUrl = lang === "ja" ? japaneseUrl : englishUrl;
     const shareImage = image.startsWith("http") ? image : `${siteUrl}${image}`;
 
     document.title = pageTitle;
@@ -42,13 +58,14 @@ export default function PageMeta({
     setMeta("name", "twitter:description", pageDescription);
     setMeta("name", "twitter:image", shareImage);
 
-    let canonical = document.head.querySelector('link[rel="canonical"]');
-    if (!canonical) {
-      canonical = document.createElement("link");
-      canonical.setAttribute("rel", "canonical");
-      document.head.appendChild(canonical);
+    setPageLink("canonical", canonicalUrl);
+    if (noIndex) {
+      document.head.querySelectorAll('link[rel="alternate"][hreflang]').forEach((link) => link.remove());
+    } else {
+      setPageLink("alternate", englishUrl, "en");
+      setPageLink("alternate", japaneseUrl, "ja");
+      setPageLink("alternate", englishUrl, "x-default");
     }
-    canonical.setAttribute("href", canonicalUrl);
   }, [title, description, image, path, noIndex, lang, location.pathname, t]);
   return null;
 }
