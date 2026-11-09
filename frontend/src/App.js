@@ -7,6 +7,7 @@ import Home from "@/pages/Home";
 import ProductCatalog from "@/pages/ProductCatalog";
 import ProductDetail from "@/pages/ProductDetail";
 import Labo from "@/pages/Labo";
+import Partnerships from "@/pages/Partnerships";
 import NotFound from "@/pages/NotFound";
 import Privacy from "@/pages/Privacy";
 import NewsArticle from "@/pages/NewsArticle";
@@ -17,23 +18,26 @@ import ScrollToTopOnNavigate from "@/components/ScrollToTopOnNavigate";
 export default function App() {
   return (
     <div className="App bg-white" data-testid="app-root">
-      <LanguageProvider>
-        <BrowserRouter>
+      <BrowserRouter>
+        <LanguageProvider>
           <ScrollToTopOnNavigate />
           <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/products" element={<ProductCatalog />} />
-            <Route path="/products/:productId" element={<ProductDetail />} />
-            <Route path="/labo" element={<Labo />} />
-            <Route path="/news" element={<NewsArticle />} />
-            <Route path="/news/:slug" element={<NewsArticle />} />
-            <Route path="/roi-calculator" element={<ROICalculator />} />
-            <Route path="/privacy" element={<Privacy />} />
-            <Route path="*" element={<NotFound />} />
+            <Route path="/ja?">
+              <Route index element={<Home />} />
+              <Route path="products" element={<ProductCatalog />} />
+              <Route path="products/:productId" element={<ProductDetail />} />
+              <Route path="labo" element={<Labo />} />
+              <Route path="partnerships" element={<Partnerships />} />
+              <Route path="news" element={<NewsArticle />} />
+              <Route path="news/:slug" element={<NewsArticle />} />
+              <Route path="roi-calculator" element={<ROICalculator />} />
+              <Route path="privacy" element={<Privacy />} />
+              <Route path="*" element={<NotFound />} />
+            </Route>
           </Routes>
           <BackToTop />
-        </BrowserRouter>
-      </LanguageProvider>
+        </LanguageProvider>
+      </BrowserRouter>
       <Toaster position="top-center" richColors />
     </div>
   );
