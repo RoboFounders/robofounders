@@ -29,7 +29,7 @@ test("both launch products have optimized media and matching gallery description
     path.resolve(__dirname, "../../public", file.slice(1));
   for (const id of productIds) {
     const assets = media.products[id];
-    for (const image of [assets.hero, ...assets.gallery]) {
+    for (const image of [assets.hero, assets.closeUp, ...assets.gallery].filter(Boolean)) {
       for (const size of [640, 1600])
         expect(fs.existsSync(publicFile(`${image}-${size}.webp`))).toBe(true);
     }
@@ -61,25 +61,21 @@ test("client-provided homepage and team images are present", () => {
   }
 });
 
-test("homepage content follows the current client worksheet direction", () => {
+test("homepage leads with planetary roller screws and separates product, R&D, and solutions", () => {
   expect(en.nav).toEqual([
     "Home",
     "About Us",
     "Products",
     "LABO",
-    "Our Works",
-    "For Startups",
+    "Solutions",
+    "Partnerships",
     "News & Events",
     "Our Teams",
     "Contact",
   ]);
-  expect(en.hero.accent).toBe("for Dangerous Manufacturing.");
-  expect(en.hero.line).toBe("Protect People. Automate Danger.");
-  expect(ja.hero.title).toBe("危険な製造現場を、");
-  expect(ja.hero.line).toBe("人を守る。危険をロボットに。");
-  expect(en.footer.tagline).toBe(
-    "The Physical AI Platform for Dangerous Manufacturing.",
-  );
+  expect(en.hero.title).toBe("Planetary Roller Screws");
+  expect(ja.hero.title).toBe("遊星ローラーねじ");
+  expect(en.about.title).toBe("The Physical AI Platform for Manufacturing");
   expect(productIds).toEqual(["roller-screw", "robotic-hand"]);
   expect(en.team.members.map(({ name, role }) => [name, role])).toEqual([
     ["Takeshi Kanamori", "COO"],
