@@ -1,5 +1,5 @@
 import { useEffect, useRef } from "react";
-import { Link } from "react-router-dom";
+import Link from "@/components/shared/SiteLink";
 import { ArrowLeft, ArrowRight, ArrowUpRight } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { media } from "@/content/media";
@@ -109,10 +109,10 @@ export default function Updates() {
             <div className="updates-section-heading">
               <h3 className="updates-column-title" id="press-heading">{t.updates.press}</h3>
               <div className="news-rail-controls" aria-label={t.updates.press}>
-                <button type="button" onClick={() => scrollNews(-1)} aria-label="Previous news">
+                <button type="button" onClick={() => scrollNews(-1)} aria-label={t.ui.previousNews}>
                   <ArrowLeft size={20} aria-hidden="true" />
                 </button>
-                <button type="button" onClick={() => scrollNews(1)} aria-label="Next news">
+                <button type="button" onClick={() => scrollNews(1)} aria-label={t.ui.nextNews}>
                   <ArrowRight size={20} aria-hidden="true" />
                 </button>
               </div>
@@ -169,7 +169,7 @@ export default function Updates() {
                       <p>{body}</p>
                       {isLinked && (
                         <span className="news-read-more">
-                          {t.ui?.readArticle || (t.lang === "ja" ? "記事を読む" : "Read full article")}
+                          {t.ui.readArticle}
                           <ArrowUpRight size={14} />
                         </span>
                       )}
