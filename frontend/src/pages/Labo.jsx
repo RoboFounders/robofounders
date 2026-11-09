@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import Link from "@/components/shared/SiteLink";
 import { ArrowUpRight } from "lucide-react";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
