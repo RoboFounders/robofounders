@@ -1,10 +1,9 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import Link from "@/components/shared/SiteLink";
 import {
   ArrowRight,
   ArrowUpRight,
   Plus,
-  Cog,
   ScanEye,
   Factory,
   Bot,
@@ -13,9 +12,6 @@ import {
   Globe2,
   Network,
   Orbit,
-  BrainCircuit,
-  ShieldCheck,
-  PlayCircle,
   Pause,
   Play,
 } from "lucide-react";
@@ -23,27 +19,30 @@ import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import PageMeta from "@/components/shared/PageMeta";
 import InquiryForm from "@/components/shared/InquiryForm";
+import InquiryDialog from "@/components/products/InquiryDialog";
+import ProductImage from "@/components/shared/ProductImage";
 import FieldGallery from "@/components/home/FieldGallery";
 import Team from "@/components/home/Team";
 import Updates from "@/components/home/Updates";
 import AccessibleLoopVideo from "@/components/shared/AccessibleLoopVideo";
 
-const productCardImages = {
-  "roller-screw": "/images/products/roller-screw/assembly-640.webp",
-  "robotic-hand": "/images/products/robot-hand-new.jpg",
-};
 import { useLanguage } from "@/contexts/LanguageContext";
 import { media } from "@/content/media";
 
+const rollerId = "roller-screw";
+const rollerPath = `/products/${rollerId}`;
 const serviceIcons = [PencilRuler, Boxes, Factory, Globe2, Orbit];
 const factoryIcons = [ScanEye, Factory, Bot];
-const heroCapabilityIcons = [Cog, BrainCircuit, Factory, ShieldCheck];
 export default function Home() {
   const { t } = useLanguage();
+  const accentBreak = t.hero.accent.indexOf("・") + 1;
+  const product = { ...t.products[rollerId], id: rollerId };
+  const closeUp = media.products[rollerId].closeUp;
+  const [consultationOpen, setConsultationOpen] = useState(false);
   const [marqueePaused, setMarqueePaused] = useState(false);
   return (
     <>
-      <PageMeta title={t.meta.home} />
+      <PageMeta title={t.meta.home} image={`${closeUp}-1600.webp`} />
       <Navbar />
       <main id="main-content" className="page-main">
         <section id="hero" className="home-hero">
@@ -55,70 +54,258 @@ export default function Home() {
               </p>
               <h1>
                 {t.hero.title}
-                <span>{t.hero.accent}</span>
+                <span>
+                  {accentBreak ? (
+                    <>
+                      <span className="hero-accent-phrase">{t.hero.accent.slice(0, accentBreak)}</span>
+                      <wbr />
+                      {t.hero.accent.slice(accentBreak)}
+                    </>
+                  ) : t.hero.accent}
+                </span>
               </h1>
               <p className="hero-line">{t.hero.line}</p>
               <p className="hero-body">{t.hero.body}</p>
-              <p className="hero-body hero-body-secondary">
-                {t.hero.bodySecondary}
-              </p>
-              <div className="hero-statements">
-                {t.hero.statements.map((statement) => (
-                  <strong key={statement}>{statement}</strong>
-                ))}
-              </div>
-              <p className="hero-build-label">{t.hero.buildLabel}</p>
-              <div
-                className="hero-capabilities"
-                aria-label={t.hero.buildLabel}
-              >
-                {t.hero.capabilities.map((capability, index) => {
-                  const Icon = heroCapabilityIcons[index];
-                  return (
-                    <span key={capability}>
-                      <Icon size={16} strokeWidth={1.6} aria-hidden="true" />
-                      {capability}
-                    </span>
-                  );
-                })}
-              </div>
               <div className="actions">
-                <Link className="button primary" to="/products">
+                <Link className="button primary" to={rollerPath}>
                   {t.hero.primaryCta}
                   <ArrowUpRight size={18} />
                 </Link>
-                <Link className="button ghost" to="/#contact">
-                  {t.hero.secondaryCta}
+                <button
+                  type="button"
+                  className="button ghost"
+                  onClick={() => setConsultationOpen(true)}
+                >
+                  {t.contact.intents.technical}
                   <ArrowRight size={17} />
-                </Link>
+                </button>
               </div>
-              <p className="hero-foot">{t.hero.foot}</p>
             </div>
-            <figure className="hero-media hero-video-media">
-              <div className="hero-video-container">
-                <AccessibleLoopVideo
-                  src={media.homeVideo}
-                  poster={media.home.hero}
-                  label={t.showcase.videoLabel}
-                  showToggle={false}
-                  showAudioToggle
-                />
-                <img
-                  className="hero-video-brandmark"
-                  src={media.logoGalaxy}
-                  width="64"
-                  height="45"
-                  alt="RoboFounders"
-                  aria-hidden="true"
-                />
-              </div>
+            <figure className="hero-media roller-hero-media">
+              <ProductImage path={closeUp} alt={product.imageAlt} eager />
+              <figcaption>
+                <span>{t.technology.label}</span>
+                <strong>{product.name}</strong>
+              </figcaption>
             </figure>
           </div>
-          <div className="hero-bottom wrap">
-            <span>{t.hero.nodes.join(" / ")}</span>
-            <a href="#physical-ai-film" aria-label={t.showcase.label}>
-              <ArrowRight size={18} />
-            </a>
+        </section>
+        <section className="section core-motion-section" id="technology">
+          <div className="wrap core-motion-grid">
+            <div>
+              <p className="eyebrow">{t.technology.label}</p>
+              <h2>{t.technology.title}</h2>
+              <p className="section-lead">{t.technology.body}</p>
+              <ul className="tags core-motion-tags">
+                {t.technology.applications.map((application) => (
+                  <li key={application}>{application}</li>
+                ))}
+              </ul>
+              <Link className="button outline" to={rollerPath}>
+                {t.hero.primaryCta}
+                <ArrowUpRight size={18} />
+              </Link>
+            </div>
+            <ProductImage path={media.products[rollerId].hero} alt={product.galleryAlts[0]} />
+          </div>
+        </section>
+        <section className="section soft-section" id="engineering">
+          <div className="wrap">
+            <div className="split-heading">
+              <div>
+                <p className="eyebrow">{t.why.label}</p>
+                <h2>{t.why.title}</h2>
+              </div>
+              <p className="section-lead">{t.why.body}</p>
+            </div>
+            <div className="why-grid">
+              {t.why.items.map(([title, body]) => (
+                <article key={title}>
+                  <h3>{title}</h3>
+                  <p>{body}</p>
+                </article>
+              ))}
+            </div>
+            <img
+              className="section-wide-image why-reference-image"
+              src={media.home.why}
+              alt={t.why.imageAlt}
+              loading="lazy"
+              width="1800"
+              height="1200"
+            />
+          </div>
+        </section>
+        <section id="how" className="section">
+          <div className="wrap">
+            <div className="split-heading">
+              <div>
+                <p className="eyebrow">{t.about.label}</p>
+                <h2 className="client-line-breaks">{t.about.title}</h2>
+              </div>
+              <p className="section-lead">{t.about.body}</p>
+            </div>
+            <div className="section-divider" />
+            <p className="eyebrow">{t.services.label}</p>
+            <h3 className="subheading">{t.services.title}</h3>
+            <p>{t.services.body}</p>
+            <div className="services-grid">
+              {t.services.items.map(([name, title, body], i) => {
+                const Icon = serviceIcons[i];
+                return (
+                  <article key={name}>
+                    <div className="card-top">
+                      <Icon size={24} strokeWidth={1.4} aria-hidden="true" />
+                    </div>
+                    <h4>{name}</h4>
+                    <strong>{title}</strong>
+                    <p>{body}</p>
+                  </article>
+                );
+              })}
+            </div>
+          </div>
+        </section>
+        <section className="section company-section">
+          <div className="wrap company-grid">
+            <figure className="company-media">
+              <img
+                src={media.home.about}
+                alt={t.company.imageAlt}
+                loading="lazy"
+                width="952"
+                height="637"
+              />
+              <figcaption>{t.company.label}</figcaption>
+            </figure>
+            <div className="company-copy">
+              <p className="eyebrow">{t.company.label}</p>
+              <h2>{t.company.title}</h2>
+              <p className="section-lead">{t.company.body}</p>
+              <section className="company-profile" id="company-profile" aria-labelledby="company-profile-heading">
+                <h3 id="company-profile-heading">{t.companyProfile.title}</h3>
+                <dl className="company-facts">
+                  <div>
+                    <dt>{t.companyProfile.nameLabel}</dt>
+                    <dd>{t.companyProfile.name}</dd>
+                  </div>
+                  <div>
+                    <dt>{t.companyProfile.officeLabel}</dt>
+                    <dd>{t.companyProfile.office}</dd>
+                  </div>
+                </dl>
+              </section>
+            </div>
+          </div>
+          <div className="wrap encounter-grid company-mission-only">
+            <aside className="company-mission">
+              <h4>{t.company.missionTitle}</h4>
+              <div className="challenge-list">
+                {t.company.challenges.map((challenge) => (
+                  <span key={challenge}>{challenge}</span>
+                ))}
+              </div>
+              <p>{t.company.mission}</p>
+            </aside>
+          </div>
+        </section>
+        <section className="section soft-section">
+          <div className="wrap">
+            <p className="eyebrow">{t.regions.label}</p>
+            <h2>{t.regions.title}</h2>
+            <p className="section-lead">{t.regions.body}</p>
+            <div className="regions-route" aria-hidden="true">
+              {t.regions.items.map(([name, , , role]) => (
+                <div className="regions-route-node" key={name}>
+                  <span className="regions-route-icon">
+                    <Globe2 size={34} strokeWidth={1.15} />
+                  </span>
+                  <strong>{name}</strong>
+                  <small>{role}</small>
+                </div>
+              ))}
+            </div>
+            {/* Global ecosystem image is temporarily hidden pending client approval. */}
+            <div className="regions-grid">
+              {t.regions.items.map(([name, title, body, role]) => (
+                <article key={name}>
+                  <div className="region-art" aria-hidden="true">
+                    <Globe2 size={140} strokeWidth={0.45} />
+                  </div>
+                  <span className="small-label">{role}</span>
+                  <h3>{name}</h3>
+                  <h4>{title}</h4>
+                  <p>{body}</p>
+                </article>
+              ))}
+            </div>
+          </div>
+        </section>
+        <section className="section soft-section story-section">
+          <div className="wrap story-grid">
+            <div>
+              <p className="eyebrow">{t.story.label}</p>
+              <h2>{t.story.title}</h2>
+              <blockquote>"{t.story.quote}"</blockquote>
+              <span className="small-label">
+                Mariel Asami Fukase / {t.team.founderRole}
+              </span>
+            </div>
+            <div className="story-copy">
+              <p>{t.story.paragraphs[0]}</p>
+              <details>
+                <summary>
+                  {t.story.more}
+                  <Plus size={18} />
+                </summary>
+                {t.story.paragraphs.slice(1).map((p) => (
+                  <p key={p}>{p}</p>
+                ))}
+              </details>
+            </div>
+          </div>
+        </section>
+        <FieldGallery />
+        <section className="section soft-section" id="labo">
+          <div className="wrap">
+            <div className="section-heading">
+              <div>
+                <p className="eyebrow">{t.labo.label}</p>
+                <h2>{t.labo.homeTitle}</h2>
+              </div>
+              <Link className="text-link" to="/labo">
+                {t.labo.status} <ArrowUpRight size={18} />
+              </Link>
+            </div>
+            <p className="section-lead">{t.labo.homeBody}</p>
+            <div className="technology-grid">
+              <Link className="technology-card" to="/labo">
+                <img className="tech-image tech-image--robotic-hand" src={media.robotHandNew} alt={t.labo.imageAlt} loading="lazy" width="100" height="100" />
+                <span className="eyebrow">{t.labo.status}</span>
+                <h3>{t.productsPage.laboName}</h3>
+                <p>{t.labo.homeBody}</p>
+                <span className="text-link">{t.labo.explore} <ArrowUpRight size={20} /></span>
+              </Link>
+            </div>
+          </div>
+        </section>
+        <section className="section platform-section">
+          <div className="wrap">
+            <p className="eyebrow">{t.platform.label}</p>
+            <h2 className="client-line-breaks">{t.platform.title}</h2>
+            <p className="section-lead">{t.platform.body}</p>
+            <div className="platform-grid">
+              {t.platform.items.map(([name, body]) => (
+                <div key={name}>
+                  <h3>{name}</h3>
+                  <p>{body}</p>
+                </div>
+              ))}
+            </div>
+            <p className="platform-closing">
+              <Network size={25} />
+              {t.platform.closing}
+            </p>
           </div>
         </section>
         <section
@@ -188,240 +375,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section className="section" id="technology">
-          <div className="wrap">
-            <div className="section-heading">
-              <div>
-                <p className="eyebrow">{t.technology.label}</p>
-                <h2>{t.technology.title}</h2>
-              </div>
-              <Link className="text-link" to="/products">
-                {t.ui.explore}
-                <ArrowUpRight size={18} />
-              </Link>
-            </div>
-            <p className="section-lead client-line-breaks">{t.technology.body}</p>
-            <div className="technology-grid is-single">
-              {["roller-screw"].map((id, i) => {
-                const product = t.products[id];
-                return (
-                  <Link
-                    className="technology-card"
-                    to={`/products/${id}`}
-                    key={id}
-                  >
-                    <img
-                      className={`tech-image tech-image--${id}`}
-                      src={productCardImages[id]}
-                      alt={product.cardImageAlt || product.imageAlt}
-                      loading="lazy"
-                      width="100"
-                      height="100"
-                    />
-                    <span className="eyebrow">
-                      {i === 0
-                        ? t.productsPage.featured
-                        : t.productsPage.second}
-                    </span>
-                    <h3>{product.name}</h3>
-                    <p className="client-line-breaks">{product.preview}</p>
-                    <span className="text-link">
-                      {t.ui.details}
-                      <ArrowUpRight size={20} />
-                    </span>
-                  </Link>
-                );
-              })}
-            </div>
-          </div>
-        </section>
-        <section id="how" className="section">
-          <div className="wrap">
-            <div className="split-heading">
-              <div>
-                <p className="eyebrow">{t.about.label}</p>
-                <h2 className="client-line-breaks">{t.about.title}</h2>
-              </div>
-              <p className="section-lead">{t.about.body}</p>
-            </div>
-            <div className="section-divider" />
-            <p className="eyebrow">{t.services.label}</p>
-            <h3 className="subheading">{t.services.title}</h3>
-            <p>{t.services.body}</p>
-            <div className="services-grid">
-              {t.services.items.map(([name, title, body], i) => {
-                const Icon = serviceIcons[i];
-                return (
-                  <article key={name}>
-                    <div className="card-top">
-                      <Icon size={24} strokeWidth={1.4} aria-hidden="true" />
-                    </div>
-                    <h4>{name}</h4>
-                    <strong>{title}</strong>
-                    <p>{body}</p>
-                  </article>
-                );
-              })}
-            </div>
-          </div>
-        </section>
-        <section className="section company-section">
-          <div className="wrap company-grid">
-            <figure className="company-media">
-              <img
-                src={media.home.about}
-                alt={t.company.imageAlt}
-                loading="lazy"
-                width="952"
-                height="637"
-              />
-              <figcaption>{t.company.label}</figcaption>
-            </figure>
-            <div className="company-copy">
-              <p className="eyebrow">{t.company.label}</p>
-              <h2>{t.company.title}</h2>
-              <p className="section-lead">{t.company.body}</p>
-            </div>
-          </div>
-          <div className="wrap encounter-grid company-mission-only">
-            <aside className="company-mission">
-              <h4>{t.company.missionTitle}</h4>
-              <div className="challenge-list">
-                {t.company.challenges.map((challenge) => (
-                  <span key={challenge}>{challenge}</span>
-                ))}
-              </div>
-              <p>{t.company.mission}</p>
-            </aside>
-          </div>
-        </section>
-        <section className="section soft-section">
-          <div className="wrap">
-            <p className="eyebrow">{t.regions.label}</p>
-            <h2>{t.regions.title}</h2>
-            <p className="section-lead">{t.regions.body}</p>
-            <div className="regions-route" aria-hidden="true">
-              {t.regions.items.map(([name, , , role]) => (
-                <div className="regions-route-node" key={name}>
-                  <span className="regions-route-icon">
-                    <Globe2 size={34} strokeWidth={1.15} />
-                  </span>
-                  <strong>{name}</strong>
-                  <small>{role}</small>
-                </div>
-              ))}
-            </div>
-            {/* Global ecosystem image is temporarily hidden pending client approval. */}
-            <div className="regions-grid">
-              {t.regions.items.map(([name, title, body, role]) => (
-                <article key={name}>
-                  <div className="region-art" aria-hidden="true">
-                    <Globe2 size={140} strokeWidth={0.45} />
-                  </div>
-                  <span className="small-label">{role}</span>
-                  <h3>{name}</h3>
-                  <h4>{title}</h4>
-                  <p>{body}</p>
-                </article>
-              ))}
-            </div>
-          </div>
-        </section>
-        <section className="section">
-          <div className="wrap">
-            <div className="split-heading">
-              <div>
-                <p className="eyebrow">{t.why.label}</p>
-                <h2>{t.why.title}</h2>
-              </div>
-              <p className="section-lead">{t.why.body}</p>
-            </div>
-            <div className="why-grid">
-              {t.why.items.map(([title, body]) => (
-                <article key={title}>
-                  <h3>{title}</h3>
-                  <p>{body}</p>
-                </article>
-              ))}
-            </div>
-            <img
-              className="section-wide-image why-reference-image"
-              src={media.home.why}
-              alt={t.why.imageAlt}
-              loading="lazy"
-              width="1800"
-              height="1200"
-            />
-          </div>
-        </section>
-        <section className="section soft-section story-section">
-          <div className="wrap story-grid">
-            <div>
-              <p className="eyebrow">{t.story.label}</p>
-              <h2>{t.story.title}</h2>
-              <blockquote>"{t.story.quote}"</blockquote>
-              <span className="small-label">
-                Mariel Asami Fukase / {t.team.founderRole}
-              </span>
-            </div>
-            <div className="story-copy">
-              <p>{t.story.paragraphs[0]}</p>
-              <details>
-                <summary>
-                  {t.story.more}
-                  <Plus size={18} />
-                </summary>
-                {t.story.paragraphs.slice(1).map((p) => (
-                  <p key={p}>{p}</p>
-                ))}
-              </details>
-            </div>
-          </div>
-        </section>
-        <FieldGallery />
-        <section className="section soft-section" id="labo">
-          <div className="wrap">
-            <div className="section-heading">
-              <div>
-                <p className="eyebrow">{t.labo.label}</p>
-                <h2>{t.labo.homeTitle}</h2>
-              </div>
-              <Link className="text-link" to="/labo">
-                {t.labo.status} <ArrowUpRight size={18} />
-              </Link>
-            </div>
-            <p className="section-lead">{t.labo.homeBody}</p>
-            <div className="technology-grid">
-              <Link className="technology-card" to="/labo">
-                <img className="tech-image tech-image--robotic-hand" src={productCardImages["robotic-hand"]} alt={t.labo.imageAlt} loading="lazy" width="100" height="100" />
-                <span className="eyebrow">{t.labo.status}</span>
-                <h3>{t.productsPage.laboName}</h3>
-                <p>{t.labo.homeBody}</p>
-                <span className="text-link">{t.labo.explore} <ArrowUpRight size={20} /></span>
-              </Link>
-            </div>
-          </div>
-        </section>
-        <section className="section platform-section">
-          <div className="wrap">
-            <p className="eyebrow">{t.platform.label}</p>
-            <h2 className="client-line-breaks">{t.platform.title}</h2>
-            <p className="section-lead">{t.platform.body}</p>
-            <div className="platform-grid">
-              {t.platform.items.map(([name, body]) => (
-                <div key={name}>
-                  <h3>{name}</h3>
-                  <p>{body}</p>
-                </div>
-              ))}
-            </div>
-            <p className="platform-closing">
-              <Network size={25} />
-              {t.platform.closing}
-            </p>
-          </div>
-        </section>
-        <section className="section dark-section">
+        <section className="section dark-section" id="solutions">
           <div className="wrap">
             <div className="split-heading">
               <div>
@@ -441,6 +395,14 @@ export default function Home() {
                   </article>
                 );
               })}
+            </div>
+            <div className="actions solutions-actions">
+              <Link className="button primary" to="/#contact">
+                {t.factory.projectCta}<ArrowUpRight size={18} />
+              </Link>
+              <Link className="button ghost" to="/#works">
+                {t.factory.worksCta}<ArrowRight size={18} />
+              </Link>
             </div>
             <div className="factory-deployment-video">
               <AccessibleLoopVideo
@@ -491,7 +453,7 @@ export default function Home() {
               <p className="eyebrow">{t.startups.label}</p>
               <h2>{t.startups.title}</h2>
               <p className="section-lead client-line-breaks">{t.startups.body}</p>
-              <Link className="button primary" to="/#contact">
+              <Link className="button primary" to="/partnerships">
                 {t.startups.cta}
                 <ArrowUpRight size={18} />
               </Link>
@@ -549,6 +511,12 @@ export default function Home() {
 
       </main>
       <Footer />
+      <InquiryDialog
+        isOpen={consultationOpen}
+        onClose={() => setConsultationOpen(false)}
+        product={product}
+        intent="technical"
+      />
     </>
   );
 }
