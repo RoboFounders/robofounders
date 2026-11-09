@@ -64,8 +64,8 @@ test("client-provided homepage and team images are present", () => {
 test("homepage leads with planetary roller screws and separates product, R&D, and solutions", () => {
   expect(en.nav).toEqual([
     "Home",
-    "About Us",
     "Products",
+    "About Us",
     "LABO",
     "Solutions",
     "Partnerships",
