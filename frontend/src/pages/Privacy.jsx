@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import Link from "@/components/shared/SiteLink";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import PageMeta from "@/components/shared/PageMeta";
@@ -9,11 +9,11 @@ const copy = {
   en: {
     title: "Privacy notice",
     intro: "How RoboFounders handles information submitted through this website.",
-    updated: "Last updated: September 15, 2026",
+    updated: "Last updated: November 8, 2026",
     sections: [
       [
         "Information we collect",
-        "When you contact us, we collect the information you choose to provide, including your name, work email, company or organization, area of interest, product, and message. We also receive the language selected for the inquiry.",
+        "When you contact us, we collect the information you choose to provide, including your name, work email, company or organization, area of interest, product, project timeline, and message. We also receive the language selected for the inquiry.",
       ],
       [
         "Purpose of use",
@@ -29,7 +29,7 @@ const copy = {
       ],
       [
         "Your choices",
-        "You may ask about, correct, or request deletion of inquiry information held by RoboFounders. Contact us using the address below. The website stores your English or Japanese preference locally in your browser so it can remember your selection.",
+        "You may ask about, correct, or request deletion of inquiry information held by RoboFounders. Contact us using the address below.",
       ],
     ],
     contact: "Privacy inquiries",
@@ -38,11 +38,11 @@ const copy = {
   ja: {
     title: "個人情報保護方針",
     intro: "本ウェブサイトを通じて送信される情報の取り扱いについてご案内します。",
-    updated: "最終更新日：2026年9月15日",
+    updated: "最終更新日：2026年11月8日",
     sections: [
       [
         "取得する情報",
-        "お問い合わせの際に、お名前、メールアドレス、会社名・組織名、ご関心のある分野、製品名、お問い合わせ内容など、お客様が入力した情報を取得します。また、お問い合わせ時に選択された言語情報を取得します。",
+        "お問い合わせの際に、お名前、メールアドレス、会社名・組織名、ご関心のある分野、製品名、ご希望のスケジュール、お問い合わせ内容など、お客様が入力した情報を取得します。また、お問い合わせ時に選択された言語情報を取得します。",
       ],
       [
         "利用目的",
@@ -58,7 +58,7 @@ const copy = {
       ],
       [
         "お問い合わせとご本人の権利",
-        "RoboFoundersが保有するお問い合わせ情報について、確認、訂正、削除をご希望の場合は、以下のメールアドレスまでご連絡ください。本サイトでは、英語・日本語の選択を記憶するため、言語設定をお客様のブラウザ内に保存します。",
+        "RoboFoundersが保有するお問い合わせ情報について、確認、訂正、削除をご希望の場合は、以下のメールアドレスまでご連絡ください。",
       ],
     ],
     contact: "個人情報に関するお問い合わせ",
