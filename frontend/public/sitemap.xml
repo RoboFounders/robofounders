@@ -268,4 +268,14 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://www.robofounders.ai/news/japan-corporation-established" />
     <xhtml:link rel="alternate" hreflang="ja" href="https://www.robofounders.ai/ja/news/japan-corporation-established" />
   </url>
+  <url>
+    <loc>https://www.robofounders.ai/news/onilema-abis-2025</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.robofounders.ai/news/onilema-abis-2025" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.robofounders.ai/ja/news/onilema-abis-2025" />
+  </url>
+  <url>
+    <loc>https://www.robofounders.ai/ja/news/onilema-abis-2025</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.robofounders.ai/news/onilema-abis-2025" />
+    <xhtml:link rel="alternate" hreflang="ja" href="https://www.robofounders.ai/ja/news/onilema-abis-2025" />
+  </url>
 </urlset>
