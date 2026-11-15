@@ -30,6 +30,7 @@ const newsImages = [
   media.diffusionBorneo, // Diffusion Borneo 2026 image from doc
   media.events[7], // client-provided Jungle Forge image
   media.startupWorldCup, // client-approved Startup World Cup image
+  media.aseanSummit, // Onilema at ABIS 2025
 ];
 
 const newsSlugMap = {
@@ -48,6 +49,7 @@ const newsSlugMap = {
   12: "/news/diffusion-borneo-2026",
   13: "/news/jungle-forge-award-2026",
   14: "/news/startup-world-cup-malaysia",
+  15: "/news/onilema-abis-2025",
 };
 
 export default function Updates() {
