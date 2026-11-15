@@ -75,7 +75,7 @@ test("homepage leads with planetary roller screws and separates product, R&D, an
   ]);
   expect(en.hero.title).toBe("Planetary Roller Screws");
   expect(ja.hero.title).toBe("遊星ローラーねじ");
-  expect(en.about.title).toBe("The Physical AI Platform for Manufacturing");
+  expect(en.about.title).toBe("Building the Infrastructure for Physical AI.");
   expect(productIds).toEqual(["roller-screw", "robotic-hand"]);
   expect(en.team.members.map(({ name, role }) => [name, role])).toEqual([
     ["Takeshi Kanamori", "COO"],
