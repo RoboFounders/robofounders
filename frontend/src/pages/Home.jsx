@@ -261,6 +261,14 @@ export default function Home() {
                 {t.story.paragraphs.slice(1).map((p) => (
                   <p key={p}>{p}</p>
                 ))}
+                {t.story.sections.map(({ title, paragraphs }) => (
+                  <section key={title}>
+                    <h3>{title}</h3>
+                    {paragraphs.map((paragraph) => (
+                      <p key={paragraph}>{paragraph}</p>
+                    ))}
+                  </section>
+                ))}
               </details>
             </div>
           </div>
