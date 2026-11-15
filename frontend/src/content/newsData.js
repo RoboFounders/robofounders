@@ -1939,6 +1939,94 @@ export const newsArticles = {
       backLink: "ニュース一覧へ戻る",
     },
   },
+  "onilema-abis-2025": {
+    id: "onilema-abis-2025",
+    date: "2025.10.26",
+    category: { en: "In the Media", ja: "メディア掲載" },
+    images: {
+      hero: "/images/works/asean-summit.jpeg",
+      groupPhoto: "/images/news/onilema-abis-2025/abis-group-photo.png",
+    },
+    heroDisplay: "contain",
+    supportingImages: ["groupPhoto"],
+    sourceUrl: "https://beamstart.com/news/onilema-japan-malaysia-innovation",
+    en: {
+      title: "Japanese Entrepreneur Highlights “Onilema” as a Symbol of ASEAN–Japan Innovation at ABIS 2025",
+      subtitles: ["ABIS 2025 panel · Kuala Lumpur, Malaysia"],
+      lead: "At ABIS 2025 in Kuala Lumpur, Mariel Asami Fukase introduced Onilema as a symbol of collaboration between Japan and Southeast Asia. BEAMSTART’s Maria Lourdes covered her remarks and the conversations that followed.",
+      sections: [
+        {
+          heading: "Women entrepreneurs and digital innovation",
+          paragraphs: [
+            "On October 26, the ASEAN Business and Investment Summit brought leaders and innovators together to discuss how digital change can benefit more people. That day, Japanese Prime Minister Sanae Takaichi attended ASEAN summit meetings in Kuala Lumpur on her first overseas trip in office.",
+            "Fukase spoke at a panel co-hosted by the ASEAN–Japan Centre titled “Driving Inclusive Futures in ASEAN and Japan: Women’s Entrepreneurship in a Digital World.” She highlighted how women entrepreneurs can apply creativity and empathy to lifestyle products, e-commerce, healthcare, femtech, and beauty.",
+          ],
+        },
+        {
+          heading: "A meeting of Japanese and Malaysian food cultures",
+          paragraphs: [
+            "Onilema combines Japanese onigiri and Malaysian nasi lemak. Fukase used the idea to express her hope for closer ties across ASEAN and to “co-create innovation through the power of diversity and technology,” as quoted by BEAMSTART.",
+          ],
+        },
+        {
+          heading: "A fair digital transition and a path from research to market",
+          paragraphs: [
+            "Dr. Kunihiko Hirabayashi, Secretary General of the ASEAN–Japan Centre, put people at the center of digital transformation. He called for a “Just Digital Transition” shaped by women, young people, and innovators.",
+            "Fukase discussed working with Malaysia’s national universities to bring research to market. She favored practical applications over competition that takes substantial funding and said Malaysia’s willingness to act quickly gave her confidence in the country’s potential.",
+          ],
+        },
+        {
+          heading: "Continuing the discussion at the ASEAN Indo-Pacific Forum",
+          paragraphs: [
+            "The next day, Fukase presented Onilema to Indonesia’s Coordinating Minister for Economic Affairs, Airlangga Hartarto. She also spoke with Joey Concepcion, chair of the Philippine ASEAN Business Advisory Council, about how women entrepreneurs can help drive AI and digital innovation across ASEAN.",
+            "Concepcion highlighted the three Ms: mentorship, money, and market access. He singled out mentors for helping founders work through practical challenges. Looking ahead to the Philippines’ 2026 ASEAN chairmanship and its turn hosting the summit, BEAMSTART expected women’s entrepreneurship and digital inclusion to remain priorities for regional cooperation.",
+          ],
+        },
+      ],
+      supportingImageAlts: ["Mariel Asami Fukase in an orange kimono poses with three guests at ABIS 2025."],
+      supportingImageCaptions: ["Mariel Asami Fukase with guests at ABIS 2025 in Kuala Lumpur."],
+      sourceLinkLabel: "Read the original BEAMSTART article",
+      backLink: "Back to News & Events",
+    },
+    ja: {
+      title: "日本人起業家がABIS 2025で紹介した「オニレマ」、日本とASEANの共創の象徴に",
+      subtitles: ["ABIS 2025 パネル討論（マレーシア・クアラルンプール）"],
+      lead: "クアラルンプールで開催されたABIS 2025で、深瀬マリエル麻美は日本とASEANの共創を象徴する「オニレマ」を紹介しました。BEAMSTARTのMaria Lourdes記者が、登壇での発言とその後の対話を報じました。",
+      sections: [
+        {
+          heading: "女性起業家が切り開くデジタル分野の可能性",
+          paragraphs: [
+            "10月26日のABIS 2025では、より多くの人がデジタル化の恩恵を受けられるよう、各界のリーダーやイノベーションの担い手が議論しました。同日、就任後初の外遊でマレーシアを訪問していた高市早苗首相は、クアラルンプールでASEAN関連首脳会議に出席しました。",
+            "日本アセアンセンターが共催したパネル討論では、デジタル時代の女性の起業を通じて、日本とASEANで誰もが参加できる社会をどう実現するかを話し合いました。深瀬は、女性起業家が創造性や共感力を生かし、ライフスタイル、電子商取引、ヘルスケア、フェムテック、美容などの分野で新たなサービスや技術を生み出せると語りました。",
+          ],
+        },
+        {
+          heading: "日本とマレーシアの食文化をつなぐ発想",
+          paragraphs: [
+            "「オニレマ」は、日本のおにぎりとマレーシアのナシレマを組み合わせたアイデアです。深瀬はこの発想を通じて、ASEAN各国との交流を深め、「多様性とテクノロジーの力でイノベーションを共に生み出したい」との思いを伝えました（BEAMSTART掲載の発言を日本語訳）。",
+          ],
+        },
+        {
+          heading: "公正なデジタル移行と、研究成果の事業化",
+          paragraphs: [
+            "日本アセアンセンターの平林国彦事務総長は、デジタル変革の中心に人を置くことの重要性を強調しました。女性や若者、イノベーションの担い手が参画できる、公正なデジタル移行（Just Digital Transition）を呼びかけました。",
+            "深瀬は、マレーシアの国立大学と連携し、研究成果を事業化につなげる構想を語りました。多額の資金を要する競争よりも、研究を実際に役立てる取り組みを重視し、すぐに行動に移すマレーシアのビジネス文化に、同国の可能性を感じていると述べました。",
+          ],
+        },
+        {
+          heading: "ASEANインド太平洋フォーラムで続いた対話",
+          paragraphs: [
+            "翌日のASEANインド太平洋フォーラムで、深瀬はインドネシアのアイルランガ・ハルタルト経済担当調整大臣に「オニレマ」を紹介しました。また、ASEANビジネス諮問評議会フィリピンのジョーイ・コンセプシオン議長と、女性起業家がASEANのAI・デジタル分野をけん引する可能性について意見を交わしました。",
+            "コンセプシオン氏は、起業家に必要な支援を「3つのM」として、メンターによる助言（Mentorship）、資金（Money）、市場へのアクセス（Market）を挙げました。なかでも、事業の具体的な課題を乗り越えるうえで、メンターの助言が重要だと強調しました。BEAMSTARTは、フィリピンが2026年にASEAN議長国として首脳会議を主催するのを前に、女性の起業とデジタル分野への幅広い参加が、引き続き地域協力の主要テーマになると伝えました。",
+          ],
+        },
+      ],
+      supportingImageAlts: ["ABIS 2025で、オレンジ色の着物を着た深瀬マリエル麻美と参加者3名が並ぶ集合写真。"],
+      supportingImageCaptions: ["クアラルンプールで開催されたABIS 2025で、参加者と並ぶ深瀬マリエル麻美。写真出典：BEAMSTART。"],
+      sourceLinkLabel: "BEAMSTARTの元記事を読む",
+      backLink: "ニュース一覧へ戻る",
+    },
+  },
   "robofounders-beamstart-physical-ai": {
     id: "robofounders-beamstart-physical-ai",
     date: "2026.08",
