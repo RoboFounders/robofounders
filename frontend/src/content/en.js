@@ -86,8 +86,8 @@ const en = {
   },
   about: {
     label: "Our long-term vision",
-    title: "The Physical AI Platform for Manufacturing",
-    body: "We are connecting precision components, robotics, and AI to help manufacturers automate dangerous, demanding, and repetitive work.",
+    title: "Building the Infrastructure for Physical AI.",
+    body: "Robots are learning to think, move, and change the physical world. We bring the motion technology and manufacturing innovations that make this possible into use around the world.",
   },
   services: {
     label: "What we do",
@@ -255,6 +255,23 @@ const en = {
       "This challenge is not unique to Japan. Around the world, exceptional manufacturers and skilled businesses are struggling to survive as labor shortages become increasingly severe.",
       "That experience inspired the creation of RoboFounders. Our mission is to preserve and pass on the world’s manufacturing excellence by combining robotics and AI to solve labor shortages.",
       "We are building a future where people and robots work together, allowing the world’s manufacturing legacy to continue for generations to come.",
+    ],
+    sections: [
+      {
+        title: "Opening manufacturing to more people",
+        paragraphs: [
+          "Men have long made up most of Japan’s manufacturing and robotics workforce. The industry also faces a pressing challenge in passing experienced engineers’ knowledge on to the next generation. As a Physical AI startup led by a woman founder, we want people to be able to contribute their skills and pursue opportunities regardless of gender, nationality, age, where they live, or how they entered the industry.",
+          "We bring experienced engineers and younger talent together with people from different fields and countries. By learning from one another, we can preserve Japan’s manufacturing expertise and develop the next generation of robotics.",
+        ],
+      },
+      {
+        title: "Growing across borders and developing new leaders",
+        paragraphs: [
+          "We aim to make Japan’s precision manufacturing a foundation for the global Physical AI and robotics industry. As we grow our operations and partnerships in Japan, Malaysia, and the United States, we will bring technologies such as planetary roller screws to more markets and connect research, engineering partnerships, and factory trials with commercial deployment. Our selection for the CES 2027 Japan Pavilion is an opportunity to bring this work to a global audience.",
+          "As a founder in deep tech and robotics, I want more women to have the authority to lead businesses and make decisions. That includes creating opportunities for women to serve as CEOs of group companies and enabling people with the right skills and drive to lead across borders.",
+          "We want to capture skilled workers’ expertise in robots so factories can handle dangerous work and respond to labor shortages. We also want more people, including women and people from different backgrounds, to shape the future of technology and industry.",
+        ],
+      },
     ],
     more: "Read the founder story",
   },
@@ -441,6 +458,11 @@ const en = {
         "May 2026",
         "RoboFounders Selected as Semi-Finalist at Startup World Cup Malaysia 2026",
         "Showcasing our Physical AI and robotics solutions on Malaysia’s biggest startup stage.",
+      ],
+      [
+        "Oct 26, 2025",
+        "Japanese Entrepreneur Highlights “Onilema” as a Symbol of ASEAN–Japan Innovation at ABIS 2025",
+        "BEAMSTART covers Mariel Asami Fukase’s talk on women-led innovation and a concept that brings Japanese onigiri and Malaysian nasi lemak together.",
       ],
     ],
   },
