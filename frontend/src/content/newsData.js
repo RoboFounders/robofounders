@@ -1,4 +1,103 @@
+import { media } from "./media";
+
 export const newsArticles = {
+  "usm-ergomotion-partnership": {
+    id: "usm-ergomotion-partnership",
+    date: "2026.11",
+    category: { en: "Company News", ja: "企業ニュース" },
+    images: { hero: media.ergomotionDemo },
+    heroDisplay: "contain",
+    video: {
+      src: "/videos/news/usm-ergomotion-demo.mp4",
+      afterIntro: true,
+      hasAudio: false,
+    },
+    en: {
+      title: "RoboFounders Partners with Universiti Sains Malaysia (USM) to Advance Robotics R&D Using ERGOMOTION AI Motion Analysis Technology",
+      subtitles: [],
+      lead: "RoboFounders Inc. (Tokyo, Japan and San Francisco, USA; CEO: Mariel Asami Fukase) has entered into a research collaboration with Universiti Sains Malaysia (USM) to leverage ERGOMOTION, an AI-powered human motion analysis technology developed by USM's research team.",
+      videoLabel: "ERGOMOTION human motion analysis demonstration",
+      videoCaption: "Motion analysis demonstration by ERGOMOTION",
+      heroAlt: "ERGOMOTION dashboard showing a camera view, a 3D pose, and an ergonomic risk assessment",
+      sections: [
+        {
+          heading: "Bridging Human Movement Analysis and Robotics Through AI",
+          paragraphs: [
+            "Through this collaboration, RoboFounders aims to utilize AI-based analysis of human body, hand, and finger movements to support its future research and development in robotics.",
+            "ERGOMOTION uses standard cameras to capture and analyze human movements, estimating body joint angles, movement speeds, and hand and finger movements. Its development version also supports detailed hand and finger tracking, including 21 landmarks per hand, estimated 3D coordinates, finger bend angles, and finger-curl measurements.",
+            "By combining USM's expertise in AI-based motion analysis with RoboFounders' robotics development capabilities, the collaboration will explore how human movement data can be applied to robotic technologies, including future robotic hand development and control systems.",
+            "ERGOMOTION was originally developed for ergonomic risk assessment and also offers potential applications in manufacturing environments. By analyzing workers' movements and identifying ergonomic risk factors, the technology may contribute to improving workplace safety and supporting the automation of physically demanding tasks.",
+            "Through this partnership, RoboFounders and USM aim to bring university research closer to real-world industrial applications, explore new possibilities in human-robot collaboration, and contribute to addressing practical challenges in the manufacturing industry.",
+            "**Together, we aim to connect human movement, AI, and robotics to help shape the future of manufacturing.**",
+          ],
+        },
+        {
+          heading: "Message from USM's Lead Researcher",
+          attribution: [
+            "**Assoc. Prof. Dr. Ahmad Sufril Azlan Mohamed**\n**Lead Researcher**\nSchool of Computer Sciences, Universiti Sains Malaysia (USM)",
+            "**Co-Researcher: Assoc. Prof. Ts. Dr. Mohd Hafiidz Jaafar**\nSchool of Industrial Technology, Universiti Sains Malaysia (USM)",
+          ],
+          quoteParagraphs: [
+            "“We are confident that combining the technical expertise in robotic hand development accumulated over more than 20 years by RoboFounders’ Head of Robotics Technology Development with the company’s global team structure, advanced engineering capabilities, and deep understanding of the manufacturing industry will enable us to create solutions that deliver genuine value to industry.",
+            "In particular, by integrating technologies for analyzing human body, hand, and finger movements with RoboFounders’ expertise in robotics, we hope to contribute to the future of industrial robotics and help address the practical challenges facing the manufacturing sector.",
+            "Penang, Malaysia, where our university is located, is a major manufacturing hub, home to numerous Japanese manufacturers and companies from across ASEAN. It is deeply meaningful and a great pleasure for us to share the research achievements developed here in Penang with the world.",
+            "Through our collaboration with RoboFounders, we are proud to take university research beyond the laboratory and develop it into practical technologies that can be implemented in real factory environments, opening up new possibilities for the future of robotics and manufacturing.”",
+          ],
+        },
+        {
+          heading: "Message from Mariel Asami Fukase, CEO of RoboFounders",
+          quoteParagraphs: [
+            "“The skills and expertise possessed by experienced craftspeople and skilled workers are invaluable assets to the manufacturing industries of Japan and across Asia.",
+            "By combining USM’s advanced motion analysis technology with the more than 20 years of robotic hand development experience of our Head of Robotics Technology Development, we aim to translate human movements and skills into practical robotics applications and pass this valuable knowledge on to the next generation.",
+            "Our vision is not simply a future in which robots replace human workers. Rather, we aspire to create a new manufacturing environment where human capabilities and skills are enhanced, and people and robots work together, supporting one another.”",
+          ],
+        },
+      ],
+      backLink: "Back to News & Events",
+    },
+    ja: {
+      title: "RoboFounders、マレーシア科学大学（USM）と提携し、ERGOMOTIONのAI動作解析技術を活用したロボティクスの研究開発を推進",
+      subtitles: [],
+      lead: "RoboFounders Inc.（日本・東京、米国・サンフランシスコ、CEO：深瀬マリエル麻美）は、マレーシア科学大学（Universiti Sains Malaysia：USM）の研究チームが開発したAI人間動作解析技術「ERGOMOTION」を活用するため、同大学との研究協力を開始しました。",
+      videoLabel: "ERGOMOTIONによる人体動作解析のデモ",
+      videoCaption: "動作解析デモ提供：ERGOMOTION",
+      heroAlt: "カメラ映像、3D姿勢、人間工学的リスク評価を表示するERGOMOTIONの画面",
+      sections: [
+        {
+          heading: "AIによる人間の動作解析とロボティクスの融合",
+          paragraphs: [
+            "本協業を通じて、RoboFoundersは、人間の身体・手・指の動きをAIで解析する技術を活用し、今後のロボティクス分野における研究開発に役立てていくことを目指します。",
+            "ERGOMOTIONは、一般的なカメラを使用して人間の動作を撮影・解析し、身体の関節角度、動作速度、手や指の動きなどを推定する技術です。開発版では、より詳細な手指のトラッキングにも対応しており、片手につき21個の特徴点を検出し、推定3D座標、指の曲げ角度、指のカール量などのデータを取得できます。",
+            "USMが有するAI動作解析の専門知識と、RoboFoundersのロボティクス開発能力を組み合わせることで、人間の動作データを、将来的なロボットハンドの開発や制御システムを含むロボティクス技術にどのように応用できるかを探求していきます。",
+            "また、ERGOMOTIONはもともと人間工学的なリスク評価を目的として開発された技術であり、製造現場における応用も期待されています。作業者の動作を分析し、人間工学的なリスク要因を特定することで、職場の安全性向上や、身体的負担の大きい作業の自動化を支援できる可能性があります。",
+            "本提携を通じて、RoboFoundersとUSMは、大学で培われた研究成果を実際の産業現場での応用へとつなげ、人間とロボットの協働における新たな可能性を探るとともに、製造業が直面する実務上の課題解決に貢献することを目指します。",
+            "**人間の動き、AI、そしてロボティクスをつなぎ、製造業の未来を切り拓いていきます。**",
+          ],
+        },
+        {
+          heading: "CEO 深瀬マリエル麻美のコメント",
+          quoteParagraphs: [
+            "「熟練作業者が持つ技能や技術は、日本をはじめアジアの製造業にとって非常に貴重な財産です。USMが持つ優れた動作解析技術と、当社ロボット技術開発部長が20年以上にわたり培ってきたロボットハンド開発の経験を組み合わせることで、人間の動作や技能をロボティクス技術に活用し、次世代へとつないでいきたいと考えています。",
+            "私たちが目指すのは、ロボットが人間の仕事を単に置き換える未来ではありません。人間の能力や技能を拡張し、人とロボットが互いに支え合いながら働く、新しい製造現場の実現です。」",
+          ],
+        },
+        {
+          heading: "USM　研究代表者のコメント",
+          attribution: [
+            "**Assoc. Prof. Dr. Ahmad Sufril Azlan Mohamed**\n**研究代表者（Lead Researcher）**\nSchool of Computer Sciences, Universiti Sains Malaysia (USM)",
+            "**共同研究者：Assoc. Prof. Ts. Dr. Mohd Hafiidz Jaafar**\nSchool of Industrial Technology, Universiti Sains Malaysia (USM)",
+          ],
+          quoteParagraphs: [
+            "「RoboFoundersのロボット技術開発部長が20年以上にわたり培ってきたロボットハンド開発の技術的専門知識に、グローバルなチーム体制、高度なエンジニアリング、そして製造業に対する深い理解が組み合わさることで、産業界に真に価値のあるソリューションを生み出せると確信しています。",
+            "特に、人間の身体や手指の動作を解析する技術と、RoboFoundersが持つロボティクス分野の知見を融合させることで、産業用ロボティクスの未来に貢献し、製造業が直面する現実的な課題の解決につなげたいと考えています。",
+            "私たちの大学が位置するマレーシアのペナン州は、重要な製造業の集積地であり、多くの日系メーカーやASEAN各国の企業が拠点を構えています。このペナンの地で積み重ねてきた研究成果を、世界に向けて発信できることは、私たちにとって非常に意義深く、大きな喜びです。",
+            "RoboFoundersとの協業を通じて、大学の研究を研究室の外へと展開し、実際の工場現場で活用される技術へと発展させ、ロボティクスと製造業の未来に新たな可能性を切り拓いていけることを誇りに思います。」",
+          ],
+        },
+      ],
+      backLink: "ニュース一覧へ戻る",
+    },
+  },
   "physical-ai-robotics-partners-2026": {
     id: "physical-ai-robotics-partners-2026",
     date: "2026.11",

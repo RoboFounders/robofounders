@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { useParams, Navigate } from "react-router-dom";
 import Link from "@/components/shared/SiteLink";
 import { ArrowLeft, ArrowUpRight, CheckCircle2, Quote, Sparkles, Linkedin, Youtube } from "lucide-react";
@@ -17,6 +18,32 @@ function renderEmphasis(text) {
   );
 }
 
+function NewsVideo({ video, poster, posterAlt, label, caption }) {
+  const [failed, setFailed] = useState(false);
+
+  return (
+    <figure className={`news-video-card${video.afterIntro ? " is-after-intro" : ""}`}>
+      <div className="news-video-player">
+        {failed ? (
+          <img src={poster} alt={posterAlt} />
+        ) : (
+          <AccessibleLoopVideo
+            src={video.src}
+            poster={poster}
+            label={label}
+            preload="none"
+            startWhenVisible
+            autoStart={false}
+            showAudioToggle={video.hasAudio !== false}
+            onError={() => setFailed(true)}
+          />
+        )}
+      </div>
+      {caption && <figcaption>{caption}</figcaption>}
+    </figure>
+  );
+}
+
 export default function NewsArticle() {
   const { slug = "x-hub-tokyo-boston" } = useParams();
   const { lang, t } = useLanguage();
@@ -28,6 +55,17 @@ export default function NewsArticle() {
 
   const content = article[lang] || article.en;
   const categoryLabel = article.category[lang] || article.category.en;
+  const showVideoAfterIntro = article.video?.src && article.video.afterIntro;
+  const videoFigure = article.video?.src && (
+    <NewsVideo
+      key={article.video.src}
+      video={article.video}
+      poster={article.video.poster || article.images.hero}
+      posterAlt={content.heroAlt || content.title}
+      label={content.videoLabel || t.gallery.video}
+      caption={content.videoCaption}
+    />
+  );
 
   return (
     <>
@@ -57,13 +95,15 @@ export default function NewsArticle() {
 
             <h1 className="news-title">{content.title}</h1>
 
-            <div className="news-subtitles">
-              {content.subtitles.map((sub, i) => (
-                <p key={i} className="news-subtitle-item">
-                  {sub}
-                </p>
-              ))}
-            </div>
+            {content.subtitles.length > 0 && (
+              <div className="news-subtitles">
+                {content.subtitles.map((sub, i) => (
+                  <p key={i} className="news-subtitle-item">
+                    {sub}
+                  </p>
+                ))}
+              </div>
+            )}
 
             <div
               className={`news-featured-media${
@@ -72,7 +112,7 @@ export default function NewsArticle() {
             >
               <img
                 src={article.images.hero}
-                alt={content.title}
+                alt={content.heroAlt || content.title}
                 style={article.heroObjectPosition ? { objectPosition: article.heroObjectPosition } : undefined}
                 width="1920"
                 height="1080"
@@ -86,10 +126,11 @@ export default function NewsArticle() {
         <article className="section news-body-section">
           <div className="wrap news-content-wrap">
             {/* Lead Paragraph */}
-            <p className={`news-lead-text${content.introParagraphs?.length ? " has-intro" : ""}`}>{content.lead}</p>
+            <p className={`news-lead-text${content.introParagraphs?.length || showVideoAfterIntro ? " has-intro" : ""}`}>{content.lead}</p>
             {content.introParagraphs?.map((paragraph, index) => (
               <p className="news-intro-text" key={index}>{renderEmphasis(paragraph)}</p>
             ))}
+            {showVideoAfterIntro && videoFigure}
 
             {/* Content Sections */}
             <div className="news-sections-flow">
@@ -99,6 +140,19 @@ export default function NewsArticle() {
                   {section.paragraphs?.map((p, pIdx) => (
                     <p key={pIdx}>{renderEmphasis(p)}</p>
                   ))}
+
+                  {section.attribution?.map((paragraph, index) => (
+                    <p className="news-quote-attribution" key={index}>
+                      {renderEmphasis(paragraph)}
+                    </p>
+                  ))}
+                  {section.quoteParagraphs && (
+                    <blockquote className="news-section-quote">
+                      {section.quoteParagraphs.map((paragraph, index) => (
+                        <p key={index}>{paragraph}</p>
+                      ))}
+                    </blockquote>
+                  )}
 
                   {(section.judgeComments || section.judgeComment) && (
                     <div className="judge-comments-list">
@@ -222,22 +276,7 @@ export default function NewsArticle() {
               </section>
             )}
 
-            {/* On-the-Ground Event Video */}
-            {article.video?.src && (
-              <figure className="news-video-card">
-                <div className="news-video-player">
-                  <AccessibleLoopVideo
-                    src={article.video.src}
-                    poster={article.video.poster || article.images.hero}
-                    label={t.gallery.video}
-                    preload="none"
-                    startWhenVisible
-                    autoStart={false}
-                    showAudioToggle
-                  />
-                </div>
-              </figure>
-            )}
+            {!showVideoAfterIntro && videoFigure}
 
             {/* CEO Quote */}
             {content.quote && (

@@ -3802,6 +3802,17 @@ html[lang="ja"] .services-grid article:nth-child(2) strong {
   color: #334155;
   margin-bottom: 16px;
 }
+.news-quote-attribution {
+  white-space: pre-line;
+}
+.news-section-quote {
+  margin: 20px 0 0;
+  padding-inline-start: 18px;
+  border-inline-start: 2px solid var(--line);
+}
+.news-section-quote p:last-child {
+  margin-bottom: 0;
+}
 .judge-comment-card {
   display: grid;
   grid-template-columns: 76px minmax(0, 1fr);
@@ -3971,6 +3982,9 @@ html[lang="ja"] .services-grid article:nth-child(2) strong {
   background: var(--paper);
   box-shadow: var(--shadow-soft);
 }
+.news-video-card.is-after-intro {
+  margin-top: 0;
+}
 .news-video-player {
   position: relative;
   background: #090c24;
@@ -3988,6 +4002,12 @@ html[lang="ja"] .services-grid article:nth-child(2) strong {
   max-height: 480px;
   object-fit: cover;
   display: block;
+}
+.news-video-player img,
+.news-video-card.is-after-intro video {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 .news-video-card figcaption {
   padding: 14px 20px;

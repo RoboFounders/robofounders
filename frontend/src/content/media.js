@@ -35,6 +35,7 @@ export const media = {
     thao: "/images/team/thao.webp",
   },
   newsBanner: "/images/events/news-banner.jpg",
+  ergomotionDemo: "/images/news/usm-ergomotion/ergomotion-analysis.jpeg",
   ces2027: "/images/news/ces-2027-japan-pavilion.png",
   physicalAiPartners: "/images/news/physical-ai-partners-2026.png",
   newsEvent: "/images/events/news-event-new.jpg",

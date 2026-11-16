@@ -13,6 +13,7 @@ export default function AccessibleLoopVideo({
   autoStart = true,
   showToggle = true,
   showAudioToggle = false,
+  onError,
 }) {
   const { t } = useLanguage();
   const videoRef = useRef(null);
@@ -120,6 +121,7 @@ export default function AccessibleLoopVideo({
         disablePictureInPicture
         disableRemotePlayback
         onContextMenu={(event) => event.preventDefault()}
+        onError={onError}
         poster={poster}
         aria-label={label}
         src={src}

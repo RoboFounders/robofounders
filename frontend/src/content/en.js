@@ -386,6 +386,11 @@ const en = {
     news: [
       [
         "Nov 2026",
+        "RoboFounders Partners with Universiti Sains Malaysia (USM) to Advance Robotics R&D Using ERGOMOTION AI Motion Analysis Technology",
+        "The research collaboration uses ERGOMOTION’s AI-powered analysis of human movement to explore applications in robotics.",
+      ],
+      [
+        "Nov 2026",
         "RoboFounders Seeks Technology and Business Partners in Physical AI and Next-Generation Robotics",
         "Seeking joint R&D, proof-of-concept, and commercial partnerships centered on planetary roller screws and related technologies.",
       ],

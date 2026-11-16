@@ -14,43 +14,26 @@ const eventImages = [
   media.home.factory, // humans and robots working together
 ];
 
-const newsImages = [
-  media.physicalAiPartners,
-  media.ces2027,
-  media.kabilanPortrait,
-  media.xHubSingapore, // client-provided X-HUB Singapore image
-  media.newsEvent, // Tokyo to Boston / JETRO X-HUB TOKYO full image
-  media.nikkeiCoverage, // client-provided Nikkei print image
-  media.japanCorporation, // client-provided Japan corporation image
-  media.aiMalaysiaTakeover, // client-provided AI Malaysia Takeover image
-  media.beamstartHero, // Same image as the BEAMSTART article hero
-  media.startupWorldCupTokyo, // client-provided Startup World Cup Tokyo image
-  media.ivs2026News, // IVS2026 Startup Market
-  media.beyondPocPortrait, // Beyond POC speaker story
-  media.diffusionBorneo, // Diffusion Borneo 2026 image from doc
-  media.events[7], // client-provided Jungle Forge image
-  media.startupWorldCup, // client-approved Startup World Cup image
-  media.aseanSummit, // Onilema at ABIS 2025
+// Keep these in the same order as the localized news cards.
+const newsCards = [
+  ["usm-ergomotion-partnership", media.ergomotionDemo, "contain"],
+  ["physical-ai-robotics-partners-2026", media.physicalAiPartners, "contain"],
+  ["ces-2027-japan-pavilion", media.ces2027, "contain"],
+  ["kabilan-kb-advisor", media.kabilanPortrait, "kabilan"],
+  ["x-hub-tokyo-singapore", media.xHubSingapore],
+  ["x-hub-tokyo-boston", media.newsEvent],
+  ["nikkei-genai-sum-2026", media.nikkeiCoverage, "nikkei"],
+  ["japan-corporation-established", media.japanCorporation],
+  ["ai-malaysia-takeover-2026", media.aiMalaysiaTakeover],
+  ["robofounders-beamstart-physical-ai", media.beamstartHero],
+  ["startup-world-cup-tokyo-2026", media.startupWorldCupTokyo],
+  ["ivs2026-startup-market", media.ivs2026News, "contain"],
+  ["diffusion-borneo-beyond-poc", media.beyondPocPortrait, "contain"],
+  ["diffusion-borneo-2026", media.diffusionBorneo],
+  ["jungle-forge-award-2026", media.events[7]],
+  ["startup-world-cup-malaysia", media.startupWorldCup, "malaysia"],
+  ["onilema-abis-2025", media.aseanSummit],
 ];
-
-const newsSlugMap = {
-  0: "/news/physical-ai-robotics-partners-2026",
-  1: "/news/ces-2027-japan-pavilion",
-  2: "/news/kabilan-kb-advisor",
-  3: "/news/x-hub-tokyo-singapore",
-  4: "/news/x-hub-tokyo-boston",
-  5: "/news/nikkei-genai-sum-2026",
-  6: "/news/japan-corporation-established",
-  7: "/news/ai-malaysia-takeover-2026",
-  8: "/news/robofounders-beamstart-physical-ai",
-  9: "/news/startup-world-cup-tokyo-2026",
-  10: "/news/ivs2026-startup-market",
-  11: "/news/diffusion-borneo-beyond-poc",
-  12: "/news/diffusion-borneo-2026",
-  13: "/news/jungle-forge-award-2026",
-  14: "/news/startup-world-cup-malaysia",
-  15: "/news/onilema-abis-2025",
-};
 
 export default function Updates() {
   const { t } = useLanguage();
@@ -127,34 +110,26 @@ export default function Updates() {
               onPointerCancel={stopRailScroll}
             >
               {t.updates.news.map(([date, title, body], index) => {
-                const linkTarget = newsSlugMap[index];
-                const isLinked = Boolean(linkTarget);
+                const [slug, image = media.newsBanner, imageStyle] = newsCards[index] || [];
+                const isLinked = Boolean(slug);
                 const CardTag = isLinked ? Link : "article";
                 const cardProps = isLinked
-                  ? { to: linkTarget, className: "news-tile-card is-link" }
+                  ? { to: `/news/${slug}`, className: "news-tile-card is-link" }
                   : { className: "news-tile-card" };
 
                 return (
                   <CardTag key={title} {...cardProps}>
                     <div
-                      style={index === 2 ? { "--kabilan-image": `url(${media.kabilanPortrait})` } : undefined}
-                      className={`news-media${
-                        index === 0 || index === 1 || index === 10 || index === 11 ? " is-contain" : ""
-                      }${
-                        index === 2 ? " is-kabilan" : ""
-                      }${
-                        index === 5 ? " is-nikkei" : ""
-                      }${
-                        index === 14 ? " is-malaysia" : ""
-                      }`}
+                      style={imageStyle === "kabilan" ? { "--kabilan-image": `url(${image})` } : undefined}
+                      className={`news-media${imageStyle ? ` is-${imageStyle}` : ""}`}
                     >
                       <img
-                        src={newsImages[index % newsImages.length]}
+                        src={image}
                         alt={title}
                         loading="lazy"
                         width="400"
                         height="240"
-                        style={index === 2 ? {
+                        style={imageStyle === "kabilan" ? {
                           width: "100%",
                           height: "200px",
                           objectFit: "contain",
