@@ -127,8 +127,8 @@ export const ces2027Opportunities = {
           "Company: RoboFounders, Inc. / 株式会社RoboFounders",
           "We look forward to hearing from you!",
         ],
+        emailImageLabel: "Email:",
         links: [
-          { label: "Email: r@robofounders.ai", href: "mailto:r@robofounders.ai" },
           { label: "RoboFounders website", href: "https://www.robofounders.ai/" },
           { label: "Official CES exhibition information: CES 2027 — JETRO Japan Pavilion", href: exhibitionUrl },
         ],
@@ -234,8 +234,8 @@ export const ces2027Opportunities = {
           "会社名：株式会社RoboFounders / RoboFounders, Inc.",
           "皆さまからのご応募をお待ちしております。",
         ],
+        emailImageLabel: "応募先：",
         links: [
-          { label: "応募先：r@robofounders.ai", href: "mailto:r@robofounders.ai" },
           { label: "公式ウェブサイト", href: "https://www.robofounders.ai/" },
           { label: "CES 2027 JETRO Japan Pavilion 出展情報", href: exhibitionUrl },
         ],

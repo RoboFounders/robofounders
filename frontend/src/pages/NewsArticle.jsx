@@ -6,6 +6,7 @@ import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import PageMeta from "@/components/shared/PageMeta";
 import AccessibleLoopVideo from "@/components/shared/AccessibleLoopVideo";
+import ContactAddressImage from "@/components/shared/ContactAddressImage";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { newsArticles } from "@/content/newsData";
 import { localizePath } from "@/lib/locale";
@@ -231,6 +232,13 @@ export default function NewsArticle() {
 
                   {section.followUp && (
                     <p className="news-followup">{section.followUp}</p>
+                  )}
+
+                  {section.emailImageLabel && (
+                    <div className="news-application-contact">
+                      <p>{section.emailImageLabel}</p>
+                      <ContactAddressImage tone="dark" />
+                    </div>
                   )}
 
                   {section.communityLinks?.length > 0 && (
