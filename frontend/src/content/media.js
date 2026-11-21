@@ -37,6 +37,7 @@ export const media = {
   newsBanner: "/images/events/news-banner.jpg",
   ergomotionDemo: "/images/news/usm-ergomotion/ergomotion-analysis.jpeg",
   ces2027: "/images/news/ces-2027-japan-pavilion.png",
+  ces2027Hiring: "/images/news/ces-2027-hiring.jpg",
   physicalAiPartners: "/images/news/physical-ai-partners-2026.png",
   newsEvent: "/images/events/news-event-new.jpg",
   ivs2026News: "/images/news/ivs-2026/founder-at-ivs.webp",

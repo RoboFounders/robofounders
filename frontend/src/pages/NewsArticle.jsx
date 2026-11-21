@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useParams, Navigate } from "react-router-dom";
 import Link from "@/components/shared/SiteLink";
-import { ArrowLeft, ArrowUpRight, CheckCircle2, Quote, Sparkles, Linkedin, Youtube } from "lucide-react";
+import { ArrowLeft, ArrowUpRight, CheckCircle2, Quote, Sparkles, Linkedin, Youtube, Instagram, Facebook } from "lucide-react";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import PageMeta from "@/components/shared/PageMeta";
@@ -15,6 +15,34 @@ function renderEmphasis(text) {
     part.startsWith("**") && part.endsWith("**")
       ? <strong key={index}>{part.slice(2, -2)}</strong>
       : part,
+  );
+}
+
+function NewsCommunityLinks({ links }) {
+  return (
+    <div className="news-community-links">
+      <div className="news-community-platforms">
+        {links.filter(({ platform }) => platform !== "LinkedIn").map(({ label, platform, href }) => (
+          <a key={href} href={href} target="_blank" rel="noopener noreferrer">
+            {platform === "Instagram" && <Instagram size={18} aria-hidden="true" />}
+            {platform === "Facebook" && <Facebook size={18} aria-hidden="true" />}
+            <span>{label}</span>
+            <ArrowUpRight size={14} aria-hidden="true" />
+          </a>
+        ))}
+      </div>
+      <div className="news-community-linkedin">
+        <p><Linkedin size={18} aria-hidden="true" /> LinkedIn</p>
+        <div className="news-community-regions">
+          {links.filter(({ platform }) => platform === "LinkedIn").map(({ label, href }) => (
+            <a key={href} href={href} target="_blank" rel="noopener noreferrer" aria-label={`LinkedIn — ${label}`}>
+              <span>{label}</span>
+              <ArrowUpRight size={14} aria-hidden="true" />
+            </a>
+          ))}
+        </div>
+      </div>
+    </div>
   );
 }
 
@@ -70,7 +98,7 @@ export default function NewsArticle() {
   return (
     <>
       <PageMeta
-        title={content.title}
+        title={content.title.replace(/\n/g, ": ")}
         description={content.lead}
         path={`/news/${slug}`}
         image={article.images.hero}
@@ -203,6 +231,27 @@ export default function NewsArticle() {
 
                   {section.followUp && (
                     <p className="news-followup">{section.followUp}</p>
+                  )}
+
+                  {section.communityLinks?.length > 0 && (
+                    <NewsCommunityLinks links={section.communityLinks} />
+                  )}
+
+                  {section.links?.length > 0 && (
+                    <ul className="news-section-links">
+                      {section.links.map(({ label, href }) => (
+                        <li key={href}>
+                          <a
+                            className="news-source-link"
+                            href={href}
+                            {...(href.startsWith("https://") ? { target: "_blank", rel: "noopener noreferrer" } : {})}
+                          >
+                            <span>{label}</span>
+                            <ArrowUpRight size={16} aria-hidden="true" />
+                          </a>
+                        </li>
+                      ))}
+                    </ul>
                   )}
 
                   {section.subBullets && (

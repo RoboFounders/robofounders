@@ -16,6 +16,7 @@ const eventImages = [
 
 // Keep these in the same order as the localized news cards.
 const newsCards = [
+  ["ces-2027-us-internship-opportunities", media.ces2027Hiring, "full-image"],
   ["usm-ergomotion-partnership", media.ergomotionDemo, "contain"],
   ["physical-ai-robotics-partners-2026", media.physicalAiPartners, "contain"],
   ["ces-2027-japan-pavilion", media.ces2027, "contain"],
@@ -127,8 +128,8 @@ export default function Updates() {
                         src={image}
                         alt={title}
                         loading="lazy"
-                        width="400"
-                        height="240"
+                        width={imageStyle === "full-image" ? 1168 : 400}
+                        height={imageStyle === "full-image" ? 1179 : 240}
                         style={imageStyle === "kabilan" ? {
                           width: "100%",
                           height: "200px",
@@ -140,7 +141,7 @@ export default function Updates() {
                     <div className="news-card-body">
                       <p className="eyebrow">{date}</p>
                       <h4>
-                        {title}
+                        <span className="news-card-title">{title}</span>
                         {isLinked && <ArrowUpRight size={16} className="news-link-arrow" />}
                       </h4>
                       <p>{body}</p>

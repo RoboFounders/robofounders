@@ -1,6 +1,8 @@
 import { media } from "./media";
+import { ces2027Opportunities } from "./ces2027Opportunities";
 
 export const newsArticles = {
+  [ces2027Opportunities.id]: ces2027Opportunities,
   "usm-ergomotion-partnership": {
     id: "usm-ergomotion-partnership",
     date: "2026.11",

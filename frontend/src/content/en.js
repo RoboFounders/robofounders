@@ -386,6 +386,11 @@ const en = {
     news: [
       [
         "Nov 2026",
+        "CES 2027 – Las Vegas\nU.S. Internship & Global Startup Support Opportunities",
+        "Join our paid CES event support team in Las Vegas, help grow our U.S. business, or connect with our global robotics community.",
+      ],
+      [
+        "Nov 2026",
         "RoboFounders Partners with Universiti Sains Malaysia (USM) to Advance Robotics R&D Using ERGOMOTION AI Motion Analysis Technology",
         "The research collaboration uses ERGOMOTION’s AI-powered analysis of human movement to explore applications in robotics.",
       ],
