@@ -7,7 +7,10 @@ export const newsArticles = {
     id: "usm-ergomotion-partnership",
     date: "2026.11",
     category: { en: "Company News", ja: "企業ニュース" },
-    images: { hero: media.ergomotionDemo },
+    images: {
+      hero: media.ergomotionDemo,
+      researcher: "/images/news/usm-ergomotion/mohd-hafiidz-jaafar.png",
+    },
     heroDisplay: "contain",
     video: {
       src: "/videos/news/usm-ergomotion-demo.mp4",
@@ -32,6 +35,18 @@ export const newsArticles = {
             "Through this partnership, RoboFounders and USM aim to bring university research closer to real-world industrial applications, explore new possibilities in human-robot collaboration, and contribute to addressing practical challenges in the manufacturing industry.",
             "**Together, we aim to connect human movement, AI, and robotics to help shape the future of manufacturing.**",
           ],
+        },
+        {
+          heading: "About the co-researcher",
+          profile: {
+            imageKey: "researcher",
+            name: "Dr. Mohd Hafiidz Bin Jaafar",
+            affiliation: "School of Industrial Technology, Universiti Sains Malaysia (USM)",
+            paragraphs: [
+              "Dr. Mohd Hafiidz Bin Jaafar is an academic at Universiti Sains Malaysia (USM), specializing in occupational safety and health, ergonomics, biomechanics, and human motion analysis.",
+              "His expertise in biomechanics modelling and motion capture supports research into human movement and its potential applications in next-generation robotic systems.",
+            ],
+          },
         },
         {
           heading: "Message from USM's Lead Researcher",
@@ -82,6 +97,18 @@ export const newsArticles = {
             "「熟練作業者が持つ技能や技術は、日本をはじめアジアの製造業にとって非常に貴重な財産です。USMが持つ優れた動作解析技術と、当社ロボット技術開発部長が20年以上にわたり培ってきたロボットハンド開発の経験を組み合わせることで、人間の動作や技能をロボティクス技術に活用し、次世代へとつないでいきたいと考えています。",
             "私たちが目指すのは、ロボットが人間の仕事を単に置き換える未来ではありません。人間の能力や技能を拡張し、人とロボットが互いに支え合いながら働く、新しい製造現場の実現です。」",
           ],
+        },
+        {
+          heading: "共同研究者の紹介",
+          profile: {
+            imageKey: "researcher",
+            name: "Dr. Mohd Hafiidz Bin Jaafar",
+            affiliation: "マレーシア科学大学（USM）産業技術学部",
+            paragraphs: [
+              "Dr. Mohd Hafiidz Bin Jaafarは、マレーシア科学大学（USM）の研究者であり、労働安全衛生、人間工学、バイオメカニクス、人間の動作解析を専門としています。",
+              "バイオメカニクスのモデリングとモーションキャプチャに関する専門知識を生かし、人間の動作と、その次世代ロボットシステムへの応用の可能性に関する研究を支えています。",
+            ],
+          },
         },
         {
           heading: "USM　研究代表者のコメント",

@@ -3901,6 +3901,48 @@ html[lang="ja"] .services-grid article:nth-child(2) strong {
 .news-quote-attribution {
   white-space: pre-line;
 }
+.news-researcher-profile {
+  display: grid;
+  grid-template-columns: 176px minmax(0, 1fr);
+  align-items: start;
+  gap: 28px;
+  padding: 28px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  background: var(--surface-muted);
+}
+.news-researcher-profile > img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius-sm);
+}
+.news-researcher-bio h3 {
+  margin: 0 0 8px;
+  font-size: 21px;
+  line-height: 1.4;
+  font-weight: 700;
+  color: var(--ink);
+}
+.news-researcher-bio .news-researcher-affiliation {
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+.news-researcher-bio p:last-child {
+  margin-bottom: 0;
+}
+@media (max-width: 600px) {
+  .news-researcher-profile {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 22px;
+    padding: 22px;
+  }
+  .news-researcher-profile > img {
+    width: 160px;
+  }
+}
 .news-section-quote {
   margin: 20px 0 0;
   padding-inline-start: 18px;

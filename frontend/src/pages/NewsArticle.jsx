@@ -166,6 +166,24 @@ export default function NewsArticle() {
               {content.sections.map((section, idx) => (
                 <section key={idx} className="news-section-block">
                   <h2>{section.heading}</h2>
+                  {section.profile && (
+                    <div className="news-researcher-profile">
+                      <img
+                        src={article.images[section.profile.imageKey]}
+                        alt={section.profile.name}
+                        width="377"
+                        height="414"
+                        loading="lazy"
+                      />
+                      <div className="news-researcher-bio">
+                        <h3>{section.profile.name}</h3>
+                        <p className="news-researcher-affiliation">{section.profile.affiliation}</p>
+                        {section.profile.paragraphs.map((paragraph, index) => (
+                          <p key={index}>{paragraph}</p>
+                        ))}
+                      </div>
+                    </div>
+                  )}
                   {section.paragraphs?.map((p, pIdx) => (
                     <p key={pIdx}>{renderEmphasis(p)}</p>
                   ))}
