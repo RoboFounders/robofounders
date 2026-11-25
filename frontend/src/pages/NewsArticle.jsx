@@ -156,6 +156,26 @@ export default function NewsArticle() {
           <div className="wrap news-content-wrap">
             {/* Lead Paragraph */}
             <p className={`news-lead-text${content.introParagraphs?.length || showVideoAfterIntro ? " has-intro" : ""}`}>{content.lead}</p>
+            {content.introFeature && (
+              <figure className="news-partnership-feature">
+                <img
+                  src={article.images[content.introFeature.imageKey]}
+                  alt={content.introFeature.alt}
+                  width="1600"
+                  height="1460"
+                  loading="lazy"
+                />
+                <figcaption>
+                  <h2>{content.introFeature.heading}</h2>
+                  <p>{content.introFeature.text}</p>
+                  <ul className="news-partnership-people">
+                    {content.introFeature.people.map(({ name, role }) => (
+                      <li key={name}><strong>{name}</strong><span>{role}</span></li>
+                    ))}
+                  </ul>
+                </figcaption>
+              </figure>
+            )}
             {content.introParagraphs?.map((paragraph, index) => (
               <p className="news-intro-text" key={index}>{renderEmphasis(paragraph)}</p>
             ))}
@@ -171,8 +191,8 @@ export default function NewsArticle() {
                       <img
                         src={article.images[section.profile.imageKey]}
                         alt={section.profile.name}
-                        width="377"
-                        height="414"
+                        width={section.profile.width || 377}
+                        height={section.profile.height || 414}
                         loading="lazy"
                       />
                       <div className="news-researcher-bio">

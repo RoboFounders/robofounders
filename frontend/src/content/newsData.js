@@ -10,6 +10,8 @@ export const newsArticles = {
     images: {
       hero: media.ergomotionDemo,
       researcher: "/images/news/usm-ergomotion/mohd-hafiidz-jaafar.png",
+      researchTeam: "/images/news/usm-ergomotion/usm-research-team.jpeg",
+      leadResearcher: "/images/news/usm-ergomotion/ahmad-sufril-azlan-mohamed.png",
     },
     heroDisplay: "contain",
     video: {
@@ -22,6 +24,17 @@ export const newsArticles = {
       subtitles: [],
       lead: "RoboFounders Inc. (Tokyo, Japan and San Francisco, USA; CEO: Mariel Asami Fukase) has entered into a research collaboration with Universiti Sains Malaysia (USM) to leverage ERGOMOTION, an AI-powered human motion analysis technology developed by USM's research team.",
       videoLabel: "ERGOMOTION human motion analysis demonstration",
+      introFeature: {
+        heading: "Strengthening Our Partnership with Universiti Sains Malaysia (USM)",
+        imageKey: "researchTeam",
+        alt: "RoboFounders and USM research collaborators together at an exhibition",
+        text: "RoboFounders and the USM research team are collaborating to analyze human muscle movements and replicate them through robotic hand technology, translating cutting-edge research into practical solutions for real-world manufacturing applications.",
+        people: [
+          { name: "Dr. Mohd Hafiidz Bin Jaafar", role: "Co-Researcher, School of Industrial Technology, USM" },
+          { name: "Mariel Fukase", role: "Founder & CEO, RoboFounders" },
+          { name: "Ahmad Sufril Azlan Mohamed", role: "Lead Researcher, Associate Professor, School of Computer Sciences, USM" },
+        ],
+      },
       videoCaption: "Motion analysis demonstration by ERGOMOTION",
       heroAlt: "ERGOMOTION dashboard showing a camera view, a 3D pose, and an ergonomic risk assessment",
       sections: [
@@ -35,6 +48,20 @@ export const newsArticles = {
             "Through this partnership, RoboFounders and USM aim to bring university research closer to real-world industrial applications, explore new possibilities in human-robot collaboration, and contribute to addressing practical challenges in the manufacturing industry.",
             "**Together, we aim to connect human movement, AI, and robotics to help shape the future of manufacturing.**",
           ],
+        },
+        {
+          heading: "About the lead researcher",
+          profile: {
+            imageKey: "leadResearcher",
+            width: 485,
+            height: 484,
+            name: "Assoc. Prof. Dr. Ahmad Sufril Azlan Mohamed",
+            affiliation: "School of Computer Sciences, Universiti Sains Malaysia (USM)",
+            paragraphs: [
+              "Associate Professor Dr. Ahmad Sufril Azlan Mohamed is an academic at the School of Computer Sciences, Universiti Sains Malaysia (USM), specialising in artificial intelligence, computer vision, motion capture, and human motion analysis. His research interests include image and video processing, object tracking, medical imaging, and virtual reality. His current work focuses on AI-driven motion recognition, multi-camera markerless motion capture, human pose and spine curvature estimation, ergonomic risk assessment, and industrial hazard detection.",
+              "He also explores Physical AI in robotics, particularly how data captured from skilled workers’ hand movements can inform the design and control of robotic hands for manufacturing tasks. Through industry–academia collaboration, he aims to bring these technologies into real-world manufacturing environments and support industrial innovation in Penang, across Malaysia, and throughout ASEAN.",
+            ],
+          },
         },
         {
           heading: "About the co-researcher",
@@ -77,6 +104,17 @@ export const newsArticles = {
       subtitles: [],
       lead: "RoboFounders Inc.（日本・東京、米国・サンフランシスコ、CEO：深瀬マリエル麻美）は、マレーシア科学大学（Universiti Sains Malaysia：USM）の研究チームが開発したAI人間動作解析技術「ERGOMOTION」を活用するため、同大学との研究協力を開始しました。",
       videoLabel: "ERGOMOTIONによる人体動作解析のデモ",
+      introFeature: {
+        heading: "マレーシア科学大学（USM）との連携を強化",
+        imageKey: "researchTeam",
+        alt: "展示会でのRoboFoundersとUSM研究チームの集合写真",
+        text: "RoboFoundersとUSM研究チームは、人間の筋肉の動きを解析し、その動きをロボットハンドで再現する技術の研究開発に取り組んでいます。先端研究を実際の製造現場で活用できる技術へと発展させることを目指します。",
+        people: [
+          { name: "Dr. Mohd Hafiidz Bin Jaafar", role: "共同研究者、USM産業技術学部" },
+          { name: "Mariel Fukase", role: "RoboFounders 創業者・CEO" },
+          { name: "Ahmad Sufril Azlan Mohamed", role: "研究代表者・准教授、USMコンピュータサイエンス学部" },
+        ],
+      },
       videoCaption: "動作解析デモ提供：ERGOMOTION",
       heroAlt: "カメラ映像、3D姿勢、人間工学的リスク評価を表示するERGOMOTIONの画面",
       sections: [
@@ -97,6 +135,22 @@ export const newsArticles = {
             "「熟練作業者が持つ技能や技術は、日本をはじめアジアの製造業にとって非常に貴重な財産です。USMが持つ優れた動作解析技術と、当社ロボット技術開発部長が20年以上にわたり培ってきたロボットハンド開発の経験を組み合わせることで、人間の動作や技能をロボティクス技術に活用し、次世代へとつないでいきたいと考えています。",
             "私たちが目指すのは、ロボットが人間の仕事を単に置き換える未来ではありません。人間の能力や技能を拡張し、人とロボットが互いに支え合いながら働く、新しい製造現場の実現です。」",
           ],
+        },
+        {
+          heading: "研究代表者の紹介",
+          profile: {
+            imageKey: "leadResearcher",
+            width: 485,
+            height: 484,
+            name: "Assoc. Prof. Dr. Ahmad Sufril Azlan Mohamed",
+            affiliation: "マレーシア科学大学（USM）コンピュータサイエンス学部",
+            paragraphs: [
+              "マレーシア科学大学（Universiti Sains Malaysia：USM）コンピュータサイエンス学部の准教授。人工知能（AI）、コンピュータビジョン、モーションキャプチャ、人間の動作解析を専門とする。",
+              "画像・映像処理、物体追跡、医用画像解析、バーチャルリアリティ（VR）など幅広い研究分野に取り組む。現在は、AIを活用した動作認識、複数カメラによるマーカーレス・モーションキャプチャ、人体姿勢および脊柱湾曲の推定、人間工学に基づく作業リスク評価、産業現場における危険検知などの研究を推進している。",
+              "また、ロボティクスにおけるPhysical AIにも注力しており、熟練作業者の手指の動作から取得したデータを、製造現場向けロボットハンドの設計・制御に活用する研究にも取り組んでいる。",
+              "産学連携を通じて、これらの先端技術の実際の製造現場への導入と、ペナン州をはじめとするマレーシア全土およびASEAN地域の産業イノベーションの促進を目指している。",
+            ],
+          },
         },
         {
           heading: "共同研究者の紹介",
